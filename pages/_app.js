@@ -13,6 +13,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   a {
+    color: #1155cc;
     text-decoration: none;
   }
 `;
@@ -22,7 +23,6 @@ const theme = {
   primary: "#2079c7",
   secondary: "#666666",
 }
-
 
 function MyApp({ Component, pageProps }) {
   return (
