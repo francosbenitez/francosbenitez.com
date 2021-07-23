@@ -1,16 +1,21 @@
 import React from "react";
+import styled from "styled-components";
+
+const StyledFooter = styled.footer`
+    text-align: center;
+`
 
 const Footer = () => {
     return (
-        <footer className="site-footer">
+        <StyledFooter>
             <p>&copy; {new Date().getFullYear()} | Built with ☕️,{" "}
             <a 
                 href="https://nextjs.org/"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="link"
-                > Next,
-            </a> and{" "}
+                > Next
+            </a>, and{" "}
             <a
                 href="https://github.com/francosbenitez/francosbenitez.com"
                 target="_blank"
@@ -26,7 +31,7 @@ const Footer = () => {
                 >{" "}Franco Sebastián Benítez
             </a>
             </p>
-        </footer>
+        </StyledFooter>
     );
 };
 

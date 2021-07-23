@@ -1,22 +1,17 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-import styled from 'styled-components'
-import Footer from '../components/Footer';
+import Head from "next/head";
+// import styles from "../styles/Home.module.css";
+import styled from "styled-components";
+import Footer from "../components/Footer";
+import Hero from "../components/Hero";
+import Blog from "../components/Blog";
 
 const Container = styled.div`
-  min-height: 100vh;
-  padding: 0 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  margin: 0 5rem;
 `;
 
 export default function Home() {
   return (
     <Container>
-    <div className={styles.container}>
       <Head>
         <title>Franco Sebastián Benítez</title>
         <meta name="description" content="Data, design, and development." />
@@ -26,9 +21,9 @@ export default function Home() {
         <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png" />
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
-
+      <Hero />
+      <Blog />
       <Footer />
-    </div>
     </Container>
   )
 }

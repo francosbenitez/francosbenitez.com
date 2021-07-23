@@ -1,0 +1,18 @@
+{
+    "hero": {
+        "name": {
+            "en": "Franco Sebastian Benitez",
+            "es": "Franco Sebastián Benítez"
+        },
+        "title": {
+            "en": "Full stack developer",
+            "es": "Desarrollador full stack"
+        }
+    },
+    "blog": {
+        "title": {
+            "en": "Featured Blog Posts",
+            "es": "Publicaciones de Blog Destacadas"
+        }
+    } 
+}
