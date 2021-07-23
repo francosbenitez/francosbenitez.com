@@ -3,21 +3,28 @@ import React from "react";
 const Footer = () => {
     return (
         <footer className="site-footer">
-            <p>Built with ☕️ and Next by 
+            <p>&copy; {new Date().getFullYear()} | Built with ☕️,{" "}
             <a 
-                href="https://twitter.com/CL_Rothschild"
+                href="https://nextjs.org/"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="link"
-                > Franco Sebastián Benítez
-            </a>. The source code is available on 
+                > Next,
+            </a> and{" "}
             <a
                 href="https://github.com/francosbenitez/francosbenitez.com"
                 target="_blank"
                 rel="noopener noreferrer"
+                class="fas fa-code-branch"
+                ></a
+            > by
+            <a 
+                href="https://twitter.com/francosbenitez"
+                target="_blank"
+                rel="noopener noreferrer"
                 class="link"
-                > GitHub</a
-            >.
+                >{" "}Franco Sebastián Benítez
+            </a>.
             </p>
         </footer>
     );
