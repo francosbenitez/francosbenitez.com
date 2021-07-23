@@ -8,6 +8,7 @@ const StyledHero = styled.section`
         font-size: 5rem;
         font-weight: 900;
         text-transform: uppercase;
+        margin-bottom: 0;
     }
         
     h2 {
@@ -15,6 +16,7 @@ const StyledHero = styled.section`
         font-size: 2.6rem;
         font-weight: 900;
         text-transform: uppercase;
+        margin: 0;
     }
     
     @media screen and (max-width: 719px) {

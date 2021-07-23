@@ -17,7 +17,6 @@ const StyledCard = styled.div`
     border: 1px solid rgba(0,0,0,0.125);
     border-radius: 20px;
     overflow: hidden;
-    margin: 2rem 1rem;
     transition: all 0.2s ease-in-out;
     padding: 3rem 2rem;
 
@@ -40,6 +39,10 @@ const StyledCard = styled.div`
         font-size: .8rem;
         font-weight: 500;
     }
+
+    @media screen and (max-width: 719px) {
+        
+    }
 `
 
 const Blog = () => {
@@ -55,13 +58,13 @@ const Blog = () => {
                         />
                     </div>
                     <div className="blog-card-text">
-                        My Portfolio Website
+                        Example Post
                     </div>
                     <div className="blog-card-date">
                         JULY 2021
                     </div>
                     <div className="blog-card-description">
-                        Built from scratch with Next. 
+                        This is an example post. 
                     </div>
             </StyledCard>
         </StyledBlog>
