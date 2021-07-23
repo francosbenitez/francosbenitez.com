@@ -1,11 +1,12 @@
 /*import '../styles/globals.css'*/
-import { createGlobalStyle, ThemeProvider } from "styled-components"
+import { createGlobalStyle, ThemeProvider } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-}
+    background-color: #f3f3f3;
+  }
 
   * {
     font-family: 'Inter', sans-serif;

@@ -1,5 +1,4 @@
 import Head from 'next/head'
-// import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import styled from 'styled-components'
 import Footer from '../components/Footer';
@@ -28,8 +27,6 @@ export default function Home() {
         <link rel="manifest" href="/site.webmanifest" />
         <script src="https://kit.fontawesome.com/355497287f.js" crossorigin="anonymous"></script>
       </Head>
-
-      
 
       <Footer />
     </div>
