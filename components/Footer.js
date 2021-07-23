@@ -15,8 +15,8 @@ const Footer = () => {
                 href="https://github.com/francosbenitez/francosbenitez.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="fas fa-code-branch"
-                ></a
+                class="link"
+                >GitHub</a
             > by
             <a 
                 href="https://twitter.com/francosbenitez"
@@ -24,7 +24,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 class="link"
                 >{" "}Franco Sebastián Benítez
-            </a>.
+            </a>
             </p>
         </footer>
     );
