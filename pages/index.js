@@ -4,12 +4,24 @@ import styled from "styled-components";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Blog from "../components/Blog";
+import { getSortedPostsData } from '../lib/posts'
+import Link from "next/link"
+import Date from "../components/date"
+
+export async function getStaticProps() {
+  const allPostsData = getSortedPostsData()
+  return {
+    props: {
+      allPostsData
+    }
+  }
+}
 
 const Container = styled.div`
   margin: 0 5rem;
 `;
 
-export default function Home() {
+export default function Home({ allPostsData }) {
   return (
     <Container>
       <Head>
@@ -23,6 +35,22 @@ export default function Home() {
       </Head>
       <Hero />
       <Blog />
+      <section>
+        <h2>Blog</h2>
+        <ul>
+          {allPostsData.map(({ id, date, title }) => (
+            <li key={id}>
+              <Link href={`/posts/${id}`}>
+                <a>{title}</a>
+              </Link>
+            <br />
+            <small>
+              <Date dateString={date} />
+            </small>
+          </li>
+          ))}
+        </ul>
+      </section>
       <Footer />
     </Container>
   )
