@@ -107,17 +107,18 @@ export default function Home({ allPostsData }) {
       </Head>
       <Hero />
       <StyledBlog>
-            <h1>{content.blog.title.en} 📝</h1>
-            <hr />
-            <StyledCard>
-              <div className="blog-card-wrapper">
-                  {allPostsData.map(({ id, date, title, description, img, img_alt }) => (
-                    <Link href={`/posts/${id}`}>
+        <h1>{content.blog.title.en} 📝</h1>
+        <hr />
+          <StyledCard>
+            <div className="blog-card-wrapper">
+              {allPostsData.map(({ id, date, title, description, img, img_alt }) => (
+                <div key={id}>
+                  <Link href={`/posts/${id}`}>
                       <div className="blog-card">
                           <div className="blog-card-img">
                               <img src={img} alt={img_alt}></img>
                           </div>
-                          <div className="blog-card-text" key={id}>
+                          <div className="blog-card-text">
                               <a>{title}</a>
                           </div>
                           <div className="blog-card-date">
@@ -127,11 +128,12 @@ export default function Home({ allPostsData }) {
                               {description} 
                           </div>
                       </div>
-                    </Link>
-                  ))}
-              </div>
-            </StyledCard>
-        </StyledBlog>
+                  </Link>
+                </div>
+              ))}
+            </div>
+          </StyledCard>
+      </StyledBlog>
       <Footer />
     </Container>
   )

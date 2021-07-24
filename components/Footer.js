@@ -13,21 +13,21 @@ const Footer = () => {
                 href="https://nextjs.org/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="link"
+                className="link"
                 > Next
             </a>, and{" "}
             <a
                 href="https://github.com/francosbenitez/francosbenitez.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="link"
+                className="link"
                 >GitHub</a
             > by
             <a 
                 href="https://twitter.com/francosbenitez"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="link"
+                className="link"
                 >{" "}Franco Sebastián Benítez
             </a>
             </p>
