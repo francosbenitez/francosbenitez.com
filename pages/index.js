@@ -1,7 +1,6 @@
 import Head from "next/head";
 // import styles from "../styles/Home.module.css";
 import styled from "styled-components";
-import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 // import Blog from "../components/Blog";
 import { getSortedPostsData } from '../lib/posts'
@@ -88,6 +87,10 @@ const StyledCard = styled.div`
         font-weight: 500;
     }
 
+    a {
+      color: #000000;
+    }
+
     @media screen and (max-width: 719px) {
         
     }
@@ -114,6 +117,7 @@ export default function Home({ allPostsData }) {
               {allPostsData.map(({ id, date, title, description, img, img_alt }) => (
                 <div key={id}>
                   <Link href={`/posts/${id}`}>
+                    <a>
                       <div className="blog-card">
                           <div className="blog-card-img">
                               <img src={img} alt={img_alt}></img>
@@ -128,13 +132,13 @@ export default function Home({ allPostsData }) {
                               {description} 
                           </div>
                       </div>
+                    </a>
                   </Link>
                 </div>
               ))}
             </div>
           </StyledCard>
       </StyledBlog>
-      <Footer />
     </Container>
   )
 }
