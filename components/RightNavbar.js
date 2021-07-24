@@ -41,8 +41,8 @@ const RightNavbar = ({ open }) => {
         <li className={router.pathname == "/" ? "active" : ""}>
             <Link href="/">Projects</Link>
         </li>
-        <li className={router.pathname == "/" ? "active" : ""}>
-            <Link href="/">Blog</Link>
+        <li className={router.pathname == "/#blog" ? "active" : ""}>
+            <Link href="/#blog">Blog</Link>
         </li>
         <li className={router.pathname == "/" ? "active" : ""}>
             <Link href="/">Contact</Link>

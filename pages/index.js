@@ -28,6 +28,10 @@ const StyledBlog = styled.section`
       color: ${(props) => props.theme.primary};
     }
 
+    hr {
+      margin: 1rem 0 1rem 0;
+    }
+
     @media screen and (max-width: 719px) {
       h1 {
         text-align: center;
@@ -114,7 +118,7 @@ export default function Home({ allPostsData }) {
         <meta name="keywords" content="francosbenitez data design development" />
       </Head>
       <Hero />
-      <StyledBlog>
+      <StyledBlog id="blog">
         <h1>{content.blog.title.en} 📝</h1>
         <hr />
           <StyledCard>

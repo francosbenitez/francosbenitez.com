@@ -3,7 +3,8 @@ import styled from "styled-components";
 import content from "../lib/content.json";
 
 const StyledHero = styled.section`
-    padding-top: 5rem;
+    padding-top: 10rem;
+    height: 100vh;
     .hero-container {
         display: flex;
         .hero-description {
