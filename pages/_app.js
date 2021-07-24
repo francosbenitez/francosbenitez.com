@@ -2,14 +2,15 @@ import { createGlobalStyle, ThemeProvider } from "styled-components";
 import Layout from "../components/Layout"
 
 const GlobalStyle = createGlobalStyle`
-  body {
+  * {
     margin: 0;
     padding: 0;
-    background-color: #f3f3f3;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
   }
 
-  * {
-    font-family: 'Inter', sans-serif;
+  body {
+    background-color: #f3f3f3;
   }
 
   a {
@@ -26,14 +27,12 @@ const theme = {
 
 function MyApp({ Component, pageProps }) {
   return (
-  <>
     <Layout>
       <GlobalStyle />
       <ThemeProvider theme={theme}>
         <Component {...pageProps} />
       </ThemeProvider>
     </Layout>
-  </>
   )
 }
 
