@@ -4,6 +4,7 @@ import content from "../lib/content.json";
 
 const StyledHero = styled.section`
     h1 {
+        padding-top: 5rem;
         color: ${(props) => props.theme.primary};
         font-size: 5rem;
         font-weight: 900;

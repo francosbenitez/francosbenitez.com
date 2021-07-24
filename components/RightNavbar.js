@@ -36,15 +36,20 @@ const RightNavbar = ({ open }) => {
      return (
         <StyledUl open={open}>
         <li className={router.pathname == "/" ? "active" : ""}>
-            <Link href="/">Home</Link>
+            <Link href="/">About</Link>
         </li>
-        <li className={router.pathname == "/about" ? "active" : ""}>
-            <Link href="/#about">About</Link>
+        <li className={router.pathname == "/" ? "active" : ""}>
+            <Link href="/">Projects</Link>
         </li>
-        <li>Projects</li>
-        <li>Blog</li>
-        <li>Contact</li>
-        <li>Resume</li>
+        <li className={router.pathname == "/" ? "active" : ""}>
+            <Link href="/">Blog</Link>
+        </li>
+        <li className={router.pathname == "/" ? "active" : ""}>
+            <Link href="/">Contact</Link>
+        </li>
+        <li className={router.pathname == "/" ? "active" : ""}>
+            <Link href="/">Resume</Link>
+        </li>
         </StyledUl>
   )
 }
