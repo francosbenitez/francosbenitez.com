@@ -24,8 +24,14 @@ const Container = styled.div`
 
 const StyledBlog = styled.section`
     h1 {
-        color: ${(props) => props.theme.primary};
+      margin: 1rem 0 1rem 0;
+      color: ${(props) => props.theme.primary};
     }
+
+    @media screen and (max-width: 719px) {
+      h1 {
+        text-align: center;
+      }
 `;
 
 const StyledCard = styled.div`
@@ -92,7 +98,10 @@ const StyledCard = styled.div`
     }
 
     @media screen and (max-width: 719px) {
-        
+        .blog-card-wrapper {
+          justify-content: center;
+          align-items: center;
+        }
     }
 `
 
