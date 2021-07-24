@@ -1,6 +1,14 @@
 import { getAllPostIds, getPostData } from '../../lib/posts'
 import Head from "next/head"
 import Date from '../../components/Date'
+import styled from "styled-components"
+import Link from "next/link"
+
+const StyledPost = styled.div`
+    max-width: 36rem;
+    padding: 0 1rem;
+    margin: 3rem auto 6rem;
+`
 
 export async function getStaticProps({ params }) {
   const postData = await getPostData(params.id)
@@ -22,6 +30,7 @@ export async function getStaticPaths() {
 export default function Post({ postData }) {
     return (
         <>
+          <StyledPost>
             <Head>
                 <title>{postData.title}</title>
             </Head>
@@ -31,9 +40,16 @@ export default function Post({ postData }) {
                 <div>
                     <Date dateString={postData.date} />
                 </div>
+                <p>{postData.description}</p>
                 <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
             </article>
             <br />
+            <div>
+              <Link href="/">
+                <a>← Back to home</a>
+              </Link>
+            </div>
+          </StyledPost>
         </>
     )
 }
