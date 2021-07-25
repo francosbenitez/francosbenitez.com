@@ -1,5 +1,6 @@
 import React from "react";
 import { StyledFooter } from "./style"
+import { SocialIcon } from 'react-social-icons';
 
 const Footer = () => {
     return (
@@ -29,8 +30,19 @@ const Footer = () => {
                 > 
                 </p>
             </div>
-            <div className="media-icons">
-                Social network icons
+            <div className="icons-container">
+                <li className="icon-wrapper">
+                    <SocialIcon url="mailto:francosbenitez@gmail.com" />
+                </li>
+                <li className="icon-wrapper">
+                    <SocialIcon url="https://linkedin.com/in/francosbenitez" />
+                </li>
+                <li className="icon-wrapper">
+                    <SocialIcon url="https://github.com/francosbenitez" />
+                </li>
+                <li className="icon-wrapper">
+                    <SocialIcon url="https://twitter.com/francosbenitez" />
+                </li>
             </div>
         </StyledFooter>
     );

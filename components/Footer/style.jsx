@@ -12,11 +12,17 @@ export const StyledFooter = styled.footer`
         padding-left: 2rem;
     }
 
-    .media-icons {
-        background-color: red;
+    .icons-container {
         flex-basis: 50%;
         text-align: right;
         padding-right: 2rem;
+    }
+
+    .icon-wrapper {
+        list-style: none;
+        display: inline-flex;
+        height: 50px; 
+        width: 50px;
     }
 
     @media (max-width: 768px) {
@@ -26,7 +32,7 @@ export const StyledFooter = styled.footer`
             padding-right: 0;
         }
 
-        .media-icons {
+        .icons-container {
             text-align: center;
             padding-right: 0;
         }

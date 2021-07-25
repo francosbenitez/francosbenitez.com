@@ -6,7 +6,7 @@ import Link from "next/link"
 import Date from "../components/Date"
 import React from "react";
 import content from "../lib/content.json";
-import { StyledBlog, StyledCard } from "./blog/style"
+import { StyledBlog, StyledCard } from "../components/Blog/style"
 import Contact from "../components/Contact"
 import About from "../components/about"
 
