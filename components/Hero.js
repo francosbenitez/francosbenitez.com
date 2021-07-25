@@ -4,7 +4,7 @@ import content from "../lib/content.json";
 import Typical from 'react-typical'
 
 const StyledHero = styled.section`
-    padding-top: 10rem;
+    padding-top: 8rem;
     height: 100vh;
     .hero-container {
         display: flex;
@@ -15,7 +15,6 @@ const StyledHero = styled.section`
                 font-size: 5rem;
                 font-weight: 900;
                 text-transform: uppercase;
-                margin-bottom: 0;
             }
             
             h2 {
@@ -23,10 +22,11 @@ const StyledHero = styled.section`
                 font-size: 2.6rem;
                 font-weight: 900;
                 text-transform: uppercase;
-                margin: 0;
+                margin-top: 1rem;
             }
 
             h3 {
+                margin-top: 1rem;
                 font-weight: 700;
                 font-size: 2rem;
             }
