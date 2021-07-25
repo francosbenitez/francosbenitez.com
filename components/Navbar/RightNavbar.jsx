@@ -19,8 +19,12 @@ const RightNavbar = ({ open }) => {
         <li className={router.pathname == "/" ? "active" : ""}>
             <Link href="/"><a>Contact</a></Link>
         </li>
-        <li className={router.pathname == "/" ? "active" : ""}>
-            <Link href="/"><a>Resume</a></Link>
+        <li>
+            <a target="_blank" 
+            href="https://docs.google.com/document/d/1NBn2pLCS70uMpsd78gWLnW3uXfdTgKzoa1HVA_yN55A/edit" 
+            rel="noopener noreferrer">
+                Resume
+                </a>
         </li>
         </StyledUl>
   )
