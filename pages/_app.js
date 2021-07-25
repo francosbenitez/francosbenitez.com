@@ -17,6 +17,10 @@ const GlobalStyle = createGlobalStyle`
     color: #1155cc;
     text-decoration: none;
   }
+
+  a:hover {
+    border-bottom: 1.5px #1155cc dotted;
+  }
 `;
 
 const theme = {

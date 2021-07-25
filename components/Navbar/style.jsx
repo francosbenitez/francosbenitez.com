@@ -7,7 +7,7 @@ export const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   position: fixed;
-  background-color: #f3f3f3;
+  background-color: white;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
   
   .logo {

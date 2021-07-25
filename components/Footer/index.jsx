@@ -1,36 +1,31 @@
 import React from "react";
-import styled from "styled-components";
-
-const StyledFooter = styled.footer`
-    text-align: center;
-    margin-bottom: 2rem;
-`
+import { StyledFooter } from "./style"
 
 const Footer = () => {
     return (
         <StyledFooter>
-            <p>&copy; {new Date().getFullYear()} | Built with ☕️,{" "}
+            <p>&copy; {new Date().getFullYear()} | Built with ☕️ and{" "}
             <a 
                 href="https://nextjs.org/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="link"
-                > Next
-            </a>, and{" "}
-            <a
-                href="https://github.com/francosbenitez/francosbenitez.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="link"
-                >GitHub</a
-            > by
+                >Next
+            </a>{" "}by{" "}
             <a 
                 href="https://twitter.com/francosbenitez"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="link"
-                >{" "}Franco Sebastián Benítez
-            </a>
+                >Franco Sebastián Benítez
+            </a>{" "}|{" "}
+            <a
+                href="https://github.com/francosbenitez/francosbenitez.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="link"
+                >See the source code</a
+            > 
             </p>
         </StyledFooter>
     );

@@ -7,6 +7,8 @@ import Date from "../components/Date"
 import React from "react";
 import content from "../lib/content.json";
 import { StyledBlog, StyledCard } from "./blog/style"
+import Contact from "../components/Contact"
+import About from "../components/about"
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData()
@@ -30,6 +32,7 @@ export default function Home({ allPostsData }) {
         <meta name="keywords" content="francosbenitez data design development" />
       </Head>
       <Hero />
+      <About />
       <StyledBlog id="blog">
         <h1>{content.blog.title.en} 📝</h1>
         <hr />
@@ -60,6 +63,7 @@ export default function Home({ allPostsData }) {
             </div>
           </StyledCard>
       </StyledBlog>
+      <Contact />
     </Container>
   )
 }
