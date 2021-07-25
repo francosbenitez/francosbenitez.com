@@ -27,6 +27,7 @@ const StyledHero = styled.section`
             }
 
             h3 {
+                font-weight: 700;
                 font-size: 2rem;
             }
         }
@@ -37,6 +38,13 @@ const StyledHero = styled.section`
             }
         }
     }
+
+    .arrow {
+        color: red;
+        text-align: center;
+    }
+
+    
     
     @media screen and (max-width: 719px) {
         .hero-container {
@@ -82,6 +90,7 @@ const Hero = () => {
                     <img src="images/cover-image.svg" alt=""></img>
                 </div>
             </div>
+            <div className="arrow">ARROW</div>
         </StyledHero>
     );
 };

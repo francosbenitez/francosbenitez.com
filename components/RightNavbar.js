@@ -9,7 +9,12 @@ const StyledUl = styled.ul`
     flex-flow: row nowrap;
 
     li {
+        font-weight: 700;
         padding: 18px 10px;
+    }
+
+    li a {
+        color: #2079c7;
     }
 
     @media (max-width: 768px) {
@@ -26,7 +31,6 @@ const StyledUl = styled.ul`
     
         li {
             color: #fff;
-        
         }
     }
 `;
@@ -36,19 +40,19 @@ const RightNavbar = ({ open }) => {
      return (
         <StyledUl open={open}>
         <li className={router.pathname == "/" ? "active" : ""}>
-            <Link href="/">About</Link>
+            <Link href="/"><a>About</a></Link>
         </li>
         <li className={router.pathname == "/" ? "active" : ""}>
-            <Link href="/">Projects</Link>
+            <Link href="/"><a>Projects</a></Link>
         </li>
         <li className={router.pathname == "/#blog" ? "active" : ""}>
-            <Link href="/#blog">Blog</Link>
+            <Link href="/#blog"><a>Blog</a></Link>
         </li>
         <li className={router.pathname == "/" ? "active" : ""}>
-            <Link href="/">Contact</Link>
+            <Link href="/"><a>Contact</a></Link>
         </li>
         <li className={router.pathname == "/" ? "active" : ""}>
-            <Link href="/">Resume</Link>
+            <Link href="/"><a>Resume</a></Link>
         </li>
         </StyledUl>
   )
