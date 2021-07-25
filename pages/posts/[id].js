@@ -7,7 +7,29 @@ import Link from "next/link"
 const StyledPost = styled.div`
     max-width: 36rem;
     padding: 0 1rem;
-    margin: 3rem auto 6rem;
+    margin: 6rem auto 9rem;
+
+    h1 {
+      margin: 1rem 0 1rem 0;
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+
+    h2 {
+      margin: 1rem 0 1rem 0;
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+
+    p {
+      margin: 1rem 0 1rem 0;
+      font-size: 1rem;
+      font-weight: 300;
+    }
+
+    hr {
+      margin: 1rem 0 1rem 0;
+    }
 `
 
 export async function getStaticProps({ params }) {
@@ -38,11 +60,14 @@ export default function Post({ postData }) {
             <StyledPost>
               <article>
                   <h1>{postData.title}</h1>
-                  <div>
+                  <p>
                       <Date dateString={postData.date} />
-                  </div>
-                  <p>{postData.description}</p>
-                  <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+                  </p>
+                  <h2>{postData.description}</h2>
+                  <hr />
+                  <p>
+                    <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+                  </p>
               </article>
               <br />
               <div>

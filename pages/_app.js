@@ -23,6 +23,8 @@ const theme = {
   font: "Inter",
   primary: "#2079c7",
   secondary: "#666666",
+  text: "#313131",
+  hover: "#DBA11C"
 }
 
 function MyApp({ Component, pageProps }) {

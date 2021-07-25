@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 const StyledFooter = styled.footer`
     text-align: center;
+    margin-bottom: 2rem;
 `
 
 const Footer = () => {

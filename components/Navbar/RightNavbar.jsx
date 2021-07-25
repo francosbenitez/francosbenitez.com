@@ -1,47 +1,7 @@
 import React from 'react';
-import styled from 'styled-components';
+import { StyledUl } from './style';
 import { useRouter } from "next/router";
 import Link from "next/link"
-
-const StyledUl = styled.ul`
-    list-style: none;
-    display: flex;
-    flex-flow: row nowrap;
-
-    li {
-        font-weight: 700;
-        padding: 18px 10px;
-    }
-
-    li a {
-        color: #2079c7;
-    }
-
-    li a:hover {
-        color: #DBA11C;
-    }
-
-    li .active a {
-        color: red;
-    }
-
-    @media (max-width: 768px) {
-        flex-flow: column nowrap;
-        background-color: #f3f3f3;
-        position: fixed;
-        transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
-        top: 0;
-        right: 0;
-        height: 100vh;
-        width: 300px;
-        padding-top: 3.5rem;
-        transition: transform 0.3s ease-in-out;
-    
-        li {
-            color: #fff;
-        }
-    }
-`;
 
 const RightNavbar = ({ open }) => {
     const router = useRouter();
