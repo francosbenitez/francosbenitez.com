@@ -26,6 +26,7 @@ const StyledBlog = styled.section`
     h1 {
       margin: 1rem 0 1rem 0;
       color: ${(props) => props.theme.primary};
+      font-size: 2rem;
     }
 
     hr {
@@ -34,6 +35,8 @@ const StyledBlog = styled.section`
 
     @media screen and (max-width: 719px) {
       h1 {
+        margin: 5rem 0 1rem 0;
+        padding-top: 1rem;
         text-align: center;
       }
 `;

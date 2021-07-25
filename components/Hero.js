@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import content from "../lib/content.json";
+import Typical from 'react-typical'
 
 const StyledHero = styled.section`
     padding-top: 10rem;
@@ -23,6 +24,10 @@ const StyledHero = styled.section`
                 font-weight: 900;
                 text-transform: uppercase;
                 margin: 0;
+            }
+
+            h3 {
+                font-size: 2rem;
             }
         }
 
@@ -59,6 +64,19 @@ const Hero = () => {
                 <div className="hero-description">
                     <h1>{content.hero.name.en}</h1>
                     <h2>{content.hero.title.en}</h2>
+                    <Typical 
+                        steps=
+                        {[
+                        "Data 📈", 
+                        2000, 
+                        'Design ✍', 
+                        2000,
+                        "Development 👨🏻‍💻", 
+                        2000
+                        ]}
+                        loop={Infinity}
+                        wrapper="h3"
+                        />
                 </div>
                 <div className="hero-img">
                     <img src="images/cover-image.svg" alt=""></img>
