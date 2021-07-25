@@ -4,7 +4,7 @@ import { StyledContact } from "./style"
 const Contact = () => {
     return (
         <StyledContact>
-            something
+            Contact 
         </StyledContact>
     );
 };

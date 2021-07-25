@@ -4,7 +4,7 @@ import { StyledAbout } from "./style"
 const About = () => {
     return (
         <StyledAbout>
-            something
+            About
         </StyledAbout>
     );
 };
