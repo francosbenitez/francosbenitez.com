@@ -43,8 +43,8 @@ export const StyledUl = styled.ul`
         color: #DBA11C;
     }
 
-    li .active a {
-        color: red;
+    li.active a {
+        border-bottom: 1.5px #1155cc solid;
     }
 
     @media (max-width: 768px) {

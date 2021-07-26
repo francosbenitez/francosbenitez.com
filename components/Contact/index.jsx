@@ -3,7 +3,7 @@ import { StyledContact } from "./style"
 
 const Contact = () => {
     return (
-        <StyledContact>
+        <StyledContact id="contact">
             <div className="description-container">
                 <h1>Contact </h1>
                 <p>If you like what you’ve seen on my site, I’d love for you to get in touch via my contact form or social media!</p>

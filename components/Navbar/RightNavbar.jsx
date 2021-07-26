@@ -7,17 +7,17 @@ const RightNavbar = ({ open }) => {
     const router = useRouter();
      return (
         <StyledUl open={open}>
-        <li className={router.pathname == "/" ? "active" : ""}>
-            <Link href="/"><a>About</a></Link>
+        <li className={router.asPath == "/#about" ? "active" : ""}>
+            <Link href="/#about">About</Link>
         </li>
-        <li className={router.pathname == "/" ? "active" : ""}>
-            <Link href="/"><a>Projects</a></Link>
+        <li className={router.asPath == "/#projects" ? "active" : ""}>
+            <Link href="/#projects"><a>Projects</a></Link>
         </li>
-        <li className={router.pathname == "/#blog" ? "active" : ""}>
+        <li className={router.asPath == "/#blog" ? "active" : ""}>
             <Link href="/#blog"><a>Blog</a></Link>
         </li>
-        <li className={router.pathname == "/" ? "active" : ""}>
-            <Link href="/"><a>Contact</a></Link>
+        <li className={router.asPath == "/#contact" ? "active" : ""}>
+            <Link href="/#contact"><a>Contact</a></Link>
         </li>
         <li>
             <a target="_blank" 
