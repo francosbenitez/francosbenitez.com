@@ -2,19 +2,23 @@ import Head from "next/head";
 import styled from "styled-components";
 import Hero from "../components/Hero";
 import { getSortedPostsData } from '../lib/posts'
+import { getSortedProjectsData } from "../lib/projects"
 import Link from "next/link"
 import Date from "../components/Date"
 import React from "react";
 import content from "../lib/content.json";
 import { StyledBlog, StyledCard } from "../components/Blog/style"
+import { StyledProjects } from "../components/Projects/style"
 import Contact from "../components/Contact"
 import About from "../components/about"
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData()
+  const allProjectsData = getSortedProjectsData()
   return {
     props: {
-      allPostsData
+      allPostsData,
+      allProjectsData
     }
   }
 }
@@ -23,7 +27,7 @@ const Container = styled.div`
   margin: 0 5rem;
 `;
 
-export default function Home({ allPostsData }) {
+export default function Home({ allPostsData, allProjectsData }) {
   return (
     <Container>
       <Head>
@@ -63,6 +67,36 @@ export default function Home({ allPostsData }) {
             </div>
           </StyledCard>
       </StyledBlog>
+      <StyledProjects id="projects">
+        <h1>Featured Projects</h1>
+        <hr />
+          <StyledCard>
+            <div className="blog-card-wrapper">
+              {allProjectsData.map(({ id, date, title, description, img, img_alt }) => (
+                <div key={id}>
+                  <Link href={`/projects/${id}`}>
+                    <a>
+                      <div className="blog-card">
+                          <div className="blog-card-img">
+                              <img src={img} alt={img_alt}></img>
+                          </div>
+                          <div className="blog-card-text">
+                              <a>{title}</a>
+                          </div>
+                          <div className="blog-card-date">
+                              <Date dateString={date} />
+                          </div>
+                          <div className="blog-card-description">
+                              {description} 
+                          </div>
+                      </div>
+                    </a>
+                  </Link>
+                </div>
+              ))}
+            </div>
+          </StyledCard>
+      </StyledProjects>
       <Contact />
     </Container>
   )
