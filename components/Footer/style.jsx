@@ -1,41 +1,38 @@
 import styled from "styled-components"
 
 export const StyledFooter = styled.footer`
-    text-align: center;
     padding: 2rem 0 2rem 0;
-    background-color: white;
     box-shadow: 10px 0 15px rgba(0, 0, 0, 0.2);
     opacity: 70%;
     display: flex;
+    flex-direction: column;
 
     .copyright {
-        padding-left: 2rem;
+        text-align: center;;
     }
 
     .icons-container {
-        flex-basis: 50%;
-        text-align: right;
-        padding-right: 2rem;
+        text-align: center;
     }
 
     .icon-wrapper {
         list-style: none;
         display: inline-flex;
-        height: 50px; 
-        width: 50px;
+        height: 25px; 
+        width: 25px;
+        margin: 0 .5rem 0 .5rem;
     }
 
-    @media (max-width: 768px) {
-        flex-direction: column;
+    @media ${(props) => props.theme.devices.tablet} {
+        flex-direction: row;
 
         .copyright {
-            padding-right: 0;
+            margin: auto;
         }
 
         .icons-container {
-            text-align: center;
-            padding-right: 0;
+            flex-basis: 50%;
+            text-align: right;
         }
     }
-   
 `

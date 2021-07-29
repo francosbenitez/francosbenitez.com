@@ -23,9 +23,21 @@ export const GlobalStyle = createGlobalStyle`
 `;
 
 export const theme = {
-  font: "Inter",
-  primary: "#2079c7",
-  secondary: "#666666",
-  text: "#313131",
-  hover: "#DBA11C"
-}
+  colors: {
+    primary: "#2079c7",
+    secondary: "#666666",
+    text: "#313131",
+    hover: "#DBA11C"
+  },
+
+  font: {
+    text: "Inter",
+  },
+
+  devices: {
+    sm_mobile: "(min-width: 350px)",
+    mobile: "(min-width: 500px)",
+    tablet: "(min-width: 800px)",
+    desktop: "(min-width: 1160px)",
+  },
+};
