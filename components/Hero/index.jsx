@@ -2,14 +2,15 @@ import React from 'react';
 import { StyledHero } from './style';
 import content from "../../lib/content.json";
 import Typical from 'react-typical'
+import { StyledMouse } from "../../styles/animations"
 
 const Hero = () => {
     return (
         <StyledHero>
             <div className="hero-container">
                 <div className="hero-description">
-                    <h1>Hi! I'm Franco!</h1>
-                    <h2>{content.hero.title}</h2>
+                    <h1>{content.hero.title}</h1>
+                    <h2>{content.hero.subtitle}</h2>
                     <Typical 
                         steps=
                         {[
@@ -28,7 +29,7 @@ const Hero = () => {
                     <img src="images/cover-image-2.svg" alt=""></img>
                 </div>
             </div>
-            <div className="mouse_scroll">
+            <StyledMouse className="mouse_scroll">
                 <div className="mouse">
                     <div className="wheel"></div>
                 </div>
@@ -37,7 +38,7 @@ const Hero = () => {
                     <span className="m_scroll_arrows doi"></span>
                     <span className="m_scroll_arrows trei"></span>
                 </div>
-            </div>
+            </StyledMouse>
         </StyledHero>
     );
 };

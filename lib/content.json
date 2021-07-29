@@ -1,7 +1,8 @@
 {
     "hero": {
-        "name": "Franco Sebastián Benítez",
-        "title": "Full stack developer"
+        "title": "Hi, I'm Franco Sebastián Benítez",
+        "subtitle": "Full stack developer",
+        "name": "Franco Sebastián Benítez"
     },
     "about": {
         "title": "About",
