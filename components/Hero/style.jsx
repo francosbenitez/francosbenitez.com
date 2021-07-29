@@ -1,58 +1,62 @@
 import styled from 'styled-components';
+import spaces from "../../styles/spaces"
 
 export const StyledHero = styled.section`
-    padding-top: 6rem;
-    height: 100vh;
-    .hero-container {
-        display: flex;
-        .hero-description {
-            flex-basis: 50%; 
-            h1 {
-                color: ${(props) => props.theme.primary};
-                font-size: 4rem;
-                font-weight: 900;
-            }
-            
-            h2 {
-                color: ${(props) => props.theme.secondary};
-                font-size: 2rem;
-                font-weight: 900;
-                margin-top: 1rem;
-            }
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem 0 1rem; /* I can't reutilize it */
+    padding-top: 5rem; /* because of the navbar */
+    text-align: center;
 
-            h3 {
-              color: ${(props) => props.theme.text};
-                margin-top: 1rem;
-                font-weight: 700;
-                font-size: 2rem;
-            }
-        }
+    h1 {
+        font-size: ${spaces.sections.fontSize};
+        margin: ${spaces.sections.h1};
+        color: ${props => props.theme.colors.primary};
+        font-weight: 900;
+    }
 
-        .hero-img {
-            img {
-                width: 200%;
-            }
-        }
+    h2 {
+        font-size: 1.3rem;
+        margin: ${spaces.sections.h1};
+        color: ${(props) => props.theme.colors.secondary};
+        font-weight: 900;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+        color: ${(props) => props.theme.text};
+        font-weight: 700;
     }
     
-    
-    
-    @media screen and (max-width: 719px) {
-        height: 150vh;
+    .hero-img img { /* see this */
+        width: 100%;
+        margin: 2rem 0 2rem 0;
+    }
+
+    @media ${props => props.theme.devices.tablet} {
         .hero-container {
-            flex-direction: column;
-            text-align: center;
-            h1 {
-                font-size: 2.5rem;
-            }
+            display: flex;
+            flex-direction: row;
+          
+            .hero-description {
+                flex-basis: 50%; 
+                
+                h1 {
+                    font-size: 4rem;
+                }
+                
+                h2 {
+                    font-size: 2rem;
+                }
 
-            h2 {
-                font-size: 1.3rem;
+                h3 {
+                    font-size: 2rem;
+                }
             }
+        }
 
-            .hero-img img {
-                width: 100%;
-            }
+        .hero-img img {
+            width: 200%;
         }
     }
 `;
