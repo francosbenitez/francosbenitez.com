@@ -1,16 +1,13 @@
 import React from 'react';
 import { StyledAbout } from "./style"
+import content from "../../lib/content.json";
 
 const About = () => {
     return (
         <StyledAbout id="about">
             <div className="description-container">
-                <h1>About</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In condimentum felis a lacus sodales lobortis. In et elit </p>
-                <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In condimentum felis a lacus sodales lobortis. In et elit
-                </p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In condimentum felis a lacus sodales lobortis. In et elit</p>
+                <h1>{content.about.title}</h1>
+                <p>{content.about.description}</p>
             </div>
             <div className="avatar-container">
                 <div className="avatar-wrapper">

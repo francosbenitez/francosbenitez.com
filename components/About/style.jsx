@@ -3,7 +3,8 @@ import styled from "styled-components"
 export const StyledAbout = styled.section`
     height: 100vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    
 
     .avatar-container {
         align-items: center;

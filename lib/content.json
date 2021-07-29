@@ -1,18 +1,27 @@
 {
     "hero": {
-        "name": {
-            "en": "Franco Sebastián Benítez",
-            "es": "Franco Sebastián Benítez"
-        },
-        "title": {
-            "en": "Full stack developer",
-            "es": "Desarrollador full stack"
-        }
+        "name": "Franco Sebastián Benítez",
+        "title": "Full stack developer"
+    },
+    "about": {
+        "title": "About",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In condimentum felis a lacus sodales lobortis. In et elit"
+    },
+    "projects": {
+        "title": "Featured Projects 📋"
     },
     "blog": {
-        "title": {
-            "en": "Featured Blog Posts",
-            "es": "Publicaciones de Blog Destacadas"
-        }
-    } 
+        "title": "Featured Blog Posts 📝"
+    },
+    "contact": {
+        "title": "Contact",
+        "description": "If you like what you’ve seen on my site, I’d love for you to get in touch via my contact form or social media!",
+        "email": "Email me for a chat",
+        "linkedin": "Connect with me",
+        "github": "Check out my code",
+        "twitter": "Follow me on Twitter"
+    },
+    "footer": {
+
+    }
 }

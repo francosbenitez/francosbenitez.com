@@ -1,23 +1,24 @@
 import React from 'react';
 import { StyledContact } from "./style"
+import content from "../../lib/content.json";
 
 const Contact = () => {
     return (
         <StyledContact id="contact">
             <div className="description-container">
-                <h1>Contact </h1>
-                <p>If you like what you’ve seen on my site, I’d love for you to get in touch via my contact form or social media!</p>
+                <h1>{content.contact.title}</h1>
+                <p>{content.contact.description}</p>
                 <div className="email">
-                    Email me for a chat
+                    <p>{content.contact.email}</p>
                 </div>
                 <div className="linkedin">
-                    Connect with me
+                    <p>{content.contact.linkedin}</p>
                 </div>
                 <div className="github">
-                    Check out my code
+                    <p>{content.contact.github}</p>
                 </div>
-                <div>
-                    Follow me on Twitter
+                <div className="twitter">
+                    <p>{content.contact.twitter}</p>
                 </div>
             </div>
             <form className="form-container" name="contact" method="POST" action="https://formspree.io/f/mleadzdo">

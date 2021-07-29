@@ -1,19 +1,35 @@
 import styled from "styled-components"
+import spaces from "../../styles/spaces"
 
 export const StyledContact = styled.section`
-    height: 100vh;
-    color: black;
+    height: ${spaces.sections.height};
     display: flex;
+    flex-direction: column;
+    margin: 0 1rem 0 1rem; /* I can't reutilize it */
 
-    .description-container {
-        flex-basis: 50%
+    h1 {
+        font-size: ${spaces.sections.fontSize};
+        margin: ${spaces.sections.h1};
+        color: ${props => props.theme.colors.primary};
     }
 
+    p {
+        margin: ${spaces.sections.p};
+    }
+
+    /*.icon {
+        margin: 2rem;
+        fill: ${props => props.theme.colors.primary};
+
+        &:hover {
+            filter: brightness(10%);
+            cursor: pointer;
+        }
+    }*/
 
     .form-wrapper {
         display: flex;
         flex-direction: column;
-        width: 100%;
         margin: 0.5rem auto;
     }
 
@@ -24,7 +40,13 @@ export const StyledContact = styled.section`
     input[type=text]:focus, 
     input[type=email]:focus, 
     textarea[name=message]:focus {
-        outline: 2px solid black;   
+        outline: 2px solid ${props => props.theme.colors.primary};   
+    }
+
+    input[type=text], 
+    input[type=email], 
+    textarea[name=message] {
+        outline: .1px solid ${props => props.theme.colors.primary};   
     }
 
     .submit-btn {   
@@ -39,18 +61,19 @@ export const StyledContact = styled.section`
         transition: color 0.15s;
         width: 100px;
         padding: .5rem .5rem .5rem .5rem;
-        box-shadow: 3px 3px 0 0 black;
-        color: black;
-        border-color: black;
+        box-shadow: 3px 3px 0 0 ${props => props.theme.colors.primary};
+        color: ${props => props.theme.colors.primary};
+        border-color: ${props => props.theme.colors.primary};
         background-color: white;
     }
 
     .submit-btn:hover {
-        padding: .5rem .5rem .5rem .5rem;
-        box-shadow: 3px 3px 0 0 black;
         color: white;
         border-color: white;
-        background-color: black;
+        background-color: ${props => props.theme.colors.primary};
     }   
 
+    @media ${props => props.theme.devices.tablet} {
+        flex-direction: row;
+    }
 `

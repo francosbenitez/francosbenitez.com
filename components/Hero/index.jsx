@@ -9,7 +9,7 @@ const Hero = () => {
             <div className="hero-container">
                 <div className="hero-description">
                     <h1>Hi! I'm Franco!</h1>
-                    <h2>{content.hero.title.en}</h2>
+                    <h2>{content.hero.title}</h2>
                     <Typical 
                         steps=
                         {[

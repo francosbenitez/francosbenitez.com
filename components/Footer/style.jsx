@@ -23,7 +23,11 @@ export const StyledFooter = styled.footer`
         margin: 0 .5rem 0 .5rem;
     }
 
-    @media ${(props) => props.theme.devices.tablet} {
+    /*.icon-wrapper svg {
+        fill: red;
+    }*/
+
+    @media ${props => props.theme.devices.tablet} {
         flex-direction: row;
 
         .copyright {
