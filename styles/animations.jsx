@@ -1,17 +1,14 @@
 import styled from "styled-components"
 
 export const StyledMouse = styled.div`
+    display: block;
+    margin: 0 auto;
+    width: 24px;
+    height: 100px;
+
     *, *:before, *:after {
         -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
     }
-  
-    .mouse_scroll {
-        display: block;
-        margin: 0 auto;
-        width: 24px;
-        height: 100px;
-    }
-  
   
     .m_scroll_arrows {
         display: block;

@@ -29,15 +29,15 @@ const Hero = () => {
                     <img src="images/cover-image-2.svg" alt=""></img>
                 </div>
             </div>
-            <StyledMouse className="mouse_scroll">
-                <div className="mouse">
-                    <div className="wheel"></div>
-                </div>
-                <div>
-                    <span className="m_scroll_arrows unu"></span>
-                    <span className="m_scroll_arrows doi"></span>
-                    <span className="m_scroll_arrows trei"></span>
-                </div>
+            <StyledMouse>
+                    <div className="mouse">
+                        <div className="wheel"></div>
+                    </div>
+                    <div>
+                        <span className="m_scroll_arrows unu"></span>
+                        <span className="m_scroll_arrows doi"></span>
+                        <span className="m_scroll_arrows trei"></span>
+                    </div>
             </StyledMouse>
         </StyledHero>
     );

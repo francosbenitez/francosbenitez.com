@@ -34,4 +34,25 @@ export const StyledHero = styled.section`
             }
         }
     }
+    
+    
+    
+    @media screen and (max-width: 719px) {
+        height: 150vh;
+        .hero-container {
+            flex-direction: column;
+            text-align: center;
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            h2 {
+                font-size: 1.3rem;
+            }
+
+            .hero-img img {
+                width: 100%;
+            }
+        }
+    }
 `;
