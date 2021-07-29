@@ -7,4 +7,4 @@ img_alt: "Blog post header image"
 featured: true
 ---
 
-# Hi!
+Hi!

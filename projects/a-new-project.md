@@ -7,4 +7,4 @@ img_alt: "antiguedad"
 featured: true
 ---
 
-# Hello! I'm a project.
+Hello! I'm a project.

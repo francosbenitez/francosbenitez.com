@@ -46,7 +46,7 @@ export default function Home({ allPostsData, allProjectsData }) {
                               <img src={img} alt={img_alt}></img>
                           </div>
                           <div className="card-text">
-                              <a>{title}</a>
+                              {title}
                           </div>
                           <div className="card-date">
                               <Date dateString={date} />
@@ -75,7 +75,7 @@ export default function Home({ allPostsData, allProjectsData }) {
                               <img src={img} alt={img_alt}></img>
                           </div>
                           <div className="card-text">
-                              <a>{title}</a>
+                              {title}
                           </div>
                           <div className="card-date">
                               <Date dateString={date} />

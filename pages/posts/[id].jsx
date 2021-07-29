@@ -31,10 +31,10 @@ export default function Post({ postData }) {
             <br />
             <StyledPost>
               <article>
-                  <h1>{postData.title}</h1>
                   <p>
                       <Date dateString={postData.date} />
                   </p>
+                  <h1>{postData.title}</h1>
                   <h2>{postData.description}</h2>
                   <hr />
                   <p>
