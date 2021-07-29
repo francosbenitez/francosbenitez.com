@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import spaces from "../../styles/spaces"
 
 export const StyledProjects = styled.div`
     max-width: 36rem;
@@ -6,24 +7,20 @@ export const StyledProjects = styled.div`
     margin: 6rem auto 9rem;
 
     h1 {
-      margin: 1rem 0 1rem 0;
-      font-size: 2.5rem;
-      font-weight: 700;
+        font-size: ${spaces.sections.fontSize};
+        margin: ${spaces.sections.h1};
+        color: ${props => props.theme.colors.primary};
+        font-weight: 900;
     }
 
     h2 {
-      margin: 1rem 0 1rem 0;
-      font-size: 1.5rem;
-      font-weight: 500;
+        font-size: 1.3rem;
+        margin: ${spaces.sections.h1};
+        color: ${(props) => props.theme.colors.secondary};
+        font-weight: 500;
     }
-
+  
     p {
-      margin: 1rem 0 1rem 0;
-      font-size: 1rem;
-      font-weight: 300;
-    }
-
-    hr {
-      margin: 1rem 0 1rem 0;
+        margin: ${spaces.sections.p};
     }
 `

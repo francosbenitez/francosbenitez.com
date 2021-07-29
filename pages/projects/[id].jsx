@@ -31,10 +31,10 @@ export default function Project({ projectData }) {
           <br />
           <StyledProjects>
             <article>
-                <h1>{projectData.title}</h1>
                 <p>
                     <Date dateString={projectData.date} />
                 </p>
+                <h1>{projectData.title}</h1>
                 <h2>{projectData.description}</h2>
                 <hr />
                 <p>
