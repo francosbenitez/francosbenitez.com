@@ -23,7 +23,7 @@ const Hero = () => {
                         ]}
                         loop={Infinity}
                         wrapper="h3"
-                        />
+                    />
                 </div>
                 <div className="hero-img">
                     <img src="images/cover-image-2.svg" alt=""></img>

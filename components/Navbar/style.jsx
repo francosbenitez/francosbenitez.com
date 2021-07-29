@@ -1,29 +1,29 @@
 import styled from 'styled-components';
 
 export const Nav = styled.nav`
-  width: 100%;
-  height: 55px;
-  padding: 0 20px;
-  display: flex;
-  justify-content: space-between;
-  position: fixed;
-  background-color: white;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 55px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   
-  .logo {
-    padding: 15px 0;
-    font-size: 1.5rem;
-    font-weight: 900;
-  }
+    .logo {
+        padding: 15px 0;
+        font-size: 1.5rem;
+        font-weight: 900;
+    }
 
     .logo a {
-        color: #313131;
+        color: ${props => props.theme.colors.text};
     } 
 
-  .logo a:hover {
-    color: #DBA11C;
-  }
-`
+    .logo a:hover {
+        color: ${props => props.theme.colors.primary};
+    }
+    `
 
 export const StyledUl = styled.ul`
     list-style: none;
@@ -36,20 +36,20 @@ export const StyledUl = styled.ul`
     }
 
     li a {
-        color: #2079c7;
+        color: ${props => props.theme.colors.primary};
     }
 
-    li a:hover {
+    /*li a:hover {
         color: #DBA11C;
-    }
+    }*/
 
     li.active a {
-        border-bottom: 1.5px #1155cc solid;
+        border-bottom: 1.5px ${props => props.theme.colors.link} solid;
     }
 
     @media (max-width: 768px) {
         flex-flow: column nowrap;
-        background-color: #f3f3f3;
+        background-color: ${props => props.theme.colors.background};
         position: fixed;
         transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
         top: 0;
@@ -61,6 +61,7 @@ export const StyledUl = styled.ul`
     
         li {
             color: #fff;
+            text-align: center;
         }
     }
 `;
@@ -73,6 +74,7 @@ export const StyledBurger = styled.div`
     right: 20px;
     z-index: 20;
     display: none;
+    cursor: pointer;
 
     div {
         width: 2rem;

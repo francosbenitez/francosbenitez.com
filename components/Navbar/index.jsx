@@ -10,7 +10,7 @@ const Navbar = () => {
     <Nav>
       <div className="logo">
         <div className={router.pathname == "/" ? "active" : ""}>
-            <Link href="/">Franco Sebastián Benítez</Link>
+            <Link href="/">FSB</Link>
         </div>
       </div>
       <Burger />
