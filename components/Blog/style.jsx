@@ -15,6 +15,9 @@ export const StyledBlog = styled.section`
 
     @media ${props => props.theme.devices.tablet} {
         
+        padding-left: 5rem; /* make it reproducible */
+        padding-right: 5rem;
+
     }
 `;
 

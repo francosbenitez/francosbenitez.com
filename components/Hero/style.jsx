@@ -15,12 +15,12 @@ export const StyledHero = styled.section`
         font-weight: 900;
     }
 
-    h2 {
+    /*h2 {
         font-size: 1.3rem;
         margin: ${spaces.sections.h1};
         color: ${(props) => props.theme.colors.secondary};
         font-weight: 900;
-    }
+    }*/
 
     h3 {
         font-size: 1.3rem;
@@ -34,6 +34,11 @@ export const StyledHero = styled.section`
     }
 
     @media ${props => props.theme.devices.tablet} {
+
+        padding-left: 5rem; /* make it reproducible */
+        padding-right: 5rem;
+
+        text-align: left;
         .hero-container {
             display: flex;
             flex-direction: row;

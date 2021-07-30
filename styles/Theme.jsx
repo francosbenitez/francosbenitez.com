@@ -15,6 +15,7 @@ export const GlobalStyle = createGlobalStyle`
     a {
       color: #1155cc;
       text-decoration: none;
+      cursor: pointer;
     }
 
     a:hover {

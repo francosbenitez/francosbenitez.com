@@ -6,6 +6,7 @@ export const StyledAbout = styled.section`
     display: flex;
     flex-direction: column;
     margin: 0 1rem 0 1rem; /* I can't reutilize it */
+    justify-content: center;
     
     h1 {
         font-size: ${spaces.sections.fontSize};
@@ -13,9 +14,13 @@ export const StyledAbout = styled.section`
         color: ${props => props.theme.colors.primary};
     }
 
+    .description-container {
+        flex-basis: 50%;
+    }
+
     .avatar-container {
         float: right;
-        flex-basis: 50%;
+        /*flex-basis: 50%;*/
         text-align: center;
     }
 
@@ -29,5 +34,9 @@ export const StyledAbout = styled.section`
 
     @media ${props => props.theme.devices.tablet} {
         flex-direction: row;
+        justify-content: space-evenly;
+
+        padding-left: 5rem; /* make it reproducible */
+        padding-right: 5rem;
     }
 `

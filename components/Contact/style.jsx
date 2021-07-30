@@ -2,10 +2,11 @@ import styled from "styled-components"
 import spaces from "../../styles/spaces"
 
 export const StyledContact = styled.section`
-    height: ${spaces.sections.height};
+    //height: ${spaces.sections.height};
     display: flex;
     flex-direction: column;
     margin: 0 1rem 0 1rem; /* I can't reutilize it */
+    /*justify-content: center;*/
 
     h1 {
         font-size: ${spaces.sections.fontSize};
@@ -16,16 +17,6 @@ export const StyledContact = styled.section`
     p {
         margin: ${spaces.sections.p};
     }
-
-    /*.icon {
-        margin: 2rem;
-        fill: ${props => props.theme.colors.primary};
-
-        &:hover {
-            filter: brightness(10%);
-            cursor: pointer;
-        }
-    }*/
 
     .form-wrapper {
         display: flex;
@@ -74,6 +65,15 @@ export const StyledContact = styled.section`
     }   
 
     @media ${props => props.theme.devices.tablet} {
+        display: flex;
         flex-direction: row;
+        
+        padding-left: 5rem; /* make it reproducible */
+        padding-right: 5rem;
+
+        .form-container {
+            flex-basis: 50%;
+            text-align: right;
+        }
     }
 `

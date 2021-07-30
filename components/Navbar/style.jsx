@@ -23,6 +23,15 @@ export const Nav = styled.nav`
     .logo a:hover {
         color: ${props => props.theme.colors.primary};
     }
+
+    @media ${props => props.theme.devices.tablet} {
+
+
+        padding-left: 5rem; /* make it reproducible */
+        padding-right: 5rem;
+
+
+    }
     `
 
 export const StyledUl = styled.ul`

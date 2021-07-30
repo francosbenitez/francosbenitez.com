@@ -1,7 +1,7 @@
 import { getAllProjectIds, getProjectData } from '../../lib/projects'
 import Head from "next/head"
 import Date from '../../components/Date'
-import { StyledProjects } from "./style"
+import { StyledProjects, StyledProjectsCard } from "./style"
 import Link from "next/link"
 
 export async function getStaticProps({ params }) {
@@ -31,8 +31,22 @@ export default function Project({ projectData }) {
           <br />
           <StyledProjects>
             <article>
+                <StyledProjectsCard>
+                  <div className="tools">
+                    <p>TOOLS USED</p>
+                    <p>Next, React, styled-components</p>
+                    <hr />
+                    <p><a>GitHub repository</a></p>
+                  </div>
+                  <div className="link">
+                    <p>PUBLISHED</p>
+                    <p>29/07/2021</p>
+                    <hr />
+                    <p><a>Live URL</a></p>
+                  </div>
+                </StyledProjectsCard>
                 <p>
-                    <Date dateString={projectData.date} />
+                  <Date dateString={projectData.date} />
                 </p>
                 <h1>{projectData.title}</h1>
                 <h2>{projectData.description}</h2>
@@ -41,7 +55,6 @@ export default function Project({ projectData }) {
                   <div dangerouslySetInnerHTML={{ __html: projectData.contentHtml }} />
                 </p>
             </article>
-            <br />
             <div>
               <Link href="/">
                 <a>← Back to home</a>

@@ -24,3 +24,32 @@ export const StyledProjects = styled.div`
         margin: ${spaces.sections.p};
     }
 `
+
+export const StyledProjectsCard = styled.div`
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    border: 1px solid blue;
+    
+    .tools {
+        width: 100%;
+        border-bottom: 1px solid blue;
+        text-align: center;
+    }
+
+    .link {
+        text-align: center;
+        width: 100%;
+    }
+
+    @media ${props => props.theme.devices.tablet} {
+        flex-direction: row;
+
+        .tools {
+            border-bottom: none;
+            border-right: 1px solid blue;
+        }
+    }
+`
+
+
