@@ -5,17 +5,31 @@
         "name": "Franco Sebastián Benítez"
     },
     "about": {
-        "title": "About",
+        "title": {
+            "1": "About",
+            "2": "Me"
+        },
         "description": "I am an undergraduate student at the University of Buenos Aires finishing a licentiate degree in psychology. Early in my career, my interest toward psychological science brought me to be interested in statistics, research, and programming. Currently, my main interests revolve around data science, design, and web development."
     },
     "projects": {
-        "title": "Featured Projects 📋"
+        "title": {
+            "1": "Featured",
+            "2": "Projects 📋"
+        },
+        "see_more": "See more projects"
     },
     "blog": {
-        "title": "Featured Blog Posts 📝"
+        "title": {
+            "1": "Featured",
+            "2": "Blog Posts 📝"
+        },
+        "see_more": "See more blog posts"
     },
     "contact": {
-        "title": "Contact",
+        "title": {
+            "1": "Contact",
+            "2": "Me"
+        },
         "description": "If you like what you’ve seen on my site, I’d love for you to get in touch via my contact form or social media!",
         "email": "Email me for a chat",
         "linkedin": "Connect with me",

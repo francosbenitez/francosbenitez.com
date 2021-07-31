@@ -2,7 +2,7 @@ import styled from "styled-components"
 import spaces from "../../styles/spaces"
 
 export const StyledBlog = styled.section`
-    height: 200vh;
+    //height: 200vh;
 
     //height: ${spaces.sections.height};
     display: flex;
@@ -12,6 +12,10 @@ export const StyledBlog = styled.section`
     h1 {
         font-size: ${spaces.sections.fontSize};
         margin: ${spaces.sections.h1};
+        color: ${props => props.theme.colors.secondary};
+    }
+
+    span {
         color: ${props => props.theme.colors.primary};
     }
 
@@ -22,11 +26,19 @@ export const StyledBlog = styled.section`
     }
 
     @media ${props => props.theme.devices.tablet} {
-        height: 100vh;
+        //height: 100vh;
 
 
-        padding-left: 5rem; /* make it reproducible */
-        padding-right: 5rem;
+         /*padding-left: 5rem;*/ /* make it reproducible */
+        /*padding-right: 5rem;*/
+
+        width: 90%;
+        position: relative;
+        max-width: 1152px;
+        margin: 0 auto;
+        min-height: calc(100vh - 6.5rem); 
+        padding-top: 7.5rem;
+        padding-bottom: 4.5rem;
 
     }
 `;

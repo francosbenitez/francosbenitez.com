@@ -42,8 +42,16 @@ export const StyledHero = styled.section`
 
     @media ${props => props.theme.devices.tablet} {
 
-        padding-left: 5rem; /* make it reproducible */
-        padding-right: 5rem;
+        /*padding-left: 5rem;*/ /* make it reproducible */
+        /*padding-right: 5rem;*/
+
+        width: 90%;
+        position: relative;
+        max-width: 1152px;
+        margin: 0 auto;
+        min-height: calc(100vh - 6.5rem); 
+        padding-top: 7.5rem;
+        padding-bottom: 4.5rem;
 
         text-align: left;
         .hero-container {

@@ -6,7 +6,9 @@ const Contact = () => {
     return (
         <StyledContact id="contact">
             <div className="description-container">
-                <h1>{content.contact.title}</h1>
+                <h1>
+                    {content.contact.title["1"]} <span>{content.contact.title["2"]}</span>
+                </h1>
                 <p>{content.contact.description}</p>
                 <div className="email">
                     <p>{content.contact.email}</p>

@@ -34,7 +34,9 @@ export default function Home({ allPostsData, allProjectsData }) {
       <Hero />
       <About />
       <StyledProjects id="projects">
-        <h1>{content.projects.title}</h1>
+          <h1>
+          {content.projects.title["1"]} <span>{content.projects.title["2"]}</span>
+          </h1>
           <StyledCard>
             <div className="card-wrapper">
               {allProjectsData.map(({ id, date, title, description, img, img_alt }) => (
@@ -62,13 +64,13 @@ export default function Home({ allPostsData, allProjectsData }) {
             </div>
           </StyledCard>
           <Link href="/projects" passHref>
-              <span className="see-all">
-                <a>SEE ALL</a>
-              </span>
+              <a className="see-all">SEE ALL</a>
           </Link>
       </StyledProjects>
       <StyledBlog id="blog">
-        <h1>{content.blog.title}</h1>
+          <h1>
+            {content.blog.title["1"]} <span>{content.blog.title["2"]}</span>
+          </h1>
           <StyledCard>
             <div className="card-wrapper">
               {allPostsData.map(({ id, date, title, description, img, img_alt }) => (
@@ -96,9 +98,7 @@ export default function Home({ allPostsData, allProjectsData }) {
             </div>
           </StyledCard>
           <Link href="/posts" passHref>
-            <span className="see-all">
-              <a>SEE ALL</a>
-            </span>
+              <a className="see-all">SEE ALL</a>
           </Link>
       </StyledBlog>
       <Contact />

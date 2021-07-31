@@ -12,7 +12,9 @@ const About = () => {
                 </div>
             </div>
             <div className="description-container">
-                <h1>{content.about.title}</h1>
+                <h1>
+                    {content.about.title["1"]} <span>{content.about.title["2"]}</span>
+                </h1>
                 <p>{content.about.description}</p>
             </div>
             
