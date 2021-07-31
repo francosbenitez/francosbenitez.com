@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const StyledFooter = styled.footer`
     padding: 2rem 0 2rem 0;
     box-shadow: 10px 0 15px rgba(0, 0, 0, 0.2);
-    opacity: 70%;
+    /*opacity: 70%;*/
     display: flex;
     flex-direction: column;
 
@@ -23,9 +23,9 @@ export const StyledFooter = styled.footer`
         margin: 0 .5rem 0 .5rem;
     }
 
-    /*.icon-wrapper svg {
-        fill: red;
-    }*/
+    .icon-wrapper a:hover {
+        border-bottom: none;
+    }
 
     @media ${props => props.theme.devices.tablet} {
         flex-direction: row;

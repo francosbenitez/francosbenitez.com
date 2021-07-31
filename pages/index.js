@@ -29,7 +29,7 @@ export default function Home({ allPostsData, allProjectsData }) {
       <Head>
         <title>Franco Sebastián Benítez</title>
         <meta name="description" content="Data, design, and development." />
-        <meta name="keywords" content="francosbenitez data design development" />
+        <meta name="keywords" content="francosbenitez data design development" /> 
       </Head>
       <Hero />
       <About />
@@ -61,6 +61,11 @@ export default function Home({ allPostsData, allProjectsData }) {
               ))}
             </div>
           </StyledCard>
+          <Link href="/projects" passHref>
+              <span className="see-all">
+                <a>SEE ALL</a>
+              </span>
+          </Link>
       </StyledProjects>
       <StyledBlog id="blog">
         <h1>{content.blog.title}</h1>
@@ -90,6 +95,11 @@ export default function Home({ allPostsData, allProjectsData }) {
               ))}
             </div>
           </StyledCard>
+          <Link href="/posts" passHref>
+            <span className="see-all">
+              <a>SEE ALL</a>
+            </span>
+          </Link>
       </StyledBlog>
       <Contact />
     </>

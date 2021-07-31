@@ -2,6 +2,9 @@ import styled from 'styled-components';
 import spaces from "../../styles/spaces"
 
 export const StyledHero = styled.section`
+    height: 100vh;
+
+
     display: flex;
     flex-direction: column;
     margin: 0 1rem 0 1rem; /* I can't reutilize it */
@@ -11,8 +14,12 @@ export const StyledHero = styled.section`
     h1 {
         font-size: ${spaces.sections.fontSize};
         margin: ${spaces.sections.h1};
-        color: ${props => props.theme.colors.primary};
+        color: ${props => props.theme.colors.secondary};
         font-weight: 900;
+    }
+
+    span {
+        color: ${props => props.theme.colors.primary};
     }
 
     /*h2 {

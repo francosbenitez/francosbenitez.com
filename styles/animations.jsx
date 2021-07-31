@@ -17,8 +17,8 @@ export const StyledMouse = styled.div`
         -ms-transform: rotate(45deg); /* IE 9 */
         -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
         transform: rotate(45deg);
-        border-right: 2px solid black;
-        border-bottom: 2px solid black;
+        border-right: 2px solid ${props => props.theme.colors.text};
+        border-bottom: 2px solid ${props => props.theme.colors.text};
         margin: 0 0 3px 4px;
         width: 16px;
         height: 16px;
@@ -65,7 +65,7 @@ export const StyledMouse = styled.div`
         width: 24px;
         border-radius: 14px;
         transform: none;
-        border: 2px solid black;
+        border: 2px solid ${props => props.theme.colors.text};
         top: 170px;
     }
   
@@ -78,7 +78,7 @@ export const StyledMouse = styled.div`
         position: relative;
         height: 4px;
         width: 4px;
-        border: 2px solid black;
+        border: 2px solid ${props => props.theme.colors.text};
         -webkit-border-radius: 8px;
                 border-radius: 8px;
     }

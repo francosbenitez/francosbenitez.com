@@ -9,7 +9,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body {
-      background-color: #f3f3f3;
+      background-color: white;
     }
 
     a {
@@ -26,11 +26,12 @@ export const GlobalStyle = createGlobalStyle`
 export const theme = {
     colors: {
         primary: "#2079c7",
-        secondary: "#666666",
+        secondary: "#6AADFF",
+        tertiary: "#DEF2FF",
+        fourth: "#DBA11C",
         text: "#313131",
-        hover: "#DBA11C",
         link: "#1155cc",
-        background: "#f3f3f3",
+        background: "white",
     },
 
     font: {

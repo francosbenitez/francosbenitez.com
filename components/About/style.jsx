@@ -2,6 +2,8 @@ import styled from "styled-components"
 import spaces from "../../styles/spaces"
 
 export const StyledAbout = styled.section`
+    height: 100vh;
+
     //height: 100vh;
     display: flex;
     flex-direction: column;

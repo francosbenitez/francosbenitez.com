@@ -22,6 +22,8 @@ export const Nav = styled.nav`
 
     .logo a:hover {
         color: ${props => props.theme.colors.primary};
+
+        border-bottom: none;
     }
 
     @media ${props => props.theme.devices.tablet} {

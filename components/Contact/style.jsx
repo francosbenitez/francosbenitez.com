@@ -2,6 +2,8 @@ import styled from "styled-components"
 import spaces from "../../styles/spaces"
 
 export const StyledContact = styled.section`
+    height: 100vh;
+
     //height: ${spaces.sections.height};
     display: flex;
     flex-direction: column;
