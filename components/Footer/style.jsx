@@ -3,7 +3,6 @@ import styled from "styled-components"
 export const StyledFooter = styled.footer`
     padding: 2rem 0 2rem 0;
     box-shadow: 10px 0 15px rgba(0, 0, 0, 0.2);
-    /*opacity: 70%;*/
     display: flex;
     flex-direction: column;
 
@@ -25,6 +24,15 @@ export const StyledFooter = styled.footer`
 
     .icon-wrapper a:hover {
         border-bottom: none;
+    }
+
+    .icon-wrapper a svg {
+        fill: ${props => props.theme.colors.primary};
+        opacity: 50%;
+    }
+
+    .icon-wrapper a svg:hover {
+        opacity: 100%;
     }
 
     @media ${props => props.theme.devices.tablet} {

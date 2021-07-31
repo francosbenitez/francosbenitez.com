@@ -1,10 +1,9 @@
 import React from "react";
 import { StyledFooter } from "./style"
-import { SocialIcon } from 'react-social-icons';
-//import { ReactSVG } from 'react-svg';
-//import svg_github from '../../public/icons/contact/github.svg';
-//import svg_email from '../../public/icons/contact/email.svg';
-//import svg_linkedin from '../../public/icons/contact/linkedin.svg';
+import GitHub from '../../public/icons/contact/github.svg';
+import Email from '../../public/icons/contact/email.svg';
+import LinkedIn from '../../public/icons/contact/linkedin.svg';
+import Twitter from '../../public/icons/contact/twitter.svg';
 
 const Footer = () => {
     return (
@@ -36,16 +35,24 @@ const Footer = () => {
             </div>
             <div className="icons-container">
                 <li className="icon-wrapper">
-                    <SocialIcon url="mailto:francosbenitez@gmail.com" />
+                    <a href="mailto:francosbenitez@gmail.com">
+                        <Email />
+                    </a>
                 </li>
                 <li className="icon-wrapper">
-                    <SocialIcon url="https://linkedin.com/in/francosbenitez" />
+                    <a href="https://linkedin.com/in/francosbenitez">
+                        <LinkedIn />
+                    </a>
                 </li>
                 <li className="icon-wrapper">
-                    <SocialIcon url="https://github.com/francosbenitez" />
+                    <a href="https://github.com/francosbenitez">
+                        <GitHub />
+                    </a>
                 </li>
                 <li className="icon-wrapper">
-                    <SocialIcon url="https://twitter.com/francosbenitez" />
+                    <a href="https://twitter.com/francosbenitez">
+                        <Twitter />
+                    </a>
                 </li>
             </div>
         </StyledFooter>
@@ -53,34 +60,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-{ /*
-<div className="icons-container">
-                <li className="icon-wrapper">
-                    <ReactSVG
-                    className='icon'
-                    src={svg_github}
-                    onClick={() => redirectTo('https://github.com/francosbenitez')}
-                    />
-                </li>
-                <li className="icon-wrapper">
-                     <ReactSVG
-                    className='icon'
-                    src={svg_linkedin}
-                    onClick={() =>
-                        redirectTo('https://linkedin.com/in/francosbenitez')
-                    }
-                    />
-                </li>
-                <li className="icon-wrapper">
-                    <ReactSVG
-                    className='icon'
-                    src={svg_email}
-                    onClick={() => redirectTo('mailto:francosbenitez@gmail.com')}
-                    />
-                </li>
-                <li className="icon-wrapper">
-                    <SocialIcon url="https://twitter.com/francosbenitez" />
-                </li>
-            </div>
-*/ }
