@@ -1,7 +1,7 @@
 import { getAllProjectIds, getProjectData } from '../../lib/projects'
 import Head from "next/head"
 import Date from '../../components/Date'
-import { StyledProjects, StyledProjectsCard } from "./styles"
+import { StyledProjectsPosts, StyledProjectsCard } from "../../components/Projects/styles"
 import Link from "next/link"
 
 export async function getStaticProps({ params }) {
@@ -29,7 +29,7 @@ export default function Project({ projectData }) {
               <meta name="description" content={projectData.description} />
           </Head>
           <br />
-          <StyledProjects>
+          <StyledProjectsPosts>
             <article>
                 <StyledProjectsCard>
                   <div className="tools">
@@ -60,7 +60,7 @@ export default function Project({ projectData }) {
                 <a>← Back to home</a>
               </Link>
             </div>
-          </StyledProjects>
+          </StyledProjectsPosts>
       </>
   )
 }
