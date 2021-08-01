@@ -6,11 +6,11 @@ import Link from "next/link"
 import Date from "../components/Date"
 import React from "react";
 import content from "../lib/content.json";
-import { StyledCard } from "../styles/card"
+import { StyledCard } from "../styles/Card"
 import { StyledBlog } from "../components/Blog/styles"
 import { StyledProjects } from "../components/Projects/styles"
 import Contact from "../components/Contact"
-import About from "../components/about"
+import About from "../components/About"
 import Image from 'next/image'
 
 export async function getStaticProps() {
