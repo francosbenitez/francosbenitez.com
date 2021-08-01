@@ -51,7 +51,7 @@ export const StyledAbout = styled.section`
         .about-container {
             display: flex;
             flex-direction: row;
-            justify-content: space-evenly;
+            justify-content: space-between;
         }
 
         .avatar-wrapper img {

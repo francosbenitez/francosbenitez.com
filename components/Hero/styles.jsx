@@ -5,7 +5,6 @@ export const StyledHero = styled.section`
     display: flex;
     flex-direction: column;
     margin: 0 1rem 0 1rem; 
-    padding-top: 5rem; 
     text-align: center;
     width: 90%;
     position: relative;
@@ -19,7 +18,7 @@ export const StyledHero = styled.section`
         font-size: ${spaces.sections.fontSize};
         margin: ${spaces.sections.h1};
         color: ${props => props.theme.colors.secondary};
-        font-weight: 900;
+        font-weight: 700;
     }
 
     span {
@@ -29,7 +28,7 @@ export const StyledHero = styled.section`
     h3 {
         font-size: 1.3rem;
         color: ${(props) => props.theme.text};
-        font-weight: 700;
+        font-weight: 500;
         /*display: inline-flex;*/
     }
     
@@ -63,7 +62,7 @@ export const StyledHero = styled.section`
         }
 
         .hero-img img {
-            width: 200%;
+            width: 150%;
         }
     }
 `;

@@ -27,6 +27,10 @@ export const StyledContact = styled.section`
         margin: ${spaces.sections.p};
     }
 
+    .form-container {
+        margin-top: 2rem;
+    }
+
     .icons-container {
         display: inline-block;
     }
@@ -106,6 +110,7 @@ export const StyledContact = styled.section`
         .form-container {
             flex-basis: 50%;
             text-align: right;
+            margin-top: 0;
         }
     }
 `
