@@ -2,7 +2,7 @@ import React from 'react';
 import { StyledHero } from './styles';
 import content from "../../lib/content.json";
 import Typical from 'react-typical'
-import { StyledMouse } from "../../styles/animations"
+import { StyledMouse } from "../../styles/Animations"
 import HeroImage from '../../public/images/cover-image-2.svg';
 
 const Hero = () => {

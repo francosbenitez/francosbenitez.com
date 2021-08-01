@@ -1,5 +1,5 @@
 import React from "react";
-import { StyledFooter } from "./style"
+import { StyledFooter } from "./styles"
 import GitHub from '../../public/icons/contact/github.svg';
 import Email from '../../public/icons/contact/email.svg';
 import LinkedIn from '../../public/icons/contact/linkedin.svg';
