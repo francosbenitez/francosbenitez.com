@@ -3,7 +3,7 @@ import Hero from "../components/Hero";
 import { getSortedPostsData } from '../lib/posts'
 import { getSortedProjectsData } from "../lib/projects"
 import Link from "next/link"
-import Date from "../components/Date"
+import Date from "../components/Date.js"
 import React from "react";
 import content from "../lib/content.json";
 import { StyledCard } from "../styles/card"
