@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import spaces from "../../styles/spaces"
+import spaces from "../../styles/Spaces"
 
 export const StyledHero = styled.section`
     display: flex;

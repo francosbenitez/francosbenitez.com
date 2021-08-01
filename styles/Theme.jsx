@@ -22,6 +22,10 @@ export const GlobalStyle = createGlobalStyle`
     a:hover {
       border-bottom: 1.5px #1155cc dotted;
     }
+
+    p {
+      font-size: 1em;
+    }
 `;
 
 export const theme = {
