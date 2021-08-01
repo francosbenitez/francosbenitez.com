@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyledContact } from "./style"
+import { StyledContact } from "./styles"
 import content from "../../lib/content.json";
 import GitHub from '../../public/icons/contact/github.svg';
 import Email from '../../public/icons/contact/email.svg';

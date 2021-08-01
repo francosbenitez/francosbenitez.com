@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyledHero } from './style';
+import { StyledHero } from './styles';
 import content from "../../lib/content.json";
 import Typical from 'react-typical'
 import { StyledMouse } from "../../styles/animations"

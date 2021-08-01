@@ -1,5 +1,5 @@
 import React from 'react';
-import { Nav } from './style';
+import { Nav } from './styles';
 import { useRouter } from "next/router";
 import Link from "next/link"
 import Burger from './Burger';

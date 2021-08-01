@@ -1,7 +1,7 @@
 import { getAllPostIds, getPostData } from '../../lib/posts'
 import Head from "next/head"
 import Date from '../../components/Date'
-import { StyledPost } from "./style"
+import { StyledPost } from "./styles"
 import Link from "next/link"
 
 export async function getStaticProps({ params }) {

@@ -1,14 +1,18 @@
 import styled from "styled-components"
-import spaces from "../../styles/spaces"
+import spaces from "../../styles/Spaces"
 
 export const StyledAbout = styled.section`
-    height: 100vh;
-
-    //height: 100vh;
     display: flex;
     flex-direction: column;
-    margin: 0 1rem 0 1rem; /* I can't reutilize it */
+    margin: 0 1rem 0 1rem; 
     justify-content: center;
+    width: 90%;
+    position: relative;
+    max-width: 1152px;
+    margin: 0 auto;
+    min-height: calc(100vh - 6.5rem); 
+    padding-top: 7.5rem;
+    padding-bottom: 4.5rem;
     
     h1 {
         font-size: ${spaces.sections.fontSize};
@@ -39,17 +43,10 @@ export const StyledAbout = styled.section`
     }
 
     @media ${props => props.theme.devices.tablet} {
-        flex-direction: row;
-        justify-content: space-evenly;
-
-        /*padding-left: 5rem;*/ /* make it reproducible */
-        /*padding-right: 5rem;*/
-        width: 90%;
-        position: relative;
-        max-width: 1152px;
-        margin: 0 auto;
-        min-height: calc(100vh - 6.5rem); 
-        padding-top: 7.5rem;
-        padding-bottom: 4.5rem;
+        .about-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
     }
 `

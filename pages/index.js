@@ -7,8 +7,8 @@ import Date from "../components/Date"
 import React from "react";
 import content from "../lib/content.json";
 import { StyledCard } from "../styles/card"
-import { StyledBlog } from "../components/Blog/style"
-import { StyledProjects } from "../components/Projects/style"
+import { StyledBlog } from "../components/Blog/styles"
+import { StyledProjects } from "../components/Projects/styles"
 import Contact from "../components/Contact"
 import About from "../components/about"
 

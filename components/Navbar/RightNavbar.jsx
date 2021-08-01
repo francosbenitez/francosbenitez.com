@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyledUl } from './style';
+import { StyledUl } from './styles';
 import { useRouter } from "next/router";
 import Link from "next/link"
 

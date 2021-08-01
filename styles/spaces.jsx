@@ -4,7 +4,7 @@ const spaces = {
         p: "1rem 0 1rem 0",
         height: "100vh",
         icons: "1rem 0 1rem 0",
-        fontSize: "2rem",
+        fontSize: "3rem",
         h3: "1rem 0 1rem 0"
     }
 };
