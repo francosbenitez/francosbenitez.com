@@ -32,7 +32,7 @@ export const StyledHero = styled.section`
         /*display: inline-flex;*/
     }
     
-    .hero-img img { 
+    .hero-img svg { 
         width: 100%;
         margin: 2rem 0 2rem 0;
     }
@@ -61,7 +61,7 @@ export const StyledHero = styled.section`
             font-size: 2rem;
         }
 
-        .hero-img img {
+        .hero-img svg {
             width: 150%;
         }
     }

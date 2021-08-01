@@ -16,7 +16,7 @@ export default function Custom404() {
     <>
     <Container>
     <div>
-        <h1>Hey there! This page doesn't exist.</h1>
+        <h1>Hey there! This page doesn&apos;t exist.</h1>
         <hr />
         <div className="backToHome">
             <Link href="/">

@@ -3,6 +3,7 @@ import { StyledHero } from './styles';
 import content from "../../lib/content.json";
 import Typical from 'react-typical'
 import { StyledMouse } from "../../styles/animations"
+import HeroImage from '../../public/images/cover-image-2.svg';
 
 const Hero = () => {
     return (
@@ -27,7 +28,7 @@ const Hero = () => {
                     />
                 </div>
                 <div className="hero-img">
-                    <img src="images/cover-image-2.svg" alt=""></img>
+                    <HeroImage />
                 </div>
             </div>
             <StyledMouse>

@@ -11,6 +11,7 @@ import { StyledBlog } from "../components/Blog/styles"
 import { StyledProjects } from "../components/Projects/styles"
 import Contact from "../components/Contact"
 import About from "../components/about"
+import Image from 'next/image'
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData()
@@ -45,7 +46,12 @@ export default function Home({ allPostsData, allProjectsData }) {
                     <a>
                       <div className="card">
                           <div className="card-img">
-                              <img src={img} alt={img_alt}></img>
+                              <Image 
+                              src={img} 
+                              alt={img_alt} 
+                              width={100}
+                              height={100}
+                              />
                           </div>
                           <div className="card-text">
                               {title}
@@ -81,7 +87,12 @@ export default function Home({ allPostsData, allProjectsData }) {
                     <a>
                       <div className="card">
                           <div className="card-img">
-                              <img src={img} alt={img_alt}></img>
+                              <Image 
+                              src={img} 
+                              alt={img_alt} 
+                              width={100}
+                              height={100}
+                              />
                           </div>
                           <div className="card-text">
                               {title}

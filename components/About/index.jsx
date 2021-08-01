@@ -1,6 +1,8 @@
 import React from 'react';
 import { StyledAbout } from "./styles"
 import content from "../../lib/content.json";
+import Avatar from "../../public/images/avatar.jpg"
+import Image from "next/image"
 
 const About = () => {
     return (
@@ -11,7 +13,10 @@ const About = () => {
             <div className="about-container">
                 <div className="avatar-container">
                     <div className="avatar-wrapper">
-                        <img src="images/avatar.jpg" alt="" />
+                        <Image 
+                        src={Avatar} 
+                        alt="" 
+                        />
                     </div>
                 </div>
                 <div className="description-container">
