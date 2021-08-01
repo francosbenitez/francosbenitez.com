@@ -5,7 +5,7 @@ export const StyledHero = styled.section`
     display: flex;
     flex-direction: column;
     margin: 0 1rem 0 1rem; 
-    text-align: center;
+    /*text-align: center;*/
     width: 90%;
     position: relative;
     max-width: 1152px;
