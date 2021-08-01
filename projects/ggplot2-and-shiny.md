@@ -6,7 +6,7 @@ img: "/images/projects/antique.png"
 img_alt: "Plot showing the antique of argentine psychology careers."
 featured: true
 tools_used: "Next, React, styled-components"
-published: "01/08/2021"
+published: "2021/08/01"
 github_url: "https://github.com/francosbenitez/plot-replication"
 live_url: "https://github.com/francosbenitez/plot-replication"
 ---
