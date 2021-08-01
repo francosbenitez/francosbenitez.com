@@ -34,15 +34,23 @@ export default function Project({ projectData }) {
                 <StyledProjectsCard>
                   <div className="tools">
                     <p>TOOLS USED</p>
-                    <p>Next, React, styled-components</p>
+                    <p>{projectData.tools_used}</p>
                     <hr />
-                    <p><a>GitHub repository</a></p>
+                    <p>
+                      <a href={`${projectData.github_url}`}>
+                        GitHub repository
+                      </a>
+                    </p>
                   </div>
                   <div className="link">
                     <p>PUBLISHED</p>
-                    <p>29/07/2021</p>
+                    <p>{projectData.published}</p>
                     <hr />
-                    <p><a>Live URL</a></p>
+                    <p>
+                      <a href={`${projectData.live_url}`}>
+                        Live URL
+                      </a>
+                    </p>
                   </div>
                 </StyledProjectsCard>
                 <p>
