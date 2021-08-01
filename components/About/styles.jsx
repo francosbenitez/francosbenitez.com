@@ -30,7 +30,7 @@ export const StyledAbout = styled.section`
     }
 
     .description-container {
-        flex-basis: 50%;
+        flex-basis: 75%;
     }
 
     .avatar-container {
@@ -40,9 +40,8 @@ export const StyledAbout = styled.section`
 
     .avatar-wrapper img {
         width: 100%;
-        max-width: 200px;
         height: auto;
-        border-radius: 50%;
+        border-radius: 25%;
         justify-content: center;
         margin-bottom: 2rem;
     }
@@ -53,8 +52,5 @@ export const StyledAbout = styled.section`
             flex-direction: row;
             justify-content: space-between;
         }
-
-        .avatar-wrapper img {
-            max-width: 300px;
-        }
-`
+    }
+ `
