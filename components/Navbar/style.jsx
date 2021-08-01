@@ -23,19 +23,9 @@ export const Nav = styled.nav`
 
     .logo a:hover {
         color: ${props => props.theme.colors.primary};
-
         border-bottom: none;
     }
-
-    @media ${props => props.theme.devices.tablet} {
-
-
-        padding-left: 5rem; /* make it reproducible */
-        padding-right: 5rem;
-
-
-    }
-    `
+`
 
 export const StyledUl = styled.ul`
     list-style: none;
@@ -50,10 +40,6 @@ export const StyledUl = styled.ul`
     li a {
         color: ${props => props.theme.colors.primary};
     }
-
-    /*li a:hover {
-        color: #DBA11C;
-    }*/
 
     li.active a {
         border-bottom: 1.5px ${props => props.theme.colors.link} solid;

@@ -2,13 +2,16 @@ import styled from "styled-components"
 import spaces from "../../styles/spaces"
 
 export const StyledContact = styled.section`
-    height: 100vh;
-
-    //height: ${spaces.sections.height};
     display: flex;
     flex-direction: column;
-    margin: 0 1rem 0 1rem; /* I can't reutilize it */
-    /*justify-content: center;*/
+    margin: 0 1rem 0 1rem; 
+    width: 90%;
+    position: relative;
+    max-width: 1152px;
+    margin: 0 auto;
+    min-height: calc(100vh - 6.5rem); 
+    padding-top: 7.5rem;
+    padding-bottom: 4.5rem;
 
     h1 {
         font-size: ${spaces.sections.fontSize};
@@ -16,7 +19,7 @@ export const StyledContact = styled.section`
         color: ${props => props.theme.colors.secondary};
     }
 
-    span {
+    h1 span {
         color: ${props => props.theme.colors.primary};
     }
 
@@ -24,6 +27,30 @@ export const StyledContact = styled.section`
         margin: ${spaces.sections.p};
     }
 
+    .icons-container {
+        display: inline-block;
+    }
+
+    .icon-wrapper {
+        list-style: none;
+        padding-bottom: 1rem;
+    }
+
+    .icon-wrapper svg,
+    .icon-wrapper span {
+        vertical-align: middle;
+    }
+
+    .icon-wrapper span {
+        padding-left: 2rem;
+        color: ${props => props.theme.colors.link};
+    }
+
+    .icon-wrapper a:hover {
+        border-bottom: none;
+        fill: ${props => props.theme.colors.primary};
+    }
+    
     .form-wrapper {
         display: flex;
         flex-direction: column;
@@ -71,19 +98,10 @@ export const StyledContact = styled.section`
     }   
 
     @media ${props => props.theme.devices.tablet} {
-        display: flex;
-        flex-direction: row;
-        
-        /*padding-left: 5rem;*/ /* make it reproducible */
-        /*padding-right: 5rem;*/
-
-        width: 90%;
-        position: relative;
-        max-width: 1152px;
-        margin: 0 auto;
-        min-height: calc(100vh - 6.5rem); 
-        padding-top: 7.5rem;
-        padding-bottom: 4.5rem;
+        .contact-container {
+            display: flex;
+            flex-direction: row;
+        }
 
         .form-container {
             flex-basis: 50%;

@@ -38,9 +38,6 @@ export const StyledFooter = styled.footer`
     @media ${props => props.theme.devices.tablet} {
         flex-direction: row;
 
-        padding-left: 5rem; /* make it reproducible */
-        padding-right: 5rem;
-
         .copyright {
             margin: auto;
         }
