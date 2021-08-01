@@ -1,6 +1,6 @@
 import { getAllProjectIds, getProjectData } from '../../lib/projects'
 import Head from "next/head"
-import Date from '../../components/Date.js'
+import Date from '../../components/Date'
 import { StyledProjects, StyledProjectsCard } from "./styles"
 import Link from "next/link"
 
