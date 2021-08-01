@@ -24,13 +24,17 @@ export const StyledAbout = styled.section`
         color: ${props => props.theme.colors.primary};
     }
 
+    .about-container {
+        display: flex;
+        flex-direction: column;
+    }
+
     .description-container {
         flex-basis: 50%;
     }
 
     .avatar-container {
         float: right;
-        /*flex-basis: 50%;*/
         text-align: center;
     }
 
@@ -40,6 +44,7 @@ export const StyledAbout = styled.section`
         height: auto;
         border-radius: 50%;
         justify-content: center;
+        margin-bottom: 2rem;
     }
 
     @media ${props => props.theme.devices.tablet} {
@@ -48,5 +53,8 @@ export const StyledAbout = styled.section`
             flex-direction: row;
             justify-content: space-evenly;
         }
-    }
+
+        .avatar-wrapper img {
+            max-width: 300px;
+        }
 `

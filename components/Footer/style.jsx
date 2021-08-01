@@ -5,6 +5,7 @@ export const StyledFooter = styled.footer`
     box-shadow: 10px 0 15px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
+    font-size: .8em;
 
     .copyright {
         text-align: center;;

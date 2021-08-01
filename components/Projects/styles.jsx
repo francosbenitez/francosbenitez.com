@@ -28,5 +28,6 @@ export const StyledProjects = styled.section`
         text-align: right; 
         white-space: nowrap;
         margin-top: 1rem;
+        font-size: 1.2em;
     }
 `;

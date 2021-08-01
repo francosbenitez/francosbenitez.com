@@ -9,7 +9,6 @@ const About = () => {
                 {content.about.title["1"]} <span>{content.about.title["2"]}</span>
             </h1>
             <div className="about-container">
-                
                 <div className="avatar-container">
                     <div className="avatar-wrapper">
                         <img src="images/avatar.jpg" alt="" />
