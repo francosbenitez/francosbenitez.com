@@ -20,14 +20,14 @@ export const StyledCard = styled.div`
       border: 1px solid rgba(0,0,0,0.125);
       border-radius: 20px;
       border-style: solid;
-      border-color: #000000;
+      border-color: ${props => props.theme.colors.secondary};
       overflow: hidden;
       padding: 3rem 2rem;
       cursor: pointer;
     }
 
     .card:hover {
-      box-shadow: 6px 6px 2px 0px #2079c7;
+      box-shadow: 6px 6px 2px 0px ${props => props.theme.colors.primary};
     }
 
     .card-img {
@@ -59,7 +59,7 @@ export const StyledCard = styled.div`
     }
 
     a {
-      color: #000000;
+      color: ${props => props.theme.colors.text};
     }
 
     @media screen and (max-width: 719px) {

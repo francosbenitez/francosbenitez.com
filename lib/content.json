@@ -20,7 +20,11 @@
             "design",
             ", and ",
             "web development",
-            "."
+            ".",
+            "Here are some of the technologies I work with:", 
+            "React with Next.js and Styled Components.",
+            "Python with Django and Flask.",
+            "Vue with Nuxt and Tailwind."
         ]
     },
     "projects": {

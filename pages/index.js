@@ -14,17 +14,6 @@ import About from "../components/About"
 import Image from 'next/image'
 import Arrow from "../public/icons/others/arrow.svg"
 
-export async function getStaticProps() {
-  const allPostsData = getSortedPostsData()
-  const allProjectsData = getSortedProjectsData()
-  return {
-    props: {
-      allPostsData,
-      allProjectsData
-    }
-  }
-}
-
 export default function Home({ allPostsData, allProjectsData }) {
   return (
     <>
@@ -126,4 +115,15 @@ export default function Home({ allPostsData, allProjectsData }) {
       <Contact />
     </>
   )
+}
+
+export async function getStaticProps() {
+  const allPostsData = getSortedPostsData()
+  const allProjectsData = getSortedProjectsData()
+  return {
+    props: {
+      allPostsData,
+      allProjectsData
+    }
+  }
 }
