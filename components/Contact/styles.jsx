@@ -76,7 +76,7 @@ export const StyledContact = styled.section`
     input[type=text], 
     input[type=email], 
     textarea[name=message] {
-        outline: .1px solid ${props => props.theme.colors.primary};   
+        outline: .01 px solid ${props => props.theme.colors.primary};   
     }
 
     .submit-btn {   

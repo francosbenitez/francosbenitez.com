@@ -13,7 +13,7 @@ export const StyledBlog = styled.section`
         line-height: 1;
     }
 
-    span {
+    h1 span {
         color: ${props => props.theme.colors.primary};
         line-height: 1;
     }
@@ -24,6 +24,17 @@ export const StyledBlog = styled.section`
         white-space: nowrap;
         margin-top: 1rem;
         font-size: 1em;
+        display: inline-block;
+    }
+
+    .see-all svg {
+        fill: ${props => props.theme.colors.link};
+        margin-right: 0.50rem;
+    }
+
+    .see-all a, 
+    .see-all svg {
+        vertical-align: middle;
     }
 
     @media ${props => props.theme.devices.tablet} {

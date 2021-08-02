@@ -30,7 +30,18 @@ export const StyledProjects = styled.section`
         text-align: right; 
         white-space: nowrap;
         margin-top: 1rem;
-        font-size: 1.2em;
+        font-size: 1em;
+        display: inline-block;
+    }
+
+    .see-all svg {
+        fill: ${props => props.theme.colors.link};
+        margin-right: 0.50rem;
+    }
+
+    .see-all a, 
+    .see-all svg {
+        vertical-align: middle;
     }
 `;
 
