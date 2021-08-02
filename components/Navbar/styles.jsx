@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Nav = styled.nav`
     width: 100%;
     height: 55px;
-    padding: 0 20px;
+    padding: 0 6rem 0 6rem;
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -77,7 +77,8 @@ export const StyledBurger = styled.div`
     div {
         width: 2rem;
         height: 0.25rem;
-        background-color: ${({ open }) => open ? '#333' : '#333'};
+        /*background-color: ${({ open }) => open ? '#333' : '#333'};*/
+        background-color: ${props => props.theme.colors.text};
         border-radius: 10px;
         transform-origin: 1px;
         transition: all 0.3s linear;

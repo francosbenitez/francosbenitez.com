@@ -12,6 +12,7 @@ import { StyledProjects } from "../components/Projects/styles"
 import Contact from "../components/Contact"
 import About from "../components/About"
 import Image from 'next/image'
+import Arrow from "../public/icons/others/arrow.svg"
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData()
@@ -71,7 +72,10 @@ export default function Home({ allPostsData, allProjectsData }) {
           </StyledCard>
           <Link href="/projects" passHref>
              <span className="see-all">
-                <a href="/projects">{content.projects.see_more}</a>
+                <a href="/projects">
+                  <Arrow />
+                  {content.projects.see_more}
+                </a>
               </span>
           </Link>
       </StyledProjects>
@@ -112,7 +116,10 @@ export default function Home({ allPostsData, allProjectsData }) {
           </StyledCard>
           <Link href="/posts" passHref>
              <span className="see-all">
-                <a href="/posts">{content.blog.see_more}</a>
+                <a href="/posts">
+                  <Arrow />
+                  {content.blog.see_more}
+                </a>
               </span>
           </Link>
       </StyledBlog>

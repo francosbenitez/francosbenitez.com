@@ -15,8 +15,9 @@ export const StyledContact = styled.section`
 
     h1 {
         font-size: ${spaces.sections.fontSize};
-        margin: ${spaces.sections.h1};
+        /*margin: ${spaces.sections.h1};*/
         color: ${props => props.theme.colors.secondary};
+        line-height: 1;
     }
 
     h1 span {
@@ -24,7 +25,8 @@ export const StyledContact = styled.section`
     }
 
     p {
-        margin: ${spaces.sections.p};
+        /*margin: ${spaces.sections.p};*/
+        margin-bottom: 1rem;
     }
 
     .form-container {

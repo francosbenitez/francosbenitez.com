@@ -31,6 +31,7 @@ export const StyledAbout = styled.section`
 
     .description-container {
         flex-basis: 75%;
+        margin-top: 1rem;
     }
 
     .avatar-container {
@@ -51,6 +52,10 @@ export const StyledAbout = styled.section`
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+        }
+
+        .description-container {
+            margin-top: 0;
         }
     }
  `

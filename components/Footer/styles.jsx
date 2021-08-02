@@ -1,17 +1,17 @@
 import styled from "styled-components"
 
 export const StyledFooter = styled.footer`
-    padding: 2rem 0 2rem 0;
+    padding: 2rem 5rem 2rem 5rem;
     box-shadow: 10px 0 15px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
-    font-size: .8em;
 
     .copyright {
         text-align: center;;
     }
 
     .icons-container {
+        margin-top: 1rem;
         text-align: center;
     }
 
@@ -46,6 +46,7 @@ export const StyledFooter = styled.footer`
         .icons-container {
             flex-basis: 50%;
             text-align: right;
+            margin-top: 0;
         }
     }
 `

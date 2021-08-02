@@ -21,7 +21,7 @@ export const StyledBlog = styled.section`
         text-align: right; 
         white-space: nowrap;
         margin-top: 1rem;
-        font-size: 1.2em;
+        font-size: 1em;
     }
 
     @media ${props => props.theme.devices.tablet} {
