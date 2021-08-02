@@ -5,9 +5,10 @@ export const StyledFooter = styled.footer`
     box-shadow: 10px 0 15px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
-    position: fixed;
     bottom: 0;
+    position: fixed;
     width: 100%;
+    background-color: white;
 
     .copyright {
         text-align: center;;
