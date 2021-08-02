@@ -26,6 +26,10 @@ export const StyledAbout = styled.section`
         line-height: 1;
     }
 
+    p {
+        font-size: 1.5em;
+    }
+
     .about-container {
         display: flex;
         flex-direction: column;
@@ -44,7 +48,7 @@ export const StyledAbout = styled.section`
     .avatar-wrapper img {
         width: 100%;
         height: auto;
-        border-radius: 25%;
+        border-radius: 50%;
         justify-content: center;
         margin-bottom: 2rem;
     }

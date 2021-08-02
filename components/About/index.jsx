@@ -20,7 +20,23 @@ const About = () => {
                     </div>
                 </div>
                 <div className="description-container">
-                    <p>{content.about.description}</p>
+                    <p>
+                        {content.about.description[0]}
+                        <span>{content.about.description[1]}</span>
+                        {content.about.description[2]}
+                        <br />
+                        <br />
+                        {content.about.description[3]}
+                        <br />
+                        <br />
+                        {content.about.description[4]}
+                        <span>{content.about.description[5]}</span>
+                        {content.about.description[6]}
+                        <span>{content.about.description[7]}</span>
+                        {content.about.description[8]}
+                        <span>{content.about.description[9]}</span>
+                        {content.about.description[10]}
+                    </p>
                 </div>
             </div>
         </StyledAbout>

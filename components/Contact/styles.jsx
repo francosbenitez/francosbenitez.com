@@ -27,6 +27,7 @@ export const StyledContact = styled.section`
 
     p {
         margin: ${spaces.sections.p};
+        font-size: 1.5em;
     }
 
     .form-container {

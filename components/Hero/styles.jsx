@@ -28,7 +28,7 @@ export const StyledHero = styled.section`
     }
 
     h3 {
-        font-size: 1.3rem;
+        font-size: 1.5em;
         color: ${(props) => props.theme.text};
         font-weight: 500;
         /*display: inline-flex;*/
