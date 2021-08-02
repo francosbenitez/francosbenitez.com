@@ -14,14 +14,14 @@
     "projects": {
         "title": {
             "1": "Featured",
-            "2": "Projects 📋"
+            "2": "Projects"
         },
         "see_more": "See more projects"
     },
     "blog": {
         "title": {
             "1": "Featured",
-            "2": "Blog Posts 📝"
+            "2": "Blog Posts"
         },
         "see_more": "See more blog posts"
     },
