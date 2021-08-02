@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import spaces from "../../styles/Spaces"
 
 export const StyledProjects = styled.section`
     display: flex;
@@ -14,8 +13,8 @@ export const StyledProjects = styled.section`
     padding-bottom: 4.5rem;
 
     h1 {
-        font-size: ${spaces.sections.fontSize};
-        margin: ${spaces.sections.h1};
+        font-size: 4em;
+        margin: 1rem 0 1rem 0;
         color: ${props => props.theme.colors.secondary};
         line-height: 1;
     }
@@ -51,21 +50,21 @@ export const StyledProjectsPosts = styled.div`
     margin: 6rem auto 9rem;
 
     h1 {
-        font-size: ${spaces.sections.fontSize};
-        margin: ${spaces.sections.h1};
-        color: ${props => props.theme.colors.primary};
+        font-size: 3em;
+        margin: 1rem 0 1rem 0;
+        color: ${props => props.theme.colors.text};
         font-weight: 900;
     }
 
     h2 {
-        font-size: 1.3rem;
-        margin: ${spaces.sections.h1};
-        color: ${(props) => props.theme.colors.secondary};
+        font-size: 1em;
+        margin: 1rem 0 1rem 0;
+        color: ${(props) => props.theme.colors.text};
         font-weight: 500;
     }
   
     p {
-        margin: ${spaces.sections.p};
+        margin: 1rem 0 1rem 0;
     }
 `
 
@@ -73,11 +72,11 @@ export const StyledProjectsCard = styled.div`
     display: flex;
     flex-direction: column;
     flex-basis: 50%;
-    border: 1px solid blue;
+    border: 1px solid ${props => props.theme.colors.text};
     
     .tools {
         width: 100%;
-        border-bottom: 1px solid blue;
+        border-bottom: 1px solid ${(props) => props.theme.colors.text};
         text-align: center;
     }
 
@@ -86,12 +85,21 @@ export const StyledProjectsCard = styled.div`
         width: 100%;
     }
 
+    .date {
+        font-weight: 500;
+    }
+
+    .tools-used,
+    .published {
+        font-weight: 800;
+    }
+
     @media ${props => props.theme.devices.tablet} {
         flex-direction: row;
 
         .tools {
             border-bottom: none;
-            border-right: 1px solid blue;
+            border-right: 1px solid ${props => props.theme.colors.text};
         }
     }
 `

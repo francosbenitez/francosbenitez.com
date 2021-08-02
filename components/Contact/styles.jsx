@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import spaces from "../../styles/Spaces"
 
 export const StyledContact = styled.section`
     display: flex;
@@ -14,8 +13,8 @@ export const StyledContact = styled.section`
     padding-bottom: 4.5rem;
 
     h1 {
-        font-size: ${spaces.sections.fontSize};
-        /*margin: ${spaces.sections.h1};*/
+        font-size: 4em;
+        margin: 1rem 0 1rem 0;
         color: ${props => props.theme.colors.secondary};
         line-height: 1;
     }
@@ -26,7 +25,7 @@ export const StyledContact = styled.section`
     }
 
     p {
-        margin: ${spaces.sections.p};
+        margin: 1rem 0 1rem 0;
         font-size: 1.5em;
     }
 

@@ -1,11 +1,6 @@
 const spaces = {
     sections: {
-        h1: "1rem 0 1rem 0",
-        p: "1rem 0 1rem 0",
-        height: "100vh",
-        icons: "1rem 0 1rem 0",
-        fontSize: "4em",
-        h3: "1rem 0 1rem 0"
+        
     }
 };
 

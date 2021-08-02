@@ -5,7 +5,6 @@ export const StyledHero = styled.section`
     display: flex;
     flex-direction: column;
     margin: 0 1rem 0 1rem; 
-    /*text-align: center;*/
     width: 90%;
     position: relative;
     max-width: 1152px;
@@ -15,8 +14,8 @@ export const StyledHero = styled.section`
     padding-bottom: 4.5rem;
 
     h1 {
-        font-size: ${spaces.sections.fontSize};
-        margin: ${spaces.sections.h1};
+        font-size: 4em;
+        margin: 1rem 0 1rem 0;
         color: ${props => props.theme.colors.secondary};
         font-weight: 700;
         line-height: 1;
@@ -27,11 +26,10 @@ export const StyledHero = styled.section`
         line-height: 1;
     }
 
-    h3 {
-        font-size: 1.5em;
+    h2 {
+        font-size: 2em;
         color: ${(props) => props.theme.text};
         font-weight: 500;
-        /*display: inline-flex;*/
     }
     
     .hero-img svg { 
@@ -50,18 +48,6 @@ export const StyledHero = styled.section`
         .hero-description {
             flex-basis: 50%; 
         }    
-
-        h1 {
-            font-size: 4rem;
-        }
-        
-        h2 {
-            font-size: 2rem;
-        }
-
-        h3 {
-            font-size: 2rem;
-        }
 
         .hero-img svg {
             width: 150%;

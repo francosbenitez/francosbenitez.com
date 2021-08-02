@@ -33,7 +33,7 @@ export default function Project({ projectData }) {
             <article>
                 <StyledProjectsCard>
                   <div className="tools">
-                    <p>TOOLS USED</p>
+                    <p className="tools-used">TOOLS USED</p>
                     <p>{projectData.tools_used}</p>
                     <hr />
                     <p>
@@ -43,7 +43,7 @@ export default function Project({ projectData }) {
                     </p>
                   </div>
                   <div className="link">
-                    <p>PUBLISHED</p>
+                    <p className="published">PUBLISHED</p>
                     <p>{projectData.published}</p>
                     <hr />
                     <p>
@@ -53,7 +53,7 @@ export default function Project({ projectData }) {
                     </p>
                   </div>
                 </StyledProjectsCard>
-                <p>
+                <p className="date">
                   <Date dateString={projectData.date} />
                 </p>
                 <h1>{projectData.title}</h1>

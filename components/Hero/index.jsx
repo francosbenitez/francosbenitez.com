@@ -4,6 +4,7 @@ import content from "../../lib/content.json";
 import Typical from 'react-typical'
 import { StyledMouse } from "../../styles/Animations"
 import HeroImage from '../../public/images/others/cover-image.svg';
+import Link from "next/link"
 
 const Hero = () => {
     return (
@@ -26,7 +27,7 @@ const Hero = () => {
                         2000
                         ]}
                         loop={Infinity}
-                        wrapper="h3"
+                        wrapper="h2"
                     />
                 </div>
                 <div className="hero-img">
@@ -34,14 +35,18 @@ const Hero = () => {
                 </div>
             </div>
             <StyledMouse>
-                    <div className="mouse">
-                        <div className="wheel"></div>
-                    </div>
-                    <div>
-                        <span className="m_scroll_arrows unu"></span>
-                        <span className="m_scroll_arrows doi"></span>
-                        <span className="m_scroll_arrows trei"></span>
-                    </div>
+                <Link href="/#about" passHref>
+                    <a>
+                        <div className="mouse">
+                            <div className="wheel"></div>
+                        </div>
+                        <div>
+                            <span className="m_scroll_arrows unu"></span>
+                            <span className="m_scroll_arrows doi"></span>
+                            <span className="m_scroll_arrows trei"></span>
+                        </div>
+                    </a>
+                </Link>
             </StyledMouse>
         </StyledHero>
     );

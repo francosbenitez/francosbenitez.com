@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import spaces from "../../styles/Spaces"
 
 export const StyledBlog = styled.section`
     display: flex;
@@ -7,8 +6,8 @@ export const StyledBlog = styled.section`
     margin: 0 1rem 0 1rem; 
 
     h1 {
-        font-size: ${spaces.sections.fontSize};
-        margin: ${spaces.sections.h1};
+        font-size: 4em;
+        margin: 1rem 0 1rem 0;
         color: ${props => props.theme.colors.secondary};
         line-height: 1;
     }
@@ -54,21 +53,21 @@ export const StyledPost = styled.div`
     margin: 6rem auto 9rem;
 
     h1 {
-        font-size: ${spaces.sections.fontSize};
-        margin: ${spaces.sections.h1};
-        color: ${props => props.theme.colors.primary};
+        font-size: 3em;
+        margin: 1rem 0 1rem 0;
+        color: ${props => props.theme.colors.text};
         font-weight: 900;
     }
 
     h2 {
-        font-size: 1.3rem;
-        margin: ${spaces.sections.h1};
-        color: ${(props) => props.theme.colors.secondary};
+        font-size: 1em;
+        margin: 1rem 0 1rem 0;
+        color: ${(props) => props.theme.colors.text};
         font-weight: 500;
     }
   
     p {
-        margin: ${spaces.sections.p};
+        margin: 1rem 0 1rem 0;
     }
 `
 

@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const StyledFooter = styled.footer`
-    padding: 2rem 5rem 2rem 5rem;
+    padding: 2rem 2rem 2rem 2rem;
     box-shadow: 10px 0 15px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
@@ -37,6 +37,7 @@ export const StyledFooter = styled.footer`
     }
 
     @media ${props => props.theme.devices.tablet} {
+        padding: 2rem 5rem 2rem 5rem;
         flex-direction: row;
 
         .copyright {

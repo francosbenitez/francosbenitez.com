@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import spaces from "../../styles/Spaces"
 
 export const StyledAbout = styled.section`
     display: flex;
@@ -15,8 +14,8 @@ export const StyledAbout = styled.section`
     padding-bottom: 4.5rem;
     
     h1 {
-        font-size: ${spaces.sections.fontSize};
-        margin: ${spaces.sections.h1};
+        font-size: 4em;
+        margin: 1rem 0 1rem 0;
         color: ${props => props.theme.colors.secondary};
         line-height: 1;
     }
@@ -37,11 +36,12 @@ export const StyledAbout = styled.section`
 
     .description-container {
         flex-basis: 75%;
-        margin-top: 1rem;
+        margin-top: 3rem;
     }
 
     .avatar-container {
         float: right;
+        margin-top: 3rem;
         text-align: center;
     }
 
@@ -61,6 +61,10 @@ export const StyledAbout = styled.section`
         }
 
         .description-container {
+            margin-top: 0;
+        }
+
+        .avatar-container {
             margin-top: 0;
         }
     }
