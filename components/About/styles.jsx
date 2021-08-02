@@ -18,10 +18,12 @@ export const StyledAbout = styled.section`
         font-size: ${spaces.sections.fontSize};
         margin: ${spaces.sections.h1};
         color: ${props => props.theme.colors.secondary};
+        line-height: 1;
     }
 
     span {
         color: ${props => props.theme.colors.primary};
+        line-height: 1;
     }
 
     .about-container {

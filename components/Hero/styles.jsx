@@ -19,10 +19,12 @@ export const StyledHero = styled.section`
         margin: ${spaces.sections.h1};
         color: ${props => props.theme.colors.secondary};
         font-weight: 700;
+        line-height: 1;
     }
 
     span {
         color: ${props => props.theme.colors.primary};
+        line-height: 1;
     }
 
     h3 {

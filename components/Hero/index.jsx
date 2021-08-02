@@ -10,8 +10,10 @@ const Hero = () => {
         <StyledHero>
             <div className="hero-container">
                 <div className="hero-description">
-                    <h1>{content.hero.title} <span>
-                {content.hero.name}</span></h1>
+                    <h1>
+                        {content.hero.title}<br />
+                        <span> {content.hero.name}</span>
+                    </h1>
                     {/*<h2>{content.hero.subtitle}</h2>*/}
                     <Typical 
                         steps=

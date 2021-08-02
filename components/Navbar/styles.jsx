@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Nav = styled.nav`
     width: 100%;
     height: 55px;
-    padding: 0 6rem 0 6rem;
+    padding: 0 20px;
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -24,6 +24,10 @@ export const Nav = styled.nav`
     .logo a:hover {
         color: ${props => props.theme.colors.primary};
         border-bottom: none;
+    }
+    
+    @media ${props => props.theme.devices.tablet} {
+        padding: 0 6rem 0 6rem;
     }
 `
 

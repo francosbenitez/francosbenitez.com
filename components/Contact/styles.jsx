@@ -22,11 +22,11 @@ export const StyledContact = styled.section`
 
     h1 span {
         color: ${props => props.theme.colors.primary};
+        line-height: 1;
     }
 
     p {
-        /*margin: ${spaces.sections.p};*/
-        margin-bottom: 1rem;
+        margin: ${spaces.sections.p};
     }
 
     .form-container {
