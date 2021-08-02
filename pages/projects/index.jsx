@@ -47,7 +47,7 @@ const Projects = ({ allProjectsData }) => {
           </StyledCard>
           <Link href="/projects" passHref>
              <span className="see-all">
-                <a href="/projects">
+                <a>
                   <Arrow />
                   {content.projects.see_more}
                 </a>

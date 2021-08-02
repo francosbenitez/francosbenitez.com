@@ -72,7 +72,7 @@ export default function Home({ allPostsData, allProjectsData }) {
           </StyledCard>
           <Link href="/projects" passHref>
              <span className="see-all">
-                <a href="/projects">
+                <a>
                   <Arrow />
                   {content.projects.see_more}
                 </a>
@@ -116,7 +116,7 @@ export default function Home({ allPostsData, allProjectsData }) {
           </StyledCard>
           <Link href="/posts" passHref>
              <span className="see-all">
-                <a href="/posts">
+                <a>
                   <Arrow />
                   {content.blog.see_more}
                 </a>

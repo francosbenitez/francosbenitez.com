@@ -47,7 +47,7 @@ const Blog = ({ allPostsData }) => {
           </StyledCard>
           <Link href="/posts" passHref>
              <span className="see-all">
-                <a href="/posts">
+                <a>
                   <Arrow />
                   {content.blog.see_more}
                 </a>
