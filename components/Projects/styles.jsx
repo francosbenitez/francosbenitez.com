@@ -48,12 +48,14 @@ export const StyledProjectsPosts = styled.div`
     max-width: 36rem;
     padding: 0 1rem;
     margin: 6rem auto 9rem;
+    min-height: calc(100vh - 6.5rem); 
 
     h1 {
         font-size: 3em;
         margin: 1rem 0 1rem 0;
         color: ${props => props.theme.colors.text};
         font-weight: 900;
+        line-height: 1;
     }
 
     h2 {

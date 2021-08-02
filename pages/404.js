@@ -1,24 +1,23 @@
 import Link from "next/link"
-import styled from "styled-components"
-
-const Styled404 = styled.section`
-    min-height: calc(100vh - 6.5rem); 
-    padding-top: 7.5rem;
-    padding-bottom: 4.5rem;
-    
-
-`
+import { StyledPost } from "../components/Blog/styles"
+import Head from "next/head"
 
 export default function Custom404() {
     return (
-        <Styled404>
-            <h1>Hey there! This page doesn&apos;t exist.</h1>
-            <hr />
-            <div className="backToHome">
-                <Link href="/">
-                <a>← Back to home</a>
-                </Link>
-            </div>
-        </Styled404>
+        <>
+            <Head>
+                <title>Page not found</title>
+                <meta name="description" content="Hey there! This page doesn't exist." />
+            </Head>
+            <StyledPost>
+                <h1>Hey there! This page doesn&apos;t exist.</h1>
+                <hr />
+                <div className="back-to-home">
+                    <Link href="/">
+                    <a>← Back to home</a>
+                    </Link>
+                </div>
+            </StyledPost>
+        </>
     )
 }

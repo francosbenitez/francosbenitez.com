@@ -45,6 +45,7 @@ export const StyledContact = styled.section`
     .icon-wrapper svg,
     .icon-wrapper span {
         vertical-align: middle;
+        font-size: 1.25em;
     }
 
     .icon-wrapper span {
