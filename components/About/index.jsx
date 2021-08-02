@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyledAbout } from "./styles"
 import content from "../../lib/content.json";
-import Avatar from "../../public/images/avatar.jpg"
+import Avatar from "../../public/images/others/avatar.jpg"
 import Image from "next/image"
 
 const About = () => {
