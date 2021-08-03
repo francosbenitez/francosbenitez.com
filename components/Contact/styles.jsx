@@ -73,17 +73,19 @@ export const StyledContact = styled.section`
         padding: 1rem 1rem 1rem 1rem;
     }
 
-    input[type=text]:focus, 
-    input[type=email]:focus, 
-    textarea[name=message]:focus {
-        outline: 3px solid ${props => props.theme.colors.secondary};   
-    }
-
     input[type=text], 
     input[type=email], 
     textarea[name=message] {
-        outline: 1px solid ${props => props.theme.colors.secondary};
         font-size: 1.25em;   
+        border-radius: .3em;
+        border: 1px solid ${props => props.theme.colors.primary};
+    }
+
+    input[type=text]:focus, 
+    input[type=email]:focus, 
+    textarea[name=message]:focus {
+        border: 2px solid ${props => props.theme.colors.primary};
+        outline: none;
     }
 
     .submit-btn {   

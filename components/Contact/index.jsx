@@ -42,7 +42,7 @@ const Contact = () => {
                         </li>
                     </div>
                 </div>
-                <form className="form-container" name="contact" method="POST" action="https://formspree.io/f/mleadzdo">
+                <form className="form-container" name="contact" method="POST" action="https://formspree.io/f/xjvjaenn">
                     <div className="form-wrapper">
                         <input type="text" name="name" className="form-control" id="inputName" placeholder="Name" required="" />
                     </div>
