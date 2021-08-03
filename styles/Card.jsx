@@ -17,10 +17,10 @@ export const StyledCard = styled.div`
       -webkit-transition: box-shadow 0.6s linear;
       transition: box-shadow 0.2s linear;
       margin: 0.5em;
-      border: 1px solid rgba(0,0,0,0.125);
+      border: 3px solid rgba(0,0,0,0.125);
       border-radius: 20px;
       border-style: solid;
-      border-color: ${props => props.theme.colors.secondary};
+      /*border-color: ${props => props.theme.colors.secondary};*/
       overflow: hidden;
       padding: 3rem 2rem;
       cursor: pointer;
@@ -45,6 +45,7 @@ export const StyledCard = styled.div`
     .card-text {
         font-weight: 700;
         font-size: 1.2rem;
+        line-height: 1.25;
     }
 
     .card-date {

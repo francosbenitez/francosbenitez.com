@@ -26,10 +26,12 @@ export const StyledAbout = styled.section`
     }
 
     p {
-        font-size: 1.5em;
+        margin-left: 1rem;
+        font-size: 1.4em;
     }
 
     .about-container {
+        margin-top: 2rem;
         display: flex;
         flex-direction: column;
     }

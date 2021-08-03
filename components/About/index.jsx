@@ -38,18 +38,6 @@ const About = () => {
                         {content.about.description[10]}
                         <br />
                         <br />
-                        {content.about.description[11]}
-                        <br />
-                        <br />
-                        <li>
-                            {content.about.description[12]}
-                        </li>
-                        <li>
-                            {content.about.description[13]}
-                        </li>
-                        <li>
-                            {content.about.description[14]}
-                        </li>
                     </p>
                 </div>
             </div>

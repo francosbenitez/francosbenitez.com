@@ -25,16 +25,21 @@ export const StyledContact = styled.section`
     }
 
     p {
-        margin: 1rem 0 1rem 0;
-        font-size: 1.5em;
+        /*margin: 1rem 0 1rem 0;*/
+        font-size: 1.4em;
     }
 
     .form-container {
-        margin-top: 2rem;
+        /*margin-top: 2rem;*/
+    }
+
+    .contact-container {
+        margin: 2rem 0 2rem 0;
     }
 
     .icons-container {
         display: inline-block;
+        margin-top: 2rem;
     }
 
     .icon-wrapper {
@@ -77,7 +82,8 @@ export const StyledContact = styled.section`
     input[type=text], 
     input[type=email], 
     textarea[name=message] {
-        outline: .01 px solid ${props => props.theme.colors.primary};   
+        outline: .01 px solid ${props => props.theme.colors.primary};
+        font-size: 1.25em;   
     }
 
     .submit-btn {   
@@ -88,7 +94,7 @@ export const StyledContact = styled.section`
         user-select: none;
         background-color: transparent;
         border: 1px solid transparent;
-        font-size: 1rem;
+        font-size: 1.25em;
         transition: color 0.15s;
         width: 100px;
         padding: .5rem .5rem .5rem .5rem;
