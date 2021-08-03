@@ -87,11 +87,11 @@ export const StyledProjectsCard = styled.div`
     display: flex;
     flex-direction: column;
     flex-basis: 50%;
-    border: 1px solid ${props => props.theme.colors.text};
+    border: 3px solid rgba(0,0,0,0.125);
     
     .tools {
         width: 100%;
-        border-bottom: 1px solid ${(props) => props.theme.colors.text};
+        border-bottom: 3px solid rgba(0,0,0,0.125);
         text-align: center;
     }
 
@@ -109,12 +109,16 @@ export const StyledProjectsCard = styled.div`
         font-weight: 800;
     }
 
+    hr {
+        border: 1px solid rgba(0,0,0,0.125);
+    }
+
     @media ${props => props.theme.devices.tablet} {
         flex-direction: row;
 
         .tools {
             border-bottom: none;
-            border-right: 1px solid ${props => props.theme.colors.text};
+            border-right: 3px solid rgba(0,0,0,0.125);
         }
     }
 `
