@@ -14,7 +14,7 @@ export const StyledContact = styled.section`
 
     h1 {
         font-size: 4em;
-        margin: 1rem 0 1rem 0;
+        /*margin: 1rem 0 1rem 0;*/
         color: ${props => props.theme.colors.secondary};
         line-height: 1;
     }
@@ -76,13 +76,13 @@ export const StyledContact = styled.section`
     input[type=text]:focus, 
     input[type=email]:focus, 
     textarea[name=message]:focus {
-        outline: 2px solid ${props => props.theme.colors.primary};   
+        outline: 3px solid ${props => props.theme.colors.secondary};   
     }
 
     input[type=text], 
     input[type=email], 
     textarea[name=message] {
-        outline: .01 px solid ${props => props.theme.colors.primary};
+        outline: 1px solid ${props => props.theme.colors.secondary};
         font-size: 1.25em;   
     }
 
