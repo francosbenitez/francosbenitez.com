@@ -12,7 +12,7 @@ import { StyledProjects } from "../components/Projects/styles"
 import Contact from "../components/Contact"
 import About from "../components/About"
 import Image from 'next/image'
-import Arrow from "../public/icons/others/arrow.svg"
+/*import Arrow from "../public/icons/others/arrow.svg"*/
 
 export default function Home({ allPostsData, allProjectsData }) {
   return (
@@ -62,8 +62,8 @@ export default function Home({ allPostsData, allProjectsData }) {
           <Link href="/projects" passHref>
              <span className="see-all">
                 <a>
-                  <Arrow />
-                  {content.projects.see_more}
+                  {/*<Arrow />*/}
+                  {content.projects.see_more} →
                 </a>
               </span>
           </Link>
@@ -106,8 +106,8 @@ export default function Home({ allPostsData, allProjectsData }) {
           <Link href="/posts" passHref>
              <span className="see-all">
                 <a>
-                  <Arrow />
-                  {content.blog.see_more}
+                  {/*<Arrow />*/}
+                  {content.blog.see_more} →
                 </a>
               </span>
           </Link>

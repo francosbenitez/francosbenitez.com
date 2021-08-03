@@ -6,10 +6,16 @@ import content from "../../lib/content.json";
 import { StyledCard } from "../../styles/Card"
 import { StyledProjects } from "../../components/Projects/styles"
 import Image from 'next/image'
-import Arrow from "../../public/icons/others/arrow.svg"
+/*import Arrow from "../../public/icons/others/arrow.svg"*/
+import Head from "next/head"
 
 const Projects = ({ allProjectsData }) => {
     return (
+        <>
+        <Head>
+          <title>Projects | Franco Sebastián Benítez</title>
+          <meta name="description" content="Franco Sebastián Benítez's projects" />
+        </Head>
         <StyledProjects id="projects">
           <h1>
             All <span>{content.projects.title["2"]}</span>
@@ -48,12 +54,13 @@ const Projects = ({ allProjectsData }) => {
           <Link href="/projects" passHref>
              <span className="see-all">
                 <a>
-                  <Arrow />
-                  Back to home
+                  {/*<Arrow />*/}
+                  ← Back to home
                 </a>
               </span>
           </Link>
       </StyledProjects>
+      </>
     );
 };
 

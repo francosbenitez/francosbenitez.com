@@ -6,10 +6,16 @@ import content from "../../lib/content.json";
 import { StyledCard } from "../../styles/Card"
 import { StyledBlog } from "../../components/Blog/styles"
 import Image from 'next/image'
-import Arrow from "../../public/icons/others/arrow.svg"
+/*import Arrow from "../../public/icons/others/arrow.svg"*/
+import Head from "next/head"
 
 const Blog = ({ allPostsData }) => {
     return (
+        <>
+        <Head>
+          <title>Blog | Franco Sebastián Benítez</title>
+          <meta name="description" content="Franco Sebastián Benítez's blog" />
+        </Head>
         <StyledBlog id="blog">
           <h1>
             All <span>{content.blog.title["2"]}</span>
@@ -48,12 +54,13 @@ const Blog = ({ allPostsData }) => {
           <Link href="/posts" passHref>
              <span className="see-all">
                 <a>
-                  <Arrow />
-                  Back to home
+                  {/*<Arrow />*/}
+                  ← Back to home
                 </a>
               </span>
           </Link>
       </StyledBlog>
+      </>
     );
 };
 
