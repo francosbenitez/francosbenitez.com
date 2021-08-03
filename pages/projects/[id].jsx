@@ -4,23 +4,6 @@ import Date from '../../components/Date'
 import { StyledProjectsPosts, StyledProjectsCard } from "../../components/Projects/styles"
 import Link from "next/link"
 
-export async function getStaticProps({ params }) {
-    const projectData = await getProjectData(params.id)
-    return {
-      props: {
-        projectData
-      }
-    }
-  }
-
-export async function getStaticPaths() {
-  const paths = getAllProjectIds()
-  return {
-    paths,
-    fallback: false
-  }
-}
-
 export default function Project({ projectData }) {
   return (
       <>
@@ -63,12 +46,36 @@ export default function Project({ projectData }) {
                   <div dangerouslySetInnerHTML={{ __html: projectData.contentHtml }} />
                 </p>
             </article>
-            <div className="back-to-home">
-              <Link href="/">
-                <a>← Back to home</a>
-              </Link>
+            <div className="back-and-go">
+              <span className="back-to-home">
+                <Link href="/">
+                  <a>← Back to home</a>
+                </Link>
+              </span>
+              <span className="go-to-all">
+                <Link href="/projects">
+                  <a>See more projects →</a>
+                </Link>
+              </span>
             </div>
           </StyledProjectsPosts>
       </>
   )
+}
+
+export async function getStaticProps({ params }) {
+  const projectData = await getProjectData(params.id)
+  return {
+    props: {
+      projectData
+    }
+  }
+}
+
+export async function getStaticPaths() {
+const paths = getAllProjectIds()
+return {
+  paths,
+  fallback: false
+}
 }

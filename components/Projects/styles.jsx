@@ -68,6 +68,19 @@ export const StyledProjectsPosts = styled.div`
     p {
         margin: 1rem 0 1rem 0;
     }
+
+    .back-and-go {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .go-to-all {
+        float: right;
+    }
+
+    .back-to-home {
+        float: left;
+    }
 `
 
 export const StyledProjectsCard = styled.div`

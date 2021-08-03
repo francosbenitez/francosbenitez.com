@@ -49,7 +49,7 @@ const Projects = ({ allProjectsData }) => {
              <span className="see-all">
                 <a>
                   <Arrow />
-                  {content.projects.see_more}
+                  Back to home
                 </a>
               </span>
           </Link>

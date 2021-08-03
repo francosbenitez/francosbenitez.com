@@ -49,7 +49,7 @@ const Blog = ({ allPostsData }) => {
              <span className="see-all">
                 <a>
                   <Arrow />
-                  {content.blog.see_more}
+                  Back to home
                 </a>
               </span>
           </Link>

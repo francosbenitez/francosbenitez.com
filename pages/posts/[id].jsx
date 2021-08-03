@@ -4,23 +4,6 @@ import Date from '../../components/Date'
 import { StyledPost } from "../../components/Blog/styles"
 import Link from "next/link"
 
-export async function getStaticProps({ params }) {
-  const postData = await getPostData(params.id)
-  return {
-    props: {
-      postData
-    }
-  }
-}
-
-export async function getStaticPaths() {
-  const paths = getAllPostIds()
-  return {
-    paths,
-    fallback: false
-  }
-}
-
 export default function Post({ postData }) {
     return (
         <>
@@ -41,12 +24,36 @@ export default function Post({ postData }) {
                     <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
                   </p>
               </article>
-              <div className="back-to-home">
-                <Link href="/">
-                  <a>← Back to home</a>
-                </Link>
+              <div className="back-and-go">
+                <span className="back-to-home">
+                  <Link href="/">
+                    <a>← Back to home</a>
+                  </Link>
+                </span>
+                <span className="go-to-all">
+                  <Link href="/posts">
+                    <a>Read more blog posts →</a>
+                  </Link>
+                </span>
               </div>
             </StyledPost>
         </>
     )
+}
+
+export async function getStaticProps({ params }) {
+  const postData = await getPostData(params.id)
+  return {
+    props: {
+      postData
+    }
+  }
+}
+
+export async function getStaticPaths() {
+  const paths = getAllPostIds()
+  return {
+    paths,
+    fallback: false
+  }
 }

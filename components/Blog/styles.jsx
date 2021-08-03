@@ -72,8 +72,17 @@ export const StyledPost = styled.div`
         margin: 1rem 0 1rem 0;
     }
 
+    .back-and-go {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .go-to-all {
+        float: right;
+    }
+
     .back-to-home {
-        margin-top: 2rem;
+        float: left;
     }
 `
 
