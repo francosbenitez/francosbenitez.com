@@ -51,7 +51,7 @@ const Projects = ({ allProjectsData }) => {
               ))}
             </div>
           </StyledCard>
-          <Link href="/projects" passHref>
+          <Link href="/" passHref>
              <span className="see-all">
                 <a>
                   {/*<Arrow />*/}
