@@ -14,7 +14,7 @@ export const Section = styled.section`
     padding-bottom: 4.5rem;
 
     h1 {
-        font-size: 4em;
+        font-size: 4.2em;
         margin: 1rem 0 1rem 0;
         color: ${props => props.theme.colors.secondary};
         line-height: 1;
@@ -35,7 +35,6 @@ export const Section = styled.section`
         text-align: right; 
         white-space: nowrap;
         margin-top: 1rem;
-        font-size: 1.25em;
         display: inline-block;
         border-bottom: none; 
     }
@@ -57,14 +56,14 @@ export const Posts = styled.div`
     min-height: calc(100vh - 6.5rem); 
 
     h1 {
-        font-size: 3em;
+        font-size: 2.8em;
         margin: 1rem 0 1rem 0;
         font-weight: 900;
         line-height: 1;
     }
 
     h2 {
-        font-size: 1em;
+        font-size: 1.4em;
         margin: 1rem 0 1rem 0;
         font-weight: 500;
     }

@@ -20,14 +20,13 @@ export const StyledCard = styled.div`
       border: 3px solid rgba(0,0,0,0.125);
       border-radius: 20px;
       border-style: solid;
-      /*border-color: ${props => props.theme.colors.secondary};*/
       overflow: hidden;
       padding: 3rem 2rem;
       cursor: pointer;
     }
 
     .card:hover {
-      box-shadow: 6px 6px 2px 0px ${props => props.theme.colors.primary};
+      box-shadow: 6px 6px 2px 0px ${props => props.theme.colors.secondary};
     }
 
     .card-img {
@@ -44,18 +43,15 @@ export const StyledCard = styled.div`
 
     .card-text {
         font-weight: 700;
-        font-size: 1.2rem;
-        line-height: 1.25;
+        font-size: 1.4em;
     }
 
     .card-date {
-        font-size: 1rem;
         font-weight: 300;
     }
 
     .card-description {
-        margin-top: 1rem;
-        font-size: .8rem;
+        margin-top: 1.25rem;
         font-weight: 500;
     }
 

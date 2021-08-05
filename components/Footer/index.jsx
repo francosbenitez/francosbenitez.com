@@ -33,7 +33,7 @@ const Footer = () => {
                     > 
                 </p>
             </div>
-            <div className="icons-container">
+            <ol className="icons-container">
                 <li className="icon-wrapper">
                     <a href="mailto:francosbenitez@gmail.com">
                         <Email />
@@ -54,7 +54,7 @@ const Footer = () => {
                         <Twitter />
                     </a>
                 </li>
-            </div>
+            </ol>
         </StyledFooter>
     );
 };
