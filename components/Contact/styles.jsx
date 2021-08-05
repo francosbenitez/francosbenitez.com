@@ -2,12 +2,12 @@ import styled from "styled-components"
 import { Section } from "../../styles/Common"
 
 export const StyledContact = styled(Section)`
-    /*.contact-container {
-        margin: 2rem 0 2rem 0;
-    }*/
-
     .icons-container {
         display: inline-block;
+        margin-top: 2rem;
+    }
+
+    .form-container {
         margin-top: 2rem;
     }
 
@@ -94,7 +94,7 @@ export const StyledContact = styled(Section)`
         .form-container {
             flex-basis: 50%;
             text-align: right;
-            /*margin-top: 0;*/
+            margin-top: 0;
         }
 
         .form-wrapper {
