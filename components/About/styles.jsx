@@ -7,19 +7,17 @@ export const StyledAbout = styled(Section)`
     }
 
     .about-container {
-        margin-top: 2rem;
         display: flex;
         flex-direction: column;
     }
 
     .description-container {
         flex-basis: 75%;
-        margin-top: 3rem;
+        margin-top: 2rem;
     }
 
     .avatar-container {
         float: right;
-        margin-top: 3rem;
         text-align: center;
     }
 
@@ -28,7 +26,6 @@ export const StyledAbout = styled(Section)`
         height: auto;
         border-radius: 50%;
         justify-content: center;
-        margin-bottom: 2rem;
     }
 
     @media ${props => props.theme.devices.tablet} {
@@ -39,10 +36,6 @@ export const StyledAbout = styled(Section)`
         }
 
         .description-container {
-            margin-top: 0;
-        }
-
-        .avatar-container {
             margin-top: 0;
         }
     }

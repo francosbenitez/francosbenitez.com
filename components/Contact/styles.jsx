@@ -2,9 +2,9 @@ import styled from "styled-components"
 import { Section } from "../../styles/Common"
 
 export const StyledContact = styled(Section)`
-    .contact-container {
+    /*.contact-container {
         margin: 2rem 0 2rem 0;
-    }
+    }*/
 
     .icons-container {
         display: inline-block;
@@ -13,7 +13,7 @@ export const StyledContact = styled(Section)`
 
     .icon-wrapper {
         list-style: none;
-        padding-bottom: 1rem;
+        margin-bottom: 1rem;
     }
 
     .icon-wrapper svg,
@@ -23,13 +23,17 @@ export const StyledContact = styled(Section)`
     }
 
     .icon-wrapper span {
-        padding-left: 2rem;
+        margin-left: 2rem;
         color: ${props => props.theme.colors.link};
     }
 
     .icon-wrapper a:hover {
         border-bottom: none;
         fill: ${props => props.theme.colors.primary};
+
+        span {
+            border-bottom: 1.5px ${props => props.theme.colors.link} dotted;
+        }
     }
     
     .form-wrapper {
@@ -90,7 +94,11 @@ export const StyledContact = styled(Section)`
         .form-container {
             flex-basis: 50%;
             text-align: right;
-            margin-top: 0;
+            /*margin-top: 0;*/
+        }
+
+        .form-wrapper {
+            margin: 0 auto 0.5rem;
         }
     }
 `

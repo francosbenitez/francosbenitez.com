@@ -34,7 +34,7 @@ export const Section = styled.section`
         text-align: right; 
         white-space: nowrap;
         margin-top: 1rem;
-        font-size: 1em;
+        font-size: 1.25em;
         display: inline-block;
     }
 
