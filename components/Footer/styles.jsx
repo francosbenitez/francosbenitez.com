@@ -11,7 +11,7 @@ export const StyledFooter = styled.footer`
 
     .copyright {
         text-align: center;
-        opacity: 50%;
+        opacity: 75%;
     }
 
     .copyright:hover {

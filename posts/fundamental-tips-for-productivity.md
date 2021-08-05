@@ -1,5 +1,5 @@
 ---
-title: 'Some (Personal) Tips for Productivity'
+title: 'Fundamental Tips for Productivity'
 date: '2021-08-01'
 description: "Don't work harder, work smarter."
 img: "/images/posts/productivity.jpg"

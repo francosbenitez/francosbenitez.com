@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Posts } from "../styles/Common"
+import { Posts } from "../styles/Commons"
 import Head from "next/head"
 
 export default function Custom404() {
