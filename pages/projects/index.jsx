@@ -51,11 +51,9 @@ const Projects = ({ allProjectsData }) => {
             </div>
           </StyledCard>
           <Link href="/" passHref>
-             <span className="see-all">
-                <a>
-                  ← Back to home
+                <a className="see-all">
+                  <span>← Back to home</span>
                 </a>
-              </span>
           </Link>
         </Section>
       </>

@@ -29,23 +29,24 @@ export const Section = styled.section`
         font-size: 1.4em;
     }
 
-    .see-all {
+    .see-all,
+    .see-all:hover {
         flex: 1; 
         text-align: right; 
         white-space: nowrap;
         margin-top: 1rem;
         font-size: 1.25em;
         display: inline-block;
+        border-bottom: none; 
     }
 
-    .see-all svg {
-        fill: ${props => props.theme.colors.link};
-        margin-right: 0.50rem;
+    .see-all span {
+        color: ${props => props.theme.colors.link};
     }
 
-    .see-all a, 
-    .see-all svg {
-        vertical-align: middle;
+    .see-all span:hover {
+        border-bottom: 1.5px ${props => props.theme.colors.link} dotted;
+        color: ${props => props.theme.colors.link};
     }
 `
 

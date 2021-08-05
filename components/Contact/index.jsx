@@ -15,32 +15,32 @@ const Contact = () => {
             <div className="contact-container">
                 <div className="description-container">
                     <p>{content.contact.description}</p>
-                    <div className="icons-container">
+                    <ol className="icons-container">
                         <li className="icon-wrapper">
-                            <a>
+                            <a target="_blank" href="mailto:francosbenitez@gmail.com" rel="noopener noreferrer">
                                 <Email />
                                 <span>{content.contact.email}</span>
                             </a>
                         </li>
                         <li className="icon-wrapper">
-                            <a>
+                            <a target="_blank" href="https://linkedin.com/in/francosbenitez" rel="noopener noreferrer">
                                 <LinkedIn />
                                 <span>{content.contact.linkedin}</span>
                             </a>
                         </li>
                         <li className="icon-wrapper">
-                            <a>
+                            <a target="_blank" href="https://github.com/francosbenitez" rel="noopener noreferrer">
                                 <GitHub />
                                 <span>{content.contact.github}</span>
                             </a>
                         </li>
                         <li className="icon-wrapper">
-                            <a>
+                            <a target="_blank" href="https://twitter.com/francosbenitez" rel="noopener noreferrer">
                                 <Twitter />
                                 <span>{content.contact.twitter}</span>
                             </a>
                         </li>
-                    </div>
+                    </ol>
                 </div>
                 <form className="form-container" name="contact" method="POST" action="https://formspree.io/f/xjvjaenn">
                     <div className="form-wrapper">

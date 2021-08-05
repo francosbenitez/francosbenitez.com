@@ -11,7 +11,7 @@ export default function Custom404() {
             </Head>
             <Posts>
                 <h1>Hey there! This page doesn&apos;t exist.</h1>
-                <p>But you don&apos;t worry, you can go to home and see the remaining of the website!</p>
+                <p>But don&apos;t worry, you can go to home and see the rest of the website!</p>
                 <hr />
                 <div className="back-to-home">
                     <Link href="/">

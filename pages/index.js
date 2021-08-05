@@ -80,11 +80,9 @@ export default function Home({ allPostsData, allProjectsData }) {
             </div>
           </StyledCard>
           <Link href="/projects" passHref>
-             <span className="see-all">
-                <a>
-                  {content.projects.see_more} →
+                <a className="see-all">
+                  <span>{content.projects.see_more} →</span>
                 </a>
-              </span>
           </Link>
       </Section>
       <Section id="blog">
@@ -123,11 +121,9 @@ export default function Home({ allPostsData, allProjectsData }) {
             </div>
           </StyledCard>
           <Link href="/posts" passHref>
-             <span className="see-all">
-                <a>
-                  {content.blog.see_more} →
+                <a className="see-all">
+                  <span>{content.blog.see_more} →</span>
                 </a>
-              </span>
           </Link>
       </Section>
       <Contact />
