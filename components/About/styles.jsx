@@ -4,7 +4,6 @@ import { Section } from "../../styles/Common"
 export const StyledAbout = styled(Section)`
     p {
         margin-left: 1rem;
-        font-size: 1.4em;
     }
 
     .about-container {

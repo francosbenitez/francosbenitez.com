@@ -6,14 +6,16 @@ export const StyledFooter = styled.footer`
     display: flex;
     flex-direction: column;
     width: 100%;
-    position: absolute;
     bottom: 0;
-
-    clear: both;
     position: relative;
 
     .copyright {
-        text-align: center;;
+        text-align: center;
+        opacity: 50%;
+    }
+
+    .copyright:hover {
+        opacity: 100%;
     }
 
     .icons-container {

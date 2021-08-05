@@ -1,38 +1,7 @@
 import styled from "styled-components"
+import { Section } from "../../styles/Common"
 
-export const StyledContact = styled.section`
-    display: flex;
-    flex-direction: column;
-    margin: 0 1rem 0 1rem; 
-    width: 90%;
-    position: relative;
-    max-width: 1152px;
-    margin: 0 auto;
-    min-height: calc(100vh - 6.5rem); 
-    padding-top: 7.5rem;
-    padding-bottom: 4.5rem;
-
-    h1 {
-        font-size: 4em;
-        /*margin: 1rem 0 1rem 0;*/
-        color: ${props => props.theme.colors.secondary};
-        line-height: 1;
-    }
-
-    h1 span {
-        color: ${props => props.theme.colors.primary};
-        line-height: 1;
-    }
-
-    p {
-        /*margin: 1rem 0 1rem 0;*/
-        font-size: 1.4em;
-    }
-
-    .form-container {
-        /*margin-top: 2rem;*/
-    }
-
+export const StyledContact = styled(Section)`
     .contact-container {
         margin: 2rem 0 2rem 0;
     }

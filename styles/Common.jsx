@@ -25,6 +25,10 @@ export const Section = styled.section`
         line-height: 1;
     }
 
+    p {
+        font-size: 1.4em;
+    }
+
     .see-all {
         flex: 1; 
         text-align: right; 
@@ -65,6 +69,10 @@ export const Posts = styled.div`
     }
 
     p {
+        margin: 1rem 0 1rem 0;
+    }
+
+    hr {
         margin: 1rem 0 1rem 0;
     }
     

@@ -6,7 +6,6 @@ import content from "../../lib/content.json";
 import { StyledCard } from "../../styles/Card"
 import { Section } from "../../styles/Common"
 import Image from 'next/image'
-/*import Arrow from "../../public/icons/others/arrow.svg"*/
 import Head from "next/head"
 
 const Blog = ({ allPostsData }) => {
