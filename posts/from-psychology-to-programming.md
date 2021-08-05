@@ -4,7 +4,7 @@ date: '2021-08-01'
 description: "A brief story about my transition from psychology to programming."
 img: "/images/posts/code.jpg"
 img_alt: "Image showing programming code."
-featured: true
+featured: false
 ---
 
 I studied a licentiate degree in psychogy at the University of Buenos Aires (UBA), Argentina. For those that don't know, to study at UBA is neccesary to do the CBC, whose acronym means "Ciclo Básico Común" (or, in English, Common Basic Cicle). Basically, the CBC is a instance in which one has to study some random subjects to familiarize oneself with how to study at University. In other words, the CBC is a instance to raise the study level in students.

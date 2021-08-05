@@ -50,8 +50,9 @@ export default function Home({ allPostsData, allProjectsData }) {
           </h1>
           <StyledCard>
             <div className="card-wrapper">
-              {allProjectsData.map(({ id, date, title, description, img, img_alt }) => (
+              {allProjectsData.map(({ id, date, title, description, img, img_alt, featured }) => (
                 <div key={id}>
+                  {featured && (
                   <Link href={`/projects/${id}`}>
                     <a>
                       <div className="card">
@@ -75,6 +76,7 @@ export default function Home({ allPostsData, allProjectsData }) {
                       </div>
                     </a>
                   </Link>
+                  )} 
                 </div>
               ))}
             </div>
@@ -91,8 +93,9 @@ export default function Home({ allPostsData, allProjectsData }) {
           </h1>
           <StyledCard>
             <div className="card-wrapper">
-              {allPostsData.map(({ id, date, title, description, img, img_alt }) => (
+              {allPostsData.map(({ id, date, title, description, img, img_alt, featured }) => (
                 <div key={id}>
+                  {featured && (
                   <Link href={`/posts/${id}`}>
                     <a>
                       <div className="card">
@@ -116,6 +119,7 @@ export default function Home({ allPostsData, allProjectsData }) {
                       </div>
                     </a>
                   </Link>
+                  )} 
                 </div>
               ))}
             </div>
