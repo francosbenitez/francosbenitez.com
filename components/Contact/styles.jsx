@@ -76,7 +76,7 @@ export const StyledContact = styled.section`
     input[type=text], 
     input[type=email], 
     textarea[name=message] {
-        font-size: 1.25em;   
+        font-size: 1em;   
         border-radius: .3em;
         border: 1px solid ${props => props.theme.colors.primary};
     }
@@ -96,7 +96,7 @@ export const StyledContact = styled.section`
         user-select: none;
         background-color: transparent;
         border: 1px solid transparent;
-        font-size: 1.25em;
+        font-size: 1em;
         transition: color 0.15s;
         width: 100px;
         padding: .5rem .5rem .5rem .5rem;

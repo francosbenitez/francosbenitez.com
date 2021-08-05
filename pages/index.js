@@ -7,8 +7,7 @@ import Date from "../components/Date"
 import React from "react";
 import content from "../lib/content.json";
 import { StyledCard } from "../styles/Card"
-import { StyledBlog } from "../components/Blog/styles"
-import { StyledProjects } from "../components/Projects/styles"
+import { Section } from "../styles/Common"
 import Contact from "../components/Contact"
 import About from "../components/About"
 import Image from 'next/image'
@@ -46,7 +45,7 @@ export default function Home({ allPostsData, allProjectsData }) {
       </Head>
       <Hero />
       <About />
-      <StyledProjects id="projects">
+      <Section id="projects">
           <h1>
           {content.projects.title["1"]} <span>{content.projects.title["2"]}</span>
           </h1>
@@ -89,8 +88,8 @@ export default function Home({ allPostsData, allProjectsData }) {
                 </a>
               </span>
           </Link>
-      </StyledProjects>
-      <StyledBlog id="blog">
+      </Section>
+      <Section id="blog">
           <h1>
             {content.blog.title["1"]} <span>{content.blog.title["2"]}</span>
           </h1>
@@ -133,7 +132,7 @@ export default function Home({ allPostsData, allProjectsData }) {
                 </a>
               </span>
           </Link>
-      </StyledBlog>
+      </Section>
       <Contact />
     </>
   )

@@ -1,7 +1,7 @@
 import { getAllPostIds, getPostData } from '../../lib/posts'
 import Head from "next/head"
 import Date from '../../components/Date'
-import { StyledPost } from "../../components/Blog/styles"
+import { Posts } from "../../styles/Common"
 import Link from "next/link"
 
 export default function Post({ postData }) {
@@ -12,7 +12,7 @@ export default function Post({ postData }) {
                 <meta name="description" content={postData.description} />
             </Head>
             <br />
-            <StyledPost>
+            <Posts>
               <article>
                   <p>
                       <Date dateString={postData.date} />
@@ -36,7 +36,7 @@ export default function Post({ postData }) {
                   </Link>
                 </span>
               </div>
-            </StyledPost>
+            </Posts>
         </>
     )
 }

@@ -70,3 +70,46 @@ export const StyledCard = styled.div`
         }
     }
 `;
+
+export const StyledProjectsCard = styled.div`
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    border: 3px solid rgba(0,0,0,0.125);
+    
+    .tools {
+        width: 100%;
+        border-bottom: 3px solid rgba(0,0,0,0.125);
+        text-align: center;
+    }
+
+    .link {
+        text-align: center;
+        width: 100%;
+    }
+
+    .date {
+        font-weight: 500;
+    }
+
+    .tools-used,
+    .published {
+        font-weight: 800;
+    }
+
+    hr {
+        border: 1px solid rgba(0,0,0,0.125);
+    }
+
+    @media ${props => props.theme.devices.tablet} {
+        flex-direction: row;
+
+        .tools {
+            border-bottom: none;
+            border-right: 3px solid rgba(0,0,0,0.125);
+        }
+    }
+`
+
+
+

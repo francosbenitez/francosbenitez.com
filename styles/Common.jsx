@@ -1,9 +1,10 @@
 import styled from "styled-components"
 
-export const StyledProjects = styled.section`
+export const Section = styled.section`
     display: flex;
     flex-direction: column;
     margin: 0 1rem 0 1rem; 
+    justify-content: center;
     width: 90%;
     position: relative;
     max-width: 1152px;
@@ -42,9 +43,9 @@ export const StyledProjects = styled.section`
     .see-all svg {
         vertical-align: middle;
     }
-`;
+`
 
-export const StyledProjectsPosts = styled.div`
+export const Posts = styled.div`
     max-width: 36rem;
     padding: 0 1rem;
     margin: 6rem auto 9rem;
@@ -53,7 +54,6 @@ export const StyledProjectsPosts = styled.div`
     h1 {
         font-size: 3em;
         margin: 1rem 0 1rem 0;
-        color: ${props => props.theme.colors.text};
         font-weight: 900;
         line-height: 1;
     }
@@ -61,14 +61,13 @@ export const StyledProjectsPosts = styled.div`
     h2 {
         font-size: 1em;
         margin: 1rem 0 1rem 0;
-        color: ${(props) => props.theme.colors.text};
         font-weight: 500;
     }
-  
+
     p {
         margin: 1rem 0 1rem 0;
     }
-
+    
     .back-and-go {
         display: inline-block;
         width: 100%;
@@ -82,46 +81,3 @@ export const StyledProjectsPosts = styled.div`
         float: left;
     }
 `
-
-export const StyledProjectsCard = styled.div`
-    display: flex;
-    flex-direction: column;
-    flex-basis: 50%;
-    border: 3px solid rgba(0,0,0,0.125);
-    
-    .tools {
-        width: 100%;
-        border-bottom: 3px solid rgba(0,0,0,0.125);
-        text-align: center;
-    }
-
-    .link {
-        text-align: center;
-        width: 100%;
-    }
-
-    .date {
-        font-weight: 500;
-    }
-
-    .tools-used,
-    .published {
-        font-weight: 800;
-    }
-
-    hr {
-        border: 1px solid rgba(0,0,0,0.125);
-    }
-
-    @media ${props => props.theme.devices.tablet} {
-        flex-direction: row;
-
-        .tools {
-            border-bottom: none;
-            border-right: 3px solid rgba(0,0,0,0.125);
-        }
-    }
-`
-
-
-

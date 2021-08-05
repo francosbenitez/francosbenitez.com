@@ -1,7 +1,8 @@
 import { getAllProjectIds, getProjectData } from '../../lib/projects'
 import Head from "next/head"
 import Date from '../../components/Date'
-import { StyledProjectsPosts, StyledProjectsCard } from "../../components/Projects/styles"
+import { Posts } from "../../styles/Common"
+import { StyledProjectsCard } from "../../styles/Card"
 import Link from "next/link"
 
 export default function Project({ projectData }) {
@@ -12,7 +13,7 @@ export default function Project({ projectData }) {
               <meta name="description" content={projectData.description} />
           </Head>
           <br />
-          <StyledProjectsPosts>
+          <Posts>
             <article>
                 <StyledProjectsCard>
                   <div className="tools">
@@ -58,7 +59,7 @@ export default function Project({ projectData }) {
                 </Link>
               </span>
             </div>
-          </StyledProjectsPosts>
+          </Posts>
       </>
   )
 }

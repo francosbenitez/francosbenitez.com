@@ -4,7 +4,7 @@ import Link from "next/link"
 import Date from "../../components/Date"
 import content from "../../lib/content.json";
 import { StyledCard } from "../../styles/Card"
-import { StyledBlog } from "../../components/Blog/styles"
+import { Section } from "../../styles/Common"
 import Image from 'next/image'
 /*import Arrow from "../../public/icons/others/arrow.svg"*/
 import Head from "next/head"
@@ -16,7 +16,7 @@ const Blog = ({ allPostsData }) => {
           <title>Blog | Franco Sebastián Benítez</title>
           <meta name="description" content="Franco Sebastián Benítez's blog" />
         </Head>
-        <StyledBlog id="blog">
+        <Section id="blog">
           <h1>
             All <span>{content.blog.title["2"]}</span>
           </h1>
@@ -59,7 +59,7 @@ const Blog = ({ allPostsData }) => {
                 </a>
               </span>
           </Link>
-      </StyledBlog>
+      </Section>
       </>
     );
 };

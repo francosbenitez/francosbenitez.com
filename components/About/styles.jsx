@@ -1,30 +1,7 @@
 import styled from "styled-components"
+import { Section } from "../../styles/Common"
 
-export const StyledAbout = styled.section`
-    display: flex;
-    flex-direction: column;
-    margin: 0 1rem 0 1rem; 
-    justify-content: center;
-    width: 90%;
-    position: relative;
-    max-width: 1152px;
-    margin: 0 auto;
-    min-height: calc(100vh - 6.5rem); 
-    padding-top: 7.5rem;
-    padding-bottom: 4.5rem;
-    
-    h1 {
-        font-size: 4em;
-        margin: 1rem 0 1rem 0;
-        color: ${props => props.theme.colors.secondary};
-        line-height: 1;
-    }
-
-    span {
-        color: ${props => props.theme.colors.primary};
-        line-height: 1;
-    }
-
+export const StyledAbout = styled(Section)`
     p {
         margin-left: 1rem;
         font-size: 1.4em;
