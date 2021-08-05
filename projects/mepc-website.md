@@ -3,7 +3,7 @@ title: 'Website of the MEPC'
 date: '2021-08-01'
 description: "From blogdown to React."
 img: "/images/projects/mepc.png"
-img_alt: "MEPC cover photo"
+img_alt: "MEPC cover photo."
 featured: true
 tools_used: "HTML, CSS, JavaScript"
 published: "2021/08/01"
