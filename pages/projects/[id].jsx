@@ -1,8 +1,8 @@
 import { getAllProjectIds, getProjectData } from '../../lib/projects'
 import Head from "next/head"
 import Date from '../../components/Date'
-import { Posts } from "../../styles/Common"
-import { StyledProjectsCard } from "../../styles/Card"
+import { Posts } from "../../styles/Commons"
+import { StyledProjectsCard } from "../../styles/Cards"
 import Link from "next/link"
 
 export default function Project({ projectData }) {

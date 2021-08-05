@@ -6,12 +6,11 @@ import Link from "next/link"
 import Date from "../components/Date"
 import React from "react";
 import content from "../lib/content.json";
-import { StyledCard } from "../styles/Card"
-import { Section } from "../styles/Common"
+import { StyledCard } from "../styles/Cards"
+import { Section } from "../styles/Commons"
 import Contact from "../components/Contact"
 import About from "../components/About"
 import Image from 'next/image'
-/*import Arrow from "../public/icons/others/arrow.svg"*/
 
 export default function Home({ allPostsData, allProjectsData }) {
   return (
@@ -83,7 +82,6 @@ export default function Home({ allPostsData, allProjectsData }) {
           <Link href="/projects" passHref>
              <span className="see-all">
                 <a>
-                  {/*<Arrow />*/}
                   {content.projects.see_more} →
                 </a>
               </span>
@@ -127,7 +125,6 @@ export default function Home({ allPostsData, allProjectsData }) {
           <Link href="/posts" passHref>
              <span className="see-all">
                 <a>
-                  {/*<Arrow />*/}
                   {content.blog.see_more} →
                 </a>
               </span>

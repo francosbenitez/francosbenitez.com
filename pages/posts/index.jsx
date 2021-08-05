@@ -3,8 +3,8 @@ import { getSortedPostsData } from '../../lib/posts'
 import Link from "next/link"
 import Date from "../../components/Date"
 import content from "../../lib/content.json";
-import { StyledCard } from "../../styles/Card"
-import { Section } from "../../styles/Common"
+import { StyledCard } from "../../styles/Cards"
+import { Section } from "../../styles/Commons"
 import Image from 'next/image'
 import Head from "next/head"
 
@@ -53,7 +53,6 @@ const Blog = ({ allPostsData }) => {
           <Link href="/" passHref>
              <span className="see-all">
                 <a>
-                  {/*<Arrow />*/}
                   ← Back to home
                 </a>
               </span>

@@ -1,7 +1,7 @@
 import { getAllPostIds, getPostData } from '../../lib/posts'
 import Head from "next/head"
 import Date from '../../components/Date'
-import { Posts } from "../../styles/Common"
+import { Posts } from "../../styles/Commons"
 import Link from "next/link"
 
 export default function Post({ postData }) {

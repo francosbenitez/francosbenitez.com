@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { Section } from "../../styles/Common"
+import { Section } from "../../styles/Commons"
 
 export const StyledAbout = styled(Section)`
     p {
