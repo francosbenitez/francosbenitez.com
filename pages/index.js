@@ -7,7 +7,7 @@ import Date from "../components/Date"
 import React from "react";
 import content from "../lib/content.json";
 import { StyledCard } from "../styles/Cards"
-import { Section } from "../styles/Commons.jsx"
+import { Section } from "../styles/Commons"
 import Contact from "../components/Contact"
 import About from "../components/About"
 import Image from 'next/image'
