@@ -3,12 +3,28 @@ import { StyledAbout } from "./styles"
 import content from "../../lib/content.json";
 import Avatar from "../../public/images/others/avatar.jpg"
 import Image from "next/image"
-import Python from "../../public/icons/tech/python.svg"
-import JavaScript from "../../public/icons/tech/js.svg"
-import CSS from "../../public/icons/tech/css3.svg"
-import Git from "../../public/icons/tech/git.svg"
 
 const About = () => {
+    const techFunc = (content) => {
+        return (
+            content.map((tech, i) => {
+                return (
+                    <div key={i}>
+                        <Image 
+                            src={tech.img}
+                            alt={tech.name}
+                            width={40}
+                            height={40}
+                        />
+                        <h4>
+                            {tech.name}
+                        </h4>
+                    </div>
+                )
+            })
+        )
+    }
+
     return (
         <StyledAbout id="about">
             <h1>
@@ -52,17 +68,15 @@ const About = () => {
                 <div className="icons-container">
                     <div className="back">
                         <h3>Backend</h3>
-                        <Python />
-                        <JavaScript />
+                        {techFunc(content.about.techStack.back)}
                     </div> 
                     <div className="front">
                         <h3>Frontend</h3>
-                        <JavaScript />
-                        <CSS />
+                        {techFunc(content.about.techStack.front)}
                     </div>
                     <div className="misc">
                         <h3>Miscellaneous</h3>
-                        <Git />
+                        {techFunc(content.about.techStack.misc)}
                     </div>
                 </div>
             </div>

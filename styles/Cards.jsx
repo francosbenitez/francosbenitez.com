@@ -35,9 +35,9 @@ export const StyledCard = styled.div`
     }
 
     .card-img img {
-      width: 250px;
+      /*width: 250px;
       height: auto;
-      object-position: cover;
+      object-position: cover;*/
       overflow: hidden;
     }
 

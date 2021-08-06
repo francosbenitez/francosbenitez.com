@@ -60,8 +60,9 @@ export default function Home({ allPostsData, allProjectsData }) {
                               <Image 
                               src={img} 
                               alt={img_alt} 
-                              width={100}
-                              height={100}
+                              layout="responsive"
+                              width={1328}
+                              height={674}
                               />
                           </div>
                           <div className="card-text">
@@ -103,8 +104,9 @@ export default function Home({ allPostsData, allProjectsData }) {
                               <Image 
                               src={img} 
                               alt={img_alt} 
-                              width={100}
-                              height={100}
+                              layout="responsive"
+                              width={1328}
+                              height={674}
                               />
                           </div>
                           <div className="card-text">

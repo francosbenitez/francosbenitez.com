@@ -22,12 +22,36 @@
             "design",
             ". However, I consider myself principally a ",
             "Full Stack Developer",
-            ".",
-            "Here are some of the technologies I work with:", 
-            "React with Next.js and Styled Components.",
-            "Python with Django and Flask.",
-            "Vue with Nuxt and Tailwind."
-        ]
+            "."
+        ],
+        "techStack": {
+            "back": [
+                {
+                    "img": "/icons/tech/js.svg",
+                    "name": "JavaScript"
+                },
+                {
+                    "img": "/icons/tech/python.svg",
+                    "name": "Python"
+                }
+            ],
+            "front": [
+                {
+                    "img": "/icons/tech/js.svg",
+                    "name": "JavaScript"
+                },
+                {
+                    "img": "/icons/tech/css3.svg",
+                    "name": "CSS"
+                }
+            ],
+            "misc": [
+                {
+                    "img": "/icons/tech/git.svg",
+                    "name": "Git"
+                }
+            ]
+        }
     },
     "projects": {
         "title": {
