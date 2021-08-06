@@ -25,9 +25,19 @@
         ] 
     },
     "hero": {
-        "title": "Hi, I'm",
-        "subtitle": "Full stack developer",
-        "name": "Franco Sebastián Benítez"
+        "img": {
+            "alt": "A programmer sitting with a computer."
+        },
+        "text": ["Hi I'm", "Franco Sebastián Benítez"],
+        "typical": [
+            "📈 Data",
+            2000,
+            "✍ Design",
+            2000,
+            "👨🏻‍💻 Development",
+            "",
+            2000
+        ]
     },
     "about": {
         "title": {

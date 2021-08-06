@@ -12,30 +12,23 @@ const Hero = () => {
             <div className="hero-container">
                 <div className="hero-description">
                     <h1>
-                        {content.hero.title}<br />
-                        <span> {content.hero.name}</span>
+                        {content.hero.text[0]}<br />
+                        <span> {content.hero.text[1]}</span>
                     </h1>
-                    {/*<h2>{content.hero.subtitle}</h2>*/}
                     <Typical 
-                        steps=
-                        {[
-                        "📈 Data", 
-                        2000, 
-                        '✍ Design', 
-                        2000,
-                        "👨🏻‍💻 Development", 
-                        2000
-                        ]}
+                        steps={content.hero.typical}
                         loop={Infinity}
                         wrapper="h2"
                     />
                 </div>
                 <div className="hero-img">
-                    <HeroImage />
+                    <HeroImage
+                    alt={content.hero.img.alt}
+                    />
                 </div>
             </div>
             <StyledMouse>
-                <Link href="/#about" passHref>
+                <Link href={content.nav.links[0].to} passHref>
                     <a>
                         <div className="mouse">
                             <div className="wheel"></div>
