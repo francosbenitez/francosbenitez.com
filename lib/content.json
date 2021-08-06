@@ -1,4 +1,29 @@
 {
+    "nav": {
+        "logo": "FSB",
+        "links": [
+            {
+                "text": "About",
+                "to": "/#about"
+            },
+            {
+                "text": "Projects",
+                "to": "/#projects"
+            },
+            {
+                "text": "Blog",
+                "to": "/#blog"
+            },
+            {
+                "text": "Contact",
+                "to": "/#contact"
+            },
+            {
+                "text": "Resume",
+                "to": "https://docs.google.com/document/d/1NBn2pLCS70uMpsd78gWLnW3uXfdTgKzoa1HVA_yN55A/edit"
+            }
+        ] 
+    },
     "hero": {
         "title": "Hi, I'm",
         "subtitle": "Full stack developer",
