@@ -28,6 +28,25 @@ export const StyledAbout = styled(Section)`
         justify-content: center;
     }
 
+    h2 {
+        text-align: center;
+        font-size: 2.8em;
+        color: ${props => props.theme.colors.secondary};
+    }
+
+    .tech-stack svg {
+        /*font-size: 20px;*/
+        width: 40px;
+        height: 40px;
+        fill: ${props => props.theme.colors.text};
+    }
+
+    .tech-stack .icons-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
     @media ${props => props.theme.devices.tablet} {
         .about-container {
             display: flex;

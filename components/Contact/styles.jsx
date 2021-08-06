@@ -57,7 +57,7 @@ export const StyledContact = styled(Section)`
     input[type=text]:focus, 
     input[type=email]:focus, 
     textarea[name=message]:focus {
-        border: 2px solid ${props => props.theme.colors.primary};
+        /*border: 2px solid ${props => props.theme.colors.primary};*/
         outline: none;
     }
 
@@ -98,7 +98,7 @@ export const StyledContact = styled(Section)`
         }
 
         .form-wrapper {
-            margin: 0 auto 0.5rem;
+            margin: 0 auto 1rem;
         }
     }
 `

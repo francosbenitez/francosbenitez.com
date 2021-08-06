@@ -8,6 +8,9 @@ export const GlobalStyle = createGlobalStyle`
       font-family: 'Inter', sans-serif;
       line-height: 1.5;
       color: #313131;
+      /* Firefox */
+      scrollbar-width: thin;
+      scrollbar-color: #6AADFF #2079c7;
     }
 
     body {
@@ -26,6 +29,21 @@ export const GlobalStyle = createGlobalStyle`
 
     p {
       font-size: 1em;
+    }
+
+    /* Chrome, Edge, and Safari */
+    body::-webkit-scrollbar {
+      width: 12px;
+    }
+
+    body::-webkit-scrollbar-track {
+      background: #2079c7;
+    }
+
+    body::-webkit-scrollbar-thumb {
+      background-color: #6AADFF; 
+      border-radius: 20px;       
+      border: 3px solid #2079c7;  
     }
 `;
 
