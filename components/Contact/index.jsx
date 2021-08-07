@@ -23,7 +23,7 @@ const Contact = () => {
                                         (i == 0) ? <Email alt={icon.alt}/>
                                         : (i == 1) ? <LinkedIn alt={icon.alt}/>
                                         : (i == 2) ? <GitHub alt={icon.alt}/>
-                                        : <Email alt={icon.alt}/>
+                                        : <Twitter alt={icon.alt}/>
                                     }
                                     <span>{icon.description}</span>
                                 </a>
