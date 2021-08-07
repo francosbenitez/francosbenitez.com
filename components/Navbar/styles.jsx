@@ -7,7 +7,9 @@ export const Nav = styled.nav`
     display: flex;
     justify-content: space-between;
     position: fixed;
-    background-color: ${props => props.theme.colors.background};
+    background-color: hsla(0,0%,100%,.9);
+    -webkit-backdrop-filter: blur(.5rem);
+    backdrop-filter: blur(.5rem);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     top: 0;
@@ -19,12 +21,21 @@ export const Nav = styled.nav`
     }
 
     .logo a {
-        color: ${props => props.theme.colors.text};
+        color: ${props => props.theme.colors.primary};
     } 
 
     .logo a:hover {
-        color: ${props => props.theme.colors.primary};
         border-bottom: none;
+    }
+
+    .dot {
+        display: inline-block;
+        background: ${props => props.theme.colors.secondary};
+        border-radius: 50%;
+        width: .5rem;
+        height: .5rem;
+        aspect-ratio: 1/1;
+        margin-left: .15rem;
     }
     
     @media ${props => props.theme.devices.tablet} {

@@ -11,7 +11,12 @@ const Navbar = () => {
       <Nav>
         <div className="logo">
           <div className={router.pathname == "/" ? "active" : ""}>
-              <Link href="/">{content.nav.logo}</Link>
+              <Link href="/" passHref>
+                <a>
+                  {content.nav.logo}
+                  <span className="dot"></span>
+                </a>
+              </Link>
           </div>
         </div>
         <Burger />

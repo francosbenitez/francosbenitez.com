@@ -14,7 +14,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body {
-      background-color: white;
+      background-color: #f9fafb;
     }
 
     a {
@@ -55,7 +55,7 @@ export const theme = {
         fourth: "#DBA11C",
         text: "#313131",
         link: "#1155cc",
-        background: "white",
+        background: "#f9fafb",
     },
 
     font: {
