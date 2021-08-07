@@ -1,5 +1,6 @@
 import React from "react";
 import { StyledFooter } from "./styles"
+import content from "../../lib/content.json";
 import GitHub from '../../public/icons/contact/github.svg';
 import Email from '../../public/icons/contact/email.svg';
 import LinkedIn from '../../public/icons/contact/linkedin.svg';
@@ -33,27 +34,19 @@ const Footer = () => {
                     > 
                 </p>
             </div>
-            <ol className="icons-container">
-                <li className="icon-wrapper">
-                    <a href="mailto:francosbenitez@gmail.com">
-                        <Email />
-                    </a>
-                </li>
-                <li className="icon-wrapper">
-                    <a href="https://linkedin.com/in/francosbenitez">
-                        <LinkedIn />
-                    </a>
-                </li>
-                <li className="icon-wrapper">
-                    <a href="https://github.com/francosbenitez">
-                        <GitHub />
-                    </a>
-                </li>
-                <li className="icon-wrapper">
-                    <a href="https://twitter.com/francosbenitez">
-                        <Twitter />
-                    </a>
-                </li>
+            <ol className="icons-container" >
+                {content.contact.social.map((icon, i) =>
+                    <li className="icon-wrapper" key={i}>
+                        <a target="_blank" href={icon.url} rel="noopener noreferrer">
+                            {
+                                (i == 0) ? <Email alt={icon.alt}/>
+                                : (i == 1) ? <LinkedIn alt={icon.alt}/>
+                                : (i == 2) ? <GitHub alt={icon.alt}/>
+                                : <Twitter alt={icon.alt}/>
+                            }
+                        </a>
+                    </li>
+                )}
             </ol>
         </StyledFooter>
     );
