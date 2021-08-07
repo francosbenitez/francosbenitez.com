@@ -44,7 +44,9 @@
             "Hi there, I’m ",
             "Franco Sebastián Benítez",
             "! I'm an undergraduate student at the University of Buenos Aires finishing a licentiate degree in psychology. ",
+            "",
             "Early in my career, my interest toward psychological science brought me to be interested in statistics, research, and programming. ",
+            "",
             "Currently, my main interests revolve around ",
             "data science",
             ", ",
@@ -53,7 +55,8 @@
             "design",
             ". However, I consider myself principally a ",
             "Full Stack Developer",
-            "."
+            ".",
+            ""
         ],
         "techStack": {
             "title": ["My Tech", "Stack"],
@@ -76,6 +79,10 @@
                 {
                     "img": "/icons/tech/css3.svg",
                     "name": "CSS"
+                },
+                {
+                    "img": "/icons/tech/styled.svg",
+                    "name": "styled-components"
                 }
             ],
             "misc": [

@@ -25,6 +25,24 @@ const About = () => {
         )
     }
 
+    const giveColor = (array) => {
+        let newArr = []
+        array.map((text) => {
+                {
+                    (text == "Franco Sebastián Benítez"
+                    || text == "web development"
+                    || text == "data science"
+                    || text == "design"
+                    || text == "Full Stack Developer") 
+                    ? newArr.push(<span dangerouslySetInnerHTML={{__html: text}}></span>)
+                    : (text == "") ? newArr.push(<div dangerouslySetInnerHTML={{__html: '<br/>'}} />)
+                    : newArr.push(text)
+                }
+            }
+        )
+        return newArr
+    }
+
     return (
         <StyledAbout id="about">
             <h1>
@@ -40,8 +58,12 @@ const About = () => {
                     </div>
                 </div>
                 <div className="description-container">
-                    <p>
-                        {content.about.description[0]}
+                <p>
+                    {giveColor(content.about.description)}
+
+                    
+
+                        {/*{content.about.description[0]}
                         <span>{content.about.description[1]}</span>
                         {content.about.description[2]}
                         <br />
@@ -59,7 +81,7 @@ const About = () => {
                         <span>{content.about.description[11]}</span>
                         {content.about.description[12]}
                         <br />
-                        <br />
+                        <br />*/}
                     </p>
                 </div>
             </div>
