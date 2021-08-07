@@ -5,8 +5,8 @@ export const StyledProjectsButton = styled.div`
 
     .button {
         box-shadow:inset 0px 1px 0px 0px #97c4fe;
-        background:linear-gradient(to bottom, #6AADFF 5%, #2079c7 100%);
-        background-color:#6AADFF;
+        background:linear-gradient(to bottom, ${props => props.theme.colors.secondary} 5%, ${props => props.theme.colors.primary} 100%);
+        background-color:${props => props.theme.colors.secondary};
         border-radius:6px;
         border:1px solid #337fed;
         display:inline-block;
@@ -20,8 +20,8 @@ export const StyledProjectsButton = styled.div`
     }
 
     .button:hover {
-        background:linear-gradient(to bottom, #2079c7 5%, #6AADFF 100%);
-        background-color:#2079c7;
+        background:linear-gradient(to bottom, ${props => props.theme.colors.primary} 5%, ${props => props.theme.colors.secondary} 100%);
+        background-color:${props => props.theme.colors.primary};
     }
 
     .button:active {
@@ -35,7 +35,7 @@ export const StyledContactButton = styled(StyledProjectsButton)`
         box-shadow:inset 0px 1px 0px 0px #ffffff;
         background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
         background-color:#f9f9f9;
-        color:#2079c7;
+        color:${props => props.theme.colors.primary};
         text-shadow:0px 1px 0px #ffffff;
     }
 

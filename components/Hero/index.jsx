@@ -2,11 +2,12 @@ import React from 'react';
 import { StyledHero } from './styles';
 import content from "../../lib/content.json";
 import Typical from 'react-typical'
-import { StyledMouse } from "../../styles/Animations"
+import { StyledArrow } from "../../styles/Animations"
 import HeroImage from '../../public/images/others/cover-image.svg';
 import Link from "next/link"
 import { StyledProjectsButton, 
     StyledContactButton } from "../../styles/Buttons"
+import Arrow from "../../public/icons/arrow.svg"
 
 const Hero = () => {
     return (
@@ -45,20 +46,15 @@ const Hero = () => {
                     />
                 </div>
             </div>
-            <StyledMouse>
+            <StyledArrow>
                 <Link href={content.nav.links[0].to} passHref>
                     <a>
-                        <div className="mouse">
-                            <div className="wheel"></div>
-                        </div>
-                        <div>
-                            <span className="m_scroll_arrows unu"></span>
-                            <span className="m_scroll_arrows doi"></span>
-                            <span className="m_scroll_arrows trei"></span>
-                        </div>
+                        <Arrow className="firstArrow" />
+                        <Arrow className="secondArrow" />
+                        <Arrow className="thirdArrow" />
                     </a>
                 </Link>
-            </StyledMouse>
+            </StyledArrow>
         </StyledHero>
     );
 };
