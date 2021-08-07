@@ -28,7 +28,7 @@ const About = () => {
     return (
         <StyledAbout id="about">
             <h1>
-                {content.about.title["1"]} <span>{content.about.title["2"]}</span>
+                {content.about.title[0]} <span>{content.about.title[1]}</span>
             </h1>
             <div className="about-container">
                 <div className="avatar-container">
@@ -64,18 +64,23 @@ const About = () => {
                 </div>
             </div>
             <div className="tech-stack">
-                <h2><span>My Tech</span> Stack</h2>
+                <h2>
+                    <span>
+                        {content.about.techStack.title[0]}
+                    </span>
+                    {" "}{content.about.techStack.title[1]}
+                </h2>
                 <div className="icons-container">
                     <div className="back">
-                        <h3>Backend</h3>
+                        <h3>{content.about.techStack.subtitles[0]}</h3>
                         {techFunc(content.about.techStack.back)}
                     </div> 
                     <div className="front">
-                        <h3>Frontend</h3>
+                        <h3>{content.about.techStack.subtitles[1]}</h3>
                         {techFunc(content.about.techStack.front)}
                     </div>
                     <div className="misc">
-                        <h3>Miscellaneous</h3>
+                        <h3>{content.about.techStack.subtitles[2]}</h3>
                         {techFunc(content.about.techStack.misc)}
                     </div>
                 </div>

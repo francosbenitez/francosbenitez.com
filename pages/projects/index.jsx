@@ -17,7 +17,7 @@ const Projects = ({ allProjectsData }) => {
         </Head>
         <Section id="projects">
           <h1>
-            All <span>{content.projects.title["2"]}</span>
+            All <span>{content.projects.title[1]}</span>
           </h1>
           <StyledCard>
             <div className="card-wrapper">
@@ -53,7 +53,7 @@ const Projects = ({ allProjectsData }) => {
           </StyledCard>
           <Link href="/" passHref>
                 <a className="see-all">
-                  <span>← Back to home</span>
+                  <span>{content.projects.back}</span>
                 </a>
           </Link>
         </Section>

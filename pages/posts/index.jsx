@@ -17,7 +17,7 @@ const Blog = ({ allPostsData }) => {
         </Head>
         <Section id="blog">
           <h1>
-            All <span>{content.blog.title["2"]}</span>
+            All <span>{content.blog.title[1]}</span>
           </h1>
           <StyledCard>
             <div className="card-wrapper">
@@ -53,7 +53,7 @@ const Blog = ({ allPostsData }) => {
           </StyledCard>
           <Link href="/" passHref>
                 <a className="see-all">
-                  <span>← Back to home</span>
+                  <span>{content.blog.back}</span>
                 </a>
           </Link>
       </Section>

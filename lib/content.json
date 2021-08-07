@@ -35,15 +35,11 @@
             "✍ Design",
             2000,
             "👨🏻‍💻 Development",
-            "",
             2000
         ]
     },
     "about": {
-        "title": {
-            "1": "About",
-            "2": "Me"
-        },
+        "title": ["About", "Me"],
         "description": [
             "Hi there, I’m ",
             "Franco Sebastián Benítez",
@@ -60,6 +56,8 @@
             "."
         ],
         "techStack": {
+            "title": ["My Tech", "Stack"],
+            "subtitles": ["Backend", "Frontend", "Miscellaneous"],
             "back": [
                 {
                     "img": "/icons/tech/js.svg",
@@ -89,29 +87,40 @@
         }
     },
     "projects": {
-        "title": {
-            "1": "Featured",
-            "2": "Projects"
-        },
-        "see_more": "See more projects"
+        "title": ["Featured", "Projects"],
+        "see_more": "See more projects →",
+        "back": "← Back to home"
     },
     "blog": {
-        "title": {
-            "1": "Featured",
-            "2": "Blog Posts"
-        },
-        "see_more": "See more blog posts"
+        "title": ["Featured", "Blog Posts"],
+        "see_more": "See more blog posts →",
+        "back": "← Back to home"
     },
     "contact": {
-        "title": {
-            "1": "Contact",
-            "2": "Me"
-        },
+        "title": ["Contact", "Me"],
         "description": "If you would like us to talk, feel free to reach out via my contact form or social media!",
-        "email": "Email me for a chat",
-        "linkedin": "Connect with me",
-        "github": "Check out my code",
-        "twitter": "Follow me on Twitter"
+        "social": [
+            {
+                "url": "mailto:francosbenitez@gmail.com",
+                "alt": "Mail icon",
+                "description": "Email me for a chat"
+            },
+            {
+                "url": "https://linkedin.com/in/francosbenitez",
+                "alt": "LinkedIn icon",
+                "description": "Connect with me"
+            },
+            {
+                "url": "https://github.com/francosbenitez",
+                "alt": "GitHub icon",
+                "description": "Check out my code"
+            },
+            {
+                "url": "https://twitter.com/francosbenitez",
+                "alt": "Twitter icon",
+                "description": "Follow me on Twitter"
+            }
+        ]
     },
     "footer": {
 

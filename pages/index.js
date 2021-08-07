@@ -46,7 +46,7 @@ export default function Home({ allPostsData, allProjectsData }) {
       <About />
       <Section id="projects">
           <h1>
-          {content.projects.title["1"]} <span>{content.projects.title["2"]}</span>
+          {content.projects.title[0]} <span>{content.projects.title[1]}</span>
           </h1>
           <StyledCard>
             <div className="card-wrapper">
@@ -84,13 +84,13 @@ export default function Home({ allPostsData, allProjectsData }) {
           </StyledCard>
           <Link href="/projects" passHref>
                 <a className="see-all">
-                  <span>{content.projects.see_more} →</span>
+                  <span>{content.projects.see_more}</span>
                 </a>
           </Link>
       </Section>
       <Section id="blog">
           <h1>
-            {content.blog.title["1"]} <span>{content.blog.title["2"]}</span>
+            {content.blog.title[0]} <span>{content.blog.title[1]}</span>
           </h1>
           <StyledCard>
             <div className="card-wrapper">
@@ -128,7 +128,7 @@ export default function Home({ allPostsData, allProjectsData }) {
           </StyledCard>
           <Link href="/posts" passHref>
                 <a className="see-all">
-                  <span>{content.blog.see_more} →</span>
+                  <span>{content.blog.see_more}</span>
                 </a>
           </Link>
       </Section>
