@@ -28,13 +28,13 @@
         "img": {
             "alt": "A programmer sitting with a computer."
         },
-        "text": ["Hi I'm", "Franco Sebastián Benítez"],
+        "text": ["Hi, I'm", "Franco Sebastián Benítez"],
         "typical": [
-            "📈 Data",
+            "👨🏻‍💻 A Full Stack Developer",
             2000,
-            "✍ Design",
+            "✍ A Designer",
             2000,
-            "👨🏻‍💻 Development",
+            "📈 A Data Analyst",
             2000
         ]
     },
@@ -55,40 +55,39 @@
             "design",
             ". However, I consider myself principally a ",
             "Full Stack Developer",
-            ".",
-            ""
+            "."
         ],
         "techStack": {
             "title": ["My Tech", "Stack"],
             "subtitles": ["Backend", "Frontend", "Miscellaneous"],
             "back": [
                 {
-                    "img": "/icons/tech/js.svg",
-                    "name": "JavaScript"
+                    "name": "JavaScript",
+                    "alt": "JavaScript icon"
                 },
                 {
-                    "img": "/icons/tech/python.svg",
-                    "name": "Python"
+                    "name": "Python",
+                    "alt": "Python icon"
                 }
             ],
             "front": [
                 {
-                    "img": "/icons/tech/js.svg",
-                    "name": "JavaScript"
+                    "name": "JavaScript",
+                    "alt": "JavaScript icon"
                 },
                 {
-                    "img": "/icons/tech/css3.svg",
-                    "name": "CSS"
+                    "name": "CSS",
+                    "alt": "CSS3 icon"
                 },
                 {
-                    "img": "/icons/tech/styled.svg",
-                    "name": "styled-components"
+                    "name": "styled-components",
+                    "alt": "styled-components icon"
                 }
             ],
             "misc": [
                 {
-                    "img": "/icons/tech/git.svg",
-                    "name": "Git"
+                    "name": "Git",
+                    "alt": "Git icon"
                 }
             ]
         }

@@ -7,7 +7,7 @@ export const Nav = styled.nav`
     display: flex;
     justify-content: space-between;
     position: fixed;
-    background-color: white;
+    background-color: ${props => props.theme.colors.background};
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     top: 0;

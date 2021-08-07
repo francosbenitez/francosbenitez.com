@@ -5,6 +5,8 @@ import Typical from 'react-typical'
 import { StyledMouse } from "../../styles/Animations"
 import HeroImage from '../../public/images/others/cover-image.svg';
 import Link from "next/link"
+import { StyledProjectsButton, 
+    StyledContactButton } from "../../styles/Buttons"
 
 const Hero = () => {
     return (
@@ -20,6 +22,22 @@ const Hero = () => {
                         loop={Infinity}
                         wrapper="h2"
                     />
+                    <div className="buttons">
+                        <StyledProjectsButton>
+                            <Link href="/#projects">
+                                <a className="button">
+                                    See my work
+                                </a>
+                            </Link>
+                        </StyledProjectsButton>
+                        <StyledContactButton>
+                            <Link href="/#contact">
+                                <a className="button">
+                                    Contact me
+                                </a>
+                            </Link>
+                        </StyledContactButton>
+                    </div>
                 </div>
                 <div className="hero-img">
                     <HeroImage

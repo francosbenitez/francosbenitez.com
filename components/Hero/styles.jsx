@@ -38,6 +38,12 @@ export const StyledHero = styled.section`
 
     @media ${props => props.theme.devices.tablet} {
         text-align: left;
+        
+        .buttons {
+            display: flex;
+            flex-direction: row;
+            float: left;
+        }
 
         .hero-container {
             display: flex;

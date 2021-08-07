@@ -3,6 +3,12 @@ import { StyledAbout } from "./styles"
 import content from "../../lib/content.json";
 import Avatar from "../../public/images/others/avatar.jpg"
 import Image from "next/image"
+import JavaScript from "../../public/icons/tech/javascript.svg"
+import Python from "../../public/icons/tech/python.svg"
+import CSS from"../../public/icons/tech/css.svg"
+import Styled from "../../public/icons/tech/styled.svg"
+import Git from "../../public/icons/tech/git.svg"
+
 
 const About = () => {
     const techFunc = (content) => {
@@ -10,12 +16,13 @@ const About = () => {
             content.map((tech, i) => {
                 return (
                     <div key={i}>
-                        <Image 
-                            src={tech.img}
-                            alt={tech.name}
-                            width={40}
-                            height={40}
-                        />
+                        {
+                            (tech.name == "JavaScript") ? <JavaScript alt={tech.alt}/>
+                            : (tech.name == "Python") ? <Python alt={tech.alt}/>
+                            : (tech.name == "CSS") ? <CSS alt={tech.alt}/>
+                            : (tech.name == "styled-components") ? <Styled alt={tech.alt} />
+                            : <Git alt={tech.alt} />
+                        }
                         <h4>
                             {tech.name}
                         </h4>
@@ -60,29 +67,7 @@ const About = () => {
                 <div className="description-container">
                 <p>
                     {giveColor(content.about.description)}
-
-                    
-
-                        {/*{content.about.description[0]}
-                        <span>{content.about.description[1]}</span>
-                        {content.about.description[2]}
-                        <br />
-                        <br />
-                        {content.about.description[3]}
-                        <br />
-                        <br />
-                        {content.about.description[4]}
-                        <span>{content.about.description[5]}</span>
-                        {content.about.description[6]}
-                        <span>{content.about.description[7]}</span>
-                        {content.about.description[8]}
-                        <span>{content.about.description[9]}</span>
-                        {content.about.description[10]}
-                        <span>{content.about.description[11]}</span>
-                        {content.about.description[12]}
-                        <br />
-                        <br />*/}
-                    </p>
+                </p>
                 </div>
             </div>
             <div className="tech-stack">

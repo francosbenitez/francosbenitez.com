@@ -17,9 +17,9 @@ export const StyledCard = styled.div`
       -webkit-transition: box-shadow 0.6s linear;
       transition: box-shadow 0.2s linear;
       margin: 0.5em;
-      border: 3px solid rgba(0,0,0,0.125);
+      border: 1px solid ${props => props.theme.colors.primary};
       border-radius: 20px;
-      border-style: solid;
+      /*border-style: solid;*/
       overflow: hidden;
       padding: 3rem 2rem;
       cursor: pointer;

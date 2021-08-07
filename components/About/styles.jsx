@@ -32,19 +32,44 @@ export const StyledAbout = styled(Section)`
         text-align: center;
         font-size: 2.8em;
         color: ${props => props.theme.colors.secondary};
+        margin-top: 2rem;
+    }
+
+    h3 {
+        font-size: 1.4em;
+        text-align: center;
+    }
+
+    h4 {
+        text-align: center;
     }
 
     .tech-stack svg {
-        /*font-size: 20px;*/
+        margin-top: 1rem;
+        margin-left:auto; 
+        margin-right:auto; 
+        display:block;
         width: 40px;
         height: 40px;
-        fill: ${props => props.theme.colors.text};
+        fill: ${props => props.theme.colors.primary};
     }
 
     .tech-stack .icons-container {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+    }
+
+    .back {
+        background-color: red;
+    }
+
+    .front {
+        background-color: green;
+    }
+
+    .misc {
+        background-color: yellow;
     }
 
     @media ${props => props.theme.devices.tablet} {
