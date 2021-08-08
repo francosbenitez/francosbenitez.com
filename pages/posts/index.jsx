@@ -52,7 +52,7 @@ const Blog = ({ allPostsData }) => {
             </div>
           </StyledCard>
           <Link href="/" passHref>
-                <a className="see-all">
+                <a className="back-to-home">
                   <span>{content.blog.back}</span>
                 </a>
           </Link>

@@ -39,11 +39,23 @@ export const Section = styled.section`
         border-bottom: none; 
     }
 
-    .see-all span {
+    .back-to-home,
+    .back-to-home:hover {
+        flex: 1; 
+        text-align: left; 
+        white-space: nowrap;
+        margin-top: 1rem;
+        display: inline-block;
+        border-bottom: none; 
+    }
+
+    .see-all span,
+    .back-to-home span {
         color: ${props => props.theme.colors.link};
     }
 
-    .see-all span:hover {
+    .see-all span:hover,
+    .back-to-home span:hover {
         border-bottom: 1.5px ${props => props.theme.colors.link} dotted;
         color: ${props => props.theme.colors.link};
     }
