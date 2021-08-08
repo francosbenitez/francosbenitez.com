@@ -18,6 +18,7 @@ export const Section = styled.section`
         margin: 1rem 0 1rem 0;
         color: ${props => props.theme.colors.secondary};
         line-height: 1;
+        /* font-weight: 700; */
     }
 
     span {
@@ -32,10 +33,10 @@ export const Section = styled.section`
     .see-all,
     .see-all:hover {
         flex: 1; 
-        text-align: right; 
+        float: right; 
         white-space: nowrap;
         margin-top: 1rem;
-        display: inline-block;
+        /* display: inline-block; */
         border-bottom: none; 
     }
 
@@ -59,6 +60,38 @@ export const Section = styled.section`
         border-bottom: 1.5px ${props => props.theme.colors.link} dotted;
         color: ${props => props.theme.colors.link};
     }
+
+    .blog-container:before {
+        background-image: radial-gradient(#5b8efc4b 15%,transparent 0),radial-gradient(#5b8efc4b 15%,transparent 0);
+        background-size: .75rem .75rem;
+        background-position: 0 0,.375rem .375rem;
+        -webkit-clip-path: polygon(100% 15%,50% 25%,45% 35%,100% 45%,100% 100%,50% 100%,0 70%,0 100%,100% 100%);
+        clip-path: polygon(0 25%,30% 35%,30% 55%,0 65%,0 75%,30% 65%,40% 75%,30% 200%,0 100%,90% 100%,100% 90%,100% 100%,0 100%);
+        content: "";
+        height: 100%;
+        left: 50%;
+        position: absolute;
+        top: 0;
+        transform: translateX(-50%);
+        width: 100%;
+        z-index: -1;
+    }
+
+    .projects-container:before {
+        background-image: radial-gradient(#5b8efc4b 15%,transparent 0),radial-gradient(#5b8efc4b 15%,transparent 0);
+        background-size: .75rem .75rem;
+        background-position: 0 0,.375rem .375rem;
+        -webkit-clip-path: polygon(50% 0, 100% 0%, 100% 100%, 50% 100%, 20% 50%);
+        clip-path: polygon(50% 0, 100% 0%, 100% 100%, 50% 100%, 20% 50%);
+        content: "";
+        height: 100%;
+        left: 50%;
+        position: absolute;
+        top: 0;
+        transform: translateX(-50%);
+        width: 100%;
+        z-index: -1;
+    }
 `
 
 export const Posts = styled.div`
@@ -70,14 +103,14 @@ export const Posts = styled.div`
     h1 {
         font-size: 2.8em;
         margin: 1rem 0 1rem 0;
-        font-weight: 900;
+        /* font-weight: 900; */
         line-height: 1;
     }
 
     h2 {
         font-size: 1.4em;
         margin: 1rem 0 1rem 0;
-        font-weight: 500;
+        /* font-weight: 500; */
     }
 
     p {

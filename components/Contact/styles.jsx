@@ -2,6 +2,22 @@ import styled from "styled-components"
 import { Section } from "../../styles/Commons"
 
 export const StyledContact = styled(Section)`
+    .contact-container:before {
+        background-image: radial-gradient(#5b8efc4b 15%,transparent 0),radial-gradient(#5b8efc4b 15%,transparent 0);
+        background-size: .75rem .75rem;
+        background-position: 0 0,.375rem .375rem;
+        -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+        clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+        content: "";
+        height: 100%;
+        left: 50%;
+        position: absolute;
+        top: 0;
+        transform: translateX(-50%);
+        width: 100%;
+        z-index: -1;
+    }
+
     .icons-container {
         display: inline-block;
         margin-top: 2rem;
@@ -95,6 +111,7 @@ export const StyledContact = styled(Section)`
             flex-basis: 50%;
             text-align: right;
             margin-top: 0;
+            margin-left: 1rem;
         }
 
         .form-wrapper {

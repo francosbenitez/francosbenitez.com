@@ -16,6 +16,7 @@ const Blog = ({ allPostsData }) => {
           <meta name="description" content="Franco Sebastián Benítez's blog" />
         </Head>
         <Section id="blog">
+          <div className="blog-container">
           <h1>
             All <span>{content.blog.title[1]}</span>
           </h1>
@@ -56,6 +57,7 @@ const Blog = ({ allPostsData }) => {
                   <span>{content.blog.back}</span>
                 </a>
           </Link>
+          </div>
       </Section>
       </>
     );

@@ -16,7 +16,7 @@ export const Nav = styled.nav`
   
     .logo {
         padding: 15px 0;
-        font-size: 1.5rem;
+        font-size: 1.4em;
         font-weight: 700;
     }
 
@@ -51,6 +51,7 @@ export const StyledUl = styled.ul`
     li {
         font-weight: 700;
         padding: 18px 10px;
+        text-transform: uppercase;
     }
 
     li a {

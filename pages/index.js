@@ -45,6 +45,7 @@ export default function Home({ allPostsData, allProjectsData }) {
       <Hero />
       <About />
       <Section id="projects">
+          <div className="projects-container">
           <h1>
           {content.projects.title[0]} <span>{content.projects.title[1]}</span>
           </h1>
@@ -87,8 +88,10 @@ export default function Home({ allPostsData, allProjectsData }) {
                   <span>{content.projects.see_more}</span>
                 </a>
           </Link>
+          </div>
       </Section>
       <Section id="blog">
+          <div className="blog-container">
           <h1>
             {content.blog.title[0]} <span>{content.blog.title[1]}</span>
           </h1>
@@ -131,6 +134,7 @@ export default function Home({ allPostsData, allProjectsData }) {
                   <span>{content.blog.see_more}</span>
                 </a>
           </Link>
+          </div>
       </Section>
       <Contact />
     </>
