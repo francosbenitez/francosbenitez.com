@@ -107,89 +107,80 @@ export const StyledProjectsCard = styled.div`
     }
 `
 
-export const StyledSkillsCard = styled.div`
-    .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  width: 100%;
-  padding: 30px 30px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-.cardsGrid {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-
-  margin-top: 50px;
-
-  @media (min-width: 850px) {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-
-    .cardWrapper {
-      margin: 0 16px;
-    }
-  }
-}
-
-.cardWrapper {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  h2 {
-    /*color: white;
-    font-family: 'Big Shoulders Stencil Display', cursive;*/
-    font-size: 24px;
-    font-weight: 400;
-    text-align: center;
-  }
-
-  .card {
-    width: calc(min(100%, 300px));
-    height: 400px;
-    margin: 16px 0 30px;
-
-    background-color: black;
-    border-radius: 10px;
-
-    padding: 10px 8px 40px;
-
+export const StyledSkillsCard = styled.section`
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 30px 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 
-    .row {
-      flex: 1;
-      display: flex;
-      align-items: flex-end;
-      justify-content: space-evenly;
+    .cardsGrid {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
 
-      .item {
+        margin-top: 50px;
+
+        @media (min-width: 850px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+            .cardWrapper {
+                margin: 0 16px;
+            }
+        }
+    }
+
+    .cardWrapper {
+        flex: 1;
         display: flex;
         flex-direction: column;
         align-items: center;
-        transition: 0.2s;
 
-        h3 {
-          color: white;
-          text-align: center;
-          margin-top: 8px;
-        }
-
-        &:hover {
-          transform: scale(1.1);
-        }
-      }
+    h2 {
+        font-size: 24px;
+        font-weight: 400;
+        text-align: center;
     }
-  }
-}
 
+    .card {
+        width: calc(min(100%, 300px));
+        height: 400px;
+        margin: 16px 0 30px;
+        background-color: ${props => props.theme.colors.secondary};
+        border-radius: 10px;
+        padding: 10px 8px 40px;
+        display: flex;
+        flex-direction: column;
+
+        .row {
+            flex: 1;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-evenly;
+
+            .item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                transition: 0.2s;
+
+                h3 {
+                    color: white;
+                    text-align: center;
+                    margin-top: 8px;
+                }
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
 `;
 
 

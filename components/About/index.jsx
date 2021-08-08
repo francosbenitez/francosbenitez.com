@@ -69,7 +69,6 @@ const About = () => {
                 </div>
             </div>
             <StyledSkillsCard>
-            <section className="container">
                 <h1>
                     <span>
                         {content.about.techStack.title[0]}
@@ -123,7 +122,6 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-            </section>
             </StyledSkillsCard>
         </StyledAbout>
     );
