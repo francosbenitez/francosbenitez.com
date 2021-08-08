@@ -11,6 +11,7 @@ export const GlobalStyle = createGlobalStyle`
       /* Firefox */
       scrollbar-width: thin;
       scrollbar-color: #6AADFF #2079c7;
+      scroll-behavior: smooth;
     }
 
     body {
