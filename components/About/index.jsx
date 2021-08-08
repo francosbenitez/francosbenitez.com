@@ -3,29 +3,26 @@ import { StyledAbout } from "./styles"
 import content from "../../lib/content.json";
 import Avatar from "../../public/images/others/avatar.jpg"
 import Image from "next/image"
-import JavaScript from "../../public/icons/tech/javascript.svg"
+{/*import JavaScript from "../../public/icons/tech/javascript.svg"
 import Python from "../../public/icons/tech/python.svg"
 import CSS from"../../public/icons/tech/css.svg"
 import Styled from "../../public/icons/tech/styled.svg"
-import Git from "../../public/icons/tech/git.svg"
-
+import Git from "../../public/icons/tech/git.svg"*/}
+import styles from './SkillsSection.module.scss';
 
 const About = () => {
     const techFunc = (content) => {
         return (
             content.map((tech, i) => {
                 return (
-                    <div key={i}>
-                        {
-                            (tech.name == "JavaScript") ? <JavaScript alt={tech.alt}/>
-                            : (tech.name == "Python") ? <Python alt={tech.alt}/>
-                            : (tech.name == "CSS") ? <CSS alt={tech.alt}/>
-                            : (tech.name == "styled-components") ? <Styled alt={tech.alt} />
-                            : <Git alt={tech.alt} />
-                        }
-                        <h4>
-                            {tech.name}
-                        </h4>
+                    <div key={i} className={styles.item}>
+                        <Image
+                        src={tech.url}
+                        alt={tech.name}
+                        width={30}
+                        height={30}
+                        />
+                        <h3>{tech.name}</h3>
                     </div>
                 )
             })
@@ -70,28 +67,61 @@ const About = () => {
                 </p>
                 </div>
             </div>
-            <div className="tech-stack">
-                <h2>
+            <section className={styles.container}>
+                <h1>
                     <span>
                         {content.about.techStack.title[0]}
                     </span>
                     {" "}{content.about.techStack.title[1]}
-                </h2>
-                <div className="icons-container">
-                    <div className="back">
-                        <h3>{content.about.techStack.subtitles[0]}</h3>
-                        {techFunc(content.about.techStack.back)}
-                    </div> 
-                    <div className="front">
-                        <h3>{content.about.techStack.subtitles[1]}</h3>
-                        {techFunc(content.about.techStack.front)}
+                </h1>
+                <div className={styles.cardsGrid}>
+                    <div className={styles.cardWrapper}>
+                        <h2>{content.about.techStack.front.title}</h2>
+                        <div className={styles.card}>
+                            <div className={styles.row}>
+                                {techFunc(content.about.techStack.front.firstRow)}
+                            </div>
+                            <div className={styles.row}>
+                                {techFunc(content.about.techStack.front.secondRow)}
+                            </div>
+                            <div className={styles.row}>
+                                {techFunc(content.about.techStack.front.thirdRow)}
+                            </div>
+                            <div className={styles.row}>
+                                {techFunc(content.about.techStack.front.fourthRow)}
+                            </div>
+                        </div>
                     </div>
-                    <div className="misc">
-                        <h3>{content.about.techStack.subtitles[2]}</h3>
-                        {techFunc(content.about.techStack.misc)}
+                    <div className={styles.cardWrapper}>
+                        <h2>{content.about.techStack.back.title}</h2>
+                        <div className={styles.card}>
+                            <div className={styles.row}>
+                                {techFunc(content.about.techStack.back.firstRow)}
+                            </div>
+                            <div className={styles.row}>
+                                {techFunc(content.about.techStack.back.secondRow)}
+                            </div>
+                            <div className={styles.row}>
+                                {techFunc(content.about.techStack.back.thirdRow)}
+                            </div>
+                        </div>
+                    </div>
+                    <div className={styles.cardWrapper}>
+                        <h2>{content.about.techStack.misc.title}</h2>
+                        <div className={styles.card}>
+                            <div className={styles.row}>
+                                {techFunc(content.about.techStack.misc.firstRow)}
+                            </div>
+                            <div className={styles.row}>
+                                {techFunc(content.about.techStack.misc.secondRow)}
+                            </div>
+                            <div className={styles.row}>
+                                {techFunc(content.about.techStack.misc.thirdRow)}
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </StyledAbout>
     );
 };

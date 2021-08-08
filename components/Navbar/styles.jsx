@@ -32,8 +32,8 @@ export const Nav = styled.nav`
         display: inline-block;
         background: ${props => props.theme.colors.secondary};
         border-radius: 50%;
-        width: .5rem;
-        height: .5rem;
+        width: .35rem;
+        height: .35rem;
         aspect-ratio: 1/1;
         margin-left: .15rem;
     }

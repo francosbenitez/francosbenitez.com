@@ -59,37 +59,87 @@
         ],
         "techStack": {
             "title": ["My Tech", "Stack"],
-            "subtitles": ["Backend", "Frontend", "Miscellaneous"],
-            "back": [
-                {
-                    "name": "JavaScript",
-                    "alt": "JavaScript icon"
-                },
-                {
-                    "name": "Python",
-                    "alt": "Python icon"
-                }
-            ],
-            "front": [
-                {
-                    "name": "JavaScript",
-                    "alt": "JavaScript icon"
-                },
-                {
-                    "name": "CSS",
-                    "alt": "CSS3 icon"
-                },
-                {
-                    "name": "styled-components",
-                    "alt": "styled-components icon"
-                }
-            ],
-            "misc": [
-                {
-                    "name": "Git",
-                    "alt": "Git icon"
-                }
-            ]
+            "back": {
+                "title": "Backend",
+                "firstRow": [
+                    {
+                        "name": "Python",
+                        "url": "/icons/tech/python.svg"
+                    }
+                ],
+                "secondRow": [
+                    {
+                        "name": "JavaScript",
+                        "url": "/icons/tech/javascript.svg"
+                    }
+                ],
+                "thirdRow": [
+                    {
+                        "name": "TypeScript",
+                        "url": "/icons/tech/typescript.svg"
+                    }
+                ]
+            },
+            "front": {
+                "title": "Frontend",
+                "firstRow": [
+                    {
+                        "name": "JavaScript",
+                        "url": "/icons/tech/javascript.svg"
+                    },
+                    {
+                        "name": "CSS",
+                        "url": "/icons/tech/css.svg"
+                    }
+                ],
+                "secondRow": [
+                    {
+                        "name": "TypeScript",
+                        "url": "/icons/tech/typescript.svg"
+                    },
+                    {
+                        "name": "React",
+                        "url": "/icons/tech/react.svg"
+                    }
+                ],
+                "thirdRow": [
+                    {
+                        "name": "Next",
+                        "url": "/icons/tech/next.svg"
+                    },
+                    {
+                        "name": "HTML",
+                        "url": "/icons/tech/html.svg"
+                    }
+                ],
+                "fourthRow": [
+                    {
+                        "name": "Styled Components",
+                        "url": "/icons/tech/styled.svg"
+                    }
+                ]
+            },
+            "misc": {
+                "title": "Miscellaneous",
+                "firstRow": [
+                    {
+                        "name": "Git",
+                        "url": "/icons/tech/git.svg"
+                    }
+                ],
+                "secondRow": [
+                    {
+                        "name": "Figma",
+                        "url": "/icons/tech/figma.svg"
+                    }
+                ],
+                "thirdRow": [
+                    {
+                        "name": "Adobe Illustrator",
+                        "url": "/icons/tech/illustrator.svg"
+                    }
+                ]
+            }
         }
     },
     "projects": {

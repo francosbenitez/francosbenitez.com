@@ -28,7 +28,7 @@ export const StyledAbout = styled(Section)`
         justify-content: center;
     }
 
-    h2 {
+    /*.h2 {
         text-align: center;
         font-size: 2.8em;
         color: ${props => props.theme.colors.secondary};
@@ -44,7 +44,7 @@ export const StyledAbout = styled(Section)`
         text-align: center;
     }
 
-    .tech-stack svg {
+    tech-stack svg {
         margin-top: 1rem;
         margin-left:auto; 
         margin-right:auto; 
@@ -70,7 +70,7 @@ export const StyledAbout = styled(Section)`
 
     .misc {
         background-color: yellow;
-    }
+    }*/
 
     @media ${props => props.theme.devices.tablet} {
         .about-container {
