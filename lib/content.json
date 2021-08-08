@@ -63,6 +63,10 @@
                     {
                         "name": "Python",
                         "url": "/icons/tech/python.svg"
+                    },
+                    {
+                        "name": "TypeScript",
+                        "url": "/icons/tech/typescript.svg"
                     }
                 ],
                 "secondRow": [
@@ -73,8 +77,8 @@
                 ],
                 "thirdRow": [
                     {
-                        "name": "TypeScript",
-                        "url": "/icons/tech/typescript.svg"
+                        "name": "MySQL",
+                        "url": "/icons/tech/mysql.svg"
                     }
                 ]
             },
@@ -116,7 +120,7 @@
                         "url": "/icons/tech/styled.svg"
                     },
                     {
-                        "name": "D3.js",
+                        "name": "D3",
                         "url": "/icons/tech/d3.svg"
                     }
                 ]
