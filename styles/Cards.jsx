@@ -118,7 +118,7 @@ export const StyledSkillsCard = styled.section`
         display: flex;
         flex-direction: column;
         width: 100%;
-        margin-top: 1rem;
+        /*margin-top: 1rem;*/
 
         @media (min-width: 850px) {
             flex-direction: row;
@@ -139,7 +139,7 @@ export const StyledSkillsCard = styled.section`
 
     h3 {
         font-size: 1em;
-        font-weight: 400;
+        font-weight: 700;
         text-align: center;
     }
 

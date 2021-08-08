@@ -47,20 +47,20 @@
             "",
             "Early in my career, my interest toward psychological science brought me to be interested in statistics, research, and programming. ",
             "",
-            "Currently, my main interests revolve around ",
+            "At present, my main interests revolve around ",
             "data science",
             ", ",
             "web development",
             ", and ",
             "design",
-            ". Although I consider myself principally a ",
-            "Full Stack Developer",
-            "."
+            ".",
+            "",
+            "The following are the technologies that I currently feel acquainted with:"
         ],
         "techStack": {
-            "title": ["My Tech", "Stack"],
+            "title": ["Tech", "Stack"],
             "back": {
-                "title": "Backend",
+                "title": "Back-end",
                 "firstRow": [
                     {
                         "name": "Python",
@@ -81,7 +81,7 @@
                 ]
             },
             "front": {
-                "title": "Frontend",
+                "title": "Front-end",
                 "firstRow": [
                     {
                         "name": "JavaScript",
@@ -116,6 +116,10 @@
                     {
                         "name": "Styled Components",
                         "url": "/icons/tech/styled.svg"
+                    },
+                    {
+                        "name": "D3.js",
+                        "url": "/icons/tech/d3.svg"
                     }
                 ]
             },
@@ -125,6 +129,10 @@
                     {
                         "name": "Git",
                         "url": "/icons/tech/git.svg"
+                    },
+                    {
+                        "name": "R",
+                        "url": "/icons/tech/r.svg"
                     }
                 ],
                 "secondRow": [

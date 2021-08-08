@@ -65,12 +65,12 @@ const About = () => {
                 </div>
             </div>
             <StyledSkillsCard>
-                <h2>
+                {/*<h2>
                     <span>
                         {content.about.techStack.title[0]}
                         {" "}{content.about.techStack.title[1]}
                     </span>
-                </h2>
+                </h2>*/}
                 <div className="cardsGrid">
                     <div className="cardWrapper">
                         <h3>{content.about.techStack.front.title}</h3>
