@@ -18,7 +18,7 @@ export const Section = styled.section`
         margin: 1rem 0 1rem 0;
         color: ${props => props.theme.colors.secondary};
         line-height: 1;
-        /* font-weight: 700; */
+        font-weight: 700;
     }
 
     span {
@@ -110,7 +110,7 @@ export const Posts = styled.div`
     h2 {
         font-size: 1.4em;
         margin: 1rem 0 1rem 0;
-        /* font-weight: 500; */
+        font-weight: 500;
     }
 
     p {
