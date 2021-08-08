@@ -3,12 +3,6 @@ import { StyledAbout } from "./styles"
 import content from "../../lib/content.json";
 import Avatar from "../../public/images/others/avatar.jpg"
 import Image from "next/image"
-{/*import JavaScript from "../../public/icons/tech/javascript.svg"
-import Python from "../../public/icons/tech/python.svg"
-import CSS from"../../public/icons/tech/css.svg"
-import Styled from "../../public/icons/tech/styled.svg"
-import Git from "../../public/icons/tech/git.svg"*/}
-//import styles from './SkillsSection.module.scss';
 import { StyledSkillsCard } from "../../styles/Cards"
 
 const About = () => {
@@ -23,7 +17,7 @@ const About = () => {
                         width={30}
                         height={30}
                         />
-                        <h3>{tech.name}</h3>
+                        <h4>{tech.name}</h4>
                     </div>
                 )
             })
@@ -32,17 +26,19 @@ const About = () => {
 
     const giveColor = (array) => {
         let newArr = []
-        array.map((text) => {
-                {
-                    (text == "Franco Sebastián Benítez"
-                    || text == "web development"
-                    || text == "data science"
-                    || text == "design"
-                    || text == "Full Stack Developer") 
-                    ? newArr.push(<span dangerouslySetInnerHTML={{__html: text}}></span>)
-                    : (text == "") ? newArr.push(<div dangerouslySetInnerHTML={{__html: '<br/>'}} />)
-                    : newArr.push(text)
-                }
+        array.map((text, i) => {
+                <div key={i}>
+                    {
+                        (text == "Franco Sebastián Benítez"
+                        || text == "web development"
+                        || text == "data science"
+                        || text == "design"
+                        || text == "Full Stack Developer") 
+                        ? newArr.push(<span dangerouslySetInnerHTML={{__html: text}}></span>)
+                        : (text == "") ? newArr.push(<div dangerouslySetInnerHTML={{__html: '<br/>'}} />)
+                        : newArr.push(text)
+                    }
+                </div>
             }
         )
         return newArr
@@ -69,15 +65,15 @@ const About = () => {
                 </div>
             </div>
             <StyledSkillsCard>
-                <h1>
+                <h2>
                     <span>
                         {content.about.techStack.title[0]}
+                        {" "}{content.about.techStack.title[1]}
                     </span>
-                    {" "}{content.about.techStack.title[1]}
-                </h1>
+                </h2>
                 <div className="cardsGrid">
                     <div className="cardWrapper">
-                        <h2>{content.about.techStack.front.title}</h2>
+                        <h3>{content.about.techStack.front.title}</h3>
                         <div className="card">
                             <div className="row">
                                 {techFunc(content.about.techStack.front.firstRow)}
@@ -94,7 +90,7 @@ const About = () => {
                         </div>
                     </div>
                     <div className="cardWrapper">
-                        <h2>{content.about.techStack.back.title}</h2>
+                        <h3>{content.about.techStack.back.title}</h3>
                         <div className="card">
                             <div className="row">
                                 {techFunc(content.about.techStack.back.firstRow)}
@@ -108,7 +104,7 @@ const About = () => {
                         </div>
                     </div>
                     <div className="cardWrapper">
-                        <h2>{content.about.techStack.misc.title}</h2>
+                        <h3>{content.about.techStack.misc.title}</h3>
                         <div className="card">
                             <div className="row">
                                 {techFunc(content.about.techStack.misc.firstRow)}

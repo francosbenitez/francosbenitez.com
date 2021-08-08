@@ -113,15 +113,12 @@ export const StyledSkillsCard = styled.section`
     align-items: center;
     width: 100%;
     padding: 30px 30px;
-    margin-top: 50px;
-    margin-bottom: 50px;
 
     .cardsGrid {
         display: flex;
         flex-direction: column;
         width: 100%;
-
-        margin-top: 50px;
+        margin-top: 1rem;
 
         @media (min-width: 850px) {
             flex-direction: row;
@@ -140,8 +137,8 @@ export const StyledSkillsCard = styled.section`
         flex-direction: column;
         align-items: center;
 
-    h2 {
-        font-size: 24px;
+    h3 {
+        font-size: 1em;
         font-weight: 400;
         text-align: center;
     }
@@ -168,7 +165,7 @@ export const StyledSkillsCard = styled.section`
                 align-items: center;
                 transition: 0.2s;
 
-                h3 {
+                h4 {
                     color: white;
                     text-align: center;
                     margin-top: 8px;
