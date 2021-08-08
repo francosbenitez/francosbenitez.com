@@ -17,7 +17,7 @@ export const Nav = styled.nav`
     .logo {
         padding: 15px 0;
         font-size: 1.5rem;
-        font-weight: 900;
+        font-weight: 700;
     }
 
     .logo a {
