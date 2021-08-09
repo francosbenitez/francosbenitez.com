@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
                 <link rel="manifest" href="/favicon_io/site.webmanifest" />
                 <link rel="mask-icon" href="/favicon_io/safari-pinned-tab.svg" color="#919191" />
                 <meta name="msapplication-TileColor" content="#ffffff" />
-                <meta name="theme-color" content="#ffffff" />
+                <meta name="theme-color" content="#2079c7" />
             </Head>
             <Navbar />
             { children }
