@@ -33,7 +33,8 @@ const About = () => {
                         || text == "web development"
                         || text == "data science"
                         || text == "design"
-                        || text == "Full Stack Developer") 
+                        || text == "Full Stack Developer"
+                        || text == "technologies") 
                         ? newArr.push(<span dangerouslySetInnerHTML={{__html: text}}></span>)
                         : (text == "") ? newArr.push(<div dangerouslySetInnerHTML={{__html: '<br/>'}} />)
                         : newArr.push(text)

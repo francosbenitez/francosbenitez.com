@@ -53,7 +53,9 @@
             "design",
             ".",
             "",
-            "The following are the technologies that I currently feel acquainted with:"
+            "The following are the ",
+            "technologies",
+            " that I currently feel acquainted with:"
         ],
         "techStack": {
             "title": ["Tech", "Stack"],
