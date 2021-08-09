@@ -7,7 +7,7 @@ export const GlobalStyle = createGlobalStyle`
       box-sizing: border-box;
       line-height: 1.5;
       color: #313131;
-      font-family: "Inter";
+      font-family: "IBM Plex Sans";
       /* Firefox */
       scrollbar-width: thin;
       scrollbar-color: #6AADFF #2079c7;

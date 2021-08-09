@@ -32,7 +32,7 @@ export default class CustomDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+          <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet" />
         </Head>
         <body>
           <Main />

@@ -26,8 +26,8 @@ const About = () => {
 
     const giveColor = (array) => {
         let newArr = []
-        array.map((text, i) => {
-                <div key={i}>
+        array.forEach(text => {
+                <div key={text}>
                     {
                         (text == "Franco Sebastián Benítez"
                         || text == "web development"
@@ -35,8 +35,8 @@ const About = () => {
                         || text == "design"
                         || text == "Full Stack Developer"
                         || text == "technologies") 
-                        ? newArr.push(<span dangerouslySetInnerHTML={{__html: text}}></span>)
-                        : (text == "") ? newArr.push(<div dangerouslySetInnerHTML={{__html: '<br/>'}} />)
+                        ? newArr.push(<span key={text} dangerouslySetInnerHTML={{__html: text}}></span>)
+                        : (text == "") ? newArr.push(<div key={text} dangerouslySetInnerHTML={{__html: '<br/>'}} />)
                         : newArr.push(text)
                     }
                 </div>
@@ -60,9 +60,9 @@ const About = () => {
                     </div>
                 </div>
                 <div className="description-container">
-                <p>
-                    {giveColor(content.about.description)}
-                </p>
+                    <p>
+                        {giveColor(content.about.description)}
+                    </p>
                 </div>
             </div>
             <StyledSkillsCard>
