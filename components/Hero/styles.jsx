@@ -43,8 +43,8 @@ export const StyledHero = styled.section`
 
     h2 {
         font-size: 2em;
-        color: ${(props) => props.theme.text};
-        font-weight: 500;
+        color: ${(props) => props.theme.grey};
+        font-weight: 600;
     }
     
     .hero-img svg { 

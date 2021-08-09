@@ -56,6 +56,7 @@ export const theme = {
         fourth: "#DBA11C",
         text: "#313131",
         link: "#1155cc",
+        grey: "#666666",
         background: "#f9fafb",
     },
 
