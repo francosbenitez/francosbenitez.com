@@ -5,15 +5,15 @@ export const GlobalStyle = createGlobalStyle`
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: "IBM Plex Sans";
       line-height: 1.5;
       color: #313131;
+      font-family: "Inter";
       /* Firefox */
       scrollbar-width: thin;
       scrollbar-color: #6AADFF #2079c7;
       scroll-behavior: smooth;
     }
-
+    
     body {
       background-color: #f9fafb;
     }
