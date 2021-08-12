@@ -4,7 +4,7 @@ import Navbar from "./Navbar"
 import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme, GlobalStyle } from "../styles/Theme"
 import { React, useState } from 'react';
-import { Toggler } from "./Toggler"
+import { ThemeSwitcher } from "../styles/Buttons"
 import Icon from "./Icon"
 
 const Layout = ({ children }) => {
@@ -20,13 +20,13 @@ const Layout = ({ children }) => {
                 <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png" />
                 <link rel="manifest" href="/favicon_io/site.webmanifest" />
                 <link rel="mask-icon" href="/favicon_io/safari-pinned-tab.svg" color="#919191" />
-                <meta name="msapplication-TileColor" content="#2079c7" />
-                <meta name="theme-color" content="#2079c7" />
+                <meta name="msapplication-TileColor" content={`${props => props.theme.colors.primary}`} />
+                <meta name="theme-color" content={`${props => props.theme.colors.primary}`} />
             </Head>
             <Navbar>
-                <Toggler onClick={toggleTheme}>
+                <ThemeSwitcher onClick={toggleTheme}>
                     <Icon name={theme === "dark" ? "day" : "night"} />   
-                </Toggler>
+                </ThemeSwitcher>
             </Navbar>
             { children }
             <Footer />

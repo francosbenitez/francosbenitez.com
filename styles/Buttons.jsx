@@ -48,3 +48,25 @@ export const StyledContactButton = styled(StyledProjectsButton)`
         margin-left: 1rem;
     }
 `;
+
+export const ThemeSwitcher = styled.button`
+    display: flex;
+    position: absolute;
+    left: 95%;
+    top: 10px;
+    width: 35px;
+    height: 35px;
+    align-items: center;
+    /* justify-content: center; */
+    fill: ${props => props.theme.colors.primary};
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    
+    @media (max-width: 768px) {
+        left: 80%;
+        top: 13px;
+        transform: translate(50%, 0%);
+    }
+`;
