@@ -94,7 +94,7 @@ export const StyledContact = styled(Section)`
         box-shadow: 3px 3px 0 0 ${props => props.theme.colors.primary};
         color: ${props => props.theme.colors.primary};
         border-color: ${props => props.theme.colors.primary};
-        background-color: white;
+        background-color: ${props => props.theme.colors.background};
     }
 
     .submit-btn:hover {

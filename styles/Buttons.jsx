@@ -4,11 +4,11 @@ export const StyledProjectsButton = styled.div`
     margin: 1rem 0 1rem 0;
 
     .button {
-        box-shadow:inset 0px 1px 0px 0px #97c4fe;
+        box-shadow:inset 0px 1px 0px 0px  ${props => props.theme.colors.secondary};
         background:linear-gradient(to bottom, ${props => props.theme.colors.secondary} 5%, ${props => props.theme.colors.primary} 100%);
         background-color:${props => props.theme.colors.secondary};
         border-radius:6px;
-        border:1px solid #337fed;
+        border:1px solid ${props => props.theme.colors.primary};
         display:inline-block;
         cursor:pointer;
         color:#ffffff;
@@ -16,7 +16,7 @@ export const StyledProjectsButton = styled.div`
         font-weight:bold;
         padding:6px 24px;
         text-decoration:none;
-        text-shadow:0px 1px 0px #1570cd;
+        text-shadow:0px 1px 0px ${props => props.theme.colors.primary};
     }
 
     .button:hover {
