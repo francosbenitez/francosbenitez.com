@@ -71,11 +71,11 @@ export const StyledProjectsCard = styled.div`
     display: flex;
     flex-direction: column;
     flex-basis: 50%;
-    border: 3px solid rgba(0,0,0,0.125);
+    border: 3px solid ${props => props.theme.colors.primary};
     
     .tools {
         width: 100%;
-        border-bottom: 3px solid rgba(0,0,0,0.125);
+        border-bottom: 3px solid ${props => props.theme.colors.primary};
         text-align: center;
     }
 
@@ -94,7 +94,7 @@ export const StyledProjectsCard = styled.div`
     }
 
     hr {
-        border: 1px solid rgba(0,0,0,0.125);
+        border: 1px solid ${props => props.theme.colors.primary};
     }
 
     @media ${props => props.theme.devices.tablet} {
@@ -102,7 +102,7 @@ export const StyledProjectsCard = styled.div`
 
         .tools {
             border-bottom: none;
-            border-right: 3px solid rgba(0,0,0,0.125);
+            border-right: 3px solid ${props => props.theme.colors.primary};
         }
     }
 `
@@ -141,6 +141,7 @@ export const StyledSkillsCard = styled.section`
         font-size: 1em;
         font-weight: 700;
         text-align: center;
+        color: ${props => props.theme.colors.text};
     }
 
     .card {
@@ -166,7 +167,7 @@ export const StyledSkillsCard = styled.section`
                 transition: 0.2s;
 
                 h4 {
-                    color: white;
+                    color: #F4F7F5;
                     text-align: center;
                     margin-top: 8px;
                 }

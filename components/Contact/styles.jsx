@@ -68,6 +68,8 @@ export const StyledContact = styled(Section)`
         font-size: 1em;   
         border-radius: .3em;
         border: 1px solid ${props => props.theme.colors.primary};
+        background-color: ${props => props.theme.colors.background};
+        color: ${props => props.theme.colors.text};
     }
 
     input[type=text]:focus, 
