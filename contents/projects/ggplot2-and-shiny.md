@@ -11,4 +11,4 @@ github_url: "https://github.com/francosbenitez/plot-replication"
 live_url: "https://github.com/francosbenitez/plot-replication"
 ---
 
-This was one of my first projects using R. I tried to do a web app to visualize results, but I didn't know very much about web apps, so I prefered to put on.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus, leo id ultricies tincidunt, mi lorem molestie est, id efficitur orci urna id odio. Aenean lacinia lacus id tellus mollis egestas. Sed et convallis nibh. Suspendisse sodales massa a est interdum, a varius mauris scelerisque. Maecenas quam purus, sodales et sollicitudin sit amet, mattis eget metus. Vivamus in lacinia libero, at viverra justo. Sed eleifend quis nisi id sodales. Sed in ex vel sem euismod fringilla. Nunc pretium orci non iaculis tempus. Proin nec eleifend risus. Duis ultricies volutpat vulputate. Pellentesque posuere nulla metus, sed porttitor ligula venenatis eget. Fusce ipsum metus, volutpat eu orci sodales, tincidunt sollicitudin lorem. Proin id ante a turpis tincidunt ultricies. Curabitur feugiat nunc sed luctus porttitor.
