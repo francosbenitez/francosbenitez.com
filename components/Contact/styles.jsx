@@ -38,6 +38,10 @@ export const StyledContact = styled(Section)`
         font-size: 1.25em;
     }
 
+    .icon-wrapper a {
+        fill: ${props => props.theme.colors.text};
+    }
+
     .icon-wrapper span {
         margin-left: 2rem;
         color: ${props => props.theme.colors.link};
