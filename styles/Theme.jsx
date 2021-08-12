@@ -6,7 +6,7 @@ export const GlobalStyle = createGlobalStyle`
       padding: 0;
       box-sizing: border-box;
       line-height: 1.5;
-      color: #313131;
+      /* color: #313131; */
       font-family: "IBM Plex Sans";
       /* Firefox */
       scrollbar-width: thin;
@@ -15,7 +15,7 @@ export const GlobalStyle = createGlobalStyle`
     }
     
     body {
-      background-color: #f9fafb;
+      background-color: ${props => props.theme.colors.background};
     }
 
     a {
@@ -29,6 +29,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     p {
+      color: ${props => props.theme.colors.text};
       font-size: 1em;
     }
 
@@ -49,25 +50,60 @@ export const GlobalStyle = createGlobalStyle`
 `;
 
 export const theme = {
-    colors: {
-        primary: "#2079c7",
-        secondary: "#6AADFF",
-        tertiary: "#DEF2FF",
-        fourth: "#DBA11C",
-        text: "#313131",
-        link: "#1155cc",
-        grey: "#666666",
-        background: "#f9fafb",
-    },
-
-    font: {
-        text: "Inter",
-    },
-
-    devices: {
-        sm_mobile: "(min-width: 350px)",
-        mobile: "(min-width: 500px)",
-        tablet: "(min-width: 800px)",
-        desktop: "(min-width: 1160px)",
-    },
+    
 };
+
+export const lightTheme = {
+  // bodyBg: "white",
+  // headings: "black",
+  // text: "#818181",
+
+  colors: {
+    primary: "#2079c7",
+    secondary: "#6AADFF",
+    tertiary: "#DEF2FF",
+    fourth: "#DBA11C",
+    text: "#818181",
+    link: "#1155cc",
+    grey: "#666666",
+    background: "white",
+  },
+
+  font: {
+      text: "Inter",
+  },
+
+  devices: {
+      sm_mobile: "(min-width: 350px)",
+      mobile: "(min-width: 500px)",
+      tablet: "(min-width: 800px)",
+      desktop: "(min-width: 1160px)",
+  },
+}
+export const darkTheme = {
+  // bodyBg: "",
+  // headings: "white",
+  // text: "#c1c1c1",
+
+  colors: {
+    primary: "#2079c7",
+    secondary: "#6AADFF",
+    tertiary: "#DEF2FF",
+    fourth: "#DBA11C",
+    text: "#c1c1c1",
+    link: "#1155cc",
+    grey: "#666666",
+    background: "#141a2c",
+  },
+
+  font: {
+      text: "Inter",
+  },
+
+  devices: {
+      sm_mobile: "(min-width: 350px)",
+      mobile: "(min-width: 500px)",
+      tablet: "(min-width: 800px)",
+      desktop: "(min-width: 1160px)",
+  },
+}
