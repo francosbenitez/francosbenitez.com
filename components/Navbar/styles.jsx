@@ -15,6 +15,17 @@ export const Nav = styled.nav`
     z-index: 1000;
     top: 0;
   
+    button {
+        position: fixed;
+        top: 18px;
+        right: 70px;
+        fill: ${props => props.theme.colors.primary};
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+
     .logo {
         padding: 15px 0;
         font-size: 1.4em;
@@ -41,6 +52,10 @@ export const Nav = styled.nav`
     
     @media ${props => props.theme.devices.tablet} {
         padding: 0 6rem 0 6rem;
+
+        button {
+            right: 60px;
+        }
     }
 `
 

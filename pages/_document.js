@@ -33,7 +33,7 @@ export default class CustomDocument extends Document {
       <Html lang="en">
         <Head>
           <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet" />
-          <meta name="theme-color" content="#bf3f3f" />
+          <meta name="theme-color" content={`${props => props.theme.colors.primary}`} />
         </Head>
         <body>
           <Main />

@@ -4,7 +4,7 @@ import Navbar from "./Navbar"
 import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme, GlobalStyle } from "../styles/Theme"
 import { React, useState } from 'react';
-import { ThemeSwitcher } from "../styles/Buttons"
+// import { ThemeSwitcher } from "../styles/Buttons"
 import Icon from "./Icon"
 
 const Layout = ({ children }) => {
@@ -25,9 +25,9 @@ const Layout = ({ children }) => {
                 <meta name="theme-color" content={`${props => props.theme.colors.primary}`} />
             </Head>
             <Navbar>
-                <ThemeSwitcher onClick={toggleTheme}>
+                <button onClick={toggleTheme}>
                     <Icon name={theme === "light" ? "night" : "day"} />   
-                </ThemeSwitcher>
+                </button>
             </Navbar>
             { children }
             <Footer />
