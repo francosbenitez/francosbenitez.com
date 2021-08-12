@@ -56,8 +56,8 @@ export const lightTheme = {
         tertiary: "#DEF2FF",
         text: "#222823",
         link: "#2079c7",
-        grey: "#222823",
-        background: "F4F7F5",
+        // grey: "#222823",
+        background: "#F4F7F5",
     },
 
     devices: {
@@ -74,7 +74,7 @@ export const darkTheme = {
         tertiary: "#575a5eae",
         text: "#F4F7F5",
         link: "#A7A2A9",
-        grey: "#F4F7F5",
+        // grey: "#F4F7F5",
         background: "#222823",
     },
 

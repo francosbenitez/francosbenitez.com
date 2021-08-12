@@ -9,9 +9,9 @@ export const Nav = styled.nav`
     position: fixed;
     /* background-color: hsla(0,0%,100%,.9); */
     background-color: ${props => props.theme.colors.background};
-    -webkit-backdrop-filter: blur(.5rem);
-    backdrop-filter: blur(.5rem);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* -webkit-backdrop-filter: blur(.5rem);
+    backdrop-filter: blur(.5rem); */
+    box-shadow: 15px 0 10px rgba(0, 0, 0, 0.2);
     z-index: 1000;
     top: 0;
   
