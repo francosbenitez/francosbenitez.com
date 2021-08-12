@@ -52,6 +52,8 @@ export const StyledHero = styled.section`
         margin: 2rem 0 2rem 0;
     }
 
+	
+
     @media ${props => props.theme.devices.tablet} {
         text-align: left;
         

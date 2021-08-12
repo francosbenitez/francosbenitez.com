@@ -54,11 +54,10 @@ export const lightTheme = {
         primary: "#2079c7",
         secondary: "#6AADFF",
         tertiary: "#DEF2FF",
-        fourth: "#DBA11C",
-        text: "#313131",
-        link: "#1155cc",
-        grey: "#666666",
-        background: "white",
+        text: "#222823",
+        link: "#2079c7",
+        grey: "#222823",
+        background: "F4F7F5",
     },
 
     devices: {
@@ -73,10 +72,9 @@ export const darkTheme = {
         primary: "#A7A2A9",
         secondary: "#575A5E",
         tertiary: "#575a5eae",
-        fourth: "#DBA11C",
         text: "#F4F7F5",
         link: "#A7A2A9",
-        grey: "#666666",
+        grey: "#F4F7F5",
         background: "#222823",
     },
 

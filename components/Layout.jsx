@@ -8,8 +8,9 @@ import { ThemeSwitcher } from "../styles/Buttons"
 import Icon from "./Icon"
 
 const Layout = ({ children }) => {
-    const [theme, setTheme] = useState(true);
-    const toggleTheme = () => { theme === "light" ? setTheme("dark") : setTheme("light") }
+    const [theme, setTheme] = useState("light");
+    const toggleTheme = () => { 
+        theme === "light" ? setTheme("dark") : setTheme("light") }
 
     return (
         <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
