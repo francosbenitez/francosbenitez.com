@@ -1,7 +1,7 @@
 ---
 title: 'My First CRUD'
 date: '2021-08-12'
-description: "Using the Flask Python microframework"
+description: "Using the Flask Python microframework."
 img: "/images/projects/flask.png"
 img_alt: "Image of a project made with the Flask Python microframework."
 featured: false
