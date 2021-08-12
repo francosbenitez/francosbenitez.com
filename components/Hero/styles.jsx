@@ -49,10 +49,20 @@ export const StyledHero = styled.section`
     
     .hero-img svg { 
         width: 100%;
-        margin: 2rem 0 2rem 0;
+        margin: 2rem 0 2rem 0; 
+        .st0{fill:${props => props.theme.colors.tertiary};}
+        .st1{fill:${props => props.theme.colors.primary};}
+        .st2{fill:#F2F2F2;}
+        .st3{fill:none;}
+        .st4{fill:none;stroke:#D3D3D3;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
+        .st5{fill:#E8BABA;}
+        .st6{fill:#313131;}
+        .st7{fill:#FBBEBE;}
+        .st8{fill:#3F3D56;}
+        .st9{fill:#FFFFFF;}
+        .st10{fill:#D1D3D4;}
+        .st11{fill:#E6E7E8;}
     }
-
-	
 
     @media ${props => props.theme.devices.tablet} {
         text-align: left;

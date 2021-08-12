@@ -3,7 +3,7 @@ import { StyledHero } from './styles';
 import content from "../../lib/content.json";
 import Typical from 'react-typical'
 import { StyledArrow } from "../../styles/Animations"
-import HeroImage from '../../public/images/others/cover-image.svg';
+import { HeroImage } from './HeroImage';
 import Link from "next/link"
 import { StyledProjectsButton, 
     StyledContactButton } from "../../styles/Buttons"
