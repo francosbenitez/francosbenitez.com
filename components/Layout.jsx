@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
             </Head>
             <Navbar>
                 <ThemeSwitcher onClick={toggleTheme}>
-                    <Icon name={theme === "dark" ? "day" : "night"} />   
+                    <Icon name={theme === "light" ? "night" : "day"} />   
                 </ThemeSwitcher>
             </Navbar>
             { children }
