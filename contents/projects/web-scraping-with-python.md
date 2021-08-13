@@ -5,7 +5,7 @@ description: "Using the Beautiful Soup library."
 img: "/images/projects/promiedos.png"
 img_alt: "Image of the Promiedos website."
 featured: false
-tools_used: "Flask, MySQL, Python"
+tools_used: "Python, Beautiful Soup"
 published: "2021/06/03"
 github_url: "https://github.com/francosbenitez/web-scraping"
 live_url: "https://github.com/francosbenitez/web-scraping"
