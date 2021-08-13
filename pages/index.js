@@ -22,7 +22,7 @@ export default function Home({ allPostsData, allProjectsData }) {
         <meta name="description" content="Data, design, and development." />
         <meta name="keywords" content="francosbenitez data design development" /> 
         <meta name="twitter:image:src" content="/images/others/social.png" />
-        <meta property="og:image" content="/images/others/social.png" />
+        <meta property="og:image" content="https://francosbenitez.vercel.app/public/images/others/social.png">
       </Head>
       <Hero />
       <About />
