@@ -1,7 +1,7 @@
 ---
-title: 'Using ggplot2 and R Shiny'
+title: 'Average age of the texts of Argentine psychology majors'
 date: '2021-07-25'
-description: "Average age of the texts of Argentine psychology majors."
+description: "Using ggplot2 and R Shiny."
 img: "/images/projects/antique.png"
 img_alt: "Plot showing the antique of Argentine psychology careers."
 featured: false
