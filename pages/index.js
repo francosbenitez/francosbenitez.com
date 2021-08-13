@@ -23,7 +23,6 @@ export default function Home({ allPostsData, allProjectsData }) {
         <meta name="keywords" content="francosbenitez data design development" /> 
         <meta name="Content-language" content="en" />
         <link rel="alternate" hrefLang="en" href="https://francosbenitez.vercel.app/" />
-        {/*<link rel="alternate" hrefLang="es-ar" href="https://www.francosbenitez.vercel.app/es" />*/}
         <link rel="canonical" href="https://francosbenitez.vercel.app/" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="Franco Sebastián Benítez" />
@@ -31,14 +30,14 @@ export default function Home({ allPostsData, allProjectsData }) {
         <meta name="twitter:creator" content="@francosbenitez" />
         <meta name="twitter:url" content="https://francosbenitez.vercel.app/" />
         <meta name="twitter:description" content="Data, design, and development." />
-        <meta name="twitter:image" content="https://francosbenitez.vercel.app/public/images/others/social.png" />
+        <meta name="twitter:image" content="/images/others/social.png" />
         <meta name="application-name" content="francosbenitez" />
         <meta property="og:title" content="francosbenitez" />
         <meta property="og:site_name" content="francosbenitez" />
         <meta property="og:url" content="https://francosbenitez.vercel.app/" />
         <meta property="og:locale" content="es_AR" />
         <meta property="og:description" content="Data, design, and development." />
-        <meta property="og:image" content="https://francosbenitez.vercel.app/public/images/others/social.png" />
+        <meta property="og:image" content="/images/others/social.png" />
         <meta property="og:image:width" content="1243" />
         <meta property="og:image:height" content="458" />
       </Head>
