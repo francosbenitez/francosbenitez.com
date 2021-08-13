@@ -32,8 +32,8 @@ export default function Home({ allPostsData, allProjectsData }) {
         <meta name="twitter:description" content="Data, design, and development." />
         <meta name="twitter:image" content="/images/others/social.png" />
         <meta name="application-name" content="francosbenitez" />
-        <meta property="og:title" content="francosbenitez" />
-        <meta property="og:site_name" content="francosbenitez" />
+        {/* <meta property="og:title" content="francosbenitez" /> */}
+        {/* <meta property="og:site_name" content="francosbenitez" /> */}
         <meta property="og:url" content="https://francosbenitez.vercel.app/" />
         <meta property="og:locale" content="es_AR" />
         <meta property="og:description" content="Data, design, and development." />
