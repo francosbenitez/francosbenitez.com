@@ -1,7 +1,7 @@
 ---
 title: 'Website of the MEPC'
 date: '2021-08-01'
-description: "From blogdown to React."
+description: "From blogdown to JavaScript."
 img: "/images/projects/mepc.png"
 img_alt: "MEPC cover photo."
 featured: true
