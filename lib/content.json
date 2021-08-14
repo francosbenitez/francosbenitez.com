@@ -75,6 +75,10 @@
                     {
                         "name": "JavaScript",
                         "url": "/icons/tech/javascript.svg"
+                    },
+                    {
+                        "name": "MongoDB",
+                        "url": "/icons/tech/mongo.svg"
                     }
                 ],
                 "thirdRow": [
