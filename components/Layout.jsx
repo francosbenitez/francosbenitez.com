@@ -3,12 +3,31 @@ import Head from "next/head"
 import Navbar from "./Navbar"
 import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme, GlobalStyle } from "../styles/Theme"
-import { React, useState } from 'react';
+//import { React, useState, useEffect } from 'react';
+import React from "react";
 // import { ThemeSwitcher } from "../styles/Buttons"
 import Icon from "./Icon"
 
+function useStickyState(defaultValue, key) {
+    const [value, setValue] = React.useState(defaultValue);
+  
+    React.useEffect(() => {
+      const stickyValue = window.localStorage.getItem(key);
+  
+      if (stickyValue !== null) {
+        setValue(JSON.parse(stickyValue));
+      }
+    }, [key]);
+  
+    React.useEffect(() => {
+      window.localStorage.setItem(key, JSON.stringify(value));
+    }, [key, value]);
+  
+    return [value, setValue];
+  }
+
 const Layout = ({ children }) => {
-    const [theme, setTheme] = useState("light");
+    const [theme, setTheme] = useStickyState("light", "theme");
     const toggleTheme = () => { 
         theme === "light" ? setTheme("dark") : setTheme("light") }
 
