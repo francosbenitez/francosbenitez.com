@@ -11,4 +11,6 @@ github_url: "https://github.com/francosbenitez/mepc"
 live_url: "https://francosbenitez.github.io/mepc"
 ---
 
-The first version of this website can be found at [https://mepc.netlify.app/](https://mepc.netlify.app/). It was built using the R blogdown package for creating websites in a easy way. Then, I have created this simple version using HTML, CSS, and JavaScript. However, right now we are currently creating a better version using TypeScript, Next, and Tailwind. It will be ready soon! 
+The first version of this website can be found at [https://mepc.netlify.app/](https://mepc.netlify.app/). It was built using the R blogdown package for creating websites in a easy way. Then, I have created this simple version using HTML, CSS, and JavaScript. 
+
+We are currently creating a better version of this project using TypeScript, Next, and Tailwind. It will be ready soon! 
