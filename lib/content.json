@@ -85,6 +85,10 @@
                     {
                         "name": "MySQL",
                         "url": "/icons/tech/mysql.svg"
+                    },
+                    {
+                        "name": "Express",
+                        "url": "/icons/tech/express.svg"
                     }
                 ]
             },

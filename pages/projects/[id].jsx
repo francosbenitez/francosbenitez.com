@@ -31,9 +31,13 @@ export default function Project({ projectData }) {
                     <p>{projectData.published}</p>
                     <hr />
                     <p>
-                      <a href={`${projectData.live_url}`}>
-                        Live URL
-                      </a>
+                      {
+                        (projectData.live_url == false) ?
+                          <p>Live not available</p> :
+                          <a href={`${projectData.live_url}`}>
+                            Live URL
+                          </a>
+                      }
                     </p>
                   </div>
                 </StyledProjectsCard>

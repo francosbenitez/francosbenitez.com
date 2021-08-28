@@ -78,7 +78,7 @@ export const StyledUl = styled.ul`
         border-bottom: 1.5px ${props => props.theme.colors.link} solid;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 800px) {
         flex-flow: column nowrap;
         background-color: ${props => props.theme.colors.background};
         position: fixed;
@@ -129,7 +129,7 @@ export const StyledBurger = styled.div`
         }
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 800px) {
         display: flex;
         justify-content: space-around;
         flex-flow: column nowrap;

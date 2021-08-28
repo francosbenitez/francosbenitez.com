@@ -8,5 +8,7 @@ featured: false
 tools_used: "R, ggplot2, Shiny"
 published: "2021/08/01"
 github_url: "https://github.com/francosbenitez/plot-replication"
-live_url: "https://github.com/francosbenitez/plot-replication"
+live_url: false
 ---
+
+One of my first projects using R, particularly the well-know set of libraries called tidyverse. I tried to make a interactive version of this project using R Shiny: [https://francosbenitez.shinyapps.io/carreras_de_psicologia_argentinas/](https://francosbenitez.shinyapps.io/carreras_de_psicologia_argentinas/); however, I didn't finish it when I realised that I could create better interactive web stuff using JavaScript. In the future I could try to remake this project. 
