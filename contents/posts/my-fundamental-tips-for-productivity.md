@@ -39,4 +39,5 @@ When talking about studying, I would recommend following the [active recall](htt
 ### Final words
 
 Firstly, being productive is a means to an end: get closer to ourselves to accomplish our objectives and wishes. I think none of us is productive just because. Secondly, being productive is like everything, with practise and dedication it improves. That is, we don’t wait to go from studying two hours a day to studying ten hours.  Finally, being productive is, also, to find the best way in which we feel more comfortable with our work. 
+
 I hope these tips, which are really important for me, would be important for you too. If you want to discuss something or simply want to talk to me, [send me a message](https://www.francosbenitez.com/#contact)! 
