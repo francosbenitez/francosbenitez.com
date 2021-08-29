@@ -11,4 +11,6 @@ github_url: "https://github.com/francosbenitez/web-scraping"
 live_url: false
 ---
 
-My first web scraping, using Python and its well known Beautiful Soup library. I scraped the [Promiedos](https://www.promiedos.com.ar/primera) website extracting five main boards of the local soccer. What is the purpose of this? This is an easy way to manipulate this data and find trends in the Argentine soccer league.
+My first web scraping, using Python and its well known Beautiful Soup library. I scraped the [Promiedos](https://www.promiedos.com.ar/primera) website extracting five main boards of the local soccer. 
+
+What was the purpose of this project? This is an easy way to manipulate this data and find trends in the Argentine soccer league.
