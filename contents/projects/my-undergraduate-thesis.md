@@ -15,4 +15,4 @@ This is the data analysis of my undergraduate thesis entitled "Perceptions about
 
 In this project I have learned a lot about data analysis. For example, I have learned how difficult it is to work with real data (as an anecdote, I struggled with creating a regex that removes " years" in a list of ages). 
 
-In addition, this project allowed me to solidify my knowledge of data analysis libraries, such as the popular Pandas, Matplotlib, and Seaborn libraries.
+In addition, this project allowed me to solidify my knowledge of not only Python but also data analysis libraries, such as the popular Pandas, Matplotlib, and Seaborn libraries.
