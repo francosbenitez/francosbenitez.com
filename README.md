@@ -9,8 +9,8 @@ My personal website, built from scratch using React/Next.js.
 ## Code and Resourses Used
 **Packages:** react, next, styled-components, date-fns, gray-matter, remark, remark-html 
 
-## Interact With My Site
-To interact with this site, clone this repository and run the following code on the command line.
+## Interact With the Website
+To interact with the website, clone this repository and run the following code on the command line.
 
 ```bash
 npm install
