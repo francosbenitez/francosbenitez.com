@@ -4,4 +4,16 @@
 
 # My Personal Website
 
-My personal website, built from scratch using React/Next. 
+My personal website, built from scratch using React/Next.js.   
+
+## Code and Resourses Used
+**Packages:** react, next, styled-components, date-fns, gray-matter, remark, remark-html 
+
+## Interact With My Site
+To interact with this site, clone this repository and run the following code on the command line.
+
+```bash
+npm install
+npm run dev
+```
+
