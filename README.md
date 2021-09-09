@@ -17,3 +17,6 @@ npm install
 npm run dev
 ```
 
+## Project Images
+
+![Website view](/view.gif "Franco Sebastián Benítez's website")
