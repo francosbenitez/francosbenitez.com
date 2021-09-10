@@ -23,9 +23,7 @@ I use Google Calendar for time blocking. Here you’ll find [The Complete Guide 
 
 ### 3. App blockers
 
-If you think you can really control yourself by not using social media, congratulations, you are from another planet. 
-
-Let’s be honest, it’s very difficult not to tempt us. We say “Only a little bit”, and we can spend many hours scrolling on Facebook, Twitter, or Instagram without realizing it. To avoid this, there are applications that block other applications: these powerful apps are called *app blockers*. The main purpose of using app blockers is that make us less dependent on our limited willpower. 
+If you think you can really control yourself by not using social media, congratulations, you are from another planet. Let’s be honest, it’s very difficult not to tempt us. We say “Only a little bit”, and we can spend many hours scrolling on Facebook, Twitter, or Instagram without realizing it. To avoid this, there are applications that block other applications: these powerful apps are called *app blockers*. The main purpose of using app blockers is that make us less dependent on our limited willpower. 
 
 I use, in this case, [Cold Turkey](https://getcoldturkey.com/) for PC, and [AppBlock](https://play.google.com/store/apps/details?id=cz.mobilesoft.appblock&hl=en&gl=US) for mobile phones. In both cases on their free versions. 
 
