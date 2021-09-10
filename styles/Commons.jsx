@@ -57,8 +57,8 @@ export const Section = styled.section`
 
     .see-all span:hover,
     .back-to-home span:hover {
-        border-bottom: 1.5px ${props => props.theme.colors.link} dotted;
-        color: ${props => props.theme.colors.link};
+        border-bottom: 1.5px ${props => props.theme.colors.primary} dotted;
+        color: ${props => props.theme.colors.primary};
     }
 
     .blog-container:before {
