@@ -75,7 +75,7 @@ export const StyledUl = styled.ul`
     }
 
     li.active a {
-        border-bottom: 1.5px ${props => props.theme.colors.link} solid;
+        border-bottom: 1.5px ${props => props.theme.colors.primary} solid;
     }
 
     @media (max-width: 800px) {

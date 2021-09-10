@@ -19,7 +19,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     a {
-        color: ${props => props.theme.colors.primary};
+        color: ${props => props.theme.colors.link};
         text-decoration: none;
         cursor: pointer;
     }
@@ -55,7 +55,7 @@ export const lightTheme = {
         secondary: "#6AADFF",
         tertiary: "#DEF2FF",
         text: "#222823",
-        link: "#2079c7",
+        link: "#1155cc",
         // grey: "#222823",
         background: "#F4F7F5",
     },
@@ -73,7 +73,7 @@ export const darkTheme = {
         secondary: "#575A5E",
         tertiary: "#575a5eae",
         text: "#F4F7F5",
-        link: "#A7A2A9",
+        link: "#E7CFBC",
         // grey: "#F4F7F5",
         background: "#222823",
     },

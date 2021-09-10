@@ -45,6 +45,7 @@ export const StyledHero = styled.section`
         font-size: 2em;
         color: ${(props) => props.theme.colors.text};
         font-weight: 600;
+        font-family: "Open Sans", sans-serif;
     }
     
     .hero-img svg { 

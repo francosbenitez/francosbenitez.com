@@ -52,7 +52,7 @@ export const Section = styled.section`
 
     .see-all span,
     .back-to-home span {
-        color: ${props => props.theme.colors.link};
+        color: ${props => props.theme.colors.primary};
     }
 
     .see-all span:hover,
@@ -110,7 +110,8 @@ export const Posts = styled.div`
     h2 {
         font-size: 1.4em;
         margin: 1rem 0 1rem 0;
-        font-weight: 500;
+        font-weight: 600;
+        font-family: "Open Sans", sans-serif;
     }
 
     p {
@@ -124,6 +125,9 @@ export const Posts = styled.div`
     .back-and-go {
         display: inline-block;
         width: 100%;
+        a {
+            color: ${props => props.theme.colors.primary};
+        }
     }
 
     .go-to-all {

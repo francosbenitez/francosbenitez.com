@@ -49,7 +49,7 @@ export const StyledContact = styled(Section)`
 
     .icon-wrapper a:hover {
         border-bottom: none;
-        fill: ${props => props.theme.colors.primary};
+        fill: ${props => props.theme.colors.link};
 
         span {
             border-bottom: 1.5px ${props => props.theme.colors.link} dotted;

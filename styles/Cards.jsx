@@ -44,6 +44,7 @@ export const StyledCard = styled.div`
     .card-text {
         font-weight: 700;
         font-size: 1.4em;
+        font-family: "Open Sans", sans-serif;
     }
 
     .card-date {
@@ -142,6 +143,7 @@ export const StyledSkillsCard = styled.section`
         font-weight: 700;
         text-align: center;
         color: ${props => props.theme.colors.text};
+        font-family: "Open Sans", sans-serif;
     }
 
     .card {

@@ -36,7 +36,7 @@ export const StyledFooter = styled.footer`
     }
 
     .icon-wrapper a svg {
-        fill: ${props => props.theme.colors.primary};
+        fill: ${props => props.theme.colors.link};
         opacity: 50%;
     }
 
