@@ -29,7 +29,7 @@ I use, in this case, [Cold Turkey](https://getcoldturkey.com/) for PC, and [AppB
 
 ### 4. Sleep
 
-Sleeping well is essential to being productivity. I use apps to reduce the screen light in my eyes at night, such as [f.lux](https://justgetflux.com/) for desktop and [Twilight](https://play.google.com/store/apps/details?id=com.urbandroid.lux&hl=en&gl=US) for mobile. On the other hand, so as not to sleep too much, I use the [Alarmy](https://play.google.com/store/apps/details?id=droom.sleepIfUCan&hl=en&gl=US) app. This last powerful app forces me to solve mathematical problems when I get up, so I have to solve such problems to turn it off. In both cases, I use these apps in their free versions.
+Sleeping well is essential to being productivity. On the one hand, I use apps to reduce the screen light in my eyes at night, such as [f.lux](https://justgetflux.com/) for desktop and [Twilight](https://play.google.com/store/apps/details?id=com.urbandroid.lux&hl=en&gl=US) for mobile, and, on the other hand, so as not to sleep too much, I use the [Alarmy](https://play.google.com/store/apps/details?id=droom.sleepIfUCan&hl=en&gl=US) app. This last powerful app forces me to solve mathematical problems when I get up, so I have to solve such problems to turn it off. In both cases, I use these apps in their free versions.
 
 **Note**: For me, seven and a half hours is enough to sleep and feel good the whole day.
 
