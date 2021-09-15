@@ -120,6 +120,16 @@ const About = () => {
                     </div>
                 </div>
             </StyledSkillsCard>
+            <div className="about-container">
+                <div className="avatar-container">
+                    <div className="avatar-wrapper"></div>
+                </div>
+                <div className="description-container" style={{padding: "0 0 0 0", margin: "0 0 0 0"}}>
+                    <p>
+                        {content.about.description_end}
+                    </p>
+                </div>
+            </div>
         </StyledAbout>
     );
 };

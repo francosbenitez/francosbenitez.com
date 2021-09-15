@@ -162,7 +162,8 @@
                     }
                 ]
             }
-        }
+        },
+        "description_end": "When I’m not staring at my computer, I like to get outside for a walk, run or bike ride. I also enjoy playing football!"
     },
     "projects": {
         "title": ["Featured", "Projects"],
