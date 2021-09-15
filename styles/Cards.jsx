@@ -172,6 +172,7 @@ export const StyledSkillsCard = styled.section`
                     color: #F4F7F5;
                     text-align: center;
                     margin-top: 8px;
+                    font-family: "Open Sans", sans-serif;
                 }
 
                 &:hover {

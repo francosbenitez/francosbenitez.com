@@ -30,10 +30,10 @@ const About = () => {
                 <div key={text}>
                     {
                         (text == "Franco Sebastián Benítez"
-                        || text == "web development"
-                        || text == "data science"
+                        || text == "development"
+                        || text == "data"
                         || text == "design"
-                        || text == "Full Stack Developer"
+                        || text == "program"
                         || text == "technologies") 
                         ? newArr.push(<span key={text} dangerouslySetInnerHTML={{__html: text}}></span>)
                         : (text == "") ? newArr.push(<div key={text} dangerouslySetInnerHTML={{__html: '<br/>'}} />)
