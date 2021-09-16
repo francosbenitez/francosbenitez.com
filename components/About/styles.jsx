@@ -30,8 +30,8 @@ export const StyledAbout = styled(Section)`
     .description-container {
         flex-basis: 75%;
         margin-top: 2rem;
-        background-image: url("/marks.png/");
-        padding-top: 40px;
+        /*background-image: url("/marks.png/");
+        padding-top: 40px;*/
         background-position: 0px 0px;
         background-repeat: no-repeat;
     }
