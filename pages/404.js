@@ -15,7 +15,7 @@ export default function Custom404() {
                 <hr />
                 <div className="back-to-home">
                     <Link href="/">
-                    <a>← Back to home</a>
+                    <a>← Go to home</a>
                     </Link>
                 </div>
             </Posts>
