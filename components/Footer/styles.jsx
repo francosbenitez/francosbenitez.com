@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const StyledFooter = styled.footer`
     padding: 2rem 2rem 2rem 2rem;
-    box-shadow: 10px 0 15px rgba(0, 0, 0, 0.2);
+    box-shadow: ${props => props.theme.colors.boxShadow};
     display: flex;
     flex-direction: column;
     width: 100%;

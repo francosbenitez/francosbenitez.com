@@ -11,7 +11,7 @@ export const Nav = styled.nav`
     background-color: ${props => props.theme.colors.background};
     /* -webkit-backdrop-filter: blur(.5rem);
     backdrop-filter: blur(.5rem); */
-    box-shadow: 15px 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: ${props => props.theme.colors.boxShadow};
     z-index: 1000;
     top: 0;
   

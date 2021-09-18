@@ -58,6 +58,7 @@ export const lightTheme = {
         link: "#1155cc",
         // grey: "#222823",
         background: "#F4F7F5",
+        boxShadow: "0 0 10px rgba(0, 0, 0, 0.2)",
     },
 
     devices: {
@@ -76,6 +77,7 @@ export const darkTheme = {
         link: "#E7CFBC",
         // grey: "#F4F7F5",
         background: "#222823",
+        boxShadow: "0 0 10px rgba(0, 0, 0, 1)",
     },
 
     devices: {
