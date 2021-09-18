@@ -21,7 +21,7 @@ export default function Project({ projectData }) {
                     <p>{projectData.tools_used}</p>
                     <hr />
                     <p>
-                      <a href={`${projectData.github_url}`}>
+                      <a href={`${projectData.github_url}`} target="_blank" rel="noopener noreferrer">
                         GitHub repository
                       </a>
                     </p>
@@ -34,7 +34,7 @@ export default function Project({ projectData }) {
                       {
                         (projectData.live_url == false) ?
                           <p>Live not available</p> :
-                          <a href={`${projectData.live_url}`}>
+                          <a href={`${projectData.live_url}`} target="_blank" rel="noopener noreferrer">
                             Live URL
                           </a>
                       }
