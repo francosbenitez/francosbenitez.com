@@ -130,10 +130,6 @@
                     {
                         "name": "Styled Components",
                         "url": "/icons/tech/styled.svg"
-                    },
-                    {
-                        "name": "D3",
-                        "url": "/icons/tech/d3.svg"
                     }
                 ]
             },
@@ -153,6 +149,10 @@
                     {
                         "name": "Figma",
                         "url": "/icons/tech/figma.svg"
+                    },
+                    {
+                        "name": "D3",
+                        "url": "/icons/tech/d3.svg"
                     }
                 ],
                 "thirdRow": [

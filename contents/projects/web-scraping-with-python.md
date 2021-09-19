@@ -5,12 +5,22 @@ description: "Using the Beautiful Soup library."
 img: "/images/projects/promiedos.png"
 img_alt: "Image of the Promiedos website."
 featured: false
-tools_used: "Python, Beautiful Soup"
+tools_used: "Python, Beautiful Soup, pandas"
 published: "2021/06/03"
 github_url: "https://github.com/francosbenitez/web-scraping"
 live_url: false
 ---
 
-My first web scraping, using Python and its well known Beautiful Soup library. I scraped the [Promiedos](https://www.promiedos.com.ar/primera) website extracting five main boards of the local soccer. 
+### What It Is
+A simple web scraping. 
 
-What was the purpose of this project? This is an easy way to manipulate this data and find trends in the Argentine soccer league.
+### What I Used
+Python and its well known Beautiful Soup library
+
+### What It Does
+It scrapes the [Promiedos](https://www.promiedos.com.ar/primera) website extracting five main boards of the Argentine soccer.
+
+### What I Learnt
+I learnt a lot about Python in itself and, particularly, how to use it for web scraping. 
+
+

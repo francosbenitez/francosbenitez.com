@@ -11,4 +11,16 @@ github_url: "https://github.com/francosbenitez/flask-crud-app"
 live_url: "https://my-first-crud.herokuapp.com/"
 ---
 
-This is my first CRUD (for those that don't know, "CRUD" stands for "Create, Read, Update, and Delete" records). I have made it using Python and its Flask microframework. In the near future, I have thought about building a more complex CRUD using the MERN stack. 
+### What It Is
+This is my first CRUD (for those that don't know, "CRUD" stands for "Create, Read, Update, and Delete" records). 
+
+### What I Used
+I have made it using Python and its Flask microframework. 
+
+### What It Does
+It allows to create, read, update, and delete records. 
+
+### What I Learnt
+I learnt how to use MySQL with Python, and how to integrate both of them in an application. 
+
+In the near future, I have thought about building a more complex CRUD using the MERN stack. 

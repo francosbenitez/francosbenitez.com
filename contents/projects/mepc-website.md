@@ -11,6 +11,16 @@ github_url: "https://github.com/francosbenitez/mepc"
 live_url: "https://francosbenitez.github.io/mepc"
 ---
 
-The first version of this website can be found at [https://mepc.netlify.app/](https://mepc.netlify.app/). It was built using the R blogdown package for creating websites in a easy way. Then, I have created this simple version using HTML, CSS, and JavaScript. 
+### What It Is
+A organizational website. 
 
-We are currently creating a better version of this project using TypeScript, Next, and Tailwind. It will be ready soon! 
+### What I Used
+I have created this simple version using HTML, CSS, and JavaScript. The first version of this website can be found [here](https://mepc.netlify.app/), which was built using the R blogdown package for creating websites in a easy way.
+
+### What It Does
+It shows what the organization is and what it does.
+
+### What I Learnt
+I learnt a lot about HTML, CSS, and the basics of JavaScript. 
+
+Currently, we are creating a better version of this project using TypeScript, Next, and Tailwind. It will be ready soon! 

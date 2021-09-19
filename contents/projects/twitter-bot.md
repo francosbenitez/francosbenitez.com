@@ -11,6 +11,19 @@ github_url: "https://github.com/francosbenitez/twitter-bot"
 live_url: "https://twitter.com/plan_psico"
 ---
 
-This is a project adapted from the tutorial [How to Make a Twitter Bot With Python](https://dylancastillo.co/how-to-make-a-twitter-bot-for-free/). When developing it, I dealt with some difficulties connecting Ubuntu to Docker, but I learned a lot about both of them.
+### What It Is
+This is a Twitter bot, adapted from the tutorial [How to Make a Twitter Bot With Python](https://dylancastillo.co/how-to-make-a-twitter-bot-for-free/)
 
-Basically, the bot tweets "No" and its derivatives every day at 15 o'clock (UTC). My interest in creating something like this stemmed from my discomfort with the curriculum at my school where I study psychology. The answer "No" and its derivatives refers the question "Has the curriculum of this school been updated?".
+### What I Used
+Python as programming language, the Twitter API, Docker, Ubuntu, and AWS Lambda for automation.
+
+### What It Does
+Basically, the bot tweets "No" and its derivatives every day at 15 o'clock (UTC). The answer "No" and its derivatives refers the question "Has the curriculum of this school been updated?".
+
+My interest in creating something like this stemmed from my discomfort with the curriculum at my school where I study psychology. 
+
+### What I Learnt
+When developing it, I dealt with some difficulties connecting Ubuntu to Docker, but I learned a lot about both of them.
+
+
+

@@ -11,8 +11,16 @@ github_url: "https://github.com/francosbenitez/thesis"
 live_url: "https://francosbenitez.github.io/thesis"
 ---
 
-This is the data analysis of my undergraduate thesis entitled "Perceptions about Replicabilty Crisis and Open Science". As the main analysis tool, I used mainly Python, but also made some plots in R. 
+### What It Is
+This is the data analysis of my undergraduate thesis entitled "Perceptions about Replicability Crisis and Open Science".
 
+### What I Used
+As the main analysis tool, I used mainly Python, but also made some plots in R. 
+
+### What It Does
+This data analysis shows the perceptions of ninety psychological researchers at my college on problems in science (replicability crisis), as well as proposed solutions (open science practices).  
+
+### What I Learnt
 In this project I learned a lot about data analysis. For example, I learned how difficult it is to work with real data (as an anecdote, I struggled with creating a regex that removes " years" in a list of ages). 
 
 In addition, this project allowed me to solidify my knowledge of not only Python but also data analysis libraries, such as the popular Pandas, Matplotlib, and Seaborn libraries.
