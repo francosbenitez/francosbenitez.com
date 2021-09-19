@@ -16,7 +16,3 @@ To interact with the website, clone this repository and run the following code o
 npm install
 npm run dev
 ```
-
-## Project Images
-
-![Website view](/view.gif "Franco Sebastián Benítez's website")
