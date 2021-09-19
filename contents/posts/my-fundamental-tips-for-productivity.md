@@ -7,7 +7,9 @@ img_alt: "Image that promotes 'don't work harder, work smarter.'"
 featured: true
 ---
 
-In my college years, I have worked hard to get the best scores possible in different subjects. However, when I was finishing my third year, I started thinking about why my scores weren’t what I wanted them to be. Namely, while I wanted to have a minimum average score between 9/10 in all subjects, I had a minimum average score of 8.25/10. Why? If I was putting a lot of effort into it. I had to be doing something wrong. Then, I started looking for information on study skills, productivity, and better habits. I googled every Reddit post and every YouTube channel possible about the topics I have already mentioned. What I found (and I have been putting into practice), is what I am going to detail below.
+In my college years, I have worked hard to get the best scores possible in different subjects. However, when I was finishing my third year, I started thinking about why my scores weren’t what I wanted them to be. Namely, while I wanted to have a minimum average score between 9/10 in all subjects, I had a minimum average score of 8.25/10. Why? If I was putting a lot of effort into it. I had to be doing something wrong. 
+
+Then, I started looking for information on study skills, productivity, and better habits. I googled every Reddit post and every YouTube channel possible about the topics I have already mentioned. What I found (and I have been putting into practice), is what I am going to detail below.
 
 ### 1. Time tracking
 
