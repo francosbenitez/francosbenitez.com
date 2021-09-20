@@ -12,7 +12,7 @@ live_url: false
 ---
 
 ### What It Is
-A simple web scraping. 
+This project is a simple web scraping. 
 
 ### What I Used
 Python and its well known Beautiful Soup library
