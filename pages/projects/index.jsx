@@ -21,29 +21,35 @@ const Projects = ({ allProjectsData }) => {
             All <span>{content.projects.title[1]}</span>
           </h1>
           <StyledCard>
-            <div className="card-wrapper">
+            <div className="projects__projects">
               {allProjectsData.map(({ id, date, title, description, img, img_alt }) => (
                 <div key={id}>
                   <Link href={`/projects/${id}`}>
                     <a>
-                      <div className="card">
-                          <div className="card-img">
-                              <Image 
-                              src={img} 
-                              alt={img_alt} 
-                              layout="responsive"
-                              width={1328}
-                              height={674}
-                              />
+                      <div className="project-card">
+                          <div className="project-card__image">
+                            <div className="lazy">
+                                <picture>
+                                  <Image 
+                                  src={img} 
+                                  alt={img_alt} 
+                                  layout="responsive"
+                                  width={1328}
+                                  height={674}
+                                  />
+                                </picture>
+                            </div>
                           </div>
-                          <div className="card-text">
+                          <div className="project-card__content">
+                            <h2 className="project-card__title">
                               {title}
-                          </div>
-                          <div className="card-date">
-                              <Date dateString={date} />
-                          </div>
-                          <div className="card-description">
-                              {description} 
+                            </h2>
+                            <small className="project-card__date">
+                              {" "}— <Date dateString={date} />
+                            </small>
+                            <p className="project-card__description">
+                                {description} 
+                            </p>
                           </div>
                       </div>
                     </a>

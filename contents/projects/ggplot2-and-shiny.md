@@ -1,5 +1,5 @@
 ---
-title: 'Texts of Argentine Psychology Majors'
+title: 'Average Age of the Texts of Argentine Psychology Majors'
 date: '2021-07-25'
 description: "Using ggplot2 and R Shiny."
 img: "/images/projects/antique.png"

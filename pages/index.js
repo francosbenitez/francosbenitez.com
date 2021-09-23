@@ -33,30 +33,36 @@ export default function Home({ allPostsData, allProjectsData }) {
           {content.projects.title[0]} <span>{content.projects.title[1]}</span>
           </h1>
           <StyledCard>
-            <div className="card-wrapper">
+            <div className="projects__projects">
               {allProjectsData.filter(({ featured }) => featured == true)
               .map(({ id, date, title, description, img, img_alt }) => (
                 <div key={id}>
                   <Link href={`/projects/${id}`}>
                     <a>
-                      <div className="card">
-                          <div className="card-img">
-                              <Image 
-                              src={img} 
-                              alt={img_alt} 
-                              layout="responsive"
-                              width={1328}
-                              height={674}
-                              />
+                      <div className="project-card">
+                          <div className="project-card__image">
+                            <div className="lazy">
+                              <picture>
+                                <Image 
+                                src={img} 
+                                alt={img_alt} 
+                                layout="responsive"
+                                width={1400}
+                                height={700}
+                                />
+                              </picture>
+                            </div>
                           </div>
-                          <div className="card-text">
+                          <div className="project-card__content">
+                            <h2 className="project-card__title">
                               {title}
-                          </div>
-                          <div className="card-date">
-                              <Date dateString={date} />
-                          </div>
-                          <div className="card-description">
-                              {description} 
+                            </h2>
+                            <small className="project-card__date">
+                              {" "}— <Date dateString={date} />
+                            </small>
+                            <p className="project-card__description">
+                                {description} 
+                            </p>
                           </div>
                       </div>
                     </a>
@@ -78,14 +84,14 @@ export default function Home({ allPostsData, allProjectsData }) {
             {content.blog.title[0]} <span>{content.blog.title[1]}</span>
           </h1>
           <StyledCard>
-            <div className="card-wrapper">
+            {/*<div className="card-wrapper">*/}
               {allPostsData.filter(({ featured }) => featured == true)
               .map(({ id, date, title, description, img, img_alt }) => (
-                <div key={id}>
+                <ol className="blog_posts" key={id}>
                   <Link href={`/posts/${id}`}>
                     <a>
-                      <div className="card">
-                          <div className="card-img">
+                    <div className="post-card">
+                          {/*<div className="card-img">
                               <Image 
                               src={img} 
                               alt={img_alt} 
@@ -93,22 +99,24 @@ export default function Home({ allPostsData, allProjectsData }) {
                               width={1328}
                               height={674}
                               />
-                          </div>
-                          <div className="card-text">
-                              {title}
-                          </div>
-                          <div className="card-date">
-                              <Date dateString={date} />
-                          </div>
-                          <div className="card-description">
-                              {description} 
+                          </div>*/}
+                          <div className="post-card__content">
+                            <h2 className="post-card__title">
+                                {title}
+                            </h2>
+                            <small className="post-card__details">
+                                <Date dateString={date} />
+                            </small>
+                            <p className="post-card__description">
+                                {description} 
+                            </p>
                           </div>
                       </div>
                     </a>
                   </Link>
-                </div>
+                </ol>
               ))}
-            </div>
+            {/*</div>*/}
           </StyledCard>
           <Link href="/posts" passHref>
                 <a className="see-all">
