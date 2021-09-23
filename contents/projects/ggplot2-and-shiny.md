@@ -8,14 +8,14 @@ featured: false
 tools_used: "R, tidyverse, Shiny"
 published: "2021/08/01"
 github_url: "https://github.com/francosbenitez/plot-replication"
-live_url: "https://francosbenitez.shinyapps.io/carreras_de_psicologia_argentinas/"
+live_url: false
 ---
 
 ### What It Is
-A customized plot. 
+This project is a customized plot. 
 
 ### What I Used
-R, particularly the well known set of libraries called tidyverse. 
+R, particularly the well known set of libraries called tidyverse.  
 
 ### What It Does
 It shows the average age of the texts of Argentine psychology majors.

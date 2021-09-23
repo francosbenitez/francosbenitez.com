@@ -12,7 +12,7 @@ live_url: "https://francosbenitez.github.io/mepc"
 ---
 
 ### What It Is
-A organizational website. 
+This project is an organizational website. 
 
 ### What I Used
 I have created this simple version using HTML, CSS, and JavaScript. The first version of this website can be found [here](https://mepc.netlify.app/), which was built using the R blogdown package for creating websites in a easy way.
