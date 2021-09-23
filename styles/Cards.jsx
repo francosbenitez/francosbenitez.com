@@ -89,6 +89,7 @@ export const StyledCard = styled.div`
 
     .project-card__description {
         font-weight: 500;
+        font-size: 1.2em;
     }
 
     .project-card__content:hover {
@@ -138,7 +139,7 @@ export const StyledCard = styled.div`
         left: -1rem;
         pointer-events: none;
         position: absolute;
-        top: -1rem;
+        top: -.5rem;
         width: calc(100% + 1rem);
     }
 
@@ -163,6 +164,7 @@ export const StyledCard = styled.div`
 
     .post-card__description {
         font-weight: 500;
+        font-size: 1.2em;
     }
 `;
 
