@@ -13,11 +13,11 @@ export const StyledCard = styled.div`
 
     .card {
       width: 250px;
-      height: auto;
+      height: 400px;
       -webkit-transition: box-shadow 0.6s linear;
       transition: box-shadow 0.2s linear;
       margin: 0.5em;
-      border: 1px solid ${props => props.theme.colors.primary};
+      border: 1px solid ${props => props.theme.colors.link};
       border-radius: 20px;
       /*border-style: solid;*/
       overflow: hidden;
@@ -26,7 +26,7 @@ export const StyledCard = styled.div`
     }
 
     .card:hover {
-      box-shadow: 6px 6px 2px 0px ${props => props.theme.colors.secondary};
+      box-shadow: 6px 6px 2px 0px ${props => props.theme.colors.link};
     }
 
     .card-img {

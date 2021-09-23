@@ -52,13 +52,13 @@ export const Section = styled.section`
 
     .see-all span,
     .back-to-home span {
-        color: ${props => props.theme.colors.primary};
+        color: ${props => props.theme.colors.link};
     }
 
     .see-all span:hover,
     .back-to-home span:hover {
-        border-bottom: 1.5px ${props => props.theme.colors.primary} dotted;
-        color: ${props => props.theme.colors.primary};
+        border-bottom: 1.5px ${props => props.theme.colors.link} dotted;
+        color: ${props => props.theme.colors.link};
     }
 
     .blog-container:before {
@@ -126,7 +126,7 @@ export const Posts = styled.div`
         display: inline-block;
         width: 100%;
         a {
-            color: ${props => props.theme.colors.primary};
+            color: ${props => props.theme.colors.link};
         }
     }
 
