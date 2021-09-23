@@ -105,7 +105,7 @@ export default function Home({ allPostsData, allProjectsData }) {
                                 {title}
                             </h2>
                             <small className="post-card__details">
-                                <Date dateString={date} />
+                              {" "}— <Date dateString={date} />
                             </small>
                             <p className="post-card__description">
                                 {description} 

@@ -50,6 +50,8 @@ export const StyledCard = styled.div`
     .project-card__date {
         font-weight: 300;
         font-size: 1em;
+        margin-bottom: .5rem;
+        display: block;
     }
 
     small {
