@@ -192,6 +192,7 @@ export const StyledCard = styled.div`
         border-radius: .3rem;
         box-shadow: ${props => props.theme.colors.boxShadow};
         position: relative;
+        transition: box-shadow .15s cubic-bezier(.445,.05,.55,.95),border-color .15s cubic-bezier(.445,.05,.55,.95);
     }
 
     .post-card:before {

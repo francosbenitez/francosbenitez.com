@@ -23,34 +23,32 @@ const Blog = ({ allPostsData }) => {
           <StyledCard>
               {allPostsData.map(({ id, date, title, description, img, img_alt }) => (
                 <ol className="blog_posts" key={id}>
-                  
-                      <li className="post-card">
-                          {/*<div className="card-img">
-                              <Image 
-                              src={img} 
-                              alt={img_alt} 
-                              layout="responsive"
-                              width={1328}
-                              height={674}
-                              />
-                          </div>*/}
-                          <div className="post-card__content">
-                            <h2 className="post-card__title">
-                              <Link href={`/posts/${id}`}>
-                                <a className="post-card__link">
-                                  {title}
-                                </a>
-                              </Link>
-                            </h2>
-                            <small className="post-card__details">
-                                <Date dateString={date} />
-                            </small>
-                            <p className="post-card__description">
-                                {description} 
-                            </p>
-                          </div>
-                      </li>
-                    
+                  <li className="post-card">
+                    {/*<div className="card-img">
+                        <Image 
+                        src={img} 
+                        alt={img_alt} 
+                        layout="responsive"
+                        width={1328}
+                        height={674}
+                        />
+                    </div>*/}
+                    <div className="post-card__content">
+                      <h2 className="post-card__title">
+                        <Link href={`/posts/${id}`}>
+                          <a className="post-card__link">
+                            {title}
+                          </a>
+                        </Link>
+                      </h2>
+                      <small className="post-card__details">
+                          <Date dateString={date} />
+                      </small>
+                      <p className="post-card__description">
+                          {description} 
+                      </p>
+                    </div>
+                  </li>
                 </ol>
               ))}
           </StyledCard>
