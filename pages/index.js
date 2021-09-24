@@ -33,19 +33,18 @@ export default function Home({ allPostsData, allProjectsData }) {
           {content.projects.title[0]} <span>{content.projects.title[1]}</span>
           </h1>
           <StyledCard>
-            <div className="projects__projects">
+            <ol className="projects__projects">
               {allProjectsData.filter(({ featured }) => featured == true)
               .map(({ id, date, title, description, img, img_alt }) => (
-                <div key={id}>
-                  <Link href={`/projects/${id}`}>
-                    <a>
-                      <div className="project-card">
+                  
+                      <li className="project-card" key={id}>
                           <div className="project-card__image">
                             <div className="lazy">
                               <picture>
                                 <Image 
                                 src={img} 
                                 alt={img_alt} 
+                                className="lazy__image lazy__image--loaded"
                                 layout="responsive"
                                 width={1400}
                                 height={700}
@@ -55,7 +54,11 @@ export default function Home({ allPostsData, allProjectsData }) {
                           </div>
                           <div className="project-card__content">
                             <h2 className="project-card__title">
+                              <Link href={`/projects/${id}`}>
+                                <a className="project-card__link">
                               {title}
+                                </a>
+                              </Link>
                             </h2>
                             <small className="project-card__date">
                               {" "}— <Date dateString={date} />
@@ -64,12 +67,10 @@ export default function Home({ allPostsData, allProjectsData }) {
                                 {description} 
                             </p>
                           </div>
-                      </div>
-                    </a>
-                  </Link>
-                </div>
+                    
+                </li>
               ))}
-            </div>
+            </ol>
           </StyledCard>
           <Link href="/projects" passHref>
                 <a className="see-all">

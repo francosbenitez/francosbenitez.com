@@ -5,6 +5,10 @@ export const StyledCard = styled.div`
       color: ${props => props.theme.colors.text};
     }
 
+    a:hover {
+        border-bottom: 1.5px ${props => props.theme.colors.link} dotted;
+    }
+
     // Projects
     .projects__projects {
         display: grid;
@@ -20,8 +24,8 @@ export const StyledCard = styled.div`
 
     .project-card__image {
         background-color: ${props => props.theme.colors.background};
-        border: 1px solid ${props => props.theme.colors.link};
         border-radius: .3rem;
+        box-shadow: ${props => props.theme.colors.boxShadow};
         overflow: hidden;
         padding-bottom: 50%;
         position: relative;
@@ -45,6 +49,27 @@ export const StyledCard = styled.div`
         font-weight: 700;
         font-size: 1.4em;
         font-family: "Open Sans", sans-serif;
+    }
+
+    .project-card__link {
+        background-image: linear-gradient(${props => props.theme.colors.background},${props => props.theme.colors.background}),linear-gradient(${props => props.theme.colors.link},${props => props.theme.colors.link});
+        background-size: 100% 1px,0 1px;
+        background-repeat: no-repeat;
+        transition: background-size .3s cubic-bezier(.77,0,.175,1);
+        background-position: bottom .2rem left;
+    }
+
+    .project-card__link:after {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        content: "";
+        top: 0;
+    }
+
+    .project-card__link:hover {
+        background-size: 100% 1px;
     }
 
     .project-card__date {
@@ -79,12 +104,14 @@ export const StyledCard = styled.div`
 
     .project-card__content {
         background-color: ${props => props.theme.colors.background};
-        border: 1px solid ${props => props.theme.colors.link};
+        border: 1px solid ${props => props.theme.colors.tertiary};
         border-radius: .3rem;
+        box-shadow: ${props => props.theme.colors.boxShadow};
         flex-grow: 1;
         margin-top: -3rem;
         margin-left: 1.5rem;
         padding: 1rem 1.5rem 1.5rem;
+        transition: box-shadow .15s cubic-bezier(.445,.05,.55,.95),border-color .15s cubic-bezier(.445,.05,.55,.95);
     }
 
     .project-card__description {
@@ -105,6 +132,38 @@ export const StyledCard = styled.div`
         .projects__projects {
             grid-template-columns: minmax(0,1fr) minmax(0,1fr);
         }
+    }
+
+    .project-card__image:after {
+        background-image: linear-gradient(${props => props.theme.colors.tertiary},${props => props.theme.colors.link});
+        content: "";
+        height: 100%;
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        transition: opacity .15s cubic-bezier(.445,.05,.55,.95);
+        width: 100%;
+    }
+
+    .project-card__image .lazy picture .lazy__image--loaded {
+        height: 100%;
+    }
+
+    .project-card__image .lazy picture .lazy__image {
+        object-fit: cover;
+        object-position: top left;
+    }
+
+    .lazy__image--loaded {
+        filter: none;
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .lazy__image {
+        display: block;
     }
 
     // Posts

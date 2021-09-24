@@ -21,42 +21,41 @@ const Projects = ({ allProjectsData }) => {
             All <span>{content.projects.title[1]}</span>
           </h1>
           <StyledCard>
-            <div className="projects__projects">
+            <ol className="projects__projects">
               {allProjectsData.map(({ id, date, title, description, img, img_alt }) => (
-                <div key={id}>
-                  <Link href={`/projects/${id}`}>
-                    <a>
-                      <div className="project-card">
-                          <div className="project-card__image">
-                            <div className="lazy">
-                                <picture>
-                                  <Image 
-                                  src={img} 
-                                  alt={img_alt} 
-                                  layout="responsive"
-                                  width={1328}
-                                  height={674}
-                                  />
-                                </picture>
-                            </div>
-                          </div>
-                          <div className="project-card__content">
-                            <h2 className="project-card__title">
-                              {title}
-                            </h2>
-                            <small className="project-card__date">
-                              {" "}— <Date dateString={date} />
-                            </small>
-                            <p className="project-card__description">
-                                {description} 
-                            </p>
-                          </div>
-                      </div>
-                    </a>
-                  </Link>
-                </div>
+                <li className="project-card" key={id}>
+                  <div className="project-card__image">
+                    <div className="lazy">
+                      <picture>
+                        <Image 
+                        src={img} 
+                        alt={img_alt} 
+                        className="lazy__image lazy__image--loaded"
+                        layout="responsive"
+                        width={1400}
+                        height={700}
+                        />
+                      </picture>
+                    </div>
+                  </div>
+                  <div className="project-card__content">
+                    <h2 className="project-card__title">
+                      <Link href={`/projects/${id}`}>
+                        <a className="project-card__link">
+                      {title}
+                        </a>
+                      </Link>
+                    </h2>
+                    <small className="project-card__date">
+                      {" "}— <Date dateString={date} />
+                    </small>
+                    <p className="project-card__description">
+                        {description} 
+                    </p>
+                  </div>
+                </li>
               ))}
-            </div>
+            </ol>
           </StyledCard>
           <Link href="/" passHref>
                 <a className="back-to-home">
