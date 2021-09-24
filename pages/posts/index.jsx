@@ -23,9 +23,8 @@ const Blog = ({ allPostsData }) => {
           <StyledCard>
               {allPostsData.map(({ id, date, title, description, img, img_alt }) => (
                 <ol className="blog_posts" key={id}>
-                  <Link href={`/posts/${id}`}>
-                    <a>
-                      <div className="post-card">
+                  
+                      <li className="post-card">
                           {/*<div className="card-img">
                               <Image 
                               src={img} 
@@ -37,18 +36,21 @@ const Blog = ({ allPostsData }) => {
                           </div>*/}
                           <div className="post-card__content">
                             <h2 className="post-card__title">
-                                {title}
+                              <Link href={`/posts/${id}`}>
+                                <a className="post-card__link">
+                                  {title}
+                                </a>
+                              </Link>
                             </h2>
                             <small className="post-card__details">
-                              {" "}— <Date dateString={date} />
+                                <Date dateString={date} />
                             </small>
                             <p className="post-card__description">
                                 {description} 
                             </p>
                           </div>
-                      </div>
-                    </a>
-                  </Link>
+                      </li>
+                    
                 </ol>
               ))}
           </StyledCard>

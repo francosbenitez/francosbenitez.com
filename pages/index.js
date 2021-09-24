@@ -61,7 +61,7 @@ export default function Home({ allPostsData, allProjectsData }) {
                               </Link>
                             </h2>
                             <small className="project-card__date">
-                              {" "}— <Date dateString={date} />
+                              <Date dateString={date} />
                             </small>
                             <p className="project-card__description">
                                 {description} 
@@ -89,9 +89,8 @@ export default function Home({ allPostsData, allProjectsData }) {
               {allPostsData.filter(({ featured }) => featured == true)
               .map(({ id, date, title, description, img, img_alt }) => (
                 <ol className="blog_posts" key={id}>
-                  <Link href={`/posts/${id}`}>
-                    <a>
-                    <div className="post-card">
+                  
+                      <li className="post-card">
                           {/*<div className="card-img">
                               <Image 
                               src={img} 
@@ -103,18 +102,21 @@ export default function Home({ allPostsData, allProjectsData }) {
                           </div>*/}
                           <div className="post-card__content">
                             <h2 className="post-card__title">
-                                {title}
+                              <Link href={`/posts/${id}`}>
+                                <a className="post-card__link">
+                                  {title}
+                                </a>
+                              </Link>
                             </h2>
                             <small className="post-card__details">
-                              {" "}— <Date dateString={date} />
+                                <Date dateString={date} />
                             </small>
                             <p className="post-card__description">
                                 {description} 
                             </p>
                           </div>
-                      </div>
-                    </a>
-                  </Link>
+                      </li>
+                    
                 </ol>
               ))}
             {/*</div>*/}

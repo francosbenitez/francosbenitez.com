@@ -52,11 +52,12 @@ export const StyledCard = styled.div`
     }
 
     .project-card__link {
-        background-image: linear-gradient(${props => props.theme.colors.background},${props => props.theme.colors.background}),linear-gradient(${props => props.theme.colors.link},${props => props.theme.colors.link});
+        /*background-image: linear-gradient(${props => props.theme.colors.background},${props => props.theme.colors.background}),linear-gradient(${props => props.theme.colors.link},${props => props.theme.colors.link});
         background-size: 100% 1px,0 1px;
         background-repeat: no-repeat;
         transition: background-size .3s cubic-bezier(.77,0,.175,1);
-        background-position: bottom .2rem left;
+        background-position: bottom .2rem left;*/
+        color: ${props => props.theme.colors.link};
     }
 
     .project-card__link:after {
@@ -117,6 +118,7 @@ export const StyledCard = styled.div`
     .project-card__description {
         font-weight: 500;
         font-size: 1.2em;
+        font-family: "Open Sans", sans-serif;
     }
 
     .project-card__content:hover {
@@ -168,13 +170,15 @@ export const StyledCard = styled.div`
 
     // Posts
     ol {
-        display: block;
-        list-style-type: decimal;
         margin-block-start: 1em;
         margin-block-end: 1em;
         margin-inline-start: 0px;
         margin-inline-end: 0px;
         padding-inline-start: 40px;
+    }
+
+    ol, ul {
+        list-style: none;
     }
 
     .blog__posts {
@@ -184,7 +188,7 @@ export const StyledCard = styled.div`
 
     .post-card {
         background-color: ${props => props.theme.colors.background};
-        border: 1px solid ${props => props.theme.colors.link};
+        border: 1px solid ${props => props.theme.colors.tertiary};
         border-radius: .3rem;
         box-shadow: ${props => props.theme.colors.boxShadow};
         position: relative;
@@ -202,16 +206,39 @@ export const StyledCard = styled.div`
         width: calc(100% + 1rem);
     }
 
+    .post-card:hover {
+        border: 1px solid ${props => props.theme.colors.link};
+        box-shadow: ${props => props.theme.colors.boxShadow};
+    }
+
     .post-card__content {
         padding: 1rem 1.5rem 1.5rem 0;
         position: relative;
     }
 
     .post-card__title {
+        //font-size: calc(1.2rem + 1vw);
         margin-bottom: .5rem;
         font-weight: 700;
         font-size: 1.4em;
         font-family: "Open Sans", sans-serif;
+    }
+
+    .post-card__link {
+        color: ${props => props.theme.colors.link};
+    }
+
+    .post-card__link:hover {
+        background-size: 100% 1px;
+    }
+
+    .post-card__link:after {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        content: "";
+        top: 0;
     }
 
     .post-card__details {
@@ -224,7 +251,10 @@ export const StyledCard = styled.div`
     .post-card__description {
         font-weight: 500;
         font-size: 1.2em;
+        font-family: "Open Sans", sans-serif;
     }
+
+    
 `;
 
 export const StyledProjectsCard = styled.div`

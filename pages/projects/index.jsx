@@ -47,7 +47,7 @@ const Projects = ({ allProjectsData }) => {
                       </Link>
                     </h2>
                     <small className="project-card__date">
-                      {" "}— <Date dateString={date} />
+                      <Date dateString={date} />
                     </small>
                     <p className="project-card__description">
                         {description} 
