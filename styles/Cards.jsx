@@ -9,7 +9,6 @@ export const StyledCard = styled.div`
         border-bottom: 1.5px ${props => props.theme.colors.link} dotted;
     }
 
-    // Projects
     .projects__projects {
         display: grid;
         grid-template-columns: 100%;
@@ -48,15 +47,9 @@ export const StyledCard = styled.div`
         margin-bottom: .5rem;
         font-weight: 700;
         font-size: 1.4em;
-        //font-family: "Open Sans", sans-serif;
     }
 
     .project-card__link {
-        /*background-image: linear-gradient(${props => props.theme.colors.background},${props => props.theme.colors.background}),linear-gradient(${props => props.theme.colors.link},${props => props.theme.colors.link});
-        background-size: 100% 1px,0 1px;
-        background-repeat: no-repeat;
-        transition: background-size .3s cubic-bezier(.77,0,.175,1);
-        background-position: bottom .2rem left;*/
         color: ${props => props.theme.colors.link};
     }
 
@@ -75,7 +68,7 @@ export const StyledCard = styled.div`
 
     .project-card__date {
         font-weight: 300;
-        font-size: 1em;
+        font-size: 1.1em;
         margin-bottom: .5rem;
         display: block;
         font-family: "Open Sans", sans-serif;
@@ -119,7 +112,6 @@ export const StyledCard = styled.div`
     .project-card__description {
         font-weight: 500;
         font-size: 1.2em;
-        //font-family: "Open Sans", sans-serif;
     }
 
     .project-card__content:hover {
@@ -247,14 +239,13 @@ export const StyledCard = styled.div`
         display: block;
         margin-bottom: .5rem;
         font-weight: 300;
-        font-size: 1em;
+        font-size: 1.1em;
         font-family: "Open Sans", sans-serif;
     }
 
     .post-card__description {
         font-weight: 500;
         font-size: 1.2em;
-        //font-family: "Open Sans", sans-serif;
     }
 
     
