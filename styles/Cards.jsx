@@ -48,7 +48,7 @@ export const StyledCard = styled.div`
         margin-bottom: .5rem;
         font-weight: 700;
         font-size: 1.4em;
-        font-family: "Open Sans", sans-serif;
+        //font-family: "Open Sans", sans-serif;
     }
 
     .project-card__link {
@@ -78,6 +78,7 @@ export const StyledCard = styled.div`
         font-size: 1em;
         margin-bottom: .5rem;
         display: block;
+        font-family: "Open Sans", sans-serif;
     }
 
     small {
@@ -118,7 +119,7 @@ export const StyledCard = styled.div`
     .project-card__description {
         font-weight: 500;
         font-size: 1.2em;
-        font-family: "Open Sans", sans-serif;
+        //font-family: "Open Sans", sans-serif;
     }
 
     .project-card__content:hover {
@@ -222,7 +223,7 @@ export const StyledCard = styled.div`
         margin-bottom: .5rem;
         font-weight: 700;
         font-size: 1.4em;
-        font-family: "Open Sans", sans-serif;
+        //font-family: "Open Sans", sans-serif;
     }
 
     .post-card__link {
@@ -247,12 +248,13 @@ export const StyledCard = styled.div`
         margin-bottom: .5rem;
         font-weight: 300;
         font-size: 1em;
+        font-family: "Open Sans", sans-serif;
     }
 
     .post-card__description {
         font-weight: 500;
         font-size: 1.2em;
-        font-family: "Open Sans", sans-serif;
+        //font-family: "Open Sans", sans-serif;
     }
 
     
