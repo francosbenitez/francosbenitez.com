@@ -261,41 +261,61 @@ export const StyledCard = styled.div`
 `;
 
 export const StyledProjectsCard = styled.div`
-    display: flex;
-    flex-direction: column;
-    flex-basis: 50%;
-    border: 3px solid ${props => props.theme.colors.primary};
-    
-    .tools {
-        width: 100%;
-        border-bottom: 3px solid ${props => props.theme.colors.primary};
+    .columns {
+        margin-left: -1rem;
+        margin-right: -1rem;
+        margin-top: -1rem;
+    }
+
+    .column {
+        display: block;
+        flex-basis: 0;
+        flex-grow: 1;
+        flex-shrink: 1;
+        padding: 1rem 1em 1rem 1rem;
+    }
+
+    .card {
+        background-color: ${props => props.theme.colors.background};
+        border-radius: .25rem;
+        box-shadow: ${props => props.theme.colors.boxShadow};
+        color: ${props => props.theme.colors.text};
+        max-width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .card-content {
+        padding: 1rem 1rem 0 1rem;
+    }
+
+    .content {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .text-centered {
         text-align: center;
     }
 
-    .link {
+    .title {
+        font-weight: 700;
+    }
+
+    .card-footer {
+        border-top: 1px solid ${props => props.theme.colors.text};
         text-align: center;
-        width: 100%;
     }
 
-    .date {
-        font-weight: 500;
-    }
-
-    .tools-used,
-    .published {
-        font-weight: 800;
-    }
-
-    hr {
-        border: 1px solid ${props => props.theme.colors.primary};
+    .card-footer-item {
+        display: inline-block;
+        position: relative;
+        margin: 1rem 1rem 1rem 1rem;
     }
 
     @media ${props => props.theme.devices.tablet} {
-        flex-direction: row;
-
-        .tools {
-            border-bottom: none;
-            border-right: 3px solid ${props => props.theme.colors.primary};
+        .columns {
+            display: flex;
         }
     }
 `

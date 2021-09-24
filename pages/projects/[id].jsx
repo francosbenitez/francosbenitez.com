@@ -16,29 +16,49 @@ export default function Project({ projectData }) {
           <Posts>
             <article>
                 <StyledProjectsCard>
-                  <div className="tools">
-                    <p className="tools-used">TOOLS USED</p>
-                    <p>{projectData.tools_used}</p>
-                    <hr />
-                    <p>
-                      <a href={`${projectData.github_url}`} target="_blank" rel="noopener noreferrer">
-                        GitHub repository
-                      </a>
-                    </p>
-                  </div>
-                  <div className="link">
-                    <p className="published">PUBLISHED</p>
-                    <p><Date dateString={projectData.date} /></p>
-                    <hr />
-                    <p>
-                      {
-                        (projectData.live_url == false) ?
-                          <p>Live not available</p> :
-                          <a href={`${projectData.live_url}`} target="_blank" rel="noopener noreferrer">
-                            Live URL
-                          </a>
-                      }
-                    </p>
+                  <div className="columns">
+                    <div className="column">
+                      <article className="card" style={{opacity:1}}>
+                        <div className="card-content">
+                          <div className="content">
+                            <div className="text-centered">
+                              <p className="title">TOOLS USED</p>
+                              <p>{projectData.tools_used}</p>
+                            </div>
+                          </div>
+                        </div>
+                        <footer className="card-footer">
+                          <span className="card-footer-item">
+                            <a href={`${projectData.github_url}`} target="_blank" rel="noopener noreferrer">
+                              GitHub repository
+                            </a>
+                          </span>
+                        </footer>
+                      </article>
+                    </div>
+                    <div className="column">
+                      <article className="card" style={{opacity:1}}>
+                        <div className="card-content">
+                          <div className="content">
+                            <div className="text-centered">
+                              <p className="title">PUBLISHED</p>
+                              <p><Date dateString={projectData.date} /></p>
+                            </div>
+                          </div>
+                        </div>
+                        <footer className="card-footer">
+                          <span className="card-footer-item">
+                            {
+                              (projectData.live_url == false) ?
+                                <p>Live not available</p> :
+                                <a href={`${projectData.live_url}`} target="_blank" rel="noopener noreferrer">
+                                  Live URL
+                                </a>
+                            }
+                          </span>
+                        </footer>
+                      </article>
+                    </div>
                   </div>
                 </StyledProjectsCard>
                 {/*<p className="date">

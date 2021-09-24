@@ -95,7 +95,7 @@ export const Section = styled.section`
 `
 
 export const Posts = styled.div`
-    max-width: 36rem;
+    max-width: 960px;
     padding: 0 1.5rem;
     margin: 6rem auto 9rem;
     min-height: calc(100vh - 6.5rem); 
