@@ -5,13 +5,13 @@ export const StyledProjectsButton = styled.div`
 
     .button {
         box-shadow:${props => props.theme.colors.boxShadow};
-        background:linear-gradient(to top, ${props => props.theme.colors.primary} 1%, ${props => props.theme.colors.primary} 100%);
+        background:linear-gradient(to bottom, ${props => props.theme.colors.primary} 5%, ${props => props.theme.colors.primary} 100%);
         background-color:${props => props.theme.colors.secondary};
         border-radius:6px;
         border:1px solid ${props => props.theme.colors.primary};
         display:inline-block;
         cursor:pointer;
-        color: #fff;
+        color: #F4F7F5;
         font-size:120%;
         font-weight: 600;
         padding:.5rem 1rem;
@@ -29,15 +29,15 @@ export const StyledProjectsButton = styled.div`
     }
 
     .button:hover:before {
-        box-shadow: 0 .5rem 1rem -.5rem ${props => props.theme.devices.primary};
+        box-shadow: 0 .5rem 1rem -.5rem ${props => props.theme.colors.text};
     }
-
+    
     .button:before {
         opacity: 1;
     }
 
     .button:before {
-        box-shadow: 0 .25rem .5rem -.25rem ${props => props.theme.devices.primary};
+        box-shadow: 0 .25rem .5rem -.25rem ${props => props.theme.colors.text};
         opacity: .5;
         transition: box-shadow .15s cubic-bezier(.445,.05,.55,.95);
         z-index: -1;
@@ -53,7 +53,7 @@ export const StyledProjectsButton = styled.div`
         width: calc(100% + 2px);
     }
 
-    .home__stuff:after {
+    .button:after {
         opacity: .2;
     }
 
