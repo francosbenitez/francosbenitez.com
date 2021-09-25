@@ -111,6 +111,7 @@ export const Posts = styled.div`
         background: linear-gradient(90deg,${props => props.theme.colors.primary},${props => props.theme.colors.text} 70%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        font-weight: 700;
     }
 
     h2 {
