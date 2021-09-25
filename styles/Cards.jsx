@@ -249,6 +249,10 @@ export const StyledCard = styled.div`
 `;
 
 export const StyledProjectsCard = styled.div`
+    p {
+        font-size: 1em;
+    }
+
     .columns {
         margin-left: -1rem;
         margin-right: -1rem;

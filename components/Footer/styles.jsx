@@ -9,6 +9,10 @@ export const StyledFooter = styled.footer`
     bottom: 0;
     position: relative;
 
+    p {
+        font-size: 1em;
+    }
+
     .copyright {
         text-align: center;
         opacity: 75%;

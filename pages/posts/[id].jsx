@@ -14,11 +14,11 @@ export default function Post({ postData }) {
             <br />
             <Posts>
               <article>
-                  <p>
-                      <Date dateString={postData.date} />
-                  </p>
                   <h1>{postData.title}</h1>
                   <h2>{postData.description}</h2>
+                  <p className="article-date">
+                      <Date dateString={postData.date} />
+                  </p>
                   <hr />
                   <p>
                     <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />

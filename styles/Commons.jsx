@@ -110,12 +110,16 @@ export const Posts = styled.div`
     h2 {
         font-size: 1.4em;
         margin: 1rem 0 1rem 0;
-        font-weight: 600;
+        font-weight: 400;
         font-family: "Open Sans", sans-serif;
     }
 
     p {
         margin: 1rem 0 1rem 0;
+    }
+
+    .article-date {
+        font-weight: 300;
     }
 
     hr {
