@@ -304,6 +304,10 @@ export const StyledProjectsCard = styled.div`
         display: inline-block;
         position: relative;
         margin: 1rem 1rem 1rem 1rem;
+
+        p {
+            margin: 0;
+        }
     }
 
     @media ${props => props.theme.devices.tablet} {
