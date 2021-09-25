@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledProjectsButton = styled.div`
-    margin: 1rem 0 1rem 0;
+    margin-bottom: 1rem;
 
     .button {
         box-shadow:inset 0px 1px 0px 0px  ${props => props.theme.colors.secondary};
@@ -11,10 +11,10 @@ export const StyledProjectsButton = styled.div`
         border:1px solid ${props => props.theme.colors.primary};
         display:inline-block;
         cursor:pointer;
-        color:#F4F7F5;
-        font-size:15px;
-        font-weight: 700;
-        padding:6px 24px;
+        color:#fcfdfd;
+        font-size:120%;
+        font-weight: 600;
+        padding:.5rem 1rem;
         text-decoration:none;
         text-shadow:0px 1px 0px ${props => props.theme.colors.primary};
     }
@@ -28,19 +28,23 @@ export const StyledProjectsButton = styled.div`
         position:relative;
         top:1px;
     }
+
+    @media ${props => props.theme.devices.tablet} {
+        margin-bottom: 0;
+    }
 `;
 
 export const StyledContactButton = styled(StyledProjectsButton)`
     .button {
-        box-shadow:inset 0px 1px 0px 0px #F4F7F5;
-        background:linear-gradient(to bottom, #F4F7F5 5%, #d0cfcffd 100%);
-        background-color:#F4F7F5;
+        box-shadow:inset 0px 1px 0px 0px #fcfdfd;
+        background:linear-gradient(to bottom, #fcfdfd 5%, #d0cfcffd 100%);
+        background-color:#fcfdfd;
         color:${props => props.theme.colors.primary};
-        text-shadow:0px 1px 0px #F4F7F5;
+        text-shadow:0px 1px 0px #fcfdfd;
     }
 
     .button:hover {
-        background:linear-gradient(to bottom, #d0cfcffd 5%, #F4F7F5 100%);
+        background:linear-gradient(to bottom, #d0cfcffd 5%, #fcfdfd 100%);
         background-color:#d0cfcffd;
     }
 

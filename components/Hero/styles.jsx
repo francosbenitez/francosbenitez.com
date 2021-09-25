@@ -30,7 +30,7 @@ export const StyledHero = styled.section`
 
     h1 {
         font-size: 4em;
-        margin: 1rem 0 1rem 0;
+        margin-bottom: 2rem;
         color: ${props => props.theme.colors.secondary};
         font-weight: 700;
         line-height: 1;
@@ -43,6 +43,7 @@ export const StyledHero = styled.section`
 
     h2 {
         font-size: 2em;
+        margin-bottom: 2rem;
         color: ${(props) => props.theme.colors.text};
         font-weight: 600;
         font-family: "Open Sans", sans-serif;
