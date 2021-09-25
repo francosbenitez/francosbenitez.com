@@ -4,7 +4,7 @@ date: '2021-09-10'
 description: "Using Python and AWS Lambda."
 img: "/images/projects/bot.png"
 img_alt: "Image of a Twiter bot account."
-featured: true
+featured: false
 tools_used: "Twitter API, AWS Lambda, Python"
 published: "2021/07/15"
 github_url: "https://github.com/francosbenitez/twitter-bot"
@@ -23,7 +23,7 @@ Basically, the bot tweets "No" and its derivatives every day at 15 o'clock (UTC)
 My interest in creating something like this stemmed from my discomfort with the curriculum at my school where I study psychology. 
 
 ### What I Learnt
-When developing it, I dealt with some difficulties connecting Ubuntu to Docker, but I learned a lot about both of them.
+On developing this project, I dealt with some difficulties connecting Ubuntu to Docker, but I learned a lot about both of them.
 
 
 
