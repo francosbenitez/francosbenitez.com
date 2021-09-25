@@ -67,11 +67,12 @@ export const StyledCard = styled.div`
     }
 
     .project-card__date {
-        font-weight: 300;
+        font-weight: 400;
         font-size: 1.1em;
         margin-bottom: .5rem;
         display: block;
         font-family: "Open Sans", sans-serif;
+        color: ${props => props.theme.colors.date};
     }
 
     small {
@@ -235,9 +236,10 @@ export const StyledCard = styled.div`
     .post-card__details {
         display: block;
         margin-bottom: .5rem;
-        font-weight: 300;
+        font-weight: 400;
         font-size: 1.1em;
         font-family: "Open Sans", sans-serif;
+        color: ${props => props.theme.colors.date};
     }
 
     .post-card__description {
@@ -295,7 +297,7 @@ export const StyledProjectsCard = styled.div`
     }
 
     .card-footer {
-        border-top: 1px solid ${props => props.theme.colors.text};
+        border-top: 1px solid ${props => props.theme.colors.date};
         text-align: center;
     }
 

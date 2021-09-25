@@ -38,6 +38,7 @@ export const Section = styled.section`
         margin-top: 1rem;
         /* display: inline-block; */
         border-bottom: none; 
+        font-size: 1.1em;
     }
 
     .back-to-home,
@@ -48,6 +49,7 @@ export const Section = styled.section`
         margin-top: 1rem;
         display: inline-block;
         border-bottom: none; 
+        font-size: 1.1em;
     }
 
     .see-all span,
@@ -101,14 +103,18 @@ export const Posts = styled.div`
     min-height: calc(100vh - 6.5rem); 
 
     h1 {
-        font-size: 2.8em;
+        font-size: 3em;
         margin: 1rem 0 1rem 0;
         /* font-weight: 900; */
-        line-height: 1;
+        line-height: 1.25;
+        background: ${props => props.theme.colors.primary};
+        background: linear-gradient(90deg,${props => props.theme.colors.primary},${props => props.theme.colors.text} 70%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
     h2 {
-        font-size: 1.4em;
+        font-size: 1.5em;
         margin: 1rem 0 1rem 0;
         font-weight: 400;
         font-family: "Open Sans", sans-serif;
@@ -119,7 +125,8 @@ export const Posts = styled.div`
     }
 
     .article-date {
-        font-weight: 300;
+        font-weight: 400;
+        color: ${props => props.theme.colors.date};
     }
 
     hr {
@@ -136,9 +143,11 @@ export const Posts = styled.div`
 
     .go-to-all {
         float: right;
+        font-size: 1.1em;
     }
 
     .back-to-home {
         float: left;
+        font-size: 1.1em;
     }
 `

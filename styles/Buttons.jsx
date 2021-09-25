@@ -5,7 +5,7 @@ export const StyledProjectsButton = styled.div`
 
     .button {
         box-shadow:${props => props.theme.colors.boxShadow};
-        background:linear-gradient(to top, ${props => props.theme.colors.secondary} 1%, ${props => props.theme.colors.primary} 100%);
+        background:linear-gradient(to top, ${props => props.theme.colors.primary} 1%, ${props => props.theme.colors.primary} 100%);
         background-color:${props => props.theme.colors.secondary};
         border-radius:6px;
         border:1px solid ${props => props.theme.colors.primary};
