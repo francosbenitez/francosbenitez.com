@@ -13,7 +13,7 @@ export const StyledProjectsButton = styled.div`
         cursor:pointer;
         color: #F4F7F5;
         font-size:120%;
-        font-weight: 600;
+        font-weight: 400;
         padding:.5rem 1rem;
         text-decoration:none;
         position: relative;
