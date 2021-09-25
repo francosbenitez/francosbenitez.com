@@ -110,7 +110,7 @@ export const StyledCard = styled.div`
     }
 
     .project-card__description {
-        font-weight: 600;
+        font-weight: 400;
         font-size: 1.2em;
     }
 
@@ -241,7 +241,7 @@ export const StyledCard = styled.div`
     }
 
     .post-card__description {
-        font-weight: 600;
+        font-weight: 400;
         font-size: 1.2em;
     }
 
