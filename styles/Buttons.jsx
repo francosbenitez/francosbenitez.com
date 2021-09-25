@@ -13,10 +13,11 @@ export const StyledProjectsButton = styled.div`
         cursor:pointer;
         color: #F4F7F5;
         font-size:120%;
-        font-weight: 400;
+        font-weight: 600;
         padding:.5rem 1rem;
         text-decoration:none;
         position: relative;
+        letter-spacing: calc(.05em - .05rem);
     }
 
     .button:hover {
