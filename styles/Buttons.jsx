@@ -4,29 +4,57 @@ export const StyledProjectsButton = styled.div`
     margin-bottom: 1rem;
 
     .button {
-        box-shadow:inset 0px 1px 0px 0px  ${props => props.theme.colors.secondary};
-        background:linear-gradient(to bottom, ${props => props.theme.colors.secondary} 5%, ${props => props.theme.colors.primary} 100%);
+        box-shadow:${props => props.theme.colors.boxShadow};
+        background:linear-gradient(to top, ${props => props.theme.colors.secondary} 1%, ${props => props.theme.colors.primary} 100%);
         background-color:${props => props.theme.colors.secondary};
         border-radius:6px;
         border:1px solid ${props => props.theme.colors.primary};
         display:inline-block;
         cursor:pointer;
-        color:#fcfdfd;
+        color: #F4F7F5;
         font-size:120%;
         font-weight: 600;
         padding:.5rem 1rem;
         text-decoration:none;
-        text-shadow:0px 1px 0px ${props => props.theme.colors.primary};
+        position: relative;
     }
 
     .button:hover {
-        background:linear-gradient(to bottom, ${props => props.theme.colors.primary} 5%, ${props => props.theme.colors.secondary} 100%);
-        background-color:${props => props.theme.colors.primary};
+        opacity: .9;
     }
 
     .button:active {
         position:relative;
         top:1px;
+    }
+
+    .button:hover:before {
+        box-shadow: 0 .5rem 1rem -.5rem ${props => props.theme.devices.primary};
+    }
+
+    .button:before {
+        opacity: 1;
+    }
+
+    .button:before {
+        box-shadow: 0 .25rem .5rem -.25rem ${props => props.theme.devices.primary};
+        opacity: .5;
+        transition: box-shadow .15s cubic-bezier(.445,.05,.55,.95);
+        z-index: -1;
+    }
+
+    .button:after, .button:before {
+        content: "";
+        border-radius: .3rem;
+        height: calc(100% + 2px);
+        left: -1px;
+        position: absolute;
+        top: -1px;
+        width: calc(100% + 2px);
+    }
+
+    .home__stuff:after {
+        opacity: .2;
     }
 
     @media ${props => props.theme.devices.tablet} {
@@ -36,41 +64,13 @@ export const StyledProjectsButton = styled.div`
 
 export const StyledContactButton = styled(StyledProjectsButton)`
     .button {
-        box-shadow:inset 0px 1px 0px 0px #fcfdfd;
-        background:linear-gradient(to bottom, #fcfdfd 5%, #d0cfcffd 100%);
-        background-color:#fcfdfd;
+        box-shadow: ${props => props.theme.colors.boxShadow};
+        background:linear-gradient(to bottom, ${props => props.theme.colors.background} 5%, ${props => props.theme.colors.background} 100%);
+        background-color:${props => props.theme.colors.background};
         color:${props => props.theme.colors.primary};
-        text-shadow:0px 1px 0px #fcfdfd;
-    }
-
-    .button:hover {
-        background:linear-gradient(to bottom, #d0cfcffd 5%, #fcfdfd 100%);
-        background-color:#d0cfcffd;
     }
 
     @media ${props => props.theme.devices.tablet} {
         margin-left: 1rem;
     }
 `;
-
-/*export const ThemeSwitcher = styled.button`
-    display: flex;
-    position: absolute;
-    left: 95%;
-    top: 10px;
-    width: 35px;
-    height: 35px;
-    align-items: center;
-    justify-content: center;
-    fill: ${props => props.theme.colors.primary};
-    background-color: transparent;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    
-    @media (max-width: 768px) {
-        left: 80%;
-        top: 13px;
-        transform: translate(50%, 0%);
-    }
-`;*/
