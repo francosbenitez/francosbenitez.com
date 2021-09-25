@@ -4,7 +4,7 @@ export const StyledProjectsButton = styled.div`
     margin-bottom: 1rem;
 
     .button {
-        box-shadow:${props => props.theme.colors.boxShadow};
+        //box-shadow:${props => props.theme.colors.boxShadow};
         background:linear-gradient(to bottom, ${props => props.theme.colors.primary} 5%, ${props => props.theme.colors.primary} 100%);
         background-color:${props => props.theme.colors.secondary};
         border-radius:6px;
@@ -64,7 +64,7 @@ export const StyledProjectsButton = styled.div`
 
 export const StyledContactButton = styled(StyledProjectsButton)`
     .button {
-        box-shadow: ${props => props.theme.colors.boxShadow};
+        //box-shadow: ${props => props.theme.colors.boxShadow};
         background:linear-gradient(to bottom, ${props => props.theme.colors.background} 5%, ${props => props.theme.colors.background} 100%);
         background-color:${props => props.theme.colors.background};
         color:${props => props.theme.colors.primary};
