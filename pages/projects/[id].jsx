@@ -4,6 +4,7 @@ import Date from '../../components/Date'
 import { Posts } from "../../styles/Commons"
 import { StyledProjectsCard } from "../../styles/Cards"
 import Link from "next/link"
+import Forbidden from "../../public/icons/forbidden.svg"
 
 export default function Project({ projectData }) {
   return (
@@ -50,7 +51,7 @@ export default function Project({ projectData }) {
                           <span className="card-footer-item">
                             {
                               (projectData.live_url == false) ?
-                                <p>Live not available</p> :
+                                <Forbidden/>:
                                 <a href={`${projectData.live_url}`} target="_blank" rel="noopener noreferrer">
                                   Live URL
                                 </a>

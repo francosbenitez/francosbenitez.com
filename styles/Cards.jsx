@@ -304,9 +304,10 @@ export const StyledProjectsCard = styled.div`
         display: inline-block;
         position: relative;
         margin: 1rem 1rem 1rem 1rem;
+        line-height: 0;
 
-        p {
-            margin: 0;
+        svg {
+            fill:  ${props => props.theme.colors.text};
         }
     }
 
