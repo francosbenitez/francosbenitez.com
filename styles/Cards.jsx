@@ -46,7 +46,7 @@ export const StyledCard = styled.div`
         display: inline-block;
         margin-bottom: .5rem;
         font-weight: 700;
-        font-size: 1.4em;
+        font-size: 1.4rem;
     }
 
     .project-card__link {
@@ -68,7 +68,7 @@ export const StyledCard = styled.div`
 
     .project-card__date {
         font-weight: 400;
-        font-size: 1.1em;
+        font-size: 1.1rem;
         margin-bottom: .5rem;
         display: block;
         font-family: "Open Sans", sans-serif;
@@ -112,7 +112,7 @@ export const StyledCard = styled.div`
 
     .project-card__description {
         font-weight: 400;
-        font-size: 1.2em;
+        font-size: 1.1rem;
     }
 
     .project-card__content:hover {
@@ -213,7 +213,7 @@ export const StyledCard = styled.div`
     .post-card__title {
         margin-bottom: .5rem;
         font-weight: 700;
-        font-size: 1.4em;
+        font-size: 1.4rem;
     }
 
     .post-card__link {
@@ -237,14 +237,14 @@ export const StyledCard = styled.div`
         display: block;
         margin-bottom: .5rem;
         font-weight: 400;
-        font-size: 1.1em;
+        font-size: 1.1rem;
         font-family: "Open Sans", sans-serif;
         color: ${props => props.theme.colors.date};
     }
 
     .post-card__description {
         font-weight: 400;
-        font-size: 1.2em;
+        font-size: 1.1rem;
     }
 
     
@@ -252,7 +252,7 @@ export const StyledCard = styled.div`
 
 export const StyledProjectsCard = styled.div`
     p {
-        font-size: 1em;
+        font-size: 1rem;
     }
 
     .columns {
@@ -345,7 +345,7 @@ export const StyledSkillsCard = styled.section`
         align-items: center;
 
     h3 {
-        font-size: 1em;
+        font-size: 1rem;
         font-weight: 700;
         text-align: center;
         color: ${props => props.theme.colors.text};

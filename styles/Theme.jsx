@@ -30,7 +30,7 @@ export const GlobalStyle = createGlobalStyle`
 
     p {
         color: ${props => props.theme.colors.text};
-        font-size: 1.1em;
+        font-size: 1.1rem;
     }
 
     /* Chrome, Edge, and Safari */

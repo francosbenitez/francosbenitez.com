@@ -15,10 +15,10 @@ export default function Post({ postData }) {
             <Posts>
               <article>
                   <h1>{postData.title}</h1>
-                  <h2>{postData.description}</h2>
                   <p className="article-date">
                       <Date dateString={postData.date} />
                   </p>
+                  <h2>{postData.description}</h2>
                   <hr />
                   <p>
                     <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />

@@ -10,7 +10,7 @@ export const StyledFooter = styled.footer`
     position: relative;
 
     p {
-        font-size: 1em;
+        font-size: 1rem;
     }
 
     .copyright {

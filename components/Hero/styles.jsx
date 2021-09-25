@@ -29,7 +29,7 @@ export const StyledHero = styled.section`
     }
 
     h1 {
-        font-size: 4em;
+        font-size: 4rem;
         margin-bottom: 2rem;
         color: ${props => props.theme.colors.secondary};
         font-weight: 700;
@@ -42,7 +42,7 @@ export const StyledHero = styled.section`
     }
 
     h2 {
-        font-size: 2em;
+        font-size: 2rem;
         margin-bottom: 2rem;
         color: ${(props) => props.theme.colors.text};
         font-weight: 600;

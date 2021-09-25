@@ -14,7 +14,7 @@ export const Section = styled.section`
     padding-bottom: 4.5rem;
 
     h1 {
-        font-size: 4.2em;
+        font-size: 4.2rem;
         margin: 1rem 0 1rem 0;
         color: ${props => props.theme.colors.secondary};
         line-height: 1;
@@ -27,7 +27,7 @@ export const Section = styled.section`
     }
 
     p {
-        font-size: 1.4em;
+        font-size: 1.4rem;
     }
 
     .see-all,
@@ -38,7 +38,7 @@ export const Section = styled.section`
         margin-top: 1rem;
         /* display: inline-block; */
         border-bottom: none; 
-        font-size: 1.1em;
+        font-size: 1.1rem;
     }
 
     .back-to-home,
@@ -49,7 +49,7 @@ export const Section = styled.section`
         margin-top: 1rem;
         display: inline-block;
         border-bottom: none; 
-        font-size: 1.1em;
+        font-size: 1.1rem;
     }
 
     .see-all span,
@@ -103,7 +103,7 @@ export const Posts = styled.div`
     min-height: calc(100vh - 6.5rem); 
 
     h1 {
-        font-size: 3em;
+        font-size: 3rem;
         margin: 1rem 0 1rem 0;
         /* font-weight: 900; */
         line-height: 1.25;
@@ -114,10 +114,10 @@ export const Posts = styled.div`
     }
 
     h2 {
-        font-size: 1.5em;
+        font-size: 1.1rem;
         margin: 1rem 0 1rem 0;
         font-weight: 400;
-        font-family: "Open Sans", sans-serif;
+        //font-family: "Open Sans", sans-serif;
     }
 
     p {
@@ -127,6 +127,7 @@ export const Posts = styled.div`
     .article-date {
         font-weight: 400;
         color: ${props => props.theme.colors.date};
+        font-family: "Open Sans", sans-serif;
     }
 
     hr {
@@ -143,11 +144,11 @@ export const Posts = styled.div`
 
     .go-to-all {
         float: right;
-        font-size: 1.1em;
+        font-size: 1.1rem;
     }
 
     .back-to-home {
         float: left;
-        font-size: 1.1em;
+        font-size: 1.1rem;
     }
 `
