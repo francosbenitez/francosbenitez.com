@@ -5,8 +5,8 @@ export const StyledProjectsButton = styled.div`
 
     .button {
         //box-shadow:${props => props.theme.colors.boxShadow};
-        background:linear-gradient(to bottom, ${props => props.theme.colors.primary} 5%, ${props => props.theme.colors.primary} 100%);
-        background-color:${props => props.theme.colors.primary};
+        background:${props => props.theme.colors.primary};
+        background:linear-gradient(180deg, ${props => props.theme.colors.primary} 0%, ${props => props.theme.colors.secondary} 100%);
         border-radius:6px;
         border:1px solid ${props => props.theme.colors.primary};
         display:inline-block;
@@ -66,8 +66,8 @@ export const StyledProjectsButton = styled.div`
 export const StyledContactButton = styled(StyledProjectsButton)`
     .button {
         //box-shadow: ${props => props.theme.colors.boxShadow};
-        background:linear-gradient(to bottom, ${props => props.theme.colors.background} 5%, ${props => props.theme.colors.background} 100%);
-        background-color:${props => props.theme.colors.background};
+        background:${props => props.theme.colors.background};
+        background:linear-gradient(5deg, ${props => props.theme.colors.background} 0%, ${props => props.theme.colors.tertiary} 100%);
         color:${props => props.theme.colors.primary};
     }
 
