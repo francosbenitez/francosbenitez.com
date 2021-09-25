@@ -110,7 +110,7 @@ export const StyledCard = styled.div`
     }
 
     .project-card__description {
-        font-weight: 500;
+        font-weight: 600;
         font-size: 1.2em;
     }
 
@@ -161,7 +161,6 @@ export const StyledCard = styled.div`
         display: block;
     }
 
-    // Posts
     ol {
         margin-block-start: 1em;
         margin-block-end: 1em;
@@ -211,11 +210,9 @@ export const StyledCard = styled.div`
     }
 
     .post-card__title {
-        //font-size: calc(1.2rem + 1vw);
         margin-bottom: .5rem;
         font-weight: 700;
         font-size: 1.4em;
-        //font-family: "Open Sans", sans-serif;
     }
 
     .post-card__link {
@@ -244,7 +241,7 @@ export const StyledCard = styled.div`
     }
 
     .post-card__description {
-        font-weight: 500;
+        font-weight: 600;
         font-size: 1.2em;
     }
 
