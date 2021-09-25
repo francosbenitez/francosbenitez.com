@@ -45,7 +45,7 @@ export const StyledCard = styled.div`
         display: inline-block;
         margin-bottom: .5rem;
         font-weight: 700;
-        font-size: 1.4rem;
+        font-size: 1.5rem;
     }
 
     .project-card__link {
@@ -212,7 +212,7 @@ export const StyledCard = styled.div`
     .post-card__title {
         margin-bottom: .5rem;
         font-weight: 700;
-        font-size: 1.4rem;
+        font-size: 1.5rem;
     }
 
     .post-card__link {
