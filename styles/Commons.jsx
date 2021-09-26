@@ -115,7 +115,7 @@ export const Posts = styled.div`
     }
 
     h2 {
-        font-size: 1.1rem;
+        //font-size: 1.1rem;
         margin: 1rem 0 1rem 0;
         font-weight: 600;
         //font-family: "Open Sans", sans-serif;
