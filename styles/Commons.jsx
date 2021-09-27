@@ -134,6 +134,7 @@ export const Posts = styled.div`
 
     hr {
         margin: 1rem 0 1rem 0;
+        border-color: #C1C1C1;
     }
     
     .back-and-go {
