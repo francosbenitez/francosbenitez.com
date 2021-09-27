@@ -298,7 +298,7 @@ export const StyledProjectsCard = styled.div`
     }
 
     .card-footer {
-        border-top: 1px solid ${props => props.theme.colors.date};
+        border-top: 1px solid #C1C1C1;
         text-align: center;
     }
 
