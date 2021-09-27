@@ -72,6 +72,7 @@ export default function Project({ projectData }) {
                   <div dangerouslySetInnerHTML={{ __html: projectData.contentHtml }} />
                 </p>
             </article>
+            <hr />
             <div className="back-and-go">
               <span className="back-to-home">
                 <Link href="/">
