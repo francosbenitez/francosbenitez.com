@@ -351,7 +351,7 @@ export const StyledSkillsCard = styled.section`
         align-items: center;
 
     h3 {
-        font-size: 1rem;
+        font-size: 1.1rem;
         font-weight: 700;
         text-align: center;
         color: ${props => props.theme.colors.text};
