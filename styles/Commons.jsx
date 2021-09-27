@@ -129,7 +129,7 @@ export const Posts = styled.div`
         font-weight: 400;
         color: ${props => props.theme.colors.date};
         font-family: "Open Sans", sans-serif;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
 
     hr {
@@ -147,11 +147,11 @@ export const Posts = styled.div`
 
     .go-to-all {
         float: right;
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 
     .back-to-home {
         float: left;
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 `
