@@ -38,7 +38,7 @@ export const Section = styled.section`
         margin-top: 1rem;
         /* display: inline-block; */
         border-bottom: none; 
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 
     .back-to-home,
@@ -49,7 +49,7 @@ export const Section = styled.section`
         margin-top: 1rem;
         display: inline-block;
         border-bottom: none; 
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 
     .see-all span,
