@@ -24,6 +24,7 @@ export default function Post({ postData }) {
                     <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
                   </p>
               </article>
+              <hr />
               <div className="back-and-go">
                 <span className="back-to-home">
                   <Link href="/">
