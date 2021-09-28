@@ -11,7 +11,7 @@ export const StyledProjectsButton = styled.div`
         border:1px solid ${props => props.theme.colors.primary};
         display:inline-block;
         cursor:pointer;
-        color: #F4F4F4;
+        color: ${props => props.theme.colors.background};
         font-size:120%;
         font-weight: 700;
         padding:.5rem 1rem;
