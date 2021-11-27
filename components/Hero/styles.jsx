@@ -8,7 +8,7 @@ export const StyledHero = styled.section`
     position: relative;
     max-width: 1152px;
     margin: 0 auto;
-    min-height: calc(100vh - 6.5rem); 
+    /* min-height: calc(100vh - 6.5rem);  */
     padding-top: 7.5rem;
     padding-bottom: 4.5rem;
 
