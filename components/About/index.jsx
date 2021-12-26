@@ -31,7 +31,7 @@ const About = () => {
                     {
                         (text == "Franco Sebastián Benítez"
                         || text == "development"
-                        || text == "data"
+                        || text == "psychology"
                         || text == "design"
                         || text == "program"
                         || text == "technologies") 
