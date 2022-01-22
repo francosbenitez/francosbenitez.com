@@ -1,5 +1,5 @@
 ---
-title: 'What Does a Psychologist Do Programming?'
+title: 'How I Transitioned From Psychology to Programming'
 date: '2021-08-01'
 description: "A brief story about my transition from psychology to programming."
 img: "/images/posts/code.jpg"
