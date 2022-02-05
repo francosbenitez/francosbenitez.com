@@ -33,6 +33,7 @@ const About = () => {
                         || text == "development"
                         || text == "psychology"
                         || text == "design"
+                        || text == "a world that I love"
                         || text == "University of Buenos Aires"
                         || text == "licentiate degree in psychology"
                         || text == "technologies") 
