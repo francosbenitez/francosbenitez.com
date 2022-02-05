@@ -41,9 +41,9 @@
     "about": {
         "title": ["About", "Me"],
         "description": [
-            "Hi there, I'm ",
+            "Hi there, I am ",
             "Franco Sebastián Benítez",
-            "! I'm a Frontend Developer passionate about ",
+            "! I am a Frontend Developer passionate about ",
             "development",
             ", ",
             "design",
@@ -161,7 +161,7 @@
                 ]
             }
         },
-        "description_end": "When I’m not staring at my computer, I like practicing calisthenics or playing football!"
+        "description_end": "When I am not staring at my computer, I like practicing calisthenics or playing football!"
     },
     "projects": {
         "title": ["Featured", "Projects"],
