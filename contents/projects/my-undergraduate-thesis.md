@@ -18,7 +18,7 @@ This is the data analysis of my undergraduate thesis entitled "Perceptions about
 As the main analysis tool, I used mainly Python, but also made some plots in R. 
 
 ### What It Does
-This data analysis shows the perceptions of ninety psychological researchers at my college on problems in science (replicability crisis), as well as proposed solutions (open science practices).  
+This data analysis shows the perceptions of ninety psychological researchers from my college about problems in science (replicability crisis), as well as proposed solutions (open science practices).  
 
 ### What I Learnt
 In this project I learned a lot about data analysis. For example, I learned how difficult it is to work with real data (as an anecdote, I struggled with creating a regex that removes " years" in a list of ages). 
