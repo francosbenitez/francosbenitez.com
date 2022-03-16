@@ -21,6 +21,6 @@ I have made it using Python and its Flask microframework.
 It allows to create, read, update, and delete records. 
 
 ### What I Learnt
-I learnt how to use MySQL with Python, and how to integrate both of them in an application. 
+I learnt how to use MySQL with Python, and how to integrate both of them into an application. 
 
-In the near future, I have thought about building a more complex CRUD using the MERN stack. 
+In the near future, I would like to build a more complex CRUD using the MERN stack. 
