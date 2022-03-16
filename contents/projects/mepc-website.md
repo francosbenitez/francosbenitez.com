@@ -23,4 +23,4 @@ It shows what the organization is and what it does.
 ### What I Learnt
 I learnt a lot about HTML, CSS, and the basics of JavaScript. 
 
-Currently, we are creating a better version of this project using TypeScript, Next, and Tailwind. It will be ready soon! 
+Currently, we are creating a better version of this project using TypeScript, Next, and Tailwind. It's going to be ready soon! 
