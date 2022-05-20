@@ -1,3 +1,4 @@
 TO-DO:
   - Transform project into TypeScript.
   - Reorganize styles better.
+  - Review SEO issues.
