@@ -1,5 +1,5 @@
 # My Personal Website
-My personal website, built from scratch.  
+- Made my own portfolio from scratch. 
 
 ## Code and Resourses Used
 - **Main Technologies**: React, Next, styled-components.
