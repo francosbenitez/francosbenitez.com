@@ -1,6 +1,6 @@
 ---
 title: Test title
-date: 30/06/2022
+date: '2021-08-01'
 description: Test description
 img: "/uploads/descarga.png"
 img_alt: ''
