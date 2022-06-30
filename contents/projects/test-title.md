@@ -1,6 +1,6 @@
 ---
 title: Test title
-date: 2022-06-30T03:00:00Z
+date: 30/06/2022
 description: Test description
 img: "/uploads/descarga.png"
 img_alt: ''
