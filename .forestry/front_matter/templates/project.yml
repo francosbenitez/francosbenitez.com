@@ -1,0 +1,34 @@
+---
+label: Project
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: description
+  label: description
+- type: file
+  name: img
+  label: img
+- type: text
+  name: img_alt
+  label: img_alt
+- type: boolean
+  name: featured
+  label: featured
+- type: text
+  name: tools_used
+  label: tools_used
+- type: text
+  name: published
+  label: published
+- type: text
+  name: github_url
+  label: github_url
+- type: text
+  name: live_url
+  label: live_url
