@@ -8,6 +8,11 @@ fields:
 - type: text
   name: description
   label: description
+- name: date
+  type: text
+  config:
+    required: false
+  label: date
 - type: file
   name: img
   label: img
@@ -29,10 +34,5 @@ fields:
 - type: text
   name: live_url
   label: live_url
-- name: date
-  type: text
-  config:
-    required: false
-  label: date
 pages:
 - contents/projects/test-title.md
