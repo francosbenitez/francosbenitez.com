@@ -32,3 +32,5 @@ fields:
 - type: text
   name: live_url
   label: live_url
+pages:
+- contents/projects/test-title.md
