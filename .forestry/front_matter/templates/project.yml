@@ -5,14 +5,14 @@ fields:
 - type: text
   name: title
   label: title
-- type: text
-  name: description
-  label: description
 - name: date
   type: text
   config:
     required: false
   label: date
+- type: text
+  name: description
+  label: description
 - type: file
   name: img
   label: img
