@@ -5,9 +5,6 @@ fields:
 - type: text
   name: title
   label: title
-- type: datetime
-  name: date
-  label: date
 - type: text
   name: description
   label: description
@@ -32,5 +29,10 @@ fields:
 - type: text
   name: live_url
   label: live_url
+- name: date
+  type: text
+  config:
+    required: false
+  label: date
 pages:
 - contents/projects/test-title.md
