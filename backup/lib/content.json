@@ -1,0 +1,201 @@
+{
+    "nav": {
+        "logo": "FSB",
+        "links": [
+            {
+                "text": "About",
+                "to": "/#about"
+            },
+            {
+                "text": "Projects",
+                "to": "/#projects"
+            },
+            {
+                "text": "Blog",
+                "to": "/#blog"
+            },
+            {
+                "text": "Contact",
+                "to": "/#contact"
+            },
+            {
+                "text": "Resume",
+                "to": "https://drive.google.com/file/d/17cqpawOOlaE3yNN_fp_sYwY_ZV8YU3Ig/view?usp=sharing"
+            }
+        ] 
+    },
+    "hero": {
+        "img": {
+            "alt": "A programmer sitting with a computer."
+        },
+        "text": ["Hi, I'm", "Franco Sebastián Benítez"],
+        "typical": [
+            "👨🏻‍💻 A Developer",
+            2000,
+            "🧠 A Psychologist",
+            2000
+        ]
+    },
+    "about": {
+        "title": ["About", "Me"],
+        "description": [
+            "Hi, nice to meet you!",
+            " I'm a Frontend Developer passionate about ",
+            "development",
+            ", ",
+            "design",
+            ", and ",
+            "psychology",
+            ". I love making things which work well, look good and are easy-to-use for everyone.",
+            "",
+            "Along my psychology career and due to my great interest in scientific psychology, I started programming and found ",
+            "a world that I love",
+            ". Since then, I have loved creating software solutions which help people develop a product, an idea, or simply a passion.",
+            "",
+            "The following are some ",
+            "technologies",
+            " that I currently feel acquainted with:"
+        ],
+        "techStack": {
+            "title": ["Tech", "Stack"],
+            "back": {
+                "title": "Back-end",
+                "firstRow": [
+                    {
+                        "name": "Python",
+                        "url": "/icons/tech/python.svg"
+                    },
+                    {
+                        "name": "TypeScript",
+                        "url": "/icons/tech/typescript.svg"
+                    }
+                ],
+                "secondRow": [
+                    {
+                        "name": "JavaScript",
+                        "url": "/icons/tech/javascript.svg"
+                    },
+                    {
+                        "name": "MongoDB",
+                        "url": "/icons/tech/mongo.svg"
+                    }
+                ],
+                "thirdRow": [
+                    {
+                        "name": "MySQL",
+                        "url": "/icons/tech/mysql.svg"
+                    },
+                    {
+                        "name": "Express",
+                        "url": "/icons/tech/express.svg"
+                    }
+                ]
+            },
+            "front": {
+                "title": "Front-end",
+                "firstRow": [
+                    {
+                        "name": "JavaScript",
+                        "url": "/icons/tech/javascript.svg"
+                    },
+                    {
+                        "name": "CSS",
+                        "url": "/icons/tech/css.svg"
+                    }
+                ],
+                "secondRow": [
+                    {
+                        "name": "TypeScript",
+                        "url": "/icons/tech/typescript.svg"
+                    },
+                    {
+                        "name": "React",
+                        "url": "/icons/tech/react.svg"
+                    }
+                ],
+                "thirdRow": [
+                    {
+                        "name": "Next",
+                        "url": "/icons/tech/next.svg"
+                    },
+                    {
+                        "name": "HTML",
+                        "url": "/icons/tech/html.svg"
+                    }
+                ],
+                "fourthRow": [
+                    {
+                        "name": "Styled Components",
+                        "url": "/icons/tech/styled.svg"
+                    }
+                ]
+            },
+            "misc": {
+                "title": "Miscellaneous",
+                "firstRow": [
+                    {
+                        "name": "Git",
+                        "url": "/icons/tech/git.svg"
+                    },
+                    {
+                        "name": "R",
+                        "url": "/icons/tech/r.svg"
+                    }
+                ],
+                "secondRow": [
+                    {
+                        "name": "Figma",
+                        "url": "/icons/tech/figma.svg"
+                    },
+                    {
+                        "name": "D3",
+                        "url": "/icons/tech/d3.svg"
+                    }
+                ],
+                "thirdRow": [
+                    {
+                        "name": "Adobe Illustrator",
+                        "url": "/icons/tech/illustrator.svg"
+                    }
+                ]
+            }
+        },
+        "description_end": "When I'm not staring at my computer, I like practising calisthenics or playing football!"
+    },
+    "projects": {
+        "title": ["Featured", "Projects"],
+        "see_more": "See more projects →",
+        "back": "← Back to home"
+    },
+    "blog": {
+        "title": ["Featured", "Blog Posts"],
+        "see_more": "See more blog posts →",
+        "back": "← Back to home"
+    },
+    "contact": {
+        "title": ["Contact", "Me"],
+        "description": "If you would like us to talk, feel free to reach out via my contact form or social media!",
+        "social": [
+            {
+                "url": "mailto:francosbenitez@gmail.com",
+                "alt": "Mail icon",
+                "description": "Email me for a chat"
+            },
+            {
+                "url": "https://linkedin.com/in/francosbenitez",
+                "alt": "LinkedIn icon",
+                "description": "Connect with me"
+            },
+            {
+                "url": "https://github.com/francosbenitez",
+                "alt": "GitHub icon",
+                "description": "Check out my code"
+            },
+            {
+                "url": "https://twitter.com/francosbenitez",
+                "alt": "Twitter icon",
+                "description": "Follow me on Twitter"
+            }
+        ]
+    }
+}
