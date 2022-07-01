@@ -4,3 +4,4 @@ TO-DO:
   - Review SEO issues.
   - Write the post for Psievidencia.
   - Implement a CMS to write posts (blog & projects).
+  - Add i18n in ES/EN.
