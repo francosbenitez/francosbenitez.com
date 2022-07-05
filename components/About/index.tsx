@@ -16,34 +16,6 @@ const About = () => {
     });
   };
 
-  const giveColor = (array: any) => {
-    let newArr: any = [];
-    array.forEach((text: any) => {
-      <div key={text}>
-        {text == "Franco Sebastián Benítez" ||
-        text == "development" ||
-        text == "psychology" ||
-        text == "design" ||
-        text == "a world that I love" ||
-        text == "University of Buenos Aires" ||
-        text == "licentiate degree in psychology" ||
-        text == "technologies"
-          ? newArr.push(
-              <span
-                key={text}
-                dangerouslySetInnerHTML={{ __html: text }}
-              ></span>
-            )
-          : text == ""
-          ? newArr.push(
-              <div key={text} dangerouslySetInnerHTML={{ __html: "<br/>" }} />
-            )
-          : newArr.push(text)}
-      </div>;
-    });
-    return newArr;
-  };
-
   return (
     <StyledAbout id="about">
       <h1>
@@ -57,24 +29,17 @@ const About = () => {
         </div>
         <div className="description-container">
           <p>
-            {giveColor([
-              "Hi, nice to meet you!",
-              " I'm a Frontend Developer passionate about ",
-              "development",
-              ", ",
-              "design",
-              ", and ",
-              "psychology",
-              ". I love making things which work well, look good and are easy-to-use for everyone.",
-              "",
-              "Along my psychology career and due to my great interest in scientific psychology, I started programming and found ",
-              "a world that I love",
-              ". Since then, I have loved creating software solutions which help people develop a product, an idea, or simply a passion.",
-              "",
-              "The following are some ",
-              "technologies",
-              " that I currently feel acquainted with:",
-            ])}
+            Hi, nice to meet you! I&apos;m a Frontend Developer passionate about{" "}
+            <span>development</span>, <span>design</span>, and{" "}
+            <span>psychology</span>. I love making things which work well, look
+            good and are easy-to-use for everyone. <br></br>
+            <br></br>Along my psychology career and due to my great interest in
+            scientific psychology, I started programming and found{" "}
+            <span>a world that I love</span>. Since then, I have loved creating
+            software solutions which help people develop a product, an idea, or
+            simply a passion. <br></br>
+            <br></br>The following are some <span>technologies</span> that I
+            currently feel acquainted with:
           </p>
         </div>
       </div>
@@ -218,8 +183,8 @@ const About = () => {
           style={{ padding: "0 0 0 0", margin: "0 0 0 0" }}
         >
           <p>
-            When I&apos;m not staring at my computer, I like practising calisthenics
-            or playing football!
+            When I&apos;m not staring at my computer, I like practising
+            calisthenics or playing football!
           </p>
         </div>
       </div>
