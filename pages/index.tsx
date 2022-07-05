@@ -7,10 +7,30 @@ import { Section } from "../styles/Commons";
 import { StyledCard } from "../styles/Cards";
 import Image from "next/image";
 import Link from "next/link";
+import Head from "next/head";
 
 const Home = ({ allProjectsData }: { allProjectsData: any }) => {
   return (
     <>
+      <Head>
+        <meta charSet="utf-8" />
+        <title>Franco Sebastián Benítez</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="description"
+          content="Franco Sebastián Benítez is a web developer, designer, and psychologist based in Buenos Aires, Argentina."
+        />
+        <meta
+          name="keywords"
+          content="francosbenitez data design development"
+        />
+        <meta name="twitter:image:src" content="/images/others/social.png" />
+        <meta property="og:image" content="/images/others/social.png" />
+        <meta
+          name="google-site-verification"
+          content="Hac1WmsMXzw_dKke-_dS0vU7nnMj8s-4gLZAu7Nyu58"
+        />
+      </Head>
       <Hero />
       <About />
       <Section id="projects">
