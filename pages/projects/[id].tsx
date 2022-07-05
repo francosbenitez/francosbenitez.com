@@ -78,11 +78,7 @@ export default function Project({ projectData }: { projectData: any }) {
           <h1>{projectData.title}</h1>
           <h2>{projectData.description}</h2>
           <hr />
-          <p>
-            <div
-              dangerouslySetInnerHTML={{ __html: projectData.contentHtml }}
-            />
-          </p>
+          <div dangerouslySetInnerHTML={{ __html: projectData.contentHtml }} />
         </article>
         <hr />
         <div className="back-and-go">
