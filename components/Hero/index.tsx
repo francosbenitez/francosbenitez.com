@@ -1,6 +1,6 @@
 import React from "react";
 import { StyledHero } from "./styles";
-import Typical from "react-typical";
+import { ReactTypical } from '@deadcoder0904/react-typical'
 import { StyledArrow } from "../../styles/Animations";
 import { HeroImage } from "./HeroImage";
 import Link from "next/link";
@@ -20,7 +20,7 @@ const Hero = () => {
             <br />
             <span> Franco Sebastián Benítez</span>
           </h1>
-          <Typical
+          <ReactTypical
             steps={["👨🏻‍💻 A Developer", 2000, "🧠 A Psychologist", 2000]}
             loop={Infinity}
             wrapper="h2"
@@ -39,7 +39,7 @@ const Hero = () => {
           </div>
         </div>
         <div className="hero-img">
-          <HeroImage alt="A programmer sitting with a computer." />
+          <HeroImage />
         </div>
       </div>
       <StyledArrow>

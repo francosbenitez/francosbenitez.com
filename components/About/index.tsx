@@ -5,8 +5,8 @@ import Image from "next/image";
 import { StyledSkillsCard } from "../../styles/Cards";
 
 const About = () => {
-  const techFunc = (content) => {
-    return content.map((tech, i) => {
+  const techFunc = (content: any) => {
+    return content.map((tech: any, i: any) => {
       return (
         <div key={i} className="item">
           <Image src={tech.url} alt={tech.name} width={30} height={30} />
@@ -16,9 +16,9 @@ const About = () => {
     });
   };
 
-  const giveColor = (array) => {
-    let newArr = [];
-    array.forEach((text) => {
+  const giveColor = (array: any) => {
+    let newArr: any = [];
+    array.forEach((text: any) => {
       <div key={text}>
         {text == "Franco Sebastián Benítez" ||
         text == "development" ||

@@ -56,7 +56,7 @@ export const Nav = styled.nav`
   }
 `;
 
-export const StyledUl = styled.ul`
+export const StyledUl = styled("ul")<{open: boolean}>`
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
@@ -94,7 +94,7 @@ export const StyledUl = styled.ul`
   }
 `;
 
-export const StyledBurger = styled.div`
+export const StyledBurger = styled("div")<{open: boolean}>`
   width: 2rem;
   height: 2rem;
   position: fixed;

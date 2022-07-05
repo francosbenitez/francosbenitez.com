@@ -3,14 +3,14 @@ import { lightTheme, darkTheme, GlobalStyle } from "../styles/Theme";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 
-const Layout = ({ children }) => {
+const Layout = ({ children }: { children: any }) => {
   return (
     <>
       <ThemeProvider theme={lightTheme}>
         <GlobalStyle />
         Layout
         <Navbar />
-        <div>{children}</div>
+        {children}
         <Footer />
       </ThemeProvider>
     </>

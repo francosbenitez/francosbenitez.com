@@ -71,7 +71,7 @@ const Contact = () => {
               className="form-control"
               id="inputName"
               placeholder="Name"
-              required=""
+              required
             />
           </div>
           <div className="form-wrapper">
@@ -81,7 +81,7 @@ const Contact = () => {
               className="form-control"
               id="inputEmail"
               placeholder="Email"
-              required=""
+              required
             />
           </div>
           <div className="form-wrapper">
@@ -89,9 +89,8 @@ const Contact = () => {
               name="message"
               className="form-control"
               id="inputMessage"
-              rows="5"
               placeholder="Message"
-              required=""
+              required
             ></textarea>
           </div>
           <button type="submit" className="submit-btn">
