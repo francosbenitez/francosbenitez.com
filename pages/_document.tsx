@@ -58,7 +58,7 @@ class MyDocument extends Document {
           />
           <meta
             name="theme-color"
-            content={`$${(props) => props.theme.colors.primary}`}
+            content={`$${(props: any) => props.theme.colors.primary}`}
           />
         </Head>
         <body>
