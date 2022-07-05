@@ -3,7 +3,6 @@ import { Nav } from "./styles";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import Burger from "./Burger";
-import content from "../../lib/content.json";
 
 const Navbar = ({ children }) => {
   const router = useRouter();

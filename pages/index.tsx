@@ -1,10 +1,8 @@
 import type { NextPage } from "next";
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
+import Hero from "../components/Hero"
 
 const Home: NextPage = () => {
-  return <>Hello world from Next/TypeScript</>;
+  return <><Hero />></>;
 };
 
 export default Home;

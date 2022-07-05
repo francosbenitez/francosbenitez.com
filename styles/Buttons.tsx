@@ -70,7 +70,6 @@ export const StyledProjectsButton = styled.div`
 
 export const StyledContactButton = styled(StyledProjectsButton)`
   .button {
-    //box-shadow: ${(props) => props.theme.colors.boxShadow};
     background: ${(props) => props.theme.colors.background};
     background: linear-gradient(
       5deg,

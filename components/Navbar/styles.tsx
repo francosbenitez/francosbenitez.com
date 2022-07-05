@@ -7,10 +7,7 @@ export const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   position: fixed;
-  /* background-color: hsla(0,0%,100%,.9); */
   background-color: ${(props) => props.theme.colors.background};
-  /* -webkit-backdrop-filter: blur(.5rem);
-    backdrop-filter: blur(.5rem); */
   box-shadow: ${(props) => props.theme.colors.boxShadow};
   z-index: 1000;
   top: 0;
