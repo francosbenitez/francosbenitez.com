@@ -218,7 +218,7 @@ const About = () => {
           style={{ padding: "0 0 0 0", margin: "0 0 0 0" }}
         >
           <p>
-            When I'm not staring at my computer, I like practising calisthenics
+            When I&apos;m not staring at my computer, I like practising calisthenics
             or playing football!
           </p>
         </div>
