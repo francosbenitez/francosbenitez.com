@@ -1,9 +1,16 @@
-import * as React from "react";
+import { ThemeProvider } from "styled-components";
+import { lightTheme, darkTheme, GlobalStyle } from "../styles/Theme";
 
-interface ILayoutProps {}
-
-const Layout: React.FunctionComponent<ILayoutProps> = (props) => {
-  return;
+const Layout = ({ children }) => {
+  return (
+    <>
+      <ThemeProvider theme={lightTheme}>
+        <GlobalStyle />
+        Layout
+        <div>{children}</div>
+      </ThemeProvider>
+    </>
+  );
 };
 
 export default Layout;
