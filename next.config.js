@@ -4,7 +4,7 @@ module.exports = {
 };
 
 module.exports = {
-  experimental: {
+  compiler: {
     styledComponents: true,
   },
   webpack(config) {
