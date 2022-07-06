@@ -1,13 +1,39 @@
-import { ThemeProvider } from "styled-components";
-import { lightTheme, darkTheme, GlobalStyle } from "../styles/Theme";
-import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Head from "next/head";
+import Navbar from "./Navbar";
+import { ThemeProvider } from "styled-components";
+import { lightTheme, darkTheme, GlobalStyle } from "../styles/Theme";
+import { useState, useEffect } from "react";
+import Icon from "./Icon";
+
+function useStickyState(defaultValue: any, key: any) {
+  const [value, setValue] = useState(defaultValue);
+
+  useEffect(() => {
+    const stickyValue = window.localStorage.getItem(key);
+
+    if (stickyValue !== null) {
+      setValue(JSON.parse(stickyValue));
+    }
+  }, [key]);
+
+  useEffect(() => {
+    window.localStorage.setItem(key, JSON.stringify(value));
+  }, [key, value]);
+
+  return [value, setValue];
+}
 
 const Layout = ({ children }: { children: any }) => {
+  const [theme, setTheme] = useStickyState("light", "theme");
+
+  const toggleTheme = () => {
+    theme === "light" ? setTheme("dark") : setTheme("light");
+  };
+
   return (
     <>
-      <ThemeProvider theme={lightTheme}>
+      <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
         <GlobalStyle />
         <Head>
           <link
@@ -42,7 +68,11 @@ const Layout = ({ children }: { children: any }) => {
             content={`${(props: any) => props.theme.colors.primary}`}
           />
         </Head>
-        <Navbar />
+        <Navbar>
+          <button onClick={toggleTheme}>
+            <Icon name={theme === "light" ? "night" : "day"} />
+          </button>
+        </Navbar>
         {children}
         <Footer />
       </ThemeProvider>

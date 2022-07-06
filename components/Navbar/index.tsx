@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import Burger from "./Burger";
 
-const Navbar = () => {
+const Navbar = ({ children }: { children: any }) => {
   const router = useRouter();
   return (
     <Nav>
@@ -18,6 +18,7 @@ const Navbar = () => {
           </Link>
         </div>
       </div>
+      {children}
       <Burger />
     </Nav>
   );
