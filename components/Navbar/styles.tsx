@@ -3,14 +3,20 @@ import styled from "styled-components";
 export const Nav = styled.nav`
   width: 100%;
   height: 55px;
-  padding: 0 20px;
-  display: flex;
-  justify-content: space-between;
   position: fixed;
   background-color: ${(props) => props.theme.colors.background};
   box-shadow: ${(props) => props.theme.colors.boxShadow};
   z-index: 1000;
   top: 0;
+
+  .nav-wrapper {
+    margin: 0 auto;
+    max-width: 1152px;
+    position: relative;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+  }
 
   button {
     position: fixed;
@@ -48,15 +54,20 @@ export const Nav = styled.nav`
   }
 
   @media ${(props) => props.theme.devices.tablet} {
-    padding: 0 6rem 0 6rem;
+    .custom-div {
+      display: flex;
+    }
 
     button {
-      right: 60px;
+      padding: 18px 10px;
+      position: relative;
+      top: 0;
+      right: 0;
     }
   }
 `;
 
-export const StyledUl = styled("ul")<{open: boolean}>`
+export const StyledUl = styled("ul")<{ open: boolean }>`
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
@@ -94,7 +105,7 @@ export const StyledUl = styled("ul")<{open: boolean}>`
   }
 `;
 
-export const StyledBurger = styled("div")<{open: boolean}>`
+export const StyledBurger = styled("div")<{ open: boolean }>`
   width: 2rem;
   height: 2rem;
   position: fixed;

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { StyledBurger } from "./styles";
 import RightNavbar from "./RightNavbar";
 
-const Burger = () => {
+const Burger = ({ children }: { children: any }) => {
   const [open, setOpen] = useState<boolean>(false);
 
   return (
@@ -12,7 +12,10 @@ const Burger = () => {
         <div />
         <div />
       </StyledBurger>
-      <RightNavbar open={open} />
+      <div className="custom-div">
+        <RightNavbar open={open} />
+        {children}
+      </div>
     </>
   );
 };

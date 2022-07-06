@@ -1,13 +1,20 @@
 import styled from "styled-components";
 
 export const StyledFooter = styled.footer`
-  padding: 2rem 2rem 2rem 2rem;
+  padding: 2rem 0;
   box-shadow: ${(props) => props.theme.colors.boxShadow};
   display: flex;
   flex-direction: column;
   width: 100%;
   bottom: 0;
   position: relative;
+
+  .footer-wrapper {
+    margin: 0 auto;
+    max-width: 1152px;
+    position: relative;
+    width: 90%;
+  }
 
   p {
     font-size: 1rem;
@@ -16,6 +23,7 @@ export const StyledFooter = styled.footer`
   .copyright {
     text-align: center;
     opacity: 75%;
+    display: inline-block;
   }
 
   .copyright:hover {
@@ -25,6 +33,8 @@ export const StyledFooter = styled.footer`
   .icons-container {
     margin-top: 1rem;
     text-align: center;
+    display: inline-block;
+    float: right;
   }
 
   .icon-wrapper {
@@ -49,7 +59,6 @@ export const StyledFooter = styled.footer`
   }
 
   @media ${(props) => props.theme.devices.tablet} {
-    padding: 2rem 5rem 2rem 5rem;
     flex-direction: row;
 
     .copyright {
