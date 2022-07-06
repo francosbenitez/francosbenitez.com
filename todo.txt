@@ -5,3 +5,4 @@ TO-DO:
   - Write the post for Psievidencia.
   - Implement a CMS to write posts (blog & projects). DONE
   - Implement i18n from Next.js.
+  - Fix hero image responsiveness.
