@@ -63,6 +63,12 @@ export const StyledFooter = styled.footer`
       margin: auto;
     }
 
+    .icon-wrapper {
+      &:last-child {
+        margin: 0 0 0 0.5rem;
+      }
+    }
+
     .icons-container {
       flex-basis: 50%;
       text-align: right;

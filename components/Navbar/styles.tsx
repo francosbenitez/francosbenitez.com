@@ -59,7 +59,7 @@ export const Nav = styled.nav`
     }
 
     button {
-      padding: 18px 10px;
+      padding: 18px 0 18px 10px;
       position: relative;
       top: 0;
       right: 0;
@@ -87,6 +87,7 @@ export const StyledUl = styled("ul")<{ open: boolean }>`
   }
 
   @media (max-width: 800px) {
+    z-index: 1;
     flex-flow: column nowrap;
     background-color: ${(props) => props.theme.colors.background};
     position: fixed;
