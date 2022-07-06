@@ -96,7 +96,6 @@ export const StyledContact = styled(Section)`
   input[type="text"]:focus,
   input[type="email"]:focus,
   textarea[name="message"]:focus {
-    /*border: 2px solid ${(props) => props.theme.colors.primary};*/
     outline: none;
   }
 

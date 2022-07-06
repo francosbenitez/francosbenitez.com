@@ -7,6 +7,7 @@ export const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
         line-height: 1.5;
         font-family: "IBM Plex Sans";
+
         /* Firefox */
         scrollbar-width: thin;
         scrollbar-color: ${(props) => props.theme.colors.secondary} ${(props) =>
@@ -61,7 +62,6 @@ export const lightTheme = {
     tertiary: "#DEF2FF",
     text: "#222823",
     link: "#1155cc",
-    // grey: "#222823",
     background: "#F4F7F5",
     boxShadow: "0 0 5px rgba(0, 0, 0, .25)",
     date: "rgba(0,0,0,.6)",
@@ -81,7 +81,6 @@ export const darkTheme = {
     tertiary: "#575a5eae",
     text: "#F4F7F5",
     link: "#E7CFBC",
-    // grey: "#F4F7F5",
     background: "#222823",
     boxShadow: "0 0 5px rgba(0, 0, 0, 1)",
     date: "#d5d8d6",

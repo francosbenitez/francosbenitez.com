@@ -36,7 +36,6 @@ export const Section = styled.section`
     float: right;
     white-space: nowrap;
     margin-top: 1rem;
-    /* display: inline-block; */
     border-bottom: none;
     font-size: 1.1rem;
   }
@@ -131,7 +130,6 @@ export const Posts = styled.div`
   h1 {
     font-size: 3rem;
     margin: 1rem 0 1rem 0;
-    /* font-weight: 900; */
     line-height: 1.25;
     background: ${(props) => props.theme.colors.primary};
     background: linear-gradient(
@@ -148,7 +146,6 @@ export const Posts = styled.div`
     font-size: 1.35rem;
     margin: 1rem 0 1rem 0;
     font-weight: 400;
-    //font-family: "Open Sans", sans-serif;
   }
 
   p {
