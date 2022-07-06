@@ -72,9 +72,6 @@ export default function Project({ projectData }: { projectData: any }) {
               </div>
             </div>
           </StyledProjectsCard>
-          {/*<p className="date">
-                  <Date dateString={projectData.date} />
-                </p>*/}
           <h1>{projectData.title}</h1>
           <h2>{projectData.description}</h2>
           <hr />

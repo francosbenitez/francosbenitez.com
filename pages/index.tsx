@@ -2,6 +2,7 @@ import Hero from "../components/Hero";
 import About from "../components/About";
 import Contact from "../components/Contact";
 import { getSortedProjectsData } from "../lib/projects";
+import { getSortedPostsData } from "../lib/posts";
 import Date from "../components/Date";
 import { Section } from "../styles/Commons";
 import { StyledCard } from "../styles/Cards";
@@ -9,7 +10,13 @@ import Image from "next/image";
 import Link from "next/link";
 import Head from "next/head";
 
-const Home = ({ allProjectsData }: { allProjectsData: any }) => {
+const Home = ({
+  allProjectsData,
+  allPostsData,
+}: {
+  allProjectsData: any;
+  allPostsData: any;
+}) => {
   return (
     <>
       <Head>
@@ -98,6 +105,52 @@ const Home = ({ allProjectsData }: { allProjectsData: any }) => {
           </Link>
         </div>
       </Section>
+      <Section id="blog">
+        <div className="blog-container">
+          <h1>
+            Featured <span>Blog Posts</span>
+          </h1>
+          <StyledCard>
+            {allPostsData
+              .filter(({ featured }: { featured: any }) => featured == true)
+              .map(
+                ({
+                  id,
+                  date,
+                  title,
+                  description,
+                }: {
+                  id: any;
+                  date: any;
+                  title: any;
+                  description: any;
+                }) => (
+                  <ol className="blog_posts" key={id}>
+                    <li className="post-card">
+                      <div className="post-card__content">
+                        <h2 className="post-card__title">
+                          <Link href={`/posts/${id}`}>
+                            <a className="post-card__link">{title}</a>
+                          </Link>
+                        </h2>
+                        <small className="post-card__details">
+                          <Date dateString={date} />
+                        </small>
+                        <p className="post-card__description">{description}</p>
+                      </div>
+                    </li>
+                  </ol>
+                )
+              )}
+            {/*</div>*/}
+          </StyledCard>
+          <Link href="/posts" passHref>
+            <a className="see-all">
+              <span>See more blog posts →</span>
+            </a>
+          </Link>
+        </div>
+      </Section>
       <Contact />
     </>
   );
@@ -105,9 +158,11 @@ const Home = ({ allProjectsData }: { allProjectsData: any }) => {
 
 export async function getStaticProps() {
   const allProjectsData = getSortedProjectsData();
+  const allPostsData = getSortedPostsData();
   return {
     props: {
       allProjectsData,
+      allPostsData,
     },
   };
 }
