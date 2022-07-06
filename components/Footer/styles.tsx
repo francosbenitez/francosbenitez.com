@@ -33,8 +33,6 @@ export const StyledFooter = styled.footer`
   .icons-container {
     margin-top: 1rem;
     text-align: center;
-    display: inline-block;
-    float: right;
   }
 
   .icon-wrapper {
@@ -69,6 +67,8 @@ export const StyledFooter = styled.footer`
       flex-basis: 50%;
       text-align: right;
       margin-top: 0;
+      float: right;
+      display: inline-block;
     }
   }
 `;
