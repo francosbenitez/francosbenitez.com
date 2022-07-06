@@ -1,6 +1,7 @@
 TO-DO:
-  - Transform project into TypeScript.
+  - Transform project into TypeScript. DONE
   - Reorganize styles better.
   - Review SEO issues.
   - Write the post for Psievidencia.
-  - Implement a CMS to write posts (blog & projects).
+  - Implement a CMS to write posts (blog & projects). DONE
+  - Implement i18n from Next.js.
