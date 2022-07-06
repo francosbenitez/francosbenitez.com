@@ -86,7 +86,7 @@ export const StyledUl = styled("ul")<{ open: boolean }>`
     border-bottom: 1.5px ${(props) => props.theme.colors.primary} solid;
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: 799px) {
     z-index: 1;
     flex-flow: column nowrap;
     background-color: ${(props) => props.theme.colors.background};
@@ -138,7 +138,7 @@ export const StyledBurger = styled("div")<{ open: boolean }>`
     }
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: 799px) {
     display: flex;
     justify-content: space-around;
     flex-flow: column nowrap;

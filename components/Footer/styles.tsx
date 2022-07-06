@@ -23,7 +23,7 @@ export const StyledFooter = styled.footer`
   .copyright {
     text-align: center;
     opacity: 75%;
-    display: inline-block;
+    display: block;
   }
 
   .copyright:hover {
@@ -61,6 +61,8 @@ export const StyledFooter = styled.footer`
 
     .copyright {
       margin: auto;
+      display: inline-block;
+      max-width: 75%;
     }
 
     .icon-wrapper {
