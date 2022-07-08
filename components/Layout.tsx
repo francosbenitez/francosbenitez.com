@@ -6,8 +6,8 @@ import { lightTheme, darkTheme, GlobalStyle } from "../styles/Theme";
 import { useState, useEffect } from "react";
 import Icon from "./Icon";
 
-function useStickyState(defaultValue: any, key: any) {
-  const [value, setValue] = useState(defaultValue);
+function useStickyState(defaultValue: string, key: string) {
+  const [value, setValue] = useState<string>(defaultValue);
 
   useEffect(() => {
     const stickyValue = window.localStorage.getItem(key);
@@ -21,10 +21,10 @@ function useStickyState(defaultValue: any, key: any) {
     window.localStorage.setItem(key, JSON.stringify(value));
   }, [key, value]);
 
-  return [value, setValue];
+  return [value, setValue] as const;
 }
 
-const Layout = ({ children }: { children: any }) => {
+const Layout = ({ children }: { children: React.ReactNode }) => {
   const [theme, setTheme] = useStickyState("light", "theme");
 
   const toggleTheme = () => {
