@@ -9,13 +9,14 @@ import { StyledCard } from "../styles/Cards";
 import Image from "next/image";
 import Link from "next/link";
 import Head from "next/head";
+import { AllProjectsData, AllPostsData } from "../types";
 
 const Home = ({
   allProjectsData,
   allPostsData,
 }: {
-  allProjectsData: any;
-  allPostsData: any;
+  allProjectsData: AllProjectsData[];
+  allPostsData: AllPostsData[];
 }) => {
   return (
     <>
@@ -57,14 +58,7 @@ const Home = ({
                     description,
                     img,
                     img_alt,
-                  }: {
-                    id: any;
-                    date: any;
-                    title: any;
-                    description: any;
-                    img: any;
-                    img_alt: any;
-                  }) => (
+                  }: AllProjectsData) => (
                     <li className="project-card" key={id}>
                       <div className="project-card__image">
                         <div className="lazy">
@@ -113,35 +107,23 @@ const Home = ({
           <StyledCard>
             {allPostsData
               .filter(({ featured }: { featured: any }) => featured == true)
-              .map(
-                ({
-                  id,
-                  date,
-                  title,
-                  description,
-                }: {
-                  id: any;
-                  date: any;
-                  title: any;
-                  description: any;
-                }) => (
-                  <ol className="blog_posts" key={id}>
-                    <li className="post-card">
-                      <div className="post-card__content">
-                        <h2 className="post-card__title">
-                          <Link href={`/posts/${id}`}>
-                            <a className="post-card__link">{title}</a>
-                          </Link>
-                        </h2>
-                        <small className="post-card__details">
-                          <Date dateString={date} />
-                        </small>
-                        <p className="post-card__description">{description}</p>
-                      </div>
-                    </li>
-                  </ol>
-                )
-              )}
+              .map(({ id, date, title, description }: AllPostsData) => (
+                <ol className="blog_posts" key={id}>
+                  <li className="post-card">
+                    <div className="post-card__content">
+                      <h2 className="post-card__title">
+                        <Link href={`/posts/${id}`}>
+                          <a className="post-card__link">{title}</a>
+                        </Link>
+                      </h2>
+                      <small className="post-card__details">
+                        <Date dateString={date} />
+                      </small>
+                      <p className="post-card__description">{description}</p>
+                    </div>
+                  </li>
+                </ol>
+              ))}
             {/*</div>*/}
           </StyledCard>
           <Link href="/posts" passHref>
