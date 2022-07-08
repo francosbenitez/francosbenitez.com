@@ -6,8 +6,13 @@ import { StyledCard } from "../../styles/Cards";
 import { Section } from "../../styles/Commons";
 import Image from "next/image";
 import Head from "next/head";
+import { AllProjectsData } from "../../types";
 
-const Projects = ({ allProjectsData }: { allProjectsData: any }) => {
+const Projects = ({
+  allProjectsData,
+}: {
+  allProjectsData: AllProjectsData[];
+}) => {
   return (
     <>
       <Head>
@@ -32,14 +37,7 @@ const Projects = ({ allProjectsData }: { allProjectsData: any }) => {
                   description,
                   img,
                   img_alt,
-                }: {
-                  id: any;
-                  date: any;
-                  title: any;
-                  description: any;
-                  img: any;
-                  img_alt: any;
-                }) => (
+                }: AllProjectsData) => (
                   <li className="project-card" key={id}>
                     <div className="project-card__image">
                       <div className="lazy">

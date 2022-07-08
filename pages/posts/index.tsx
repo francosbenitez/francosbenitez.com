@@ -5,8 +5,9 @@ import Date from "../../components/Date";
 import { StyledCard } from "../../styles/Cards";
 import { Section } from "../../styles/Commons";
 import Head from "next/head";
+import { AllPostsData } from "../../types";
 
-const Blog = ({ allPostsData }: { allPostsData: any }) => {
+const Blog = ({ allPostsData }: { allPostsData: AllPostsData[] }) => {
   return (
     <>
       <Head>
@@ -20,17 +21,7 @@ const Blog = ({ allPostsData }: { allPostsData: any }) => {
           </h1>
           <StyledCard>
             {allPostsData.map(
-              ({
-                id,
-                date,
-                title,
-                description,
-              }: {
-                id: any;
-                date: any;
-                title: any;
-                description: any;
-              }) => (
+              ({ id, date, title, description }: AllPostsData) => (
                 <ol className="blog_posts" key={id}>
                   <li className="post-card">
                     <div className="post-card__content">
