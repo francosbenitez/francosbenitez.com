@@ -21,3 +21,8 @@ export type AllPostsData = {
   img_alt: string;
   title: string;
 };
+
+export type Tech = {
+  name: string;
+  url: string;
+};

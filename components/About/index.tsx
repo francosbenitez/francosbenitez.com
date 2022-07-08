@@ -3,10 +3,11 @@ import { StyledAbout } from "./styles";
 import Avatar from "../../public/images/others/avatar.jpg";
 import Image from "next/image";
 import { StyledSkillsCard } from "../../styles/Cards";
+import { Tech } from "../../types";
 
 const About = () => {
-  const techFunc = (content: any) => {
-    return content.map((tech: any, i: any) => {
+  const techFunc = (content: Tech[]) => {
+    return content.map((tech: Tech, i: number) => {
       return (
         <div key={i} className="item">
           <Image src={tech.url} alt={tech.name} width={30} height={30} />
