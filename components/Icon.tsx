@@ -1,6 +1,6 @@
 import React from "react";
 
-const Icon = ({ name, size = "24" }: { name: any; size?: any }) => {
+const Icon = ({ name, size = "24" }: { name: string; size?: string }) => {
   switch (name) {
     case "day":
       return (
