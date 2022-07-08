@@ -41,7 +41,7 @@ export function getAllProjectIds() {
   });
 }
 
-export async function getProjectData(id: any) {
+export async function getProjectData(id: string) {
   const fullPath = path.join(projectsDirectory, `${id}.md`);
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const matterResult = matter(fileContents);

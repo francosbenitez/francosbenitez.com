@@ -3,7 +3,7 @@ import { StyledUl } from "./styles";
 import { useRouter } from "next/router";
 import Link from "next/link";
 
-const RightNavbar = ({ open }: { open: any }) => {
+const RightNavbar = ({ open }: { open: boolean }) => {
   const router = useRouter();
 
   const links = [

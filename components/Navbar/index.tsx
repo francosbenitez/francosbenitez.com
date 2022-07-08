@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import Burger from "./Burger";
 
-const Navbar = ({ children }: { children: any }) => {
+const Navbar = ({ children }: { children: React.ReactNode }) => {
   const router = useRouter();
   return (
     <Nav>

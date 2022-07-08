@@ -3,8 +3,13 @@ import Head from "next/head";
 import Date from "../../components/Date";
 import { Posts } from "../../styles/Commons";
 import Link from "next/link";
+import { AllPostsData } from "../../types";
 
-export default function Post({ postData }: { postData: any }) {
+interface PostData extends AllPostsData {
+  contentHtml: string;
+}
+
+export default function Post({ postData }: { postData: PostData }) {
   return (
     <>
       <Head>
@@ -40,7 +45,7 @@ export default function Post({ postData }: { postData: any }) {
   );
 }
 
-export async function getStaticProps({ params }: { params: any }) {
+export async function getStaticProps({ params }: { params: PostData }) {
   const postData = await getPostData(params.id);
   return {
     props: {

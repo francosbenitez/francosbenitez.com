@@ -49,7 +49,9 @@ const Home = ({
           <StyledCard>
             <ol className="projects__projects">
               {allProjectsData
-                .filter(({ featured }: { featured: any }) => featured == true)
+                .filter(
+                  ({ featured }: { featured: boolean }) => featured == true
+                )
                 .map(
                   ({
                     id,
@@ -106,7 +108,7 @@ const Home = ({
           </h1>
           <StyledCard>
             {allPostsData
-              .filter(({ featured }: { featured: any }) => featured == true)
+              .filter(({ featured }: { featured: boolean }) => featured == true)
               .map(({ id, date, title, description }: AllPostsData) => (
                 <ol className="blog_posts" key={id}>
                   <li className="post-card">

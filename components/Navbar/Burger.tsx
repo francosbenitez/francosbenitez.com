@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { StyledBurger } from "./styles";
 import RightNavbar from "./RightNavbar";
 
-const Burger = ({ children }: { children: any }) => {
+const Burger = ({ children }: { children: React.ReactNode }) => {
   const [open, setOpen] = useState<boolean>(false);
 
   return (

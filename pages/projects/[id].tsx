@@ -5,8 +5,13 @@ import { Posts } from "../../styles/Commons";
 import { StyledProjectsCard } from "../../styles/Cards";
 import Link from "next/link";
 import Forbidden from "../../public/icons/forbidden.svg";
+import { AllProjectsData } from "../../types";
 
-export default function Project({ projectData }: { projectData: any }) {
+interface ProjectData extends AllProjectsData {
+  contentHtml: string;
+}
+
+export default function Project({ projectData }: { projectData: ProjectData }) {
   return (
     <>
       <Head>
@@ -55,7 +60,7 @@ export default function Project({ projectData }: { projectData: any }) {
                   </div>
                   <footer className="card-footer">
                     <span className="card-footer-item">
-                      {projectData.live_url == false ? (
+                      {!projectData.live_url ? (
                         <Forbidden />
                       ) : (
                         <a
@@ -95,7 +100,7 @@ export default function Project({ projectData }: { projectData: any }) {
   );
 }
 
-export async function getStaticProps({ params }: { params: any }) {
+export async function getStaticProps({ params }: { params: ProjectData }) {
   const projectData = await getProjectData(params.id);
   return {
     props: {
