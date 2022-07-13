@@ -1,6 +1,6 @@
 # francosbenitez.com
 
-*My personal website*
+_My personal website_
 
 ## Code and Resourses Used
 
@@ -8,5 +8,4 @@
 
 ## Live Demo
 
-- [Link](https://francosbenitez.com)
-
+- <a href="https://francosbenitez.com" target="_blank">Link</a>
