@@ -1,11 +1,12 @@
-# My Personal Website
+# francosbenitez.com
 
-- Made my own portfolio from scratch.
+*My personal website*
 
 ## Code and Resourses Used
 
-- **Main Technologies**: TypeScript, React, Next, styled-components.
+- **Main Technologies**: TypeScript, React, Next, styled-components
 
 ## Live Demo
 
-- [Website](https://www.francosbenitez.com/)
+- [Link](https://www.francosbenitez.com/)
+
