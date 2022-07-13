@@ -8,5 +8,5 @@
 
 ## Live Demo
 
-- [Link](https://www.francosbenitez.com/)
+- [Link](https://francosbenitez.com)
 
