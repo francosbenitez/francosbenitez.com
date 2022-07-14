@@ -6,3 +6,4 @@ TO-DO:
   - Implement a CMS to write posts (blog & projects). DONE
   - Implement i18n from Next.js.
   - Fix hero image responsiveness.
+  - Remove the three cards from the About section, or think about the possibility to make them dynamic ones.
