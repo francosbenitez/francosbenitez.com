@@ -34,3 +34,5 @@ fields:
 - type: text
   name: live_url
   label: live_url
+pages:
+- contents/projects/flask-crud-application.md
