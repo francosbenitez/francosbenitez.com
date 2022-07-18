@@ -36,4 +36,5 @@ fields:
   label: live_url
 pages:
 - contents/projects/flask-crud-application.md
+- contents/projects/mepc-website.md
 - contents/projects/web-scraping-with-python.md
