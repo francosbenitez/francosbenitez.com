@@ -1,16 +1,16 @@
 ---
-title: 'Data Analysis of My Undergraduate Thesis'
+title: Data Analysis of My Undergraduate Thesis
 date: '2021-08-01'
-description: "Using Python and R."
+description: Using Python and R.
 img: "/images/projects/science.png"
-img_alt: "A plot of my undergraduate thesis."
+img_alt: A plot of my undergraduate thesis.
 featured: true
-tools_used: "Python, R"
-published: "2021/08/01"
-github_url: "https://github.com/francosbenitez/thesis"
-live_url: "https://francosbenitez.github.io/thesis"
----
+tools_used: Python, R
+published: 2021/08/01
+github_url: https://github.com/francosbenitez/thesis
+live_url: https://francosbenitez.github.io/thesis
 
+---
 ### What It Is
 This is the data analysis of my undergraduate thesis entitled "Perceptions about Replicability Crisis and Open Science".
 
