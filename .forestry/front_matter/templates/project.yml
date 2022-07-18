@@ -36,6 +36,7 @@ fields:
   label: live_url
 pages:
 - contents/projects/flask-crud-application.md
+- contents/projects/ggplot2-and-shiny.md
 - contents/projects/mepc-website.md
 - contents/projects/my-undergraduate-thesis.md
 - contents/projects/twitter-bot.md
