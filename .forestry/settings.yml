@@ -14,7 +14,7 @@ sections:
   label: Posts
   create: all
   match: "**/*"
-upload_dir: public/images
+upload_dir: public/uploads
 public_path: "/public"
 front_matter_path: ''
 use_front_matter_path: false
