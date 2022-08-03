@@ -26,11 +26,11 @@ const Home = ({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="description"
-          content="Franco Sebastián Benítez is a web developer, designer, and psychologist based in Buenos Aires, Argentina."
+          content="Franco Sebastián Benítez is a developer and psychologist based in Buenos Aires, Argentina."
         />
         <meta
           name="keywords"
-          content="francosbenitez data design development"
+          content="francosbenitez development psychology"
         />
         <meta name="twitter:image:src" content="/images/others/social.png" />
         <meta property="og:image" content="/images/others/social.png" />
