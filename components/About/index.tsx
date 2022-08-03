@@ -31,9 +31,9 @@ const About = () => {
         <div className="description-container">
           <p>
             Hi, nice to meet you! I&apos;m a Frontend Developer passionate about{" "}
-            <span>development</span>, <span>design</span>, and{" "}
-            <span>psychology</span>. I love making things which work well, look
-            good and are easy-to-use for everyone. <br></br>
+            <span>data</span>, <span>development</span>, and{" "}
+            <span>psychology</span>. I love making things which use data, work
+            well and are easy-to-use for everyone. <br></br>
             <br></br>Along my psychology career and due to my great interest in
             scientific psychology, I started programming and found{" "}
             <span>a world that I love</span>. Since then, I have loved creating
