@@ -30,7 +30,7 @@ const About = () => {
         </div>
         <div className="description-container">
           <p>
-            Hi, nice to meet you! I&apos;m a Frontend Developer passionate about{" "}
+            Hi, nice to meet you! I&apos;m a Full-stack Developer passionate about{" "}
             <span>data</span>, <span>development</span>, and{" "}
             <span>psychology</span>. I love making things which use data, work
             well and are easy-to-use for everyone. <br></br>
