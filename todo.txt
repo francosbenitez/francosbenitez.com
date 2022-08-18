@@ -7,3 +7,12 @@ TO-DO:
   - Implement i18n from Next.js.
   - Fix hero image responsiveness.
   - Setup a backend for ***courses*** and to improve my brand.
+  - Setup a *backend CMS* for dynamic content related to:
+    - Hero
+      - Text
+      - Image
+    - About
+      - Text
+      - Technologies icons
+    - Projects
+    - Posts
