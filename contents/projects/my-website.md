@@ -1,7 +1,7 @@
 ---
-title: My Website
+title: francosbenitez.com
 date: '2021-08-01'
-description: Using Next and styled-components.
+description: "\U0001F468‍\U0001F4BB My personal website"
 img: "/captura-de-pantalla-2022-09-05-a-la-s-15-59-06.png"
 img_alt: A screenshot of my website.
 featured: true
