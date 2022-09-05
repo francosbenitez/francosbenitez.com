@@ -1,8 +1,8 @@
 ---
 title: psievidencia.com
 date: '2022-06-01'
-description: "\U0001F50E A web application to find your best evidence-based psychologist"
-img: "/captura-de-pantalla-2022-09-05-a-la-s-16-04-02.png"
+description: A web application to find your best evidence-based psychologist
+img: "/captura-de-pantalla-2022-09-05-a-la-s-16-14-48.png"
 img_alt: Psievidencia cover photo.
 featured: true
 tools_used: React, TypeScript, Next, Django
