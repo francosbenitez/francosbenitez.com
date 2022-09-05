@@ -2,7 +2,7 @@
 title: My Website
 date: '2021-08-01'
 description: Using Next and styled-components.
-img: "/captura-de-pantalla-2022-09-05-a-la-s-15-53-24.png"
+img: "/captura-de-pantalla-2022-09-05-a-la-s-15-59-06.png"
 img_alt: A screenshot of my website.
 featured: true
 tools_used: Next, React, styled-components, Forestry
