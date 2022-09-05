@@ -2,7 +2,7 @@
 title: Psievidencia
 date: '2022-06-01'
 description: A web app for psychologists.
-img: "/captura-de-pantalla-2022-09-05-a-la-s-15-41-30.png"
+img: "/captura-de-pantalla-2022-09-05-a-la-s-16-04-02.png"
 img_alt: Psievidencia cover photo.
 featured: true
 tools_used: React, TypeScript, Next, Django
