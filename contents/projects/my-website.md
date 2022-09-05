@@ -13,16 +13,22 @@ live_url: https://francosbenitez.com/
 ---
 ### What It Is
 
-This is my personal website. I have created two previous version ([v1](http://francosbenitez.netlify.app/) and [v2](https://github.com/francosbenitez/v2)) before, but this is the most developed version I have ever made.
+This project is my personal website. 
+
+I have created two previous version ([v1](http://francosbenitez.netlify.app/) and [v2](https://github.com/francosbenitez/v2)) before, but this is the most developed one.
 
 ### What I Used
 
-The website is based on [Next.js](https://nextjs.org/). For styles, it uses [styled-components](https://styled-icons.js.org/). And as a CMS, it uses [Forestry](https://forestry.io/ "Forestry").
+It uses [Forestry](https://forestry.io/ "Forestry") as a git-based CMS.
 
 ### What It Does
 
-This website shows more about me, my projects and my blog posts. It serves mostly as a means to show my programming skills.
+It shows more about me, my projects and my blog posts. 
+
+It serves mostly as a means to show my programming skills.
 
 ### What I Learnt
 
-On developing this project, I learned a lot about Next and React in themselves. I also learnt a lot about CSS-in-JS, given that styled-components is nothing more than pure CSS inside JavaScript.
+Next and React more in-depth.
+
+How to use and organize CSS-in-JS.
