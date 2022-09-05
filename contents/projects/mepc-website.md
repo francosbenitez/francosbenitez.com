@@ -1,7 +1,8 @@
 ---
-title: Website of the MEPC
+title: mepc.app
 date: '2021-08-01'
-description: A psychology organizational website.
+description: "✨ Website of the Movimiento Estudiantil por la Psicología Científica
+  (MEPC)"
 img: "/captura-de-pantalla-2022-09-05-a-la-s-16-03-37.png"
 img_alt: MEPC cover photo.
 featured: true
