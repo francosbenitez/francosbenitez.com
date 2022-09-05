@@ -4,7 +4,7 @@ date: '2021-08-01'
 description: Using Python and R.
 img: "/images/projects/science.png"
 img_alt: A plot of my undergraduate thesis.
-featured: true
+featured: false
 tools_used: Python, R
 published: 2021/08/01
 github_url: https://github.com/francosbenitez/thesis
