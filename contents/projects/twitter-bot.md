@@ -1,16 +1,16 @@
 ---
-title: 'Creating a Twitter Bot'
+title: Creating a Twitter Bot
 date: '2021-09-10'
-description: "Using Python and AWS Lambda."
+description: Using Python and AWS Lambda
 img: "/images/projects/bot.png"
-img_alt: "Image of a Twiter bot account."
+img_alt: Image of a Twiter bot account
 featured: false
-tools_used: "Twitter API, AWS Lambda, Python"
-published: "2021/07/15"
-github_url: "https://github.com/francosbenitez/twitter-bot"
-live_url: "https://twitter.com/plan_psico"
----
+tools_used: Twitter API, AWS Lambda, Python
+published: 2021/07/15
+github_url: https://github.com/francosbenitez/twitter-bot
+live_url: https://twitter.com/plan_psico
 
+---
 ### What It Is
 This is a Twitter bot, adapted from the tutorial [How to Make a Twitter Bot With Python](https://dylancastillo.co/how-to-make-a-twitter-bot-for-free/)
 
@@ -24,6 +24,3 @@ My interest in creating something like this stemmed from my discomfort with the 
 
 ### What I Learnt
 On developing this project, I dealt with some difficulties connecting Ubuntu to Docker, but I learned a lot about both of them.
-
-
-

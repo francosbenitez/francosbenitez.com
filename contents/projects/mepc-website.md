@@ -1,26 +1,36 @@
 ---
-title: 'Website of the MEPC'
+title: mepc.app
 date: '2021-08-01'
-description: "From blogdown to JavaScript."
-img: "/images/projects/mepc.png"
-img_alt: "MEPC cover photo."
+description: Website of the Movimiento Estudiantil por la Psicología Científica (MEPC)
+img: "/captura-de-pantalla-2022-09-05-a-la-s-16-03-37.png"
+img_alt: MEPC Cover Photo
 featured: true
-tools_used: "HTML, CSS, JavaScript"
-published: "2021/08/01"
-github_url: "https://github.com/francosbenitez/mepc"
-live_url: "https://francosbenitez.github.io/mepc"
----
+tools_used: React, Next, TypeScript, Express, Prisma
+published: 2021/08/01
+github_url: https://github.com/francosbenitez/mepc.app
+live_url: https://www.mepc.app/
 
+---
 ### What It Is
-This project is an organizational website. 
+
+This project is an organizational website.
 
 ### What I Used
-I have created this simple version using HTML, CSS, and JavaScript. The first version of this website can be found [here](https://mepc.netlify.app/), which was built using the R blogdown package for creating websites in a easy way.
+
+It uses an API which can be found on [this other repository](https://github.com/francosbenitez/mepc-backend "this other repository").
 
 ### What It Does
-It shows what the organization is and what it does.
+
+It shows articles, what the organization is and what it does.
+
+It has a dashboard view only for admin and authenticated users.
+
+It allows to create/publish articles in the dashboard view.
 
 ### What I Learnt
-I learnt a lot about HTML, CSS, and the basics of JavaScript. 
 
-Currently, we are creating a better version of this project using TypeScript, Next, and Tailwind. It's going to be ready soon! 
+How to make a good API with Express and Prisma.
+
+How to use TypeScript better.
+
+More about Tailwind.
