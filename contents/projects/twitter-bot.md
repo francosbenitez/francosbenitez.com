@@ -3,7 +3,7 @@ title: Creating a Twitter Bot
 date: '2021-09-10'
 description: Using Python and AWS Lambda.
 img: "/images/projects/bot.png"
-img_alt: Image of a Twiter bot account.
+img_alt: Image of a Twiter bot account
 featured: false
 tools_used: Twitter API, AWS Lambda, Python
 published: 2021/07/15

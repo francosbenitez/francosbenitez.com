@@ -3,7 +3,7 @@ title: Average Age of the Texts of Argentine Psychology Majors
 date: '2021-07-25'
 description: Using ggplot2 and R Shiny.
 img: "/images/projects/antique.png"
-img_alt: Plot showing the antique of Argentine psychology careers.
+img_alt: Plot showing the antique of Argentine psychology careers
 featured: false
 tools_used: R, tidyverse, Shiny
 published: 2021/08/01
