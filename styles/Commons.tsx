@@ -148,6 +148,10 @@ export const Posts = styled.div`
     font-weight: 400;
   }
 
+  h3 {
+    font-size: 1.3rem;
+  }
+
   p {
     margin: 1rem 0 1rem 0;
   }
