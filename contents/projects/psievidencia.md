@@ -2,13 +2,13 @@
 title: Psievidencia
 date: '2022-06-01'
 description: A web app for psychologists.
-img: "/psievidencia.png"
+img: "/captura-de-pantalla-2022-09-05-a-la-s-15-41-30.png"
 img_alt: Psievidencia cover photo.
 featured: true
-tools_used: 'React, TypeScript, Next, Django, '
+tools_used: React, TypeScript, Next, Django
 published: '2022-06-01'
 github_url: https://github.com/francosbenitez/psievidencia.com
-live_url: https://francosbenitez.github.io/mepc
+live_url: https://www.psievidencia.com/
 
 ---
 ### What It Is
@@ -17,12 +17,16 @@ This project is an web application.
 
 ### What I Used
 
-XXX.
+Backend: Django, Django REST Framework, PostgreSQL.
+
+Frontend: React, Next, Tailwind.
 
 ### What It Does
 
-XXX.
+It allows people to find evidence-based psychologists.
 
 ### What I Learnt
 
-XXX.
+More about the main tecnologies, that is TypeScript, Next, React, Django and Django REST Framework.
+
+Specifically, I learnt how to make a solid REST API with Django, and how to componentize well with React. 
