@@ -8,7 +8,7 @@ featured: false
 tools_used: Flask, MySQL, Python
 published: 2021/07/15
 github_url: https://github.com/francosbenitez/flask-crud-app
-live_url: https://my-first-crud.herokuapp.com/
+live_url: ''
 
 ---
 ### What It Is
