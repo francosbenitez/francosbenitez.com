@@ -1,7 +1,7 @@
 ---
 title: Data Analysis of My Undergraduate Thesis
 date: '2021-08-01'
-description: Using Python (and R).
+description: Using Python (and R)
 img: "/images/projects/science.png"
 img_alt: A plot of my undergraduate thesis
 featured: false
