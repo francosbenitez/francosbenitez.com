@@ -1,7 +1,7 @@
 ---
 title: Creating a Twitter Bot
 date: '2021-09-10'
-description: Using Python and AWS Lambda.
+description: Using Python and AWS Lambda
 img: "/images/projects/bot.png"
 img_alt: Image of a Twiter bot account
 featured: false
