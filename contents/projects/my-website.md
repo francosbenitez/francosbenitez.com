@@ -3,7 +3,7 @@ title: francosbenitez.com
 date: '2021-08-01'
 description: My personal website
 img: "/captura-de-pantalla-2022-09-05-a-la-s-15-59-06.png"
-img_alt: A screenshot of my website.
+img_alt: francosbenitez.com Cover Photo
 featured: true
 tools_used: Next, React, styled-components, Forestry
 published: 2021/08/01
@@ -17,14 +17,12 @@ This is my personal website. I have created two previous version ([v1](http://fr
 
 ### What I Used
 
-The website is based on [Next.js](https://nextjs.org/). For styles, it uses [styled-components](https://styled-icons.js.org/).
-
-It uses Forestry as a git-based CMS.
+The website is based on [Next.js](https://nextjs.org/). For styles, it uses [styled-components](https://styled-icons.js.org/). And as a CMS, it uses [Forestry](https://forestry.io/ "Forestry").
 
 ### What It Does
 
-This website shows more about me, my projects, and my blog posts. It serves mostly as a means to show my programming skills.
+This website shows more about me, my projects and my blog posts. It serves mostly as a means to show my programming skills.
 
 ### What I Learnt
 
-On developing this project, I learned a lot about Next and React in themselves. I also learnt a lot about CSS and how to organize it better, given that styled-components is nothing more than pure CSS inside JavaScript.
+On developing this project, I learned a lot about Next and React in themselves. I also learnt a lot about CSS-in-JS, given that styled-components is nothing more than pure CSS inside JavaScript.
