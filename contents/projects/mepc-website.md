@@ -2,13 +2,13 @@
 title: Website of the MEPC
 date: '2021-08-01'
 description: A psychology organizational website.
-img: "/captura-de-pantalla-2022-09-05-a-la-s-15-45-38.png"
+img: "/captura-de-pantalla-2022-09-05-a-la-s-16-03-37.png"
 img_alt: MEPC cover photo.
 featured: true
 tools_used: React, Next, TypeScript, Express, Prisma
 published: 2021/08/01
-github_url: https://github.com/francosbenitez/mepc
-live_url: https://francosbenitez.github.io/mepc
+github_url: https://github.com/francosbenitez/mepc.app
+live_url: https://www.mepc.app/
 
 ---
 ### What It Is
