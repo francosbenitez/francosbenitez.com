@@ -1,7 +1,7 @@
 ---
 title: Website of the MEPC
 date: '2021-08-01'
-description: From blogdown to JavaScript.
+description: A psychology organizational website
 img: "/captura-de-pantalla-2022-09-05-a-la-s-15-45-38.png"
 img_alt: MEPC cover photo.
 featured: true
