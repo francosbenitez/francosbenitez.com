@@ -17,10 +17,6 @@ This project is an organizational website.
 
 ### What I Used
 
-The first version of this website can be found [here](https://mepc.netlify.app/), which was built using the R blogdown package for creating websites in a easy way.
-
-This current version uses:
-
 Frontend: React, Next, Tailwind, TypeScript.
 
 Backend: Express, Prisma, PostgreSQL, TypeScript.
@@ -31,6 +27,4 @@ It shows what the organization is and what it does.
 
 ### What I Learnt
 
-I learnt a lot about HTML, CSS, and the basics of JavaScript in the first version.
-
-In the current version, I am learning a lot about the main tecnologies used.
+I learnt a lot about the main tecnologies used.
