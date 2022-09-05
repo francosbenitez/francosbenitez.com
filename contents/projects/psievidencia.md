@@ -1,7 +1,7 @@
 ---
-title: Psievidencia
+title: psievidencia.com
 date: '2022-06-01'
-description: A web app for psychologists.
+description: "\U0001F50E A web application to find your best evidence-based psychologist"
 img: "/captura-de-pantalla-2022-09-05-a-la-s-16-04-02.png"
 img_alt: Psievidencia cover photo.
 featured: true
