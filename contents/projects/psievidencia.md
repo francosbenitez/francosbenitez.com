@@ -17,8 +17,9 @@ This project is an web application.
 
 ### What I Used
 
-* It uses an API which can be found on [this other repository](https://github.com/francosbenitez/psievidencia-backend "this other repository").
-* It is also based on a previous [data analysis](https://github.com/francosbenitez/psievidencia-analysis "data analysis").
+It uses an API which can be found on [this other repository](https://github.com/francosbenitez/psievidencia-backend "this other repository").
+
+It is also based on a previous [data analysis](https://github.com/francosbenitez/psievidencia-analysis "data analysis").
 
 ### What It Does
 
@@ -26,6 +27,8 @@ It allows people to find evidence-based psychologists.
 
 ### What I Learnt
 
-* How to make a solid REST API with Django and Django REST Framework.
-* How to componentize better using React.
-* How to use Tailwind better.
+How to make a solid REST API with Django and Django REST Framework.
+
+How to componentize better using React.
+
+How to use Tailwind better.
