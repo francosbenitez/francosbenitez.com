@@ -17,16 +17,20 @@ This project is an organizational website.
 
 ### What I Used
 
-* It uses an API which can be found on [this other repository](https://github.com/francosbenitez/mepc-backend "this other repository").
+It uses an API which can be found on [this other repository](https://github.com/francosbenitez/mepc-backend "this other repository").
 
 ### What It Does
 
-* It shows articles, what the organization is and what it does. 
-* It has a dashboard view only for admin and authenticated users.
-* It allows to create/publish articles in the dashboard view.
+It shows articles, what the organization is and what it does.
+
+It has a dashboard view only for admin and authenticated users.
+
+It allows to create/publish articles in the dashboard view.
 
 ### What I Learnt
 
-* How to make a good API with Express and Prisma.
-* How to use TypeScript better.
-* More about Tailwind.
+How to make a good API with Express and Prisma.
+
+How to use TypeScript better.
+
+More about Tailwind.
