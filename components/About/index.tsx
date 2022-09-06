@@ -27,8 +27,8 @@ const About = () => {
             software solutions which help people develop a product, an idea, or
             simply a passion. <br></br>
             <br></br>
-            Although I've had experience with different technologies (and I'm
-            always open to learn new ones!), currently{" "}
+            Although I&apos;ve had experience with different technologies (and
+            I&apos;m always open to learn new ones!), currently{" "}
             <span>my favourite tech stack</span> revolves around:
           </p>{" "}
           <br></br>
