@@ -1,19 +1,19 @@
-TO-DO:
-  - Transform project into TypeScript. DONE
-  - Reorganize styles better.
-  - Review SEO issues.
-  - Write the post for Psievidencia.
-  - Implement a CMS to write posts (blog & projects). DONE
-  - Implement i18n from Next.js.
-  - Fix hero image responsiveness.
-  - Setup a backend for ***courses*** and to improve my brand.
-  - Setup a *backend CMS* for dynamic content related to:
-    - Hero
-      - Text
-      - Image
-    - About
-      - Text
-      - Technologies icons
-    - Projects
-    - Posts
-  - Remove the three cards from the About section, or think about the possibility to make them dynamic ones.
+- Transform project into TypeScript. DONE
+- Reorganize styles better.
+- Review SEO issues.
+- Write the post for Psievidencia. DONE
+- Implement a CMS to write posts (blog & projects). DONE
+- Implement i18n from Next.js.
+- Fix hero image responsiveness.
+- Setup a backend for ***courses*** and to improve my brand.
+- Setup a *backend CMS* for dynamic content related to:
+  - Hero
+    - Text
+    - Image
+  - About
+    - Text
+    - Technologies icons
+  - Projects
+  - Posts
+- Remove the three cards from the About section, or think about the possibility to make them dynamic ones.
+- Remove styled-components and implement Tailwind with CSS.
