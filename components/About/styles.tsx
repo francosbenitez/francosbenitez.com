@@ -6,6 +6,11 @@ export const StyledAbout = styled(Section)`
     margin-left: 1rem;
   }
 
+  li {
+    margin-left: 2rem;
+    font-size: 1.4rem;
+  }
+
   .about-container {
     display: flex;
     flex-direction: column;

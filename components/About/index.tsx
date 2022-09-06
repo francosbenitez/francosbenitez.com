@@ -2,21 +2,8 @@ import React from "react";
 import { StyledAbout } from "./styles";
 import Avatar from "../../public/images/others/avatar.jpg";
 import Image from "next/image";
-import { StyledSkillsCard } from "../../styles/Cards";
-import { Tech } from "../../types";
 
 const About = () => {
-  const techFunc = (content: Tech[]) => {
-    return content.map((tech: Tech, i: number) => {
-      return (
-        <div key={i} className="item">
-          <Image src={tech.url} alt={tech.name} width={30} height={30} />
-          <h4>{tech.name}</h4>
-        </div>
-      );
-    });
-  };
-
   return (
     <StyledAbout id="about">
       <h1>
@@ -39,150 +26,20 @@ const About = () => {
             <span>a world that I love</span>. Since then, I have loved creating
             software solutions which help people develop a product, an idea, or
             simply a passion. <br></br>
-            <br></br>The following are some <span>technologies</span> that I
-            currently feel acquainted with:
-          </p>
-        </div>
-      </div>
-      <StyledSkillsCard>
-        <div className="cardsGrid">
-          <div className="cardWrapper">
-            <h3>Front-end</h3>
-            <div className="card">
-              <div className="row">
-                {techFunc([
-                  {
-                    name: "JavaScript",
-                    url: "/icons/tech/javascript.svg",
-                  },
-                  {
-                    name: "CSS",
-                    url: "/icons/tech/css.svg",
-                  },
-                ])}
-              </div>
-              <div className="row">
-                {techFunc([
-                  {
-                    name: "TypeScript",
-                    url: "/icons/tech/typescript.svg",
-                  },
-                  {
-                    name: "React",
-                    url: "/icons/tech/react.svg",
-                  },
-                ])}
-              </div>
-              <div className="row">
-                {techFunc([
-                  {
-                    name: "Next",
-                    url: "/icons/tech/next.svg",
-                  },
-                  {
-                    name: "HTML",
-                    url: "/icons/tech/html.svg",
-                  },
-                ])}
-              </div>
-              <div className="row">
-                {techFunc([
-                  {
-                    name: "Styled Components",
-                    url: "/icons/tech/styled.svg",
-                  },
-                ])}
-              </div>
-            </div>
-          </div>
-          <div className="cardWrapper">
-            <h3>Back-end</h3>
-            <div className="card">
-              <div className="row">
-                {techFunc([
-                  {
-                    name: "Python",
-                    url: "/icons/tech/python.svg",
-                  },
-                  {
-                    name: "TypeScript",
-                    url: "/icons/tech/typescript.svg",
-                  },
-                ])}
-              </div>
-              <div className="row">
-                {techFunc([
-                  {
-                    name: "JavaScript",
-                    url: "/icons/tech/javascript.svg",
-                  },
-                  {
-                    name: "MongoDB",
-                    url: "/icons/tech/mongo.svg",
-                  },
-                ])}
-              </div>
-              <div className="row">
-                {techFunc([
-                  {
-                    name: "MySQL",
-                    url: "/icons/tech/mysql.svg",
-                  },
-                  {
-                    name: "Express",
-                    url: "/icons/tech/express.svg",
-                  },
-                ])}
-              </div>
-            </div>
-          </div>
-          <div className="cardWrapper">
-            <h3>Miscellaneous</h3>
-            <div className="card">
-              <div className="row">
-                {techFunc([
-                  {
-                    name: "Git",
-                    url: "/icons/tech/git.svg",
-                  },
-                  {
-                    name: "R",
-                    url: "/icons/tech/r.svg",
-                  },
-                ])}
-              </div>
-              <div className="row">
-                {techFunc([
-                  {
-                    name: "Figma",
-                    url: "/icons/tech/figma.svg",
-                  },
-                  {
-                    name: "D3",
-                    url: "/icons/tech/d3.svg",
-                  },
-                ])}
-              </div>
-              <div className="row">
-                {techFunc([
-                  {
-                    name: "Adobe Illustrator",
-                    url: "/icons/tech/illustrator.svg",
-                  },
-                ])}
-              </div>
-            </div>
-          </div>
-        </div>
-      </StyledSkillsCard>
-      <div className="about-container">
-        <div className="avatar-container">
-          <div className="avatar-wrapper"></div>
-        </div>
-        <div
-          className="description-container"
-          style={{ padding: "0 0 0 0", margin: "0 0 0 0" }}
-        >
+            <br></br>
+            Although I've had experience with different technologies (and I'm
+            always open to learn new ones!), currently{" "}
+            <span>my favourite tech stack</span> revolves around:
+          </p>{" "}
+          <br></br>
+          <ul>
+            <li>Languages: TypeScript, Python Frontend</li>{" "}
+            <li>Frameworks: React + Next, Vue</li>
+            <li>Backend Frameworks: Express + Prisma, Django</li>{" "}
+            <li>CSS Frameworks: Tailwind, Styled Components</li>
+            <li> Databases: PostgreSQL, MySQL</li>
+          </ul>
+          <br></br>
           <p>
             When I&apos;m not staring at my computer, I like practising
             calisthenics or playing football!
