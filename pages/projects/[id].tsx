@@ -15,7 +15,7 @@ export default function Project({ projectData }: { projectData: ProjectData }) {
   return (
     <>
       <Head>
-        <title>{projectData.title}</title>
+        <title>{projectData.title} | Franco Sebastián Benítez</title>
         <meta name="description" content={projectData.description} />
       </Head>
       <br />

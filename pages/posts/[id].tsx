@@ -13,7 +13,7 @@ export default function Post({ postData }: { postData: PostData }) {
   return (
     <>
       <Head>
-        <title>{postData.title}</title>
+        <title>{postData.title} | Franco Sebastián Benítez</title>
         <meta name="description" content={postData.description} />
       </Head>
       <br />
