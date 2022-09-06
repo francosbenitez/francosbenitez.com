@@ -77,7 +77,7 @@ export default function Project({ projectData }: { projectData: ProjectData }) {
               </div>
             </div>
           </StyledProjectsCard>
-          <h1>{projectData.title}</h1>
+          <h1 style={{ overflowWrap: "break-word" }}>{projectData.title}</h1>
           <h2>{projectData.description}</h2>
           <hr />
           <div dangerouslySetInnerHTML={{ __html: projectData.contentHtml }} />

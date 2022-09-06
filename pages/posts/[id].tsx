@@ -19,7 +19,7 @@ export default function Post({ postData }: { postData: PostData }) {
       <br />
       <Posts>
         <article>
-          <h1>{postData.title}</h1>
+          <h1 style={{ overflowWrap: "break-word" }}>{postData.title}</h1>
           <p className="article-date">
             <Date dateString={postData.date} />
           </p>
