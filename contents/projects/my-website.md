@@ -15,7 +15,7 @@ live_url: https://francosbenitez.com/
 
 This project is my personal website. 
 
-I have created two previous version ([v1](http://francosbenitez.netlify.app/) and [v2](https://github.com/francosbenitez/v2)) before, but this is the most developed one.
+I have created two previous versions ([v1](http://francosbenitez.netlify.app/) and [v2](https://github.com/francosbenitez/v2)) before, but this is the most developed one.
 
 ### What I Used
 
