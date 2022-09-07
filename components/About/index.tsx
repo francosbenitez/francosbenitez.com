@@ -1,7 +1,7 @@
 import React from "react";
-import Avatar from "../../public/images/others/avatar.jpg";
+import Avatar from "@/public/images/others/avatar.jpg";
 import Image from "next/image";
-import styles from "./styles.module.css";
+import styles from "@/components/About/styles.module.css";
 
 const About = () => {
   return (
