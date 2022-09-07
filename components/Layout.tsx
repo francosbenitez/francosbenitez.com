@@ -31,6 +31,10 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
     theme === "light" ? setTheme("dark") : setTheme("light");
   };
 
+  useEffect(() => {
+    document.body.setAttribute("data-theme", theme);
+  }, [theme]);
+
   return (
     <>
       <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>

@@ -1,21 +1,21 @@
 import React from "react";
-import { StyledAbout } from "./styles";
 import Avatar from "../../public/images/others/avatar.jpg";
 import Image from "next/image";
+import styles from "./styles.module.css";
 
 const About = () => {
   return (
-    <StyledAbout id="about">
+    <div id={styles["about"]} className="section">
       <h1>
         About <span>Me</span>
       </h1>
-      <div className="about-container">
-        <div className="avatar-container">
-          <div className="avatar-wrapper">
+      <div className={styles["about-container"]}>
+        <div className={styles["avatar-container"]}>
+          <div className={styles["avatar-wrapper"]}>
             <Image src={Avatar} alt="" />
           </div>
         </div>
-        <div className="description-container">
+        <div className={styles["description-container"]}>
           <p>
             Hi, nice to meet you! I&apos;m a Frontend Developer passionate about{" "}
             <span>data</span>, <span>development</span>, and{" "}
@@ -46,7 +46,7 @@ const About = () => {
           </p>
         </div>
       </div>
-    </StyledAbout>
+    </div>
   );
 };
 
