@@ -1,6 +1,5 @@
 import React from "react";
 import { ReactTypical } from "@deadcoder0904/react-typical";
-import { StyledArrow } from "../../styles/Animations";
 import { HeroImage } from "./HeroImage";
 import Link from "next/link";
 import {
@@ -42,15 +41,15 @@ const Hero = () => {
           <HeroImage />
         </div>
       </div>
-      <StyledArrow>
+      <div className={styles["arrow"]}>
         <Link href="/#about" passHref>
           <a>
-            <Arrow className="firstArrow" />
-            <Arrow className="secondArrow" />
-            <Arrow className="thirdArrow" />
+            <Arrow className={styles["firstArrow"]} />
+            <Arrow className={styles["secondArrow"]} />
+            <Arrow className={styles["thirdArrow"]} />
           </a>
         </Link>
-      </StyledArrow>
+      </div>
     </section>
   );
 };
