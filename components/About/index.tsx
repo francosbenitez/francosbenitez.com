@@ -5,7 +5,7 @@ import styles from "@/components/About/styles.module.css";
 
 const About = () => {
   return (
-    <div id="about" className={`section ${styles["about"]}`}>
+    <section id="about" className={`section ${styles["about"]}`}>
       <h1>
         About <span>Me</span>
       </h1>
@@ -46,7 +46,7 @@ const About = () => {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
