@@ -1,0 +1,63 @@
+.post {
+  max-width: 960px;
+  padding: 0 1.5rem;
+  margin: 6rem auto 9rem;
+  min-height: calc(100vh - 6.5rem);
+}
+
+.post h1 {
+  font-size: 3rem;
+  margin: 1rem 0 1rem 0;
+  line-height: 1.25;
+  background: var(--primary);
+  background: linear-gradient(90deg, var(--primary), var(--text) 70%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+.post h2 {
+  font-size: 1.35rem;
+  margin: 1rem 0 1rem 0;
+  font-weight: 400;
+}
+
+.post h3 {
+  font-size: 1.3rem;
+}
+
+.post p {
+  margin: 1rem 0 1rem 0;
+}
+
+.post .article-date {
+  font-weight: 400;
+  color: var(--date);
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+}
+
+.post hr {
+  margin: 1rem 0 1rem 0;
+  border-color: #c1c1c1;
+}
+
+.post .back-and-go {
+  display: inline-block;
+  width: 100%;
+}
+
+.post .back-and-go a {
+  color: var(--link);
+}
+
+.post .go-to-all {
+  float: right;
+  font-size: 1.1rem;
+}
+
+.post .back-to-home {
+  float: left;
+  font-size: 1.1rem;
+}
