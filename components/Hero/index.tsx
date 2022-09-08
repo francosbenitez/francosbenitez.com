@@ -1,6 +1,5 @@
 import React from "react";
-import { StyledHero } from "./styles";
-import { ReactTypical } from '@deadcoder0904/react-typical'
+import { ReactTypical } from "@deadcoder0904/react-typical";
 import { StyledArrow } from "../../styles/Animations";
 import { HeroImage } from "./HeroImage";
 import Link from "next/link";
@@ -9,12 +8,13 @@ import {
   StyledContactButton,
 } from "../../styles/Buttons";
 import Arrow from "../../public/icons/arrow.svg";
+import styles from "@/components/Hero/styles.module.css";
 
 const Hero = () => {
   return (
-    <StyledHero>
-      <div className="hero-container">
-        <div className="hero-description">
+    <section className={styles["hero"]}>
+      <div className={styles["hero-container"]}>
+        <div className={styles["hero-description"]}>
           <h1>
             Hi, I&apos;m
             <br />
@@ -25,7 +25,7 @@ const Hero = () => {
             loop={Infinity}
             wrapper="h2"
           />
-          <div className="buttons">
+          <div className={styles["buttons"]}>
             <StyledProjectsButton>
               <Link href="/#projects">
                 <a className="button">See my work</a>
@@ -38,7 +38,7 @@ const Hero = () => {
             </StyledContactButton>
           </div>
         </div>
-        <div className="hero-img">
+        <div className={styles["hero-img"]}>
           <HeroImage />
         </div>
       </div>
@@ -51,7 +51,7 @@ const Hero = () => {
           </a>
         </Link>
       </StyledArrow>
-    </StyledHero>
+    </section>
   );
 };
 
