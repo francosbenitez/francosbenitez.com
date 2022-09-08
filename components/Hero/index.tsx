@@ -2,10 +2,6 @@ import React from "react";
 import { ReactTypical } from "@deadcoder0904/react-typical";
 import { HeroImage } from "./HeroImage";
 import Link from "next/link";
-import {
-  StyledProjectsButton,
-  StyledContactButton,
-} from "../../styles/Buttons";
 import Arrow from "../../public/icons/arrow.svg";
 import styles from "@/components/Hero/styles.module.css";
 
@@ -25,16 +21,18 @@ const Hero = () => {
             wrapper="h2"
           />
           <div className={styles["buttons"]}>
-            <StyledProjectsButton>
+            <div className={styles["projects-button"]}>
               <Link href="/#projects">
-                <a className="button">See my work</a>
+                <a className={styles["button"]}>See my work</a>
               </Link>
-            </StyledProjectsButton>
-            <StyledContactButton>
+            </div>
+            <div
+              className={`${styles["contact-button"]} ${styles["projects-button"]}`}
+            >
               <Link href="/#contact">
-                <a className="button">Contact me</a>
+                <a className={styles["button"]}>Contact me</a>
               </Link>
-            </StyledContactButton>
+            </div>
           </div>
         </div>
         <div className={styles["hero-img"]}>
