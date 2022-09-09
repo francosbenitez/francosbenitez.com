@@ -3,7 +3,6 @@ import { getSortedPostsData } from "../../lib/posts";
 import Link from "next/link";
 import Date from "../../components/Date";
 import { StyledCard } from "../../styles/Cards";
-import { Section } from "../../styles/Commons";
 import Head from "next/head";
 import { AllPostsData } from "../../types";
 
@@ -14,7 +13,7 @@ const Blog = ({ allPostsData }: { allPostsData: AllPostsData[] }) => {
         <title>Blog | Franco Sebastián Benítez</title>
         <meta name="description" content="Franco Sebastián Benítez's blog" />
       </Head>
-      <Section id="blog">
+      <section id="blog" className="section">
         <div className="blog-container">
           <h1>
             All <span>Blog Posts</span>
@@ -46,7 +45,7 @@ const Blog = ({ allPostsData }: { allPostsData: AllPostsData[] }) => {
             </a>
           </Link>
         </div>
-      </Section>
+      </section>
     </>
   );
 };

@@ -1,7 +1,6 @@
 import { getAllPostIds, getPostData } from "../../lib/posts";
 import Head from "next/head";
 import Date from "../../components/Date";
-import { Posts } from "../../styles/Commons";
 import Link from "next/link";
 import { AllPostsData } from "../../types";
 
@@ -17,7 +16,7 @@ export default function Post({ postData }: { postData: PostData }) {
         <meta name="description" content={postData.description} />
       </Head>
       <br />
-      <Posts>
+      <div className="post">
         <article>
           <h1 style={{ overflowWrap: "break-word" }}>{postData.title}</h1>
           <p className="article-date">
@@ -40,7 +39,7 @@ export default function Post({ postData }: { postData: PostData }) {
             </Link>
           </span>
         </div>
-      </Posts>
+      </div>
     </>
   );
 }

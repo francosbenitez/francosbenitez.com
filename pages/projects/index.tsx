@@ -3,7 +3,6 @@ import { getSortedProjectsData } from "../../lib/projects";
 import Link from "next/link";
 import Date from "../../components/Date";
 import { StyledCard } from "../../styles/Cards";
-import { Section } from "../../styles/Commons";
 import Image from "next/image";
 import Head from "next/head";
 import { AllProjectsData } from "../../types";
@@ -22,7 +21,7 @@ const Projects = ({
           content="Franco Sebastián Benítez's projects"
         />
       </Head>
-      <Section id="projects">
+      <section id="projects" className="section">
         <div className="projects-container">
           <h1>
             All <span>Projects</span>
@@ -75,7 +74,7 @@ const Projects = ({
             </a>
           </Link>
         </div>
-      </Section>
+      </section>
     </>
   );
 };
