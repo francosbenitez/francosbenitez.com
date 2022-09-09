@@ -44,13 +44,13 @@ const Contact = () => {
               <li className={styles["icon-wrapper"]} key={i}>
                 <a target="_blank" href={icon.url} rel="noopener noreferrer">
                   {i == 0 ? (
-                    <Email alt={icon.alt} />
+                    <Email alt={icon.alt} className="inline" />
                   ) : i == 1 ? (
-                    <LinkedIn alt={icon.alt} />
+                    <LinkedIn alt={icon.alt} className="inline" />
                   ) : i == 2 ? (
-                    <GitHub alt={icon.alt} />
+                    <GitHub alt={icon.alt} className="inline" />
                   ) : (
-                    <Twitter alt={icon.alt} />
+                    <Twitter alt={icon.alt} className="inline" />
                   )}
                   <span>{icon.description}</span>
                 </a>
