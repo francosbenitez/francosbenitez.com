@@ -1,7 +1,6 @@
 import { getAllProjectIds, getProjectData } from "../../lib/projects";
 import Head from "next/head";
 import Date from "../../components/Date";
-import { StyledProjectsCard } from "../../styles/Cards";
 import Link from "next/link";
 import Forbidden from "../../public/icons/forbidden.svg";
 import { AllProjectsData } from "../../types";

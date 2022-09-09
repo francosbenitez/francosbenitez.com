@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { StyledBurger } from "./styles";
 import RightNavbar from "./RightNavbar";
 import styles from "@/components/Navbar/styles.module.css";
 
