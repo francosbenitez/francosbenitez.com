@@ -1,21 +1,21 @@
 import React from "react";
-import { StyledAbout } from "./styles";
-import Avatar from "../../public/images/others/avatar.jpg";
+import Avatar from "@/public/images/others/avatar.jpg";
 import Image from "next/image";
+import styles from "@/components/About/styles.module.css";
 
 const About = () => {
   return (
-    <StyledAbout id="about">
+    <section id="about" className={`section ${styles["about"]}`}>
       <h1>
         About <span>Me</span>
       </h1>
-      <div className="about-container">
-        <div className="avatar-container">
-          <div className="avatar-wrapper">
+      <div className={styles["about-container"]}>
+        <div className={styles["avatar-container"]}>
+          <div className={styles["avatar-wrapper"]}>
             <Image src={Avatar} alt="" />
           </div>
         </div>
-        <div className="description-container">
+        <div className={styles["description-container"]}>
           <p>
             Hi, nice to meet you! I&apos;m a Frontend Developer passionate about{" "}
             <span>data</span>, <span>development</span>, and{" "}
@@ -32,11 +32,11 @@ const About = () => {
             <span>my favourite tech stack</span> revolves around:
           </p>{" "}
           <br></br>
-          <ul>
+          <ul className="list-disc">
             <li>Languages: TypeScript, Python</li>{" "}
             <li>Frontend Frameworks: React + Next, Vue</li>
             <li>Backend Frameworks: Express + Prisma, Django</li>{" "}
-            <li>CSS Frameworks: Tailwind, Styled Components</li>
+            <li>CSS Framework: Tailwind</li>
             <li> Databases: PostgreSQL, MySQL</li>
           </ul>
           <br></br>
@@ -46,7 +46,7 @@ const About = () => {
           </p>
         </div>
       </div>
-    </StyledAbout>
+    </section>
   );
 };
 

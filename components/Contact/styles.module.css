@@ -1,0 +1,137 @@
+.contact-container:before {
+  background-image: radial-gradient(#5b8efc4b 15%, transparent 0),
+    radial-gradient(#5b8efc4b 15%, transparent 0);
+  background-size: 0.75rem 0.75rem;
+  background-position: 0 0, 0.375rem 0.375rem;
+  -webkit-clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 75%,
+    75% 75%,
+    75% 100%,
+    50% 75%,
+    0% 75%
+  );
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 75%,
+    75% 75%,
+    75% 100%,
+    50% 75%,
+    0% 75%
+  );
+  content: "";
+  height: 100%;
+  left: 50%;
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: -1;
+}
+
+.icons-container {
+  display: inline-block;
+  margin-top: 2rem;
+}
+
+.form-container {
+  margin-top: 2rem;
+}
+
+.icon-wrapper {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+.icon-wrapper svg,
+.icon-wrapper span {
+  vertical-align: middle;
+  font-size: 1.25em;
+}
+
+.icon-wrapper a {
+  fill: var(--text);
+}
+
+.icon-wrapper span {
+  margin-left: 2rem;
+  color: var(--link);
+}
+
+.icon-wrapper a:hover {
+  border-bottom: none;
+  fill: var(--link);
+}
+.icon-wrapper a:hover span {
+  border-bottom: 1.5px var(--link) dotted;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem auto;
+}
+
+.form-control {
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea[name="message"] {
+  font-size: 1em;
+  border-radius: 0.3em;
+  border: 1px solid var(--primary);
+  background-color: var(--background);
+  color: var(--text);
+}
+
+.contact input[type="text"]:focus,
+.contact input[type="email"]:focus,
+.contact textarea[name="message"]:focus {
+  outline: none;
+}
+
+.submit-btn {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  font-size: 1em;
+  transition: color 0.15s;
+  width: 100px;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  box-shadow: 3px 3px 0 0 var(--primary);
+  color: var(--primary);
+  border-color: var(--primary);
+  background-color: var(--background);
+}
+
+.submit-btn:hover {
+  color: white;
+  border-color: white;
+  background-color: var(--primary);
+}
+
+@media (min-width: 768px) {
+  .contact-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .form-container {
+    flex-basis: 50%;
+    text-align: right;
+    margin-top: 0;
+    margin-left: 1rem;
+  }
+
+  .form-wrapper {
+    margin: 0 auto 1rem;
+  }
+}

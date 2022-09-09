@@ -16,4 +16,4 @@
   - Projects
   - Posts
 - Remove the three cards from the About section, or think about the possibility to make them dynamic ones.
-- Remove styled-components and implement Tailwind with CSS.
+- Remove styled-components and implement Tailwind with CSS. DONE

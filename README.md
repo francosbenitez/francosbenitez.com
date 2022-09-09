@@ -4,7 +4,7 @@ _My personal website_
 
 ## Code and Resourses Used
 
-- **Main Technologies**: TypeScript, React, Next, styled-components
+- **Main Technologies**: TypeScript, React, Next, Tailwind
 
 ## Live Demo
 

@@ -2,8 +2,6 @@ import React from "react";
 import { getSortedPostsData } from "../../lib/posts";
 import Link from "next/link";
 import Date from "../../components/Date";
-import { StyledCard } from "../../styles/Cards";
-import { Section } from "../../styles/Commons";
 import Head from "next/head";
 import { AllPostsData } from "../../types";
 
@@ -14,12 +12,12 @@ const Blog = ({ allPostsData }: { allPostsData: AllPostsData[] }) => {
         <title>Blog | Franco Sebastián Benítez</title>
         <meta name="description" content="Franco Sebastián Benítez's blog" />
       </Head>
-      <Section id="blog">
+      <section id="blog" className="section">
         <div className="blog-container">
           <h1>
             All <span>Blog Posts</span>
           </h1>
-          <StyledCard>
+          <div className="card">
             {allPostsData.map(
               ({ id, date, title, description }: AllPostsData) => (
                 <ol className="blog_posts" key={id}>
@@ -39,14 +37,14 @@ const Blog = ({ allPostsData }: { allPostsData: AllPostsData[] }) => {
                 </ol>
               )
             )}
-          </StyledCard>
+          </div>
           <Link href="/" passHref>
             <a className="back-to-home">
               <span>← Back to home</span>
             </a>
           </Link>
         </div>
-      </Section>
+      </section>
     </>
   );
 };

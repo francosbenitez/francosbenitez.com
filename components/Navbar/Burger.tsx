@@ -1,18 +1,23 @@
 import React, { useState } from "react";
-import { StyledBurger } from "./styles";
 import RightNavbar from "./RightNavbar";
+import styles from "@/components/Navbar/styles.module.css";
 
 const Burger = ({ children }: { children: React.ReactNode }) => {
   const [open, setOpen] = useState<boolean>(false);
 
   return (
     <>
-      <StyledBurger open={open} onClick={() => setOpen(!open)}>
-        <div />
-        <div />
-        <div />
-      </StyledBurger>
-      <div className="custom-div">
+      <div className={styles["burger"]} onClick={() => setOpen(!open)}>
+        <div style={{ transform: open ? "rotate(45deg)" : "rotate(0)" }} />
+        <div
+          style={{
+            transform: open ? "translateX(100%)" : "translateX(0)",
+            opacity: open ? 0 : 1,
+          }}
+        />
+        <div style={{ transform: open ? "rotate(-45deg)" : "rotate(0)" }} />
+      </div>
+      <div className={styles["custom-div"]}>
         <RightNavbar open={open} />
         {children}
       </div>

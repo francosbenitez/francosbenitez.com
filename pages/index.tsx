@@ -4,8 +4,6 @@ import Contact from "../components/Contact";
 import { getSortedProjectsData } from "../lib/projects";
 import { getSortedPostsData } from "../lib/posts";
 import Date from "../components/Date";
-import { Section } from "../styles/Commons";
-import { StyledCard } from "../styles/Cards";
 import Image from "next/image";
 import Link from "next/link";
 import Head from "next/head";
@@ -28,10 +26,7 @@ const Home = ({
           name="description"
           content="Franco Sebastián Benítez is a developer and psychologist based in Buenos Aires, Argentina."
         />
-        <meta
-          name="keywords"
-          content="francosbenitez development psychology"
-        />
+        <meta name="keywords" content="francosbenitez development psychology" />
         <meta name="twitter:image:src" content="/images/others/social.png" />
         <meta property="og:image" content="/images/others/social.png" />
         <meta
@@ -41,12 +36,12 @@ const Home = ({
       </Head>
       <Hero />
       <About />
-      <Section id="projects">
+      <section id="projects" className="section">
         <div className="projects-container">
           <h1>
             Featured <span>Projects</span>
           </h1>
-          <StyledCard>
+          <div className="card">
             <ol className="projects__projects">
               {allProjectsData
                 .filter(
@@ -93,20 +88,20 @@ const Home = ({
                   )
                 )}
             </ol>
-          </StyledCard>
+          </div>
           <Link href="/projects" passHref>
             <a className="see-all">
               <span>See more projects →</span>
             </a>
           </Link>
         </div>
-      </Section>
-      <Section id="blog">
+      </section>
+      <section id="blog" className="section">
         <div className="blog-container">
           <h1>
             Featured <span>Blog Posts</span>
           </h1>
-          <StyledCard>
+          <div className="card">
             {allPostsData
               .filter(({ featured }: { featured: boolean }) => featured == true)
               .map(({ id, date, title, description }: AllPostsData) => (
@@ -127,14 +122,14 @@ const Home = ({
                 </ol>
               ))}
             {/*</div>*/}
-          </StyledCard>
+          </div>
           <Link href="/posts" passHref>
             <a className="see-all">
               <span>See more blog posts →</span>
             </a>
           </Link>
         </div>
-      </Section>
+      </section>
       <Contact />
     </>
   );

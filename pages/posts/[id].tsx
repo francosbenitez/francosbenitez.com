@@ -1,7 +1,6 @@
 import { getAllPostIds, getPostData } from "../../lib/posts";
 import Head from "next/head";
 import Date from "../../components/Date";
-import { Posts } from "../../styles/Commons";
 import Link from "next/link";
 import { AllPostsData } from "../../types";
 
@@ -10,14 +9,15 @@ interface PostData extends AllPostsData {
 }
 
 export default function Post({ postData }: { postData: PostData }) {
+  const postDataFormatted = postData.title + " | Franco Sebastián Benítez";
   return (
     <>
       <Head>
-        <title>{postData.title} | Franco Sebastián Benítez</title>
+        <title>{postDataFormatted}</title>
         <meta name="description" content={postData.description} />
       </Head>
       <br />
-      <Posts>
+      <div className="post">
         <article>
           <h1 style={{ overflowWrap: "break-word" }}>{postData.title}</h1>
           <p className="article-date">
@@ -40,7 +40,7 @@ export default function Post({ postData }: { postData: PostData }) {
             </Link>
           </span>
         </div>
-      </Posts>
+      </div>
     </>
   );
 }

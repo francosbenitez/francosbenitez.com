@@ -1,8 +1,6 @@
 import { getAllProjectIds, getProjectData } from "../../lib/projects";
 import Head from "next/head";
 import Date from "../../components/Date";
-import { Posts } from "../../styles/Commons";
-import { StyledProjectsCard } from "../../styles/Cards";
 import Link from "next/link";
 import Forbidden from "../../public/icons/forbidden.svg";
 import { AllProjectsData } from "../../types";
@@ -12,16 +10,18 @@ interface ProjectData extends AllProjectsData {
 }
 
 export default function Project({ projectData }: { projectData: ProjectData }) {
+  const projectDataFormatted =
+    projectData.title + " | Franco Sebastián Benítez";
   return (
     <>
       <Head>
-        <title>{projectData.title} | Franco Sebastián Benítez</title>
+        <title>{projectDataFormatted}</title>
         <meta name="description" content={projectData.description} />
       </Head>
       <br />
-      <Posts>
+      <div className="post">
         <article>
-          <StyledProjectsCard>
+          <div className="projects-card">
             <div className="columns">
               <div className="column">
                 <article className="card" style={{ opacity: 1 }}>
@@ -76,7 +76,7 @@ export default function Project({ projectData }: { projectData: ProjectData }) {
                 </article>
               </div>
             </div>
-          </StyledProjectsCard>
+          </div>
           <h1 style={{ overflowWrap: "break-word" }}>{projectData.title}</h1>
           <h2>{projectData.description}</h2>
           <hr />
@@ -95,7 +95,7 @@ export default function Project({ projectData }: { projectData: ProjectData }) {
             </Link>
           </span>
         </div>
-      </Posts>
+      </div>
     </>
   );
 }

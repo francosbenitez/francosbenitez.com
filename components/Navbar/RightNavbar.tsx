@@ -1,7 +1,7 @@
 import React from "react";
-import { StyledUl } from "./styles";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import styles from "@/components/Navbar/styles.module.css";
 
 const RightNavbar = ({ open }: { open: boolean }) => {
   const router = useRouter();
@@ -30,10 +30,17 @@ const RightNavbar = ({ open }: { open: boolean }) => {
   ];
 
   return (
-    <StyledUl open={open}>
+    <ul
+      className={`${styles["nav-ul"]} ${
+        open ? styles["transform-0"] : styles["transform-100"]
+      }`}
+    >
       {links.map((link, i) =>
         link.text != "Resume" ? (
-          <li key={i} className={router.asPath == link.to ? "active" : ""}>
+          <li
+            key={i}
+            className={router.asPath == link.to ? styles["active"] : ""}
+          >
             <Link href={link.to}>{link.text}</Link>
           </li>
         ) : (
@@ -44,7 +51,7 @@ const RightNavbar = ({ open }: { open: boolean }) => {
           </li>
         )
       )}
-    </StyledUl>
+    </ul>
   );
 };
 
