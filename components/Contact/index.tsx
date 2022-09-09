@@ -1,9 +1,9 @@
 import React from "react";
-import { StyledContact } from "./styles";
-import GitHub from "../../public/icons/contact/github.svg";
-import Email from "../../public/icons/contact/email.svg";
-import LinkedIn from "../../public/icons/contact/linkedin.svg";
-import Twitter from "../../public/icons/contact/twitter.svg";
+import GitHub from "@/public/icons/contact/github.svg";
+import Email from "@/public/icons/contact/email.svg";
+import LinkedIn from "@/public/icons/contact/linkedin.svg";
+import Twitter from "@/public/icons/contact/twitter.svg";
+import styles from "@/components/Contact/styles.module.css";
 
 const Contact = () => {
   const social = [
@@ -29,19 +29,19 @@ const Contact = () => {
     },
   ];
   return (
-    <StyledContact id="contact">
+    <section id="contact" className={`${styles["contact"]} section`}>
       <h1>
         Contact <span>Me</span>
       </h1>
-      <div className="contact-container">
-        <div className="description-container">
+      <div className={styles["contact-container"]}>
+        <div className={styles["description-container"]}>
           <p>
             If you would like us to talk, feel free to reach out via my contact
             form or social media!
           </p>
-          <ol className="icons-container">
+          <ol className={styles["icons-container"]}>
             {social.map((icon, i) => (
-              <li className="icon-wrapper" key={i}>
+              <li className={styles["icon-wrapper"]} key={i}>
                 <a target="_blank" href={icon.url} rel="noopener noreferrer">
                   {i == 0 ? (
                     <Email alt={icon.alt} />
@@ -59,46 +59,46 @@ const Contact = () => {
           </ol>
         </div>
         <form
-          className="form-container"
+          className={styles["form-container"]}
           name="contact"
           method="POST"
           action="https://formspree.io/f/xjvjaenn"
         >
-          <div className="form-wrapper">
+          <div className={styles["form-wrapper"]}>
             <input
               type="text"
               name="name"
-              className="form-control"
+              className={styles["form-control"]}
               id="inputName"
               placeholder="Name"
               required
             />
           </div>
-          <div className="form-wrapper">
+          <div className={styles["form-wrapper"]}>
             <input
               type="email"
               name="email"
-              className="form-control"
+              className={styles["form-control"]}
               id="inputEmail"
               placeholder="Email"
               required
             />
           </div>
-          <div className="form-wrapper">
+          <div className={styles["form-wrapper"]}>
             <textarea
               name="message"
-              className="form-control"
+              className={styles["form-control"]}
               id="inputMessage"
               placeholder="Message"
               required
             ></textarea>
           </div>
-          <button type="submit" className="submit-btn">
+          <button type="submit" className={styles["submit-btn"]}>
             Send
           </button>
         </form>
       </div>
-    </StyledContact>
+    </section>
   );
 };
 
