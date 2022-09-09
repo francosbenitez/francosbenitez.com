@@ -39,7 +39,7 @@ const Home = ({
       <section id="projects" className="section">
         <div className="projects-container">
           <h1>
-            Featured <span>Projects</span>
+            Personal <span>Projects</span>
           </h1>
           <div className="card">
             <ol className="projects__projects">
@@ -99,7 +99,7 @@ const Home = ({
       <section id="blog" className="section">
         <div className="blog-container">
           <h1>
-            Featured <span>Blog Posts</span>
+            Blog <span>Posts</span>
           </h1>
           <div className="card">
             {allPostsData

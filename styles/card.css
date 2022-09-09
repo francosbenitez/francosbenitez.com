@@ -256,6 +256,10 @@
 }
 
 /* Projects card */
+.projects-card a {
+  color: var(--link);
+}
+
 .projects-card p {
   font-size: 1rem;
 }

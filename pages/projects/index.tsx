@@ -23,7 +23,7 @@ const Projects = ({
       <section id="projects" className="section">
         <div className="projects-container">
           <h1>
-            All <span>Projects</span>
+            All <span>Personal Projects</span>
           </h1>
           <div className="card">
             <ol className="projects__projects">
