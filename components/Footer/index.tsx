@@ -1,9 +1,8 @@
 import React from "react";
-import { StyledFooter } from "./styles";
-import GitHub from "../../public/icons/contact/github.svg";
-import Email from "../../public/icons/contact/email.svg";
-import LinkedIn from "../../public/icons/contact/linkedin.svg";
-import Twitter from "../../public/icons/contact/twitter.svg";
+import GitHub from "@/public/icons/contact/github.svg";
+import Email from "@/public/icons/contact/email.svg";
+import LinkedIn from "@/public/icons/contact/linkedin.svg";
+import Twitter from "@/public/icons/contact/twitter.svg";
 import styles from "@/components/Footer/styles.module.css";
 
 const Footer = () => {
