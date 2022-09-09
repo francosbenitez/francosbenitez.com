@@ -1,27 +1,27 @@
 import React from "react";
-import { Nav } from "./styles";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import Burger from "./Burger";
+import styles from "@/components/Navbar/styles.module.css";
 
 const Navbar = ({ children }: { children: React.ReactNode }) => {
   const router = useRouter();
   return (
-    <Nav>
-      <div className="nav-wrapper">
-        <div className="logo">
-          <div className={router.pathname == "/" ? "active" : ""}>
+    <nav className={styles["navbar"]}>
+      <div className={styles["nav-wrapper"]}>
+        <div className={styles["logo"]}>
+          <div className={router.pathname == "/" ? styles["active"] : ""}>
             <Link href="/" passHref>
               <a>
                 FSB
-                <span className="dot"></span>
+                <span className={styles["dot"]}></span>
               </a>
             </Link>
           </div>
         </div>
         <Burger>{children}</Burger>
       </div>
-    </Nav>
+    </nav>
   );
 };
 
