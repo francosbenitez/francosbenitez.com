@@ -17,3 +17,4 @@
   - Posts
 - Remove the three cards from the About section, or think about the possibility to make them dynamic ones.
 - Remove styled-components and implement Tailwind with CSS. DONE
+- Make a place to put "My Visual Studio Code Extensions", "the apps I use often".
