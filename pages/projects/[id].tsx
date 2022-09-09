@@ -20,7 +20,7 @@ export default function Project({ projectData }: { projectData: ProjectData }) {
       <br />
       <div className="post">
         <article>
-          <StyledProjectsCard>
+          <div className="projects-card">
             <div className="columns">
               <div className="column">
                 <article className="card" style={{ opacity: 1 }}>
@@ -75,7 +75,7 @@ export default function Project({ projectData }: { projectData: ProjectData }) {
                 </article>
               </div>
             </div>
-          </StyledProjectsCard>
+          </div>
           <h1 style={{ overflowWrap: "break-word" }}>{projectData.title}</h1>
           <h2>{projectData.description}</h2>
           <hr />

@@ -4,7 +4,6 @@ import Contact from "../components/Contact";
 import { getSortedProjectsData } from "../lib/projects";
 import { getSortedPostsData } from "../lib/posts";
 import Date from "../components/Date";
-import { StyledCard } from "../styles/Cards";
 import Image from "next/image";
 import Link from "next/link";
 import Head from "next/head";
@@ -42,7 +41,7 @@ const Home = ({
           <h1>
             Featured <span>Projects</span>
           </h1>
-          <StyledCard>
+          <div className="card">
             <ol className="projects__projects">
               {allProjectsData
                 .filter(
@@ -89,7 +88,7 @@ const Home = ({
                   )
                 )}
             </ol>
-          </StyledCard>
+          </div>
           <Link href="/projects" passHref>
             <a className="see-all">
               <span>See more projects →</span>
@@ -102,7 +101,7 @@ const Home = ({
           <h1>
             Featured <span>Blog Posts</span>
           </h1>
-          <StyledCard>
+          <div className="card">
             {allPostsData
               .filter(({ featured }: { featured: boolean }) => featured == true)
               .map(({ id, date, title, description }: AllPostsData) => (
@@ -123,7 +122,7 @@ const Home = ({
                 </ol>
               ))}
             {/*</div>*/}
-          </StyledCard>
+          </div>
           <Link href="/posts" passHref>
             <a className="see-all">
               <span>See more blog posts →</span>

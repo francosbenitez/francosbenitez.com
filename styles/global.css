@@ -1,6 +1,7 @@
 @import url("section.css");
 @import url("hero.css");
 @import url("post.css");
+@import url("card.css");
 
 :root {
   --primary: #2079c7;

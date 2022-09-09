@@ -2,7 +2,6 @@ import React from "react";
 import { getSortedPostsData } from "../../lib/posts";
 import Link from "next/link";
 import Date from "../../components/Date";
-import { StyledCard } from "../../styles/Cards";
 import Head from "next/head";
 import { AllPostsData } from "../../types";
 
@@ -18,7 +17,7 @@ const Blog = ({ allPostsData }: { allPostsData: AllPostsData[] }) => {
           <h1>
             All <span>Blog Posts</span>
           </h1>
-          <StyledCard>
+          <div className="card">
             {allPostsData.map(
               ({ id, date, title, description }: AllPostsData) => (
                 <ol className="blog_posts" key={id}>
@@ -38,7 +37,7 @@ const Blog = ({ allPostsData }: { allPostsData: AllPostsData[] }) => {
                 </ol>
               )
             )}
-          </StyledCard>
+          </div>
           <Link href="/" passHref>
             <a className="back-to-home">
               <span>← Back to home</span>

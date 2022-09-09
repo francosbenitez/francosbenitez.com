@@ -2,7 +2,6 @@ import React from "react";
 import { getSortedProjectsData } from "../../lib/projects";
 import Link from "next/link";
 import Date from "../../components/Date";
-import { StyledCard } from "../../styles/Cards";
 import Image from "next/image";
 import Head from "next/head";
 import { AllProjectsData } from "../../types";
@@ -26,7 +25,7 @@ const Projects = ({
           <h1>
             All <span>Projects</span>
           </h1>
-          <StyledCard>
+          <div className="card">
             <ol className="projects__projects">
               {allProjectsData.map(
                 ({
@@ -67,7 +66,7 @@ const Projects = ({
                 )
               )}
             </ol>
-          </StyledCard>
+          </div>
           <Link href="/" passHref>
             <a className="back-to-home">
               <span>← Back to home</span>
