@@ -4,6 +4,7 @@ import GitHub from "../../public/icons/contact/github.svg";
 import Email from "../../public/icons/contact/email.svg";
 import LinkedIn from "../../public/icons/contact/linkedin.svg";
 import Twitter from "../../public/icons/contact/twitter.svg";
+import styles from "@/components/Footer/styles.module.css";
 
 const Footer = () => {
   const social = [
@@ -30,9 +31,9 @@ const Footer = () => {
   ];
 
   return (
-    <StyledFooter>
-      <div className="footer-wrapper">
-        <div className="copyright">
+    <div className={styles["footer"]}>
+      <div className={styles["footer-wrapper"]}>
+        <div className={styles["copyright"]}>
           <p>
             &copy; {new Date().getFullYear()} | Built with ☕️ and{" "}
             <a
@@ -63,9 +64,9 @@ const Footer = () => {
             </a>
           </p>
         </div>
-        <ol className="icons-container">
+        <ol className={styles["icons-container"]}>
           {social.map((icon, i) => (
-            <li className="icon-wrapper" key={i}>
+            <li className={styles["icon-wrapper"]} key={i}>
               <a target="_blank" href={icon.url} rel="noopener noreferrer">
                 {i == 0 ? (
                   <Email alt={icon.alt} />
@@ -81,7 +82,7 @@ const Footer = () => {
           ))}
         </ol>
       </div>
-    </StyledFooter>
+    </div>
   );
 };
 
