@@ -36,7 +36,7 @@ const About = () => {
             <li>Languages: TypeScript, Python</li>{" "}
             <li>Frontend Frameworks: React + Next, Vue</li>
             <li>Backend Frameworks: Express + Prisma, Django</li>{" "}
-            <li>CSS Frameworks: Tailwind, Styled Components</li>
+            <li>CSS Framework: Tailwind</li>
             <li> Databases: PostgreSQL, MySQL</li>
           </ul>
           <br></br>
