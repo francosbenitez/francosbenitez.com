@@ -9,10 +9,11 @@ interface PostData extends AllPostsData {
 }
 
 export default function Post({ postData }: { postData: PostData }) {
+  const postDataFormatted = postData.title + " | Franco Sebastián Benítez";
   return (
     <>
       <Head>
-        <title>{postData.title} | Franco Sebastián Benítez</title>
+        <title>{postDataFormatted}</title>
         <meta name="description" content={postData.description} />
       </Head>
       <br />

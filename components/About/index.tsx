@@ -32,7 +32,7 @@ const About = () => {
             <span>my favourite tech stack</span> revolves around:
           </p>{" "}
           <br></br>
-          <ul>
+          <ul className="list-disc">
             <li>Languages: TypeScript, Python</li>{" "}
             <li>Frontend Frameworks: React + Next, Vue</li>
             <li>Backend Frameworks: Express + Prisma, Django</li>{" "}

@@ -10,10 +10,12 @@ interface ProjectData extends AllProjectsData {
 }
 
 export default function Project({ projectData }: { projectData: ProjectData }) {
+  const projectDataFormatted =
+    projectData.title + " | Franco Sebastián Benítez";
   return (
     <>
       <Head>
-        <title>{projectData.title} | Franco Sebastián Benítez</title>
+        <title>{projectDataFormatted}</title>
         <meta name="description" content={projectData.description} />
       </Head>
       <br />

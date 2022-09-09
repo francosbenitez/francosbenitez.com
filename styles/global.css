@@ -3,6 +3,10 @@
 @import url("post.css");
 @import url("card.css");
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --primary: #2079c7;
   --secondary: #6aadff;
