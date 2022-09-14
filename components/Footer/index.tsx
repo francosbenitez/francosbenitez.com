@@ -8,7 +8,7 @@ import styles from "@/components/Footer/styles.module.css";
 const Footer = () => {
   const social = [
     {
-      url: "mailto:francosbenitez@gmail.com",
+      url: "mailto:me@francosbenitez.com",
       alt: "Mail icon",
       description: "Email me for a chat",
     },
