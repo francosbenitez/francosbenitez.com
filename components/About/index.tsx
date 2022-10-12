@@ -35,7 +35,7 @@ const About = () => {
           <ul className="list-disc">
             <li>Languages: TypeScript, Python</li>
             <li>Frontend Frameworks: React + Next</li>
-            <li>Backend Frameworks: Express + Prisma, Django + DRF</li>
+            <li>Backend Frameworks: Django + DRF, Express + Prisma</li>
             <li>CSS Framework: Tailwind</li>
             <li>Database: PostgreSQL</li>
           </ul>
