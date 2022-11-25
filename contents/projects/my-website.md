@@ -4,7 +4,7 @@ date: "2021-08-01"
 description: My personal website
 img: "/captura-de-pantalla-2022-09-05-a-la-s-15-59-06.png"
 img_alt: francosbenitez.com Cover Photo
-featured: false
+featured: true
 tools_used: Next, React, Tailwind, Forestry
 published: 2021/08/01
 github_url: https://github.com/francosbenitez/francosbenitez.com
