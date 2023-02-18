@@ -35,6 +35,7 @@ const About = () => {
           <ul className="list-disc">
             <li>Languages: TypeScript, Python</li>
             <li>Frontend Frameworks: React, Redux, Next</li>
+            <li>Mobile Frameworks: React Native, Expo</li>
             <li>Backend Frameworks: Django, DRF</li>
             <li>CSS Frameworks: Tailwind, Material UI</li>
             <li>Database: PostgreSQL</li>
