@@ -34,11 +34,11 @@ const About = () => {
           <br></br>
           <ul className="list-disc">
             <li>Languages: Python, JavaScript</li>
+            <li>Backend Frameworks: Django, DRF</li>
+            <li>Database: PostgreSQL</li>
             <li>Frontend Frameworks: React, Redux, Next</li>
             <li>Mobile Frameworks: React Native, Expo</li>
-            <li>Backend Frameworks: Django, DRF</li>
             <li>CSS Frameworks: Tailwind, Material UI</li>
-            <li>Database: PostgreSQL</li>
           </ul>
           <br></br>
           <p>
