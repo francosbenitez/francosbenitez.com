@@ -33,7 +33,7 @@ const About = () => {
           </p>{" "}
           <br></br>
           <ul className="list-disc">
-            <li>Languages: TypeScript, Python</li>
+            <li>Languages: Python, JavaScript</li>
             <li>Frontend Frameworks: React, Redux, Next</li>
             <li>Mobile Frameworks: React Native, Expo</li>
             <li>Backend Frameworks: Django, DRF</li>
