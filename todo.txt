@@ -1,2 +1,4 @@
 - don't do a new site again
 - modify the SVG in the home
+- remove the subtitle animation (a psychologist, a developer)
+- offer a translation into a spanish
