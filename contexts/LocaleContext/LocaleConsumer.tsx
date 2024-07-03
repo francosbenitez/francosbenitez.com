@@ -1,10 +1,14 @@
-import { useContext } from "react";
+import { ReactNode, useContext, FC } from "react";
 import LocaleContext from "./index";
 
-const LocaleConsumer = ({ children }) => {
+interface LocaleConsumerProps {
+  children: (context: any) => ReactNode;
+}
+
+const LocaleConsumer: FC<LocaleConsumerProps> = ({ children }) => {
   const context = useContext(LocaleContext);
 
-  return children(context);
+  return <>{children(context)}</>;
 };
 
 export default LocaleConsumer;
