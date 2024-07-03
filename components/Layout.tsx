@@ -65,12 +65,14 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         <meta name="theme-color" content="#2079c7" />
       </Head>
       <Navbar>
-        <button>
-          <LanguageSwitcher />
-        </button>
-        <button onClick={toggleTheme}>
-          <Icon name={theme === "light" ? "night" : "day"} />
-        </button>
+        <div className="flex items-center fill-primary">
+          <button>
+            <LanguageSwitcher />
+          </button>
+          <button onClick={toggleTheme}>
+            <Icon name={theme === "light" ? "night" : "day"} />
+          </button>
+        </div>
       </Navbar>
       <FadeIn>{children}</FadeIn>
       <Footer />
