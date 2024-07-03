@@ -11,12 +11,16 @@ const Hero = () => {
       <div className={styles["hero-container"]}>
         <div className={styles["hero-description"]}>
           <h1>
-            <FormattedMessage id="home.title" />, I&apos;m
+            <FormattedMessage id="home.title" />
             <br />
             <span> Franco Sebastián Benítez</span>
           </h1>
-          <h2 style={{ marginBottom: "0.5rem" }}>👨🏻‍💻 Developer</h2>
-          <h2>🧠 Psychologist</h2>
+          <h2 style={{ marginBottom: "0.5rem" }}>
+            <FormattedMessage id="home.job.1" />
+          </h2>
+          <h2>
+            <FormattedMessage id="home.job.2" />
+          </h2>
           <div className={styles["buttons"]}>
             <div className={styles["projects-button"]}>
               <Link href="/#projects">
