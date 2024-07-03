@@ -1,5 +1,4 @@
 import React from "react";
-import { ReactTypical } from "@deadcoder0904/react-typical";
 import { HeroImage } from "./HeroImage";
 import Link from "next/link";
 import Arrow from "../../public/icons/arrow.svg";
@@ -15,11 +14,8 @@ const Hero = () => {
             <br />
             <span> Franco Sebastián Benítez</span>
           </h1>
-          <ReactTypical
-            steps={["👨🏻‍💻 A Developer", 2000, "🧠 A Psychologist", 2000]}
-            loop={Infinity}
-            wrapper="h2"
-          />
+          <h2 style={{ marginBottom: "0.5rem" }}>👨🏻‍💻 Developer</h2>
+          <h2>🧠 Psychologist</h2>
           <div className={styles["buttons"]}>
             <div className={styles["projects-button"]}>
               <Link href="/#projects">
