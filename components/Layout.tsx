@@ -3,6 +3,8 @@ import Head from "next/head";
 import Navbar from "./Navbar";
 import { useState, useEffect } from "react";
 import Icon from "./Icon";
+import LanguageSwitcher from "./LanguageSwitcher";
+import FadeIn from "./FadeIn";
 
 function useStickyState(defaultValue: string, key: string) {
   const [value, setValue] = useState<string>(defaultValue);
@@ -63,11 +65,14 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         <meta name="theme-color" content="#2079c7" />
       </Head>
       <Navbar>
+        <button>
+          <LanguageSwitcher />
+        </button>
         <button onClick={toggleTheme}>
           <Icon name={theme === "light" ? "night" : "day"} />
         </button>
       </Navbar>
-      {children}
+      <FadeIn>{children}</FadeIn>
       <Footer />
     </>
   );
