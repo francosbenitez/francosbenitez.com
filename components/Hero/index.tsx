@@ -14,7 +14,8 @@ const Hero = () => {
             <br />
             <span> Franco Sebastián Benítez</span>
           </h1>
-          <h2>👨🏻‍💻 Developer, 🧠 Psychologist</h2>
+          <h2 style={{ marginBottom: "0.5rem" }}>👨🏻‍💻 Developer</h2>
+          <h2>🧠 Psychologist</h2>
           <div className={styles["buttons"]}>
             <div className={styles["projects-button"]}>
               <Link href="/#projects">
