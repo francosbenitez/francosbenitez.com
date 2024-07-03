@@ -3,6 +3,7 @@ import { HeroImage } from "./HeroImage";
 import Link from "next/link";
 import Arrow from "../../public/icons/arrow.svg";
 import styles from "@/components/Hero/styles.module.css";
+import { FormattedMessage } from "react-intl";
 
 const Hero = () => {
   return (
@@ -10,7 +11,7 @@ const Hero = () => {
       <div className={styles["hero-container"]}>
         <div className={styles["hero-description"]}>
           <h1>
-            Hi, I&apos;m
+            <FormattedMessage id="home.title" />, I&apos;m
             <br />
             <span> Franco Sebastián Benítez</span>
           </h1>
