@@ -24,14 +24,18 @@ const Hero = () => {
           <div className={styles["buttons"]}>
             <div className={styles["projects-button"]}>
               <Link href="/#projects">
-                <a className={styles["button"]}>See my work</a>
+                <a className={styles["button"]}>
+                  <FormattedMessage id="home.see.my.work" />
+                </a>
               </Link>
             </div>
             <div
               className={`${styles["contact-button"]} ${styles["projects-button"]}`}
             >
               <Link href="/#contact">
-                <a className={styles["button"]}>Contact me</a>
+                <a className={styles["button"]}>
+                  <FormattedMessage id="home.contact" />
+                </a>
               </Link>
             </div>
           </div>
