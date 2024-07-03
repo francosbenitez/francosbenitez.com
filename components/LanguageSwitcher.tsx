@@ -12,7 +12,7 @@ const LanguageSwitcher = () => {
     setOpen(!open);
   };
 
-  const handleLocale = (locale) => {
+  const handleLocale = (locale: string) => {
     setCurrentLocale(locale);
     localStorage.setItem("locale", locale);
     setOpen(false);

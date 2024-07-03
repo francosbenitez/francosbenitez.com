@@ -1,7 +1,12 @@
 import { useContext } from "react";
 import LocaleContext from "contexts/LocaleContext";
 
-const useLocale = () => {
+interface LocaleContextType {
+  currentLocale: string;
+  setCurrentLocale: (locale: string) => void;
+}
+
+const useLocale = (): LocaleContextType => {
   const context = useContext(LocaleContext);
 
   // https://kentcdodds.com/blog/how-to-use-react-context-effectively
