@@ -8,7 +8,7 @@ import LocaleProvider from "contexts/LocaleContext/LocaleProvider";
 import LocaleConsumer from "contexts/LocaleContext/LocaleConsumer";
 
 const App = ({ Component, pageProps }: AppProps) => {
-  const messages = {
+  const messages: { [key: string]: any } = {
     es,
     en,
   };
