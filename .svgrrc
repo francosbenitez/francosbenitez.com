@@ -1,0 +1,6 @@
+{
+  "replaceAttrValues": {
+    "#E1E1E1": "{props.fill}",
+    "#000": "{props.stroke}"
+  }
+}
