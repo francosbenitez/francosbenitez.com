@@ -1,4 +1,9 @@
 {
+  "navbar.about": "Acerca",
+  "navbar.projects": "Proyectos",
+  "navbar.blog": "Blog",
+  "navbar.contact": "Contacto",
+  "navbar.resume": "Currículum",
   "home.title": "Hola, soy",
   "home.job.1": "👨🏻‍💻 Programador",
   "home.job.2": "🧠 Psicólogo",

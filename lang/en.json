@@ -1,4 +1,9 @@
 {
+  "navbar.about": "About",
+  "navbar.projects": "Projects",
+  "navbar.blog": "Blog",
+  "navbar.contact": "Contact",
+  "navbar.resume": "Resume",
   "home.title": "Hi, I'm",
   "home.job.1": "👨🏻‍💻 Developer",
   "home.job.2": "🧠 Psychologist",
