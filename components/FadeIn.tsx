@@ -1,8 +1,13 @@
-import { useState } from "react";
+import { useState, ReactNode, FC } from "react";
 import { Waypoint } from "react-waypoint";
 import { useSpring, animated } from "react-spring";
 
-const FadeIn = ({ children, delay }) => {
+interface FadeInProps {
+  children: ReactNode;
+  delay?: number;
+}
+
+const FadeIn: FC<FadeInProps> = ({ children, delay = 500 }) => {
   const [inView, setInview] = useState(false);
 
   const transition = useSpring({
