@@ -65,7 +65,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         <meta name="theme-color" content="#2079c7" />
       </Head>
       <Navbar>
-        <div className="flex items-center fill-primary gap-2">
+        <div className="flex items-center fill-primary gap-2 ml-4">
           <button>
             <LanguageSwitcher />
           </button>
