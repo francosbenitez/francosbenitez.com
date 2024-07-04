@@ -4,40 +4,43 @@ import Email from "@/public/icons/contact/email.svg";
 import LinkedIn from "@/public/icons/contact/linkedin.svg";
 import Twitter from "@/public/icons/contact/twitter.svg";
 import styles from "@/components/Contact/styles.module.css";
+import { FormattedMessage } from "react-intl";
 
 const Contact = () => {
   const social = [
     {
       url: "mailto:me@francosbenitez.com",
       alt: "Mail icon",
-      description: "Email me for a chat",
+      description: <FormattedMessage id="contact.email" />,
     },
     {
       url: "https://linkedin.com/in/francosbenitez",
       alt: "LinkedIn icon",
-      description: "Connect with me",
+      description: <FormattedMessage id="contact.linkedin" />,
     },
     {
       url: "https://github.com/francosbenitez",
       alt: "GitHub icon",
-      description: "Check out my code",
+      description: <FormattedMessage id="contact.github" />,
     },
     {
       url: "https://twitter.com/francosbenitez",
       alt: "Twitter icon",
-      description: "Follow me on Twitter",
+      description: <FormattedMessage id="contact.twitter" />,
     },
   ];
   return (
     <section id="contact" className={`${styles["contact"]} section`}>
       <h1>
-        Contact <span>Me</span>
+        <FormattedMessage id="contact.title.1" />{" "}
+        <span>
+          <FormattedMessage id="contact.title.2" />
+        </span>
       </h1>
       <div className={styles["contact-container"]}>
         <div className={styles["description-container"]}>
           <p>
-            If you would like us to talk, feel free to reach out via my contact
-            form or social media!
+            <FormattedMessage id="contact.description" />
           </p>
           <ol className={styles["icons-container"]}>
             {social.map((icon, i) => (
@@ -65,14 +68,18 @@ const Contact = () => {
           action="https://formspree.io/f/xjvjaenn"
         >
           <div className={styles["form-wrapper"]}>
-            <input
-              type="text"
-              name="name"
-              className={styles["form-control"]}
-              id="inputName"
-              placeholder="Name"
-              required
-            />
+            <FormattedMessage id="contact.name">
+              {(placeholder) => (
+                <input
+                  type="text"
+                  name="name"
+                  className={styles["form-control"]}
+                  id="inputName"
+                  placeholder={placeholder}
+                  required
+                />
+              )}
+            </FormattedMessage>
           </div>
           <div className={styles["form-wrapper"]}>
             <input
@@ -85,16 +92,20 @@ const Contact = () => {
             />
           </div>
           <div className={styles["form-wrapper"]}>
-            <textarea
-              name="message"
-              className={styles["form-control"]}
-              id="inputMessage"
-              placeholder="Message"
-              required
-            ></textarea>
+            <FormattedMessage id="contact.message">
+              {(placeholder) => (
+                <textarea
+                  name="message"
+                  className={styles["form-control"]}
+                  id="inputMessage"
+                  placeholder={placeholder}
+                  required
+                ></textarea>
+              )}
+            </FormattedMessage>
           </div>
           <button type="submit" className={styles["submit-btn"]}>
-            Send
+            <FormattedMessage id="contact.send" />
           </button>
         </form>
       </div>

@@ -2,12 +2,16 @@ import React from "react";
 import Avatar from "@/public/images/others/avatar.jpg";
 import Image from "next/image";
 import styles from "@/components/About/styles.module.css";
+import { FormattedMessage } from "react-intl";
 
 const About = () => {
   return (
     <section id="about" className={`section ${styles["about"]}`}>
       <h1>
-        About <span>Me</span>
+        <FormattedMessage id="about.title.1" />{" "}
+        <span>
+          <FormattedMessage id="about.title.2" />
+        </span>
       </h1>
       <div className={styles["about-container"]}>
         <div className={styles["avatar-container"]}>
@@ -17,8 +21,8 @@ const About = () => {
         </div>
         <div className={styles["description-container"]}>
           <p>
-            Hi, nice to meet you! I&apos;m a (mostly) Backend Developer passionate about{" "}
-            <span>data</span>, <span>development</span>, and{" "}
+            Hi, nice to meet you! I&apos;m a (mostly) Backend Developer
+            passionate about <span>data</span>, <span>development</span>, and{" "}
             <span>psychology</span>. I love making things which use data, work
             well, and are easy-to-use for everyone. <br></br>
             <br></br>Along my psychology career and due to my great interest in

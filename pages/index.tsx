@@ -8,6 +8,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Head from "next/head";
 import { AllProjectsData, AllPostsData } from "../types";
+import { FormattedMessage } from "react-intl";
 
 const Home = ({
   allProjectsData,
@@ -39,7 +40,10 @@ const Home = ({
       <section id="projects" className="section">
         <div className="projects-container">
           <h1>
-            Personal <span>Projects</span>
+            <FormattedMessage id="projects.title.1" />{" "}
+            <span>
+              <FormattedMessage id="projects.title.2" />
+            </span>
           </h1>
           <div className="card">
             <ol className="projects__projects">
@@ -91,7 +95,9 @@ const Home = ({
           </div>
           <Link href="/projects" passHref>
             <a className="see-all">
-              <span>See more projects →</span>
+              <span>
+                <FormattedMessage id="projects.see.more" /> →
+              </span>
             </a>
           </Link>
         </div>
@@ -99,7 +105,10 @@ const Home = ({
       <section id="blog" className="section">
         <div className="blog-container">
           <h1>
-            Blog <span>Posts</span>
+            <FormattedMessage id="blog.title.1" />{" "}
+            <span>
+              <FormattedMessage id="blog.title.2" />
+            </span>
           </h1>
           <div className="card">
             {allPostsData
@@ -125,7 +134,9 @@ const Home = ({
           </div>
           <Link href="/posts" passHref>
             <a className="see-all">
-              <span>See more blog posts →</span>
+              <span>
+                <FormattedMessage id="blog.see.more" /> →
+              </span>
             </a>
           </Link>
         </div>
