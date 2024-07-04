@@ -1,5 +1,4 @@
 import Hero from "../components/Hero";
-import Contact from "../components/Contact";
 import { getSortedProjectsData } from "../lib/projects";
 import { getSortedPostsData } from "../lib/posts";
 import Date from "../components/Date";
@@ -139,7 +138,6 @@ const Home = ({
           </Link>
         </div>
       </section>
-      <Contact />
     </>
   );
 };
