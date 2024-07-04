@@ -1,9 +1,10 @@
 import React from "react";
-import { HeroImage } from "./HeroImage";
 import Link from "next/link";
 import Arrow from "../../public/icons/arrow.svg";
 import styles from "@/components/Hero/styles.module.css";
 import { FormattedMessage } from "react-intl";
+import Avatar from "@/public/images/others/avatar_2.jpeg";
+import Image from "next/image";
 
 const Hero = () => {
   return (
@@ -40,8 +41,16 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className={styles["hero-img"]}>
-          <HeroImage />
+        <div className="hidden md:flex w-full justify-center basis-1/2">
+          <div>
+            <Image
+              src={Avatar}
+              alt=""
+              width={350}
+              height={350}
+              className="object-cover object-center rounded-[50%]"
+            />
+          </div>
         </div>
       </div>
       <div className={styles["arrow"]}>

@@ -1,5 +1,5 @@
 import React from "react";
-import Avatar from "@/public/images/others/avatar.jpg";
+import Avatar from "@/public/images/others/avatar_3.jpeg";
 import Image from "next/image";
 import styles from "@/components/About/styles.module.css";
 import { FormattedMessage } from "react-intl";
@@ -8,16 +8,20 @@ const About = () => {
   return (
     <section id="about" className={`section ${styles["about"]}`}>
       <h1>
-        <FormattedMessage id="about.title.1" />{" "}
+        <FormattedMessage id="about.title.1" />
         <span>
           <FormattedMessage id="about.title.2" />
         </span>
       </h1>
       <div className={styles["about-container"]}>
-        <div className={styles["avatar-container"]}>
-          <div className={styles["avatar-wrapper"]}>
-            <Image src={Avatar} alt="" />
-          </div>
+        <div>
+          <Image
+            src={Avatar}
+            alt=""
+            width={350}
+            height={350}
+            className="object-cover object-center rounded-2xl shadow-2xl"
+          />
         </div>
         <div className={styles["description-container"]}>
           <p>
