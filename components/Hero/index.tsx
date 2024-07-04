@@ -42,7 +42,7 @@ const Hero = () => {
           </div>
         </div>
         <div className="hidden md:flex w-full justify-center basis-1/2">
-          <div>
+          <div className="flex flex-col justify-content items-center gap-4 relative">
             <Image
               src={Avatar}
               alt=""
@@ -50,6 +50,7 @@ const Hero = () => {
               height={350}
               className="object-cover object-center rounded-[50%]"
             />
+            <p className="text-3xl absolute left-0">☕</p>
           </div>
         </div>
       </div>
