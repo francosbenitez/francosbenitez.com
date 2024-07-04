@@ -2,6 +2,7 @@ import { useState } from "react";
 import Argentina from "@/public/icons/argentina.svg";
 import Usa from "@/public/icons/usa.svg";
 import useLocale from "hooks/useLocale";
+import GTranslateOutlinedIcon from "@mui/icons-material/GTranslateOutlined";
 
 const LanguageSwitcher = () => {
   const { currentLocale, setCurrentLocale } = useLocale();
@@ -25,11 +26,11 @@ const LanguageSwitcher = () => {
           className={`flag-container ${open && "active"}`}
           onClick={switchOpen}
         >
-          {currentLocale === "en" ? (
-            <Usa width="30" className="flag-svg" />
-          ) : (
-            <Argentina width="30" className="flag-svg" />
-          )}
+          <GTranslateOutlinedIcon
+            sx={{
+              color: "var(--primary)",
+            }}
+          />
           <svg
             stroke="var(--primary)"
             fill="var(--primary)"
