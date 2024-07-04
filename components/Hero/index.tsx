@@ -33,7 +33,7 @@ const Hero = () => {
             <div
               className={`${styles["contact-button"]} ${styles["projects-button"]}`}
             >
-              <Link href="/#contact">
+              <Link href="/contact">
                 <a className={styles["button"]}>
                   <FormattedMessage id="home.contact" />
                 </a>
