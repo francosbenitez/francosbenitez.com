@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import { FormattedMessage } from "react-intl";
 import FadeIn from "@/components/FadeIn";
