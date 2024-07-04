@@ -3,6 +3,7 @@ import Head from "next/head";
 import Navbar from "./Navbar";
 import { useState, useEffect } from "react";
 import Icon from "./Icon";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 function useStickyState(defaultValue: string, key: string) {
   const [value, setValue] = useState<string>(defaultValue);
@@ -63,9 +64,14 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         <meta name="theme-color" content="#2079c7" />
       </Head>
       <Navbar>
-        <button onClick={toggleTheme}>
-          <Icon name={theme === "light" ? "night" : "day"} />
-        </button>
+        <div className="fixed md:relative top-[15px] md:top-[-2px] right-[70px] md:right-0 flex items-center fill-primary gap-2 ml-4">
+          <button>
+            <LanguageSwitcher />
+          </button>
+          <button onClick={toggleTheme}>
+            <Icon name={theme === "light" ? "night" : "day"} />
+          </button>
+        </div>
       </Navbar>
       {children}
       <Footer />

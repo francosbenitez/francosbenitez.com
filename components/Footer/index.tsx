@@ -4,6 +4,7 @@ import Email from "@/public/icons/contact/email.svg";
 import LinkedIn from "@/public/icons/contact/linkedin.svg";
 import Twitter from "@/public/icons/contact/twitter.svg";
 import styles from "@/components/Footer/styles.module.css";
+import { FormattedMessage } from "react-intl";
 
 const Footer = () => {
   const social = [
@@ -34,7 +35,9 @@ const Footer = () => {
       <div className={styles["footer-wrapper"]}>
         <div className={styles["copyright"]}>
           <p>
-            &copy; {new Date().getFullYear()} | Built with ☕️ and{" "}
+            &copy; {new Date().getFullYear()} |{" "}
+            <FormattedMessage id="footer.built.with" /> ☕️{" "}
+            <FormattedMessage id="footer.and" />{" "}
             <a
               href="https://nextjs.org/"
               target="_blank"
@@ -43,7 +46,7 @@ const Footer = () => {
             >
               Next
             </a>{" "}
-            by{" "}
+            <FormattedMessage id="footer.by" />{" "}
             <a
               href="https://twitter.com/francosbenitez"
               target="_blank"
@@ -59,7 +62,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="link"
             >
-              See the source code
+              <FormattedMessage id="footer.see.source" />
             </a>
           </p>
         </div>

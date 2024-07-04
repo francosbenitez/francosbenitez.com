@@ -38,6 +38,7 @@
 
 .form-container {
   margin-top: 2rem;
+  max-width: 300px;
 }
 
 .icon-wrapper {
@@ -128,7 +129,8 @@
     flex-basis: 50%;
     text-align: right;
     margin-top: 0;
-    margin-left: 1rem;
+    margin-left: auto;
+    max-width: 400px;
   }
 
   .form-wrapper {

@@ -2,30 +2,33 @@ import React from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import styles from "@/components/Navbar/styles.module.css";
+import { useIntl } from "react-intl";
 
 const RightNavbar = ({ open }: { open: boolean }) => {
+  const intl = useIntl();
   const router = useRouter();
 
   const links = [
     {
-      text: "About",
-      to: "/#about",
+      text: intl.formatMessage({ id: "navbar.about" }),
+      to: "/about",
     },
     {
-      text: "Projects",
+      text: intl.formatMessage({ id: "navbar.projects" }),
       to: "/#projects",
     },
     {
-      text: "Blog",
+      text: intl.formatMessage({ id: "navbar.blog" }),
       to: "/#blog",
     },
     {
-      text: "Contact",
-      to: "/#contact",
+      text: intl.formatMessage({ id: "navbar.contact" }),
+      to: "/contact",
     },
     {
-      text: "Resume",
+      text: intl.formatMessage({ id: "navbar.resume" }),
       to: "https://drive.google.com/file/d/17cqpawOOlaE3yNN_fp_sYwY_ZV8YU3Ig/view?usp=sharing",
+      newTab: true,
     },
   ];
 
@@ -36,7 +39,7 @@ const RightNavbar = ({ open }: { open: boolean }) => {
       }`}
     >
       {links.map((link, i) =>
-        link.text != "Resume" ? (
+        link.hasOwnProperty("newTab") === false ? (
           <li
             key={i}
             className={router.asPath == link.to ? styles["active"] : ""}

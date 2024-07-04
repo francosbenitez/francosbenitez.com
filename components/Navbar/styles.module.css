@@ -18,7 +18,7 @@
   justify-content: space-between;
 }
 
-.navbar button {
+/* .navbar button {
   position: fixed;
   top: 18px;
   right: 70px;
@@ -27,7 +27,7 @@
   border: none;
   outline: none;
   cursor: pointer;
-}
+} */
 
 .logo {
   padding: 15px 0;
@@ -58,12 +58,12 @@
     display: flex;
   }
 
-  .navbar button {
+  /* .navbar button {
     padding: 18px 0 18px 10px;
     position: relative;
     top: 0;
     right: 0;
-  }
+  } */
 }
 
 /* Nav ul */

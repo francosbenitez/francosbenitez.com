@@ -64,23 +64,12 @@
   background-repeat: no-repeat;
 }
 
-.avatar-container {
-  float: right;
-  text-align: center;
-}
-
-.avatar-wrapper img {
-  width: 100%;
-  height: auto;
-  border-radius: 50%;
-  justify-content: center;
-}
-
 @media (min-width: 768px) {
   .about-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 1.5rem;
   }
 
   .description-container {
