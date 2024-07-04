@@ -4,7 +4,6 @@ import Navbar from "./Navbar";
 import { useState, useEffect } from "react";
 import Icon from "./Icon";
 import LanguageSwitcher from "./LanguageSwitcher";
-import FadeIn from "./FadeIn";
 
 function useStickyState(defaultValue: string, key: string) {
   const [value, setValue] = useState<string>(defaultValue);
@@ -74,7 +73,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           </button>
         </div>
       </Navbar>
-      <FadeIn>{children}</FadeIn>
+      {children}
       <Footer />
     </>
   );
