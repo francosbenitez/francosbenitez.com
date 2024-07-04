@@ -23,11 +23,12 @@ const RightNavbar = ({ open }: { open: boolean }) => {
     },
     {
       text: intl.formatMessage({ id: "navbar.contact" }),
-      to: "/#contact",
+      to: "/contact",
     },
     {
       text: intl.formatMessage({ id: "navbar.resume" }),
       to: "https://drive.google.com/file/d/17cqpawOOlaE3yNN_fp_sYwY_ZV8YU3Ig/view?usp=sharing",
+      newTab: true,
     },
   ];
 
@@ -38,7 +39,7 @@ const RightNavbar = ({ open }: { open: boolean }) => {
       }`}
     >
       {links.map((link, i) =>
-        link.text != "Resume" ? (
+        link.hasOwnProperty("newTab") === false ? (
           <li
             key={i}
             className={router.asPath == link.to ? styles["active"] : ""}
