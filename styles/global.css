@@ -110,12 +110,12 @@ body::-webkit-scrollbar-thumb {
   transition: transform 0.5s ease-in-out;
 }
 
-.switcher-area .lang-switcher .flag-container.active {
+/* .switcher-area .lang-switcher .flag-container.active {
   background-color: var(--primary);
-}
+} */
 
 .switcher-area .lang-switcher .flag-container.active .triangle {
-  fill: white;
+  fill: var(--primary);
   transform: rotate(-180deg);
 }
 
