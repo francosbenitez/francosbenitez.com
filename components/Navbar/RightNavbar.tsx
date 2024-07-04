@@ -11,7 +11,7 @@ const RightNavbar = ({ open }: { open: boolean }) => {
   const links = [
     {
       text: intl.formatMessage({ id: "navbar.about" }),
-      to: "/#about",
+      to: "/about",
     },
     {
       text: intl.formatMessage({ id: "navbar.projects" }),

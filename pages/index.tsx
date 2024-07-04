@@ -1,5 +1,4 @@
 import Hero from "../components/Hero";
-import About from "../components/About";
 import Contact from "../components/Contact";
 import { getSortedProjectsData } from "../lib/projects";
 import { getSortedPostsData } from "../lib/posts";
@@ -36,7 +35,6 @@ const Home = ({
         />
       </Head>
       <Hero />
-      <About />
       <section id="projects" className="section">
         <div className="projects-container">
           <h1>
