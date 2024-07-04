@@ -40,7 +40,7 @@ const Home = ({
       <section id="projects" className="section">
         <div className="projects-container">
           <h1>
-            <FormattedMessage id="projects.title.1" />{" "}
+            <FormattedMessage id="projects.title.1" />
             <span>
               <FormattedMessage id="projects.title.2" />
             </span>
@@ -105,7 +105,7 @@ const Home = ({
       <section id="blog" className="section">
         <div className="blog-container">
           <h1>
-            <FormattedMessage id="blog.title.1" />{" "}
+            <FormattedMessage id="blog.title.1" />
             <span>
               <FormattedMessage id="blog.title.2" />
             </span>

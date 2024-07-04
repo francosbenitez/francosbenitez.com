@@ -32,7 +32,7 @@ const Contact = () => {
   return (
     <section id="contact" className={`${styles["contact"]} section`}>
       <h1>
-        <FormattedMessage id="contact.title.1" />{" "}
+        <FormattedMessage id="contact.title.1" />
         <span>
           <FormattedMessage id="contact.title.2" />
         </span>
