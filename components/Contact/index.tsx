@@ -75,7 +75,7 @@ const Contact = () => {
                   name="name"
                   className={styles["form-control"]}
                   id="inputName"
-                  placeholder={placeholder}
+                  placeholder={placeholder.toString()}
                   required
                 />
               )}
@@ -98,7 +98,7 @@ const Contact = () => {
                   name="message"
                   className={styles["form-control"]}
                   id="inputMessage"
-                  placeholder={placeholder}
+                  placeholder={placeholder.toString()}
                   required
                 ></textarea>
               )}
