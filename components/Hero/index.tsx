@@ -55,7 +55,7 @@ const Hero = () => {
         </div>
       </div>
       <div className={styles["arrow"]}>
-        <Link href="/#about" passHref>
+        <Link href="/#projects" passHref>
           <a>
             <Arrow className={styles["firstArrow"]} />
             <Arrow className={styles["secondArrow"]} />
