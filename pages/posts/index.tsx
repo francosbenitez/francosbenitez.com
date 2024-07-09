@@ -4,6 +4,7 @@ import Link from "next/link";
 import Date from "../../components/Date";
 import Head from "next/head";
 import { AllPostsData } from "../../types";
+import { FormattedMessage } from "react-intl";
 
 const Blog = ({ allPostsData }: { allPostsData: AllPostsData[] }) => {
   return (
@@ -15,7 +16,10 @@ const Blog = ({ allPostsData }: { allPostsData: AllPostsData[] }) => {
       <section id="blog" className="section">
         <div className="blog-container">
           <h1>
-            All <span>Blog Posts</span>
+            <FormattedMessage id="blog.all.1" />{" "}
+            <span>
+              <FormattedMessage id="blog.all.2" />
+            </span>
           </h1>
           <div className="card">
             {allPostsData.map(
@@ -40,7 +44,9 @@ const Blog = ({ allPostsData }: { allPostsData: AllPostsData[] }) => {
           </div>
           <Link href="/" passHref>
             <a className="back-to-home">
-              <span>← Back to home</span>
+              <span>
+                ← <FormattedMessage id="back.to.home" />
+              </span>
             </a>
           </Link>
         </div>

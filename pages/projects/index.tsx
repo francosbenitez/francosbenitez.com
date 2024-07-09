@@ -5,6 +5,7 @@ import Date from "../../components/Date";
 import Image from "next/image";
 import Head from "next/head";
 import { AllProjectsData } from "../../types";
+import { FormattedMessage } from "react-intl";
 
 const Projects = ({
   allProjectsData,
@@ -23,7 +24,10 @@ const Projects = ({
       <section id="projects" className="section">
         <div className="projects-container">
           <h1>
-            All <span>Personal Projects</span>
+            <FormattedMessage id="projects.all.1" />{" "}
+            <span>
+              <FormattedMessage id="projects.all.2" />
+            </span>
           </h1>
           <div className="card">
             <ol className="projects__projects">
@@ -69,7 +73,9 @@ const Projects = ({
           </div>
           <Link href="/" passHref>
             <a className="back-to-home">
-              <span>← Back to home</span>
+              <span>
+                ← <FormattedMessage id="back.to.home" />
+              </span>
             </a>
           </Link>
         </div>

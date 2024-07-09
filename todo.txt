@@ -1,4 +1,8 @@
-- don't do a new site again
-- modify the SVG in the home
-- remove the subtitle animation (a psychologist, a developer)
-- offer a translation into a spanish
+- don't do a new site again -> ABORTED
+- modify the SVG in the home -> DONE
+- remove the subtitle animation (a psychologist, a developer) -> DONE
+- offer a translation into a spanish -> IN COURSE
+- update to latest next -> TO-DO
+  - setup drizzle with latest next, following webdevcody tutorials
+    - setup a railway database or a vercel one
+- provide oauth using lucia (webdevcody recommendation) or another tool -> TO-DO

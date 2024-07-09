@@ -17,9 +17,13 @@
   "projects.title.1": "🚧 Proye",
   "projects.title.2": "ctos",
   "projects.see.more": "Ver más proyectos",
+  "projects.all.1": "Todos",
+  "projects.all.2": "los proyectos",
   "blog.title.1": "✍️ Bl",
   "blog.title.2": "og",
   "blog.see.more": "Ver más publicaciones",
+  "blog.all.1": "Todas",
+  "blog.all.2": "las publicaciones",
   "contact.title.1": "Charl",
   "contact.title.2": "emos",
   "contact.description": "Chateame a través del formulario o mis redes",
@@ -33,5 +37,6 @@
   "footer.built.with": "Hecho con",
   "footer.by": "por",
   "footer.and": "y",
-  "footer.see.source": "Ver el código fuente"
+  "footer.see.source": "Ver el código fuente",
+  "back.to.home": "Volver al inicio"
 }
