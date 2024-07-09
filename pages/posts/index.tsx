@@ -16,7 +16,10 @@ const Blog = ({ allPostsData }: { allPostsData: AllPostsData[] }) => {
       <section id="blog" className="section">
         <div className="blog-container">
           <h1>
-            All <span>Blog Posts</span>
+            <FormattedMessage id="blog.all.1" />{" "}
+            <span>
+              <FormattedMessage id="blog.all.2" />
+            </span>
           </h1>
           <div className="card">
             {allPostsData.map(

@@ -24,7 +24,10 @@ const Projects = ({
       <section id="projects" className="section">
         <div className="projects-container">
           <h1>
-            All <span>Personal Projects</span>
+            <FormattedMessage id="projects.all.1" />{" "}
+            <span>
+              <FormattedMessage id="projects.all.2" />
+            </span>
           </h1>
           <div className="card">
             <ol className="projects__projects">
