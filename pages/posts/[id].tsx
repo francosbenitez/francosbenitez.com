@@ -39,7 +39,9 @@ export default function Post({ postData }: { postData: PostData }) {
           </span>
           <span className="go-to-all">
             <Link href="/posts">
-              <a>Read more blog posts →</a>
+              <a>
+                <FormattedMessage id="blog.see.more" /> →
+              </a>
             </Link>
           </span>
         </div>

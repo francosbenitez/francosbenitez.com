@@ -94,7 +94,9 @@ export default function Project({ projectData }: { projectData: ProjectData }) {
           </span>
           <span className="go-to-all">
             <Link href="/projects">
-              <a>See more projects →</a>
+              <a>
+                <FormattedMessage id="projects.see.more" /> →
+              </a>
             </Link>
           </span>
         </div>
