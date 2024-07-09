@@ -23,7 +23,7 @@ const BlogComponent = ({ allPostsData }: { allPostsData: AllPostsData[] }) => {
                   <li className="post-card">
                     <div className="post-card__content">
                       <h2 className="post-card__title">
-                        <Link href={`/posts/${id}`}>
+                        <Link href={`/posts/${id}`} legacyBehavior>
                           <a className="post-card__link">{title}</a>
                         </Link>
                       </h2>
@@ -37,7 +37,7 @@ const BlogComponent = ({ allPostsData }: { allPostsData: AllPostsData[] }) => {
               ))}
             {/*</div>*/}
           </div>
-          <Link href="/posts" passHref>
+          <Link href="/posts" passHref legacyBehavior>
             <a className="see-all">
               <span>
                 <FormattedMessage id="blog.see.more" /> →

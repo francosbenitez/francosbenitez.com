@@ -24,7 +24,7 @@ const Hero = () => {
           </h2>
           <div className={styles["buttons"]}>
             <div className={styles["projects-button"]}>
-              <Link href="/#projects">
+              <Link href="/#projects" legacyBehavior>
                 <a className={styles["button"]}>
                   <FormattedMessage id="home.see.my.work" />
                 </a>
@@ -33,7 +33,7 @@ const Hero = () => {
             <div
               className={`${styles["contact-button"]} ${styles["projects-button"]}`}
             >
-              <Link href="/contact">
+              <Link href="/contact" legacyBehavior>
                 <a className={styles["button"]}>
                   <FormattedMessage id="home.contact" />
                 </a>
@@ -55,7 +55,7 @@ const Hero = () => {
         </div>
       </div>
       <div className={styles["arrow"]}>
-        <Link href="/#projects" passHref>
+        <Link href="/#projects" passHref legacyBehavior>
           <a>
             <Arrow className={styles["firstArrow"]} />
             <Arrow className={styles["secondArrow"]} />

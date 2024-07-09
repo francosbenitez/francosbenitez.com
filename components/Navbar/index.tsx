@@ -11,7 +11,7 @@ const Navbar = ({ children }: { children: React.ReactNode }) => {
       <div className={styles["nav-wrapper"]}>
         <div className={styles["logo"]}>
           <div className={router.pathname == "/" ? styles["active"] : ""}>
-            <Link href="/" passHref>
+            <Link href="/" passHref legacyBehavior>
               <a>
                 FSB
                 <span className={styles["dot"]}></span>
