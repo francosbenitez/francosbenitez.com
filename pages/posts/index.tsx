@@ -4,6 +4,7 @@ import Link from "next/link";
 import Date from "../../components/Date";
 import Head from "next/head";
 import { AllPostsData } from "../../types";
+import { FormattedMessage } from "react-intl";
 
 const Blog = ({ allPostsData }: { allPostsData: AllPostsData[] }) => {
   return (
@@ -40,7 +41,9 @@ const Blog = ({ allPostsData }: { allPostsData: AllPostsData[] }) => {
           </div>
           <Link href="/" passHref>
             <a className="back-to-home">
-              <span>← Back to home</span>
+              <span>
+                ← <FormattedMessage id="back.to.home" />
+              </span>
             </a>
           </Link>
         </div>

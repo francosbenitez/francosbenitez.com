@@ -5,6 +5,7 @@ import Date from "../../components/Date";
 import Image from "next/image";
 import Head from "next/head";
 import { AllProjectsData } from "../../types";
+import { FormattedMessage } from "react-intl";
 
 const Projects = ({
   allProjectsData,
@@ -69,7 +70,9 @@ const Projects = ({
           </div>
           <Link href="/" passHref>
             <a className="back-to-home">
-              <span>← Back to home</span>
+              <span>
+                ← <FormattedMessage id="back.to.home" />
+              </span>
             </a>
           </Link>
         </div>

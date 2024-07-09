@@ -4,6 +4,7 @@ import Date from "../../components/Date";
 import Link from "next/link";
 import Forbidden from "../../public/icons/forbidden.svg";
 import { AllProjectsData } from "../../types";
+import { FormattedMessage } from "react-intl";
 
 interface ProjectData extends AllProjectsData {
   contentHtml: string;
@@ -86,7 +87,9 @@ export default function Project({ projectData }: { projectData: ProjectData }) {
         <div className="back-and-go">
           <span className="back-to-home">
             <Link href="/">
-              <a>← Back to home</a>
+              <a>
+                ← <FormattedMessage id="back.to.home" />
+              </a>
             </Link>
           </span>
           <span className="go-to-all">
