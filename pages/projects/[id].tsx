@@ -86,14 +86,14 @@ export default function Project({ projectData }: { projectData: ProjectData }) {
         <hr />
         <div className="back-and-go">
           <span className="back-to-home">
-            <Link href="/">
+            <Link href="/" legacyBehavior>
               <a>
                 ← <FormattedMessage id="back.to.home" />
               </a>
             </Link>
           </span>
           <span className="go-to-all">
-            <Link href="/projects">
+            <Link href="/projects" legacyBehavior>
               <a>
                 <FormattedMessage id="projects.see.more" /> →
               </a>

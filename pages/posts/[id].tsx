@@ -31,14 +31,14 @@ export default function Post({ postData }: { postData: PostData }) {
         <hr />
         <div className="back-and-go">
           <span className="back-to-home">
-            <Link href="/">
+            <Link href="/" legacyBehavior>
               <a>
                 ← <FormattedMessage id="back.to.home" />
               </a>
             </Link>
           </span>
           <span className="go-to-all">
-            <Link href="/posts">
+            <Link href="/posts" legacyBehavior>
               <a>
                 <FormattedMessage id="blog.see.more" /> →
               </a>

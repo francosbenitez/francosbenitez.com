@@ -28,7 +28,7 @@ const Blog = ({ allPostsData }: { allPostsData: AllPostsData[] }) => {
                   <li className="post-card">
                     <div className="post-card__content">
                       <h2 className="post-card__title">
-                        <Link href={`/posts/${id}`}>
+                        <Link href={`/posts/${id}`} legacyBehavior>
                           <a className="post-card__link">{title}</a>
                         </Link>
                       </h2>
@@ -42,7 +42,7 @@ const Blog = ({ allPostsData }: { allPostsData: AllPostsData[] }) => {
               )
             )}
           </div>
-          <Link href="/" passHref>
+          <Link href="/" passHref legacyBehavior>
             <a className="back-to-home">
               <span>
                 ← <FormattedMessage id="back.to.home" />

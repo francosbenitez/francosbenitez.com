@@ -52,7 +52,7 @@ const ProjectsComponent = ({
                       </div>
                       <div className="project-card__content">
                         <h2 className="project-card__title">
-                          <Link href={`/projects/${id}`}>
+                          <Link href={`/projects/${id}`} legacyBehavior>
                             <a className="project-card__link">{title}</a>
                           </Link>
                         </h2>
@@ -68,7 +68,7 @@ const ProjectsComponent = ({
                 )}
             </ol>
           </div>
-          <Link href="/projects" passHref>
+          <Link href="/projects" passHref legacyBehavior>
             <a className="see-all">
               <span>
                 <FormattedMessage id="projects.see.more" /> →

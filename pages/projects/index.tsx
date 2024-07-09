@@ -57,7 +57,7 @@ const Projects = ({
                     </div>
                     <div className="project-card__content">
                       <h2 className="project-card__title">
-                        <Link href={`/projects/${id}`}>
+                        <Link href={`/projects/${id}`} legacyBehavior>
                           <a className="project-card__link">{title}</a>
                         </Link>
                       </h2>
@@ -71,7 +71,7 @@ const Projects = ({
               )}
             </ol>
           </div>
-          <Link href="/" passHref>
+          <Link href="/" passHref legacyBehavior>
             <a className="back-to-home">
               <span>
                 ← <FormattedMessage id="back.to.home" />

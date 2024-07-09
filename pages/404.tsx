@@ -20,7 +20,7 @@ const Error404 = () => {
         </p>
         <hr />
         <div className="back-to-home">
-          <Link href="/">
+          <Link href="/" legacyBehavior>
             <a>← Go to home</a>
           </Link>
         </div>

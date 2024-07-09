@@ -12,7 +12,7 @@ function useStickyState(defaultValue: string, key: string) {
     const stickyValue = window.localStorage.getItem(key);
 
     if (stickyValue !== null) {
-      setValue(JSON.parse(stickyValue));
+      setValue(stickyValue);
     }
   }, [key]);
 
