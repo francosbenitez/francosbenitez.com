@@ -25,7 +25,7 @@ const About = () => {
         </div>
         <div className={styles["description-container"]}>
           <p>
-            Hello! I'm Franco, a dedicated Backend Developer passionate about software development, data, and psychology. I enjoy creating solutions that work seamlessly, leverage data effectively, and are user-friendly for everyone.
+            Hello! I&apos;m Franco, a dedicated Backend Developer passionate about software development, data, and psychology. I enjoy creating solutions that work seamlessly, leverage data effectively, and are user-friendly for everyone.
           </p>
           {/*<p>
             Hi, nice to meet you! I&apos;m a (mostly) Backend Developer
