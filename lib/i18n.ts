@@ -10,6 +10,9 @@ export const translations = {
     backToBlog: "Back to blog",
     connect: "Let's connect!",
     language: "Language",
+    light: "Light",
+    dark: "Dark",
+    system: "System",
   },
   es: {
     about: "Sobre mí",
@@ -17,6 +20,9 @@ export const translations = {
     backToBlog: "Volver al blog",
     connect: "Conectemos!",
     language: "Idioma",
+    light: "Claro",
+    dark: "Oscuro",
+    system: "Sistema",
   },
 };
 

@@ -4,8 +4,9 @@ import { useTheme } from "next-themes"
 
 import { Button } from "@/components/ui/button"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
+import { translations } from "@/lib/i18n"
 
-export function ThemeToggle() {
+export function ThemeToggle({ currentLang }: { currentLang: string }) {
   const { setTheme, theme } = useTheme()
 
   return (
@@ -18,9 +19,15 @@ export function ThemeToggle() {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
-        <DropdownMenuItem onClick={() => setTheme("light")}>Light</DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("dark")}>Dark</DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("system")}>System</DropdownMenuItem>
+        <DropdownMenuItem onClick={() => setTheme("light")}>
+          {translations[currentLang].light}
+        </DropdownMenuItem>
+        <DropdownMenuItem onClick={() => setTheme("dark")}>
+          {translations[currentLang].dark}
+        </DropdownMenuItem>
+        <DropdownMenuItem onClick={() => setTheme("system")}>
+          {translations[currentLang].system}
+        </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
   )
