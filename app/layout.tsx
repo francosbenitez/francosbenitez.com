@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning className={inter.variable}>
       <body className="min-h-screen bg-background font-sans antialiased">
-        <div className="container max-w-2xl mx-auto">
+        <div className="sm:container max-w-2xl mx-auto">
           <ThemeProvider
             attribute="class"
             defaultTheme="system"
