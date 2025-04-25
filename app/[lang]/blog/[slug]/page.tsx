@@ -1,5 +1,5 @@
 import { getBlogPostBySlug, getBlogPosts } from "@/lib/get-content";
-import { validateLanguage } from "@/lib/i18n";
+import { translations, validateLanguage } from "@/lib/i18n";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { markdownToHtml } from "@/lib/markdown";
@@ -43,9 +43,9 @@ export default async function BlogPostPage({
         className="mb-8 -ml-2 text-muted-foreground hover:text-foreground"
         asChild
       >
-        <Link href={`/${lang}/blog`}>
+        <Link href={`/${lang}`}>
           <ArrowLeft className="h-4 w-4 mr-2" />
-          {lang === "en" ? "Back to blog" : "Volver al blog"}
+          {translations[lang].backToHome}
         </Link>
       </Button>
 

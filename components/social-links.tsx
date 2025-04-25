@@ -27,28 +27,25 @@ export function SocialLinks() {
   ];
 
   return (
-    <div className="pt-4 border-t border-border/40">
-      {/* <h2 className="text-xl font-medium mb-6">{translations[lang].connect}</h2> */}
-      <div className="flex flex-wrap gap-4">
-        {socialLinks.map((link) => (
-          <Button
-            key={link.name}
-            variant="outline"
-            size="icon"
-            className="rounded-full h-10 w-10 transition-all hover:scale-105 hover:bg-secondary hover:border-primary/20"
-            asChild
+    <div className="flex flex-wrap gap-4">
+      {socialLinks.map((link) => (
+        <Button
+          key={link.name}
+          variant="outline"
+          size="icon"
+          className="rounded-full h-10 w-10 transition-all hover:scale-105 hover:bg-secondary hover:border-primary/20"
+          asChild
+        >
+          <a
+            href={link.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={link.name}
           >
-            <a
-              href={link.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label={link.name}
-            >
-              {link.icon}
-            </a>
-          </Button>
-        ))}
-      </div>
+            {link.icon}
+          </a>
+        </Button>
+      ))}
     </div>
   );
 }

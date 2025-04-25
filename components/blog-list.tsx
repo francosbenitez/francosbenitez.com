@@ -1,41 +1,37 @@
-import Link from "next/link"
-import type { BlogPost } from "@/lib/get-content"
-import { Card, CardContent, CardHeader, CardTitle, CardFooter } from "@/components/ui/card"
-import { ArrowRight } from "lucide-react"
+import Link from "next/link";
+import type { BlogPost } from "@/lib/get-content";
+import { ArrowRight } from "lucide-react";
 
 export function BlogList({ posts, lang }: { posts: BlogPost[]; lang: string }) {
+  const isEnglish = lang === "en";
+
   return (
-    <div className="space-y-8">
+    <ul className="divide-y divide-border/20">
       {posts.map((post) => (
-        <Card
-          key={post.slug}
-          className="overflow-hidden border-border/40 group hover:border-primary/20 transition-all duration-300"
-        >
-          <Link href={`/${lang}/blog/${post.slug}`} className="block h-full">
-            <CardHeader className="pb-3">
-              <CardTitle className="text-xl tracking-tight group-hover:text-primary transition-colors">
-                {post.title}
-              </CardTitle>
-              <p className="text-sm text-muted-foreground">
-                {new Date(post.date).toLocaleDateString(lang === "en" ? "en-US" : "es-ES", {
-                  year: "numeric",
-                  month: "long",
-                  day: "numeric",
-                })}
-              </p>
-            </CardHeader>
-            <CardContent>
-              <p className="text-muted-foreground line-clamp-2">{post.excerpt}</p>
-            </CardContent>
-            <CardFooter className="text-sm text-muted-foreground flex items-center pt-0">
-              <span className="flex items-center group-hover:text-primary transition-colors">
-                {lang === "en" ? "Read more" : "Leer más"}
-                <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </span>
-            </CardFooter>
+        <li key={post.slug}>
+          <Link
+            href={`/${lang}/blog/${post.slug}`}
+            className="group flex items-center justify-between py-3 hover:bg-accent/10 transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-primary rounded"
+          >
+            <div className="flex items-baseline gap-3 min-w-0">
+              <h3 className="font-medium truncate">{post.title}</h3>
+              <time
+                dateTime={post.date}
+                className="text-xs text-muted-foreground shrink-0"
+              >
+                {new Date(post.date).toLocaleDateString(
+                  isEnglish ? "en-US" : "es-ES",
+                  {
+                    month: "short",
+                    year: "numeric",
+                  }
+                )}
+              </time>
+            </div>
+            <ArrowRight className="h-3 w-3 text-muted-foreground transition-transform group-hover:translate-x-1 group-hover:text-primary" />
           </Link>
-        </Card>
+        </li>
       ))}
-    </div>
-  )
+    </ul>
+  );
 }

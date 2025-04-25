@@ -6,8 +6,9 @@ export const languages = [
 export const translations = {
   en: {
     about: "About",
-    blog: "Blog",
-    backToBlog: "Back to blog",
+    blog: "Writing",
+    backToBlog: "Back to writing",
+    backToHome: "Back to home",
     connect: "Let's connect!",
     language: "Language",
     light: "Light",
@@ -16,8 +17,9 @@ export const translations = {
   },
   es: {
     about: "Sobre mí",
-    blog: "Blog",
-    backToBlog: "Volver al blog",
+    blog: "Escritos",
+    backToBlog: "Volver a escritos",
+    backToHome: "Volver al inicio",
     connect: "Conectemos!",
     language: "Idioma",
     light: "Claro",
