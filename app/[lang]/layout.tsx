@@ -1,5 +1,5 @@
 import type React from "react";
-import { Navigation } from "@/components/navigation";
+// import { Navigation } from "@/components/navigation";
 import { LanguageSwitcher } from "@/components/language-switcher";
 import { validateLanguage } from "@/lib/i18n";
 import { ThemeToggle } from "@/components/theme-toggle";
@@ -18,7 +18,7 @@ export default async function LocaleLayout({
     <div className="min-h-screen flex flex-col bg-background text-foreground">
       <header className="sticky top-0 z-40 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <Navigation lang={lang} />
+          {/* <Navigation lang={lang} /> */}
           <div className="flex items-center gap-2">
             <ThemeToggle />
             <LanguageSwitcher currentLang={lang} />
