@@ -11,7 +11,7 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
 } from "@/components/ui/dropdown-menu"
-import { languages } from "@/lib/i18n"
+import { languages, translations } from "@/lib/i18n";
 
 export function LanguageSwitcher({ currentLang }: { currentLang: string }) {
   const router = useRouter()
@@ -32,7 +32,7 @@ export function LanguageSwitcher({ currentLang }: { currentLang: string }) {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="w-40">
-        <DropdownMenuLabel>Language</DropdownMenuLabel>
+        <DropdownMenuLabel>{translations[currentLang].language}</DropdownMenuLabel>
         <DropdownMenuSeparator />
         {languages.map((lang) => (
           <DropdownMenuItem
