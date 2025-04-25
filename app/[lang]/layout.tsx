@@ -20,7 +20,7 @@ export default async function LocaleLayout({
         <div className="px-4 py-4 flex justify-between items-center">
           {/* <Navigation lang={lang} /> */}
           <div className="flex items-center gap-2 ml-auto">
-            <ThemeToggle />
+            <ThemeToggle currentLang={lang} />
             <LanguageSwitcher currentLang={lang} />
           </div>
         </div>
