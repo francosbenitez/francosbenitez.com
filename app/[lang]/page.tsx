@@ -20,7 +20,7 @@ export default async function AboutPage({
       <article className="prose dark:prose-invert mx-auto">
         <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
       </article>
-      <SocialLinks lang={lang} />
+      <SocialLinks />
     </div>
   );
 }

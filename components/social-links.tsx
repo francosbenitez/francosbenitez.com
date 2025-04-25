@@ -1,8 +1,8 @@
 import { Github, Twitter, Linkedin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { translations } from "@/lib/i18n";
+// import { translations } from "@/lib/i18n";
 
-export function SocialLinks({ lang }: { lang: string }) {
+export function SocialLinks() {
   const socialLinks = [
     {
       name: "GitHub",
@@ -28,7 +28,7 @@ export function SocialLinks({ lang }: { lang: string }) {
 
   return (
     <div className="mt-12 pt-8 border-t border-border/40">
-      <h2 className="text-xl font-medium mb-6">{translations[lang].connect}</h2>
+      {/* <h2 className="text-xl font-medium mb-6">{translations[lang].connect}</h2> */}
       <div className="flex flex-wrap gap-4">
         {socialLinks.map((link) => (
           <Button
