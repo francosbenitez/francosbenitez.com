@@ -23,14 +23,16 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning className={inter.variable}>
       <body className="min-h-screen bg-background font-sans antialiased">
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <LanguageProvider>{children}</LanguageProvider>
-        </ThemeProvider>
+        <div className="container max-w-2xl mx-auto">
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <LanguageProvider>{children}</LanguageProvider>
+          </ThemeProvider>
+        </div>
       </body>
     </html>
   );
