@@ -27,7 +27,7 @@ export function SocialLinks() {
   ];
 
   return (
-    <div className="mt-12 pt-8 border-t border-border/40">
+    <div className="pt-4 border-t border-border/40">
       {/* <h2 className="text-xl font-medium mb-6">{translations[lang].connect}</h2> */}
       <div className="flex flex-wrap gap-4">
         {socialLinks.map((link) => (
