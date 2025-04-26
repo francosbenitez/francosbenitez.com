@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/components/language-provider";
 import { ThemeProvider } from "@/components/theme-provider";
+import { PostHogProvider } from "@/providers/posthog";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -22,18 +23,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning className={inter.variable}>
-      <body className="min-h-screen bg-background font-sans antialiased">
-        <div className="max-w-2xl mx-auto">
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-            <LanguageProvider>{children}</LanguageProvider>
-          </ThemeProvider>
-        </div>
-      </body>
+      <PostHogProvider>
+        <body className="min-h-screen bg-background font-sans antialiased">
+          <div className="max-w-2xl mx-auto">
+            <ThemeProvider
+              attribute="class"
+              defaultTheme="system"
+              enableSystem
+              disableTransitionOnChange
+            >
+              <LanguageProvider>{children}</LanguageProvider>
+            </ThemeProvider>
+          </div>
+        </body>
+      </PostHogProvider>
     </html>
   );
 }
