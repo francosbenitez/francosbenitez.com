@@ -11,7 +11,7 @@ export async function markdownToHtml(markdown: string) {
     .use(remarkGfm)
     .use(remarkRehype)
     // NOTE: The commented code
-    // below is for rendering img, Image, etc., in .mdx files
+    // below is for rendering `img`, `Image`, etc., in .mdx files
     // .use(remarkRehype, { allowDangerousHtml: true })
     // .use(rehypeRaw)
     .use(rehypeStringify)
