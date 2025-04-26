@@ -3,7 +3,7 @@ import type React from "react";
 import { LanguageSwitcher } from "@/components/language-switcher";
 import { validateLanguage } from "@/lib/i18n";
 import { ThemeToggle } from "@/components/theme-toggle";
-
+import Image from "next/image";
 export default async function LocaleLayout({
   children,
   params,
@@ -19,6 +19,7 @@ export default async function LocaleLayout({
       <header className="sticky top-0 z-40 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="px-4 py-4 flex justify-between items-center">
           {/* <Navigation lang={lang} /> */}
+          <Image src="/logo.png" alt="FSB's logo" width={24} height={24} />
           <div className="flex items-center gap-2 ml-auto">
             <ThemeToggle currentLang={lang} />
             <LanguageSwitcher currentLang={lang} />

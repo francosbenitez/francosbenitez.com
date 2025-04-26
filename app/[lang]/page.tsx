@@ -2,7 +2,7 @@ import { getAboutContent } from "@/lib/get-content";
 import { SocialLinks } from "@/components/social-links";
 import { validateLanguage } from "@/lib/i18n";
 import { markdownToHtml } from "@/lib/markdown";
-import { getBlogPosts } from "@/lib/get-content";
+// import { getBlogPosts } from "@/lib/get-content";
 // import { BlogList } from "@/components/blog-list";
 
 export default async function AboutPage({
@@ -13,7 +13,7 @@ export default async function AboutPage({
   const resolvedParams = await Promise.resolve(params);
   const lang = await validateLanguage(resolvedParams.lang);
   const { content } = await getAboutContent(lang);
-  const posts = await getBlogPosts(lang);
+  // const posts = await getBlogPosts(lang);
 
   // Convert markdown to HTML
   const htmlContent = await markdownToHtml(content);
