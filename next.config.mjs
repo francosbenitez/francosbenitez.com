@@ -3,6 +3,9 @@ import remarkGfm from "remark-gfm";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  env: {
+    ENVIRONMENT: process.env.ENVIRONMENT,
+  },
   pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
   eslint: {
     ignoreDuringBuilds: true,
