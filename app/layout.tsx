@@ -13,7 +13,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Franco Sebastián Benítez",
-  description: "Programador, psicólogo, emprendedor",
+  description: "Software developer, psychologist, and entrepreneur",
 };
 
 export default function RootLayout({
