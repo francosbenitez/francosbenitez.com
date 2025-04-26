@@ -26,7 +26,7 @@ export default async function LocaleLayout({
           </div>
         </div>
       </header>
-      <main className="flex-1 px-4 py-2 md:py-4 animate-in fade-in duration-500">
+      <main className="flex-1 px-4 animate-in fade-in duration-500">
         {children}
       </main>
       {/* <footer className="border-t border-border/40 py-8 mt-12">
