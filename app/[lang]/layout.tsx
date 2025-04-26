@@ -29,7 +29,7 @@ export default async function LocaleLayout({
       <main className="flex-1 px-4 py-6 md:py-8 animate-in fade-in duration-500">
         {children}
       </main>
-      <footer className="border-t border-border/40 py-8 mt-12">
+      {/* <footer className="border-t border-border/40 py-8 mt-12">
         <div className="px-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-muted-foreground">
@@ -37,7 +37,7 @@ export default async function LocaleLayout({
             </p>
           </div>
         </div>
-      </footer>
+      </footer> */}
     </div>
   );
 }
