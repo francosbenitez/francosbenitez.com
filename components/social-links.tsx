@@ -5,16 +5,6 @@ import { Button } from "@/components/ui/button";
 export function SocialLinks() {
   const socialLinks = [
     {
-      name: "GitHub",
-      url: "https://github.com/francosbenitez",
-      icon: <Github className="h-5 w-5" />,
-    },
-    {
-      name: "X",
-      url: "https://x.com/francosbenitez",
-      icon: <Twitter className="h-5 w-5" />,
-    },
-    {
       name: "LinkedIn",
       url: "https://linkedin.com/in/francosbenitez",
       icon: <Linkedin className="h-5 w-5" />,
@@ -23,6 +13,16 @@ export function SocialLinks() {
       name: "Email",
       url: "mailto:me@francosbenitez.com",
       icon: <Mail className="h-5 w-5" />,
+    },
+    {
+      name: "X",
+      url: "https://x.com/francosbenitez",
+      icon: <Twitter className="h-5 w-5" />,
+    },
+    {
+      name: "GitHub",
+      url: "https://github.com/francosbenitez",
+      icon: <Github className="h-5 w-5" />,
     },
   ];
 
