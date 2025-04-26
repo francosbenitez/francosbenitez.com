@@ -1,9 +1,9 @@
 import { getAboutContent } from "@/lib/get-content";
 import { SocialLinks } from "@/components/social-links";
-import { validateLanguage, translations } from "@/lib/i18n";
+import { validateLanguage } from "@/lib/i18n";
 import { markdownToHtml } from "@/lib/markdown";
 import { getBlogPosts } from "@/lib/get-content";
-import { BlogList } from "@/components/blog-list";
+// import { BlogList } from "@/components/blog-list";
 
 export default async function AboutPage({
   params,
@@ -24,7 +24,7 @@ export default async function AboutPage({
         <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
       </article>
       <SocialLinks />
-      <hr className="border-b border-border/40 my-8" />
+      {/* <hr className="border-b border-border/40 my-8" />
       <div className="flex flex-col gap-4">
         <header className="">
           <h1 className="text-3xl font-bold tracking-tight mb-2">
@@ -37,7 +37,7 @@ export default async function AboutPage({
           </p>
         </header>
         <BlogList posts={posts} lang={lang} />
-      </div>
+      </div> */}
     </div>
   );
 }
