@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning className={inter.variable}>
       <PostHogProvider>
-        <body className="min-h-screen bg-background font-sans antialiased">
+        <body className="bg-background font-sans antialiased">
           <div className="max-w-2xl mx-auto">
             <ThemeProvider
               attribute="class"

@@ -15,7 +15,7 @@ export default async function LocaleLayout({
   const lang = await validateLanguage(resolvedParams.lang);
 
   return (
-    <div className="min-h-screen flex flex-col bg-background text-foreground">
+    <div className="flex flex-col bg-background text-foreground">
       <header className="sticky top-0 z-40 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="px-4 py-4 flex justify-between items-center">
           {/* <Navigation lang={lang} /> */}
