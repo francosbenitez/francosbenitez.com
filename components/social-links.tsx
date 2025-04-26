@@ -1,4 +1,4 @@
-import { Github, Twitter, Linkedin, Mail } from "lucide-react";
+import { Github, Twitter, Linkedin, Mail, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 // import { translations } from "@/lib/i18n";
 
@@ -15,14 +15,19 @@ export function SocialLinks() {
       icon: <Mail className="h-5 w-5" />,
     },
     {
+      name: "GitHub",
+      url: "https://github.com/francosbenitez",
+      icon: <Github className="h-5 w-5" />,
+    },
+    {
       name: "X",
       url: "https://x.com/francosbenitez",
       icon: <Twitter className="h-5 w-5" />,
     },
     {
-      name: "GitHub",
-      url: "https://github.com/francosbenitez",
-      icon: <Github className="h-5 w-5" />,
+      name: "Instagram",
+      url: "https://instagram.com/francosbenitez",
+      icon: <Instagram className="h-5 w-5" />,
     },
   ];
 
