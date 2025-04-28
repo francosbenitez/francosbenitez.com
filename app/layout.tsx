@@ -8,7 +8,7 @@ import { PostHogProvider } from "@/providers/posthog";
 
 const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-sans",
+  variable: "--font-inter",
 });
 
 export const metadata: Metadata = {
