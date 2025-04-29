@@ -8,7 +8,7 @@ export default async function LocaleLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: { lang: string };
+  params: Promise<{ lang: string }>;
 }) {
   const resolvedParams = await Promise.resolve(params);
   const lang = await validateLanguage(resolvedParams.lang);

@@ -3,7 +3,11 @@ import { markdownToHtml } from "@/lib/markdown";
 import { getAboutContent } from "@/lib/get-content";
 import { SocialLinks } from "@/components/social-links";
 
-export default async function Home({ params }: { params: { lang: string } }) {
+export default async function Home({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}) {
   const resolvedParams = await Promise.resolve(params);
   const lang = await validateLanguage(resolvedParams.lang);
   const { content } = await getAboutContent(lang);

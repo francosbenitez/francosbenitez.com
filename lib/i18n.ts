@@ -7,7 +7,13 @@ export async function validateLanguage(lang: string): Promise<string> {
   return languages.some((l) => l.code === lang) ? lang : "en";
 }
 
-export const translations = {
+type Translations = {
+  [key: string]: {
+    [key: string]: string;
+  };
+};
+
+export const translations: Translations = {
   en: {
     // about: "About",
     // blog: "Writing",
