@@ -1,15 +1,25 @@
-import type React from "react";
 import type { Metadata } from "next";
+// import { Geist, Geist_Mono } from "next/font/google";
 import { IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
-import { LanguageProvider } from "@/components/language-provider";
 import { ThemeProvider } from "@/components/theme-provider";
-import { PostHogProvider } from "@/providers/posthog";
+import { PostHogProvider } from "@/components/posthog-provider";
 
 const ibmPlexMono = IBM_Plex_Mono({
+  variable: "--font-ibm-plex-mono",
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700"],
 });
+
+// const geistSans = Geist({
+//   variable: "--font-geist-sans",
+//   subsets: ["latin"],
+// });
+
+// const geistMono = Geist_Mono({
+//   variable: "--font-geist-mono",
+//   subsets: ["latin"],
+// });
 
 export const metadata: Metadata = {
   title: "Franco Sebastián Benítez",
@@ -22,9 +32,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning className={ibmPlexMono.className}>
+    <html lang="en">
       <PostHogProvider>
-        <body className="bg-background antialiased">
+        {/* <body
+        className={`${geistSans.variable} ${geistMono.variable} antialised`}
+        > */}
+        <body className={`${ibmPlexMono.variable} antialiased`}>
           <div className="max-w-2xl mx-auto">
             <ThemeProvider
               attribute="class"
@@ -32,7 +45,7 @@ export default function RootLayout({
               enableSystem
               disableTransitionOnChange
             >
-              <LanguageProvider>{children}</LanguageProvider>
+              {children}
             </ThemeProvider>
           </div>
         </body>
