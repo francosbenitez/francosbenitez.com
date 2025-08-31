@@ -22,8 +22,17 @@ const ibmPlexMono = IBM_Plex_Mono({
 // });
 
 export const metadata: Metadata = {
-  title: "Franco Sebastián Benítez",
-  description: "Software developer, psychologist, and entrepreneur",
+  title: "FSB | Franco Sebastián Benítez",
+  description: "Building tech that thinks like people",
+  keywords: [
+    "software developer",
+    "psychologist",
+    "entrepreneur",
+    "startups",
+    "AI",
+    "product management",
+    "FSB",
+  ],
 };
 
 export default function RootLayout({
