@@ -23,8 +23,8 @@ export function LogoImg() {
     <Image
       src={resolvedTheme === "dark" ? "/logo-dark.svg" : "/logo-light.svg"}
       alt="FSB's logo"
-      width={24}
-      height={24}
+      width={12}
+      height={12}
     />
   );
 }
