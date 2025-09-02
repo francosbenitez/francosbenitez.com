@@ -1,4 +1,4 @@
-import { validateLanguage } from "@/lib/i18n";
+import { validateLanguage, t } from "@/lib/i18n";
 import { markdownToHtml } from "@/lib/markdown";
 import { getAboutContent } from "@/lib/get-content";
 import { SocialLinks } from "@/components/social-links";
@@ -51,7 +51,7 @@ export default async function Home({
             </div>
             {/* Photo label below image */}
             <p className="text-xs text-muted-foreground mt-2 italic">
-              São Paulo adventures
+              {t(lang, "photoLabel")}
             </p>
           </div>
 
@@ -68,7 +68,7 @@ export default async function Home({
               href={`/${lang}/quotes`}
               className="text-sm text-muted-foreground"
             >
-              {lang === "es" ? "Frases interesantes" : "Interesting quotes"} →
+              {t(lang, "interestingQuotes")} →
             </Link>
           </div>
         </article>
