@@ -63,7 +63,7 @@ export default async function Home({
               href={`/${lang}/quotes`}
               className="text-sm text-muted-foreground"
             >
-              {lang === "es" ? "Frases" : "Quotes"} →
+              {lang === "es" ? "Frases interesantes" : "Interesting quotes"} →
             </Link>
           </div>
         </article>
