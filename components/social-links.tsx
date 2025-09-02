@@ -32,7 +32,7 @@ export function SocialLinks() {
   ];
 
   return (
-    <div className="flex flex-wrap gap-4">
+    <div className="flex flex-wrap gap-4 mb-8">
       {socialLinks.map((link) => (
         <Button
           key={link.name}

@@ -57,7 +57,12 @@ export default async function Home({
 
           <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
 
+          <SocialLinks />
+
           {/* Link to quotes page */}
+          <h2 className="mb-4 text-2xl font-medium tracking-tight text-foreground">
+            Links
+          </h2>
           <div className="mb-8">
             <Link
               href={`/${lang}/quotes`}
@@ -67,7 +72,6 @@ export default async function Home({
             </Link>
           </div>
         </article>
-        <SocialLinks />
       </div>
     );
   }
