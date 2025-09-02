@@ -1,8 +1,9 @@
 import { validateLanguage } from "@/lib/i18n";
 import { markdownToHtml } from "@/lib/markdown";
-import { getAboutContent, getQuotesContent } from "@/lib/get-content";
+import { getAboutContent } from "@/lib/get-content";
 import { SocialLinks } from "@/components/social-links";
 import Image from "next/image";
+import Link from "next/link";
 
 export default async function Home({
   params,
@@ -12,7 +13,6 @@ export default async function Home({
   const resolvedParams = await Promise.resolve(params);
   const lang = await validateLanguage(resolvedParams.lang);
   const { content } = await getAboutContent(lang);
-  const { content: quotesContent } = await getQuotesContent(lang);
 
   // Split content to separate title from rest of content
   const lines = content.split("\n");
@@ -57,13 +57,15 @@ export default async function Home({
 
           <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
 
-          {/* Quotes section */}
-          <div
-            className="prose dark:prose-invert"
-            dangerouslySetInnerHTML={{
-              __html: await markdownToHtml(quotesContent),
-            }}
-          />
+          {/* Link to quotes page */}
+          <div className="mb-8">
+            <Link
+              href={`/${lang}/quotes`}
+              className="text-sm text-muted-foreground"
+            >
+              {lang === "es" ? "Frases" : "Quotes"} →
+            </Link>
+          </div>
         </article>
         <SocialLinks />
       </div>
