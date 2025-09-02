@@ -1,0 +1,99 @@
+{
+  "metadata": {
+    "timestamp": 1756742718.2009833,
+    "version": 2,
+    "git": {
+      "branch": "bugster/tests/onboarding-20250901-160514",
+      "commit": "290653e041d8c46096dfbdf41e393010cc971bf4"
+    }
+  },
+  "data": {
+    "framework": {
+      "id": "next",
+      "name": "Next.js",
+      "dir_path": "/home/bugsteruser/app/repo/"
+    },
+    "router_type": "app",
+    "stats": {
+      "fileCount": 18,
+      "routeCount": 2,
+      "apiRouteCount": 0,
+      "layoutCount": 2
+    },
+    "layouts": [
+      {
+        "name": "async",
+        "relative_file_path": "app/[lang]/layout.tsx",
+        "relative_dir_path": "app/[lang]",
+        "content": "import { validateLanguage } from \"@/lib/i18n\";\nimport { ThemeToggle } from \"@/components/theme-toggle\";\nimport { LanguageSwitcher } from \"@/components/language-switcher\";\nimport { LogoImg } from \"@/components/logo-img\";\n\nexport default async function LocaleLayout({\n  children,\n  params,\n}: {\n  children: React.ReactNode;\n  params: Promise<{ lang: string }>;\n}) {\n  const resolvedParams = await Promise.resolve(params);\n  const lang = await validateLanguage(resolvedParams.lang);\n\n  return (\n    <div className=\"flex flex-col bg-background text-foreground\">\n      <header className=\"sticky top-0 z-40 w-full border-b border-gray-400 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60\">\n        <div className=\"px-4 py-4 flex justify-between items-center\">\n          <LogoImg />\n          <div className=\"flex items-center gap-2 ml-auto\">\n            <ThemeToggle currentLang={lang} />\n            <LanguageSwitcher currentLang={lang} />\n          </div>\n        </div>\n      </header>\n      <main className=\"flex-1 px-4 animate-in fade-in duration-500\">\n        {children}\n      </main>\n    </div>\n  );\n}\n",
+        "components": [
+          "LogoImg",
+          "ThemeToggle",
+          "LanguageSwitcher"
+        ]
+      },
+      {
+        "name": "function",
+        "relative_file_path": "app/layout.tsx",
+        "relative_dir_path": "app",
+        "content": "import type { Metadata } from \"next\";\n// import { Geist, Geist_Mono } from \"next/font/google\";\nimport { IBM_Plex_Mono } from \"next/font/google\";\nimport \"./globals.css\";\nimport { ThemeProvider } from \"@/components/theme-provider\";\nimport { PostHogProvider } from \"@/components/posthog-provider\";\n\nconst ibmPlexMono = IBM_Plex_Mono({\n  variable: \"--font-ibm-plex-mono\",\n  subsets: [\"latin\"],\n  weight: [\"100\", \"200\", \"300\", \"400\", \"500\", \"600\", \"700\"],\n});\n\n// const geistSans = Geist({\n//   variable: \"--font-geist-sans\",\n//   subsets: [\"latin\"],\n// });\n\n// const geistMono = Geist_Mono({\n//   variable: \"--font-geist-mono\",\n//   subsets: [\"latin\"],\n// });\n\nexport const metadata: Metadata = {\n  title: \"FSB | Franco Sebasti\u00e1n Ben\u00edtez\",\n  description: \"Building tech that thinks like people\",\n  keywords: [\n    \"software developer\",\n    \"psychologist\",\n    \"entrepreneur\",\n    \"startups\",\n    \"AI\",\n    \"product management\",\n    \"FSB\",\n  ],\n};\n\nexport default function RootLayout({\n  children,\n}: Readonly<{\n  children: React.ReactNode;\n}>) {\n  return (\n    <html lang=\"en\">\n      <PostHogProvider>\n        {/* <body\n        className={`${geistSans.variable} ${geistMono.variable} antialised`}\n        > */}\n        <body className={`${ibmPlexMono.variable} antialiased`}>\n          <div className=\"max-w-2xl mx-auto\">\n            <ThemeProvider\n              attribute=\"class\"\n              defaultTheme=\"system\"\n              enableSystem\n              disableTransitionOnChange\n            >\n              {children}\n            </ThemeProvider>\n          </div>\n        </body>\n      </PostHogProvider>\n    </html>\n  );\n}\n",
+        "components": [
+          "PostHogProvider",
+          "ThemeProvider"
+        ]
+      }
+    ],
+    "routes": [
+      {
+        "routePath": "/:lang",
+        "relativeFilePath": "app/[lang]/page.tsx",
+        "layoutChain": [
+          "async",
+          "function"
+        ],
+        "components": [
+          "SocialLinks"
+        ],
+        "hasParams": true,
+        "hasForm": false,
+        "hooks": [],
+        "eventHandlers": [],
+        "featureFlags": []
+      },
+      {
+        "routePath": "/",
+        "relativeFilePath": "app/page.tsx",
+        "layoutChain": [
+          "function"
+        ],
+        "components": [],
+        "hasParams": false,
+        "hasForm": false,
+        "hooks": [],
+        "eventHandlers": [],
+        "featureFlags": []
+      }
+    ],
+    "api_routes": [],
+    "all_paths": [
+      "app/[lang]/layout.tsx",
+      "app/[lang]/page.tsx",
+      "app/layout.tsx",
+      "app/page.tsx",
+      "components/language-switcher.tsx",
+      "components/logo-img.tsx",
+      "components/posthog-provider.tsx",
+      "components/social-links.tsx",
+      "components/theme-provider.tsx",
+      "components/theme-toggle.tsx",
+      "components/ui/button.tsx",
+      "components/ui/dropdown-menu.tsx",
+      "lib/get-content.tsx",
+      "lib/i18n.ts",
+      "lib/markdown.tsx",
+      "lib/utils.ts",
+      "mdx-components.tsx",
+      "next.config.ts"
+    ]
+  }
+}
