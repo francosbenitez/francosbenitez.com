@@ -1,6 +1,6 @@
 import { validateLanguage } from "@/lib/i18n";
 import { markdownToHtml } from "@/lib/markdown";
-import { getAboutContent } from "@/lib/get-content";
+import { getAboutContent, getQuotesContent } from "@/lib/get-content";
 import { SocialLinks } from "@/components/social-links";
 import Image from "next/image";
 
@@ -12,6 +12,7 @@ export default async function Home({
   const resolvedParams = await Promise.resolve(params);
   const lang = await validateLanguage(resolvedParams.lang);
   const { content } = await getAboutContent(lang);
+  const { content: quotesContent } = await getQuotesContent(lang);
 
   // Split content to separate title from rest of content
   const lines = content.split("\n");
@@ -55,6 +56,14 @@ export default async function Home({
           </div>
 
           <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
+
+          {/* Quotes section */}
+          <div
+            className="prose dark:prose-invert"
+            dangerouslySetInnerHTML={{
+              __html: await markdownToHtml(quotesContent),
+            }}
+          />
         </article>
         <SocialLinks />
       </div>

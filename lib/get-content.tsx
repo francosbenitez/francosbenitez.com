@@ -20,3 +20,20 @@ export async function getAboutContent(
     return { content: "Content not found" };
   }
 }
+
+export async function getQuotesContent(
+  lang: string
+): Promise<{ content: string }> {
+  const filePath = path.join(contentDirectory, lang, "quotes.mdx");
+
+  try {
+    const fileContent = fs.readFileSync(filePath, "utf8");
+    const { content } = matter(fileContent);
+
+    // Return the raw content for processing by remark
+    return { content };
+  } catch (error) {
+    console.error(`Error reading quotes content for ${lang}:`, error);
+    return { content: "Content not found" };
+  }
+}
