@@ -50,3 +50,4 @@ next-env.d.ts
 *.bugster.log
 .bugster/paths.json
 .bugster/ui_config_cache.json
+

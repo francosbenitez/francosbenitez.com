@@ -26,6 +26,7 @@ export const translations: Translations = {
     system: "System",
     photoLabel: "São Paulo adventures",
     interestingQuotes: "Interesting quotes",
+    myJourney: "My journey",
   },
   es: {
     // about: "Sobre mí",
@@ -39,6 +40,7 @@ export const translations: Translations = {
     system: "Sistema",
     photoLabel: "Aventuras en São Paulo",
     interestingQuotes: "Frases interesantes",
+    myJourney: "Mi trayectoria",
   },
 };
 

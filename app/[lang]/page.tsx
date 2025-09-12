@@ -67,7 +67,7 @@ export default async function Home({
             <ul className="mx-0">
               <li className="text-sm text-muted-foreground">
                 1.{" "}
-                <Link href={`/${lang}/quotes`} className="">
+                <Link href={`/${lang}/journey`} className="">
                   {t(lang, "myJourney")} →
                 </Link>
               </li>

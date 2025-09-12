@@ -37,3 +37,20 @@ export async function getQuotesContent(
     return { content: "Content not found" };
   }
 }
+
+export async function getJourneyContent(
+  lang: string
+): Promise<{ content: string }> {
+  const filePath = path.join(contentDirectory, lang, "journey.mdx");
+
+  try {
+    const fileContent = fs.readFileSync(filePath, "utf8");
+    const { content } = matter(fileContent);
+
+    // Return the raw content for processing by remark
+    return { content };
+  } catch (error) {
+    console.error(`Error reading journey content for ${lang}:`, error);
+    return { content: "Content not found" };
+  }
+}
