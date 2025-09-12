@@ -64,12 +64,20 @@ export default async function Home({
             Links
           </h2>
           <div className="mb-8">
-            <Link
-              href={`/${lang}/quotes`}
-              className="text-sm text-muted-foreground"
-            >
-              {t(lang, "interestingQuotes")} →
-            </Link>
+            <ul className="mx-0">
+              <li className="text-sm text-muted-foreground">
+                1.{" "}
+                <Link href={`/${lang}/quotes`} className="">
+                  {t(lang, "myJourney")} →
+                </Link>
+              </li>
+              <li className="text-sm text-muted-foreground">
+                2.{" "}
+                <Link href={`/${lang}/quotes`} className="">
+                  {t(lang, "interestingQuotes")} →
+                </Link>
+              </li>
+            </ul>
           </div>
         </article>
       </div>
