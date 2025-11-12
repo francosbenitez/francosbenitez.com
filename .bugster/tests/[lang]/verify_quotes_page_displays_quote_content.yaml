@@ -1,9 +1,0 @@
-name: Verify quotes page displays quote content
-page: quotes
-page_path: app/[lang]/quotes/page.tsx
-task: Test that the quotes page loads and displays quotes
-steps:
-- Navigate to the quotes page
-- Verify quote content is displayed
-- Check that social links are present and functional
-expected_result: Quotes page loads with quote content and social links
