@@ -1,0 +1,10 @@
+name: Test language switcher functionality
+page: home
+page_path: app/[lang]/page.tsx
+task: Verify language switching changes page content language
+steps:
+- Navigate to the home page
+- Click on the language switcher
+- Select a different language option
+- Verify page content updates to the new language
+expected_result: Page content updates to reflect selected language
