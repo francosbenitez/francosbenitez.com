@@ -1,0 +1,10 @@
+name: Test theme toggle functionality
+page: home
+page_path: app/[lang]/page.tsx
+task: Verify theme switching between light and dark modes
+steps:
+- Navigate to the home page
+- Click the theme toggle button
+- Verify the page appearance changes to reflect the new theme
+- Refresh the page and confirm theme persists
+expected_result: Theme changes successfully and persists across page interactions

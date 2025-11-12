@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "timestamp": 1762984976749,
+    "timestamp": 1762991813405,
     "git": {
       "branch": "main",
-      "commit": "0187439fff3bc5c4ff21a47d20d9d9c893181d85"
+      "commit": "043f8a975d7da14edb1f9d00a3672209b632c95d"
     }
   },
   "data": {
@@ -13,11 +13,6 @@
         "name": "Next.js",
         "dir_path": "/Users/francosbenitez/Documents/Projects/fsb/francosbenitez.com/"
       }
-    ],
-    "commands": {
-      "test": {
-        "firstExecuted": true
-      }
-    }
+    ]
   }
 }

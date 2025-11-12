@@ -1,0 +1,9 @@
+name: Verify quotes page displays quote content
+page: quotes
+page_path: app/[lang]/quotes/page.tsx
+task: Test that the quotes page loads with inspirational content
+steps:
+- Navigate to the quotes page
+- Verify quotes content is displayed
+- Check that social links are accessible
+expected_result: Quotes page displays quote collection and social links
