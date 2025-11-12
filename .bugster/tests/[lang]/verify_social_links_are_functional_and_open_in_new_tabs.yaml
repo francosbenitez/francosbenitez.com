@@ -1,0 +1,11 @@
+name: Verify social links are functional and open in new tabs
+page: home
+page_path: app/[lang]/page.tsx
+task: Test social media links functionality
+steps:
+- Navigate to the home page
+- Locate the social links section
+- Click on a social media link
+- Verify the link opens in a new browser tab
+- Verify the external social media page loads correctly
+expected_result: Social links open external pages in new browser tabs
