@@ -1,0 +1,9 @@
+name: Test root redirect functionality
+page: root
+page_path: app/page.tsx
+task: Verify root path redirects to appropriate language version
+steps:
+- Navigate directly to the root URL
+- Verify automatic redirect occurs
+- Check that user lands on appropriate language version of home page
+expected_result: Root path redirects user to correct language-specific home page
