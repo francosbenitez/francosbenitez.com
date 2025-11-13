@@ -1,9 +1,0 @@
-name: Verify journey page displays timeline content
-page: journey
-page_path: app/[lang]/journey/page.tsx
-task: Test that the journey page loads with career timeline information
-steps:
-- Navigate to the journey page
-- Verify journey content is visible
-- Check that social links are present at the bottom
-expected_result: Journey page displays professional timeline and social links

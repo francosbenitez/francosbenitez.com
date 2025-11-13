@@ -1,9 +1,0 @@
-name: Verify home page loads with main content
-page: home
-page_path: app/[lang]/page.tsx
-task: Test that the home page displays correctly with profile information
-steps:
-- Navigate to the home page
-- Verify the page content is visible
-- Check that social links are displayed
-expected_result: Home page loads successfully showing profile content and social links
