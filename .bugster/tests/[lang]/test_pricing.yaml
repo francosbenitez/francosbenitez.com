@@ -8,3 +8,14 @@ steps:
   - Verify the pricing table is displayed correctly
   - Verify the pricing cards are displayed correctly
   - Verify the pricing table is displayed correctly
+name: Test pricing page
+page: pricing
+page_path: app/[lang]/pricing/page.tsx
+task: Verify the pricing page loads correctly
+steps:
+  - Start on the pricing page
+  - Verify the page loads with fade-in animation
+  - Verify the pricing table is displayed correctly
+  - Verify the pricing cards are displayed correctly
+  - Verify the pricing table is displayed correctly
+expected_result: Pricing page loads correctly
