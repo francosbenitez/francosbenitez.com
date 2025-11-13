@@ -18,4 +18,4 @@ steps:
   - Verify the pricing table is displayed correctly
   - Verify the pricing cards are displayed correctly
   - Verify the pricing table is displayed correctly
-expected_result: Pricing page loads correctly
+expected_result: Pricing page loads correctly with correct content
