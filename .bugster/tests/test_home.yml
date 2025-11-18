@@ -3,7 +3,7 @@ page: /
 page_path: app/page.tsx
 task: Verify core navigation elements and informational content on homepage
 steps:
-  - Navigate to the homepage
+  - Navigate to the homepage.
   - Verify the header with navigation links is visible
   - Verify footer links and information
 expected_result:
