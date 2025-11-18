@@ -8,9 +8,6 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      # Your deployment steps here
-      # ...
-
       - name: Trigger Bugster Tests
         uses: Bugsterapp/bugster-action@v1
         with:
