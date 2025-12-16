@@ -8,4 +8,5 @@ steps:
   - First step description
   - Second step description
   - Third step description
+  - Fourth step description - new
 expected_result: Describe the expected outcome
