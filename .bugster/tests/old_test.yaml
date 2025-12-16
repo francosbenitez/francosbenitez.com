@@ -1,0 +1,11 @@
+name: My New Test
+page: page_identifier
+page_path: src/app/path/to/page.tsx
+credential_id: user
+requires_login: true
+task: describe what this test verifies
+steps:
+  - First step description
+  - Second step description
+  - Third step description
+expected_result: Describe the expected outcome
