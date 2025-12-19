@@ -1,9 +1,0 @@
-name: Example test
-page: /example
-page_path: src/app/example/page.tsx
-task: Example test to demonstrate Bugster test structure
-steps:
-  - Navigate to the example page
-  - Verify page loads correctly
-  - Check that expected content is displayed
-expected_result: Page loads successfully and displays expected content
