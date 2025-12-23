@@ -1,6 +1,5 @@
 name: Hola
 page: page_identifier
 page_path: src/app/path/to/page.tsx
-credential_id: user
 task: describe what this test verifies
 expected_result: Describe the expected outcome
