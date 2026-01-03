@@ -4,10 +4,11 @@ import matter from "gray-matter";
 
 const contentDirectory = path.join(process.cwd(), "contents");
 
-export async function getAboutContent(
-  lang: string
+async function getContentFile(
+  lang: string,
+  filename: string
 ): Promise<{ content: string }> {
-  const filePath = path.join(contentDirectory, lang, "about.mdx");
+  const filePath = path.join(contentDirectory, lang, `${filename}.mdx`);
 
   try {
     const fileContent = fs.readFileSync(filePath, "utf8");
@@ -16,41 +17,31 @@ export async function getAboutContent(
     // Return the raw content for processing by remark
     return { content };
   } catch (error) {
-    console.error(`Error reading about content for ${lang}:`, error);
+    console.error(`Error reading ${filename} content for ${lang}:`, error);
     return { content: "Content not found" };
   }
+}
+
+export async function getAboutContent(
+  lang: string
+): Promise<{ content: string }> {
+  return getContentFile(lang, "about");
 }
 
 export async function getQuotesContent(
   lang: string
 ): Promise<{ content: string }> {
-  const filePath = path.join(contentDirectory, lang, "quotes.mdx");
+  return getContentFile(lang, "quotes");
+}
 
-  try {
-    const fileContent = fs.readFileSync(filePath, "utf8");
-    const { content } = matter(fileContent);
-
-    // Return the raw content for processing by remark
-    return { content };
-  } catch (error) {
-    console.error(`Error reading quotes content for ${lang}:`, error);
-    return { content: "Content not found" };
-  }
+export async function getProductEngineerContent(
+  lang: string
+): Promise<{ content: string }> {
+  return getContentFile(lang, "product-engineer");
 }
 
 export async function getJourneyContent(
   lang: string
 ): Promise<{ content: string }> {
-  const filePath = path.join(contentDirectory, lang, "journey.mdx");
-
-  try {
-    const fileContent = fs.readFileSync(filePath, "utf8");
-    const { content } = matter(fileContent);
-
-    // Return the raw content for processing by remark
-    return { content };
-  } catch (error) {
-    console.error(`Error reading journey content for ${lang}:`, error);
-    return { content: "Content not found" };
-  }
+  return getContentFile(lang, "journey");
 }
