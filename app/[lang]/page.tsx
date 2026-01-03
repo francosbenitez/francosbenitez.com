@@ -77,6 +77,14 @@ export default async function Home({
                   {t(lang, "interestingQuotes")} →
                 </Link>
               </li>
+              {lang === "en" && (
+                <li className="text-sm text-muted-foreground">
+                  3.{" "}
+                  <Link href={`/${lang}/product-engineer`} className="">
+                    What is a Product Engineer? →
+                  </Link>
+                </li>
+              )}
             </ul>
           </div>
         </article>
