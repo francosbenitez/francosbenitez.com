@@ -68,20 +68,20 @@ export default async function Home({
               <li className="text-sm text-muted-foreground">
                 1.{" "}
                 <Link href={`/${lang}/journey`} className="">
-                  {t(lang, "myJourney")} →
+                  {t(lang, "myJourney")}
                 </Link>
               </li>
               <li className="text-sm text-muted-foreground">
                 2.{" "}
                 <Link href={`/${lang}/quotes`} className="">
-                  {t(lang, "interestingQuotes")} →
+                  {t(lang, "interestingQuotes")}
                 </Link>
               </li>
               {lang === "en" && (
                 <li className="text-sm text-muted-foreground">
                   3.{" "}
                   <Link href={`/${lang}/product-engineer`} className="">
-                    What is a Product Engineer? →
+                    What is a Product Engineer?
                   </Link>
                 </li>
               )}
