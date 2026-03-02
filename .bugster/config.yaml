@@ -4,7 +4,7 @@
 
 # Project Information
 project_name: francosbenitez.com
-project_id: francosbenitez.com-1762988680
+project_id: iHMBJhSmdfouF8xO38h3
 base_url: "http://localhost:3000"
 
 # Project Authentication
@@ -21,7 +21,6 @@ base_url: "http://localhost:3000"
 # You can create the Vercel Protection Bypass Secret for Automation in this link:
 # https://vercel.com/d?to=/[team]/[project]/settings/deployment-protection&title=Deployment+Protection+settings
 # x-vercel-protection-bypass: ${VERCEL_BYPASS_SECRET}
-
 
 # Test Execution Preferences
 # Uncomment and modify the options below to customize test execution behavior.
