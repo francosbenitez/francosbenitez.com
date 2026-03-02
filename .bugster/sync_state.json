@@ -1,0 +1,32 @@
+{
+  "98e2fae7-d908-4794-8572-ff8dbfd4b253": {
+    "hash": "79b19e595606d1262feb381fc0d8d808c0b8369b184fc93e25acbe5aef052ff1",
+    "file_name": "(protected)/test_1.yaml",
+    "last_synced": "2026-03-02T15:10:44.189877+00:00"
+  },
+  "fd96995a-5962-4435-b3c4-381d87f1c95a": {
+    "hash": "12b910cf13ce0705e5fa9888380a8dcba1fe853d46a2778dba00d8cc834c6e73",
+    "file_name": "(protected)/test_2.yaml",
+    "last_synced": "2026-03-02T15:10:44.190043+00:00"
+  },
+  "3b9c5383-daf1-467c-80b7-73ba00443348": {
+    "hash": "f7ead03071ca0d0f646513c7412f77a6e1ef929803cc56ef5d5101e584a9686f",
+    "file_name": "(protected)/test_3.yaml",
+    "last_synced": "2026-03-02T15:10:44.190179+00:00"
+  },
+  "1bdd3d15-925c-41ff-8223-8564b32a30ea": {
+    "hash": "c4776dce6fb0bce81d48eb145c99da474b2067b7ad61d8fea2f1ac4162e5d8eb",
+    "file_name": "(protected)/test_4.yaml",
+    "last_synced": "2026-03-02T15:10:44.190306+00:00"
+  },
+  "fdde97a0-763d-4d93-b77c-0db882a2665a": {
+    "hash": "3b9b92499b32a6be642f360f468c1733864ac4c2f1f1bfc9e090fb1904a293c6",
+    "file_name": "(protected)/test_5.yaml",
+    "last_synced": "2026-03-02T15:10:44.190422+00:00"
+  },
+  "28738a77-d614-4237-8ba6-a75e28671276": {
+    "hash": "c4776dce6fb0bce81d48eb145c99da474b2067b7ad61d8fea2f1ac4162e5d8eb",
+    "file_name": "directory/test_4.yaml",
+    "last_synced": "2026-03-02T15:10:44.190534+00:00"
+  }
+}
