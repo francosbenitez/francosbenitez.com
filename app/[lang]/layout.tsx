@@ -2,6 +2,7 @@ import { validateLanguage } from "@/lib/i18n";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { LanguageSwitcher } from "@/components/language-switcher";
 import { LogoImg } from "@/components/logo-img";
+import { NavTabs } from "@/components/nav-tabs";
 
 export default async function LocaleLayout({
   children,
@@ -16,9 +17,12 @@ export default async function LocaleLayout({
   return (
     <div className="flex flex-col bg-background text-foreground">
       <header className="sticky top-0 z-40 w-full border-b border-gray-400 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="px-4 py-4 flex justify-between items-center">
+        <div className="px-4 py-4 flex items-center justify-between">
           <LogoImg />
-          <div className="flex items-center gap-2 ml-auto">
+          <div className="flex items-center">
+            <NavTabs lang={lang} />
+          </div>
+          <div className="flex items-center gap-2">
             <ThemeToggle currentLang={lang} />
             <LanguageSwitcher currentLang={lang} />
           </div>

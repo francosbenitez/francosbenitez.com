@@ -32,25 +32,28 @@ export function SocialLinks() {
   ];
 
   return (
-    <div className="flex flex-wrap gap-4 mb-8">
-      {socialLinks.map((link) => (
-        <Button
-          key={link.name}
-          variant="outline"
-          size="icon"
-          className="rounded-full h-10 w-10 transition-all hover:scale-105 hover:bg-secondary hover:border-primary/20"
-          asChild
-        >
-          <a
-            href={link.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={link.name}
+    <>
+      <hr className="my-6" />
+      <div className="flex flex-wrap gap-4 mb-8">
+        {socialLinks.map((link) => (
+          <Button
+            key={link.name}
+            variant="outline"
+            size="icon"
+            className="rounded-full h-10 w-10 transition-all hover:scale-105 hover:bg-secondary hover:border-primary/20"
+            asChild
           >
-            {link.icon}
-          </a>
-        </Button>
-      ))}
-    </div>
+            <a
+              href={link.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={link.name}
+            >
+              {link.icon}
+            </a>
+          </Button>
+        ))}
+      </div>
+    </>
   );
 }

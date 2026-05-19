@@ -14,92 +14,71 @@ export default async function Home({
   const lang = await validateLanguage(resolvedParams.lang);
   const { content } = await getAboutContent(lang);
 
-  // Split content to separate title from rest of content
-  const lines = content.split("\n");
-  const titleIndex = lines.findIndex((line) => line.startsWith("# "));
+  const lines = content.split("\n").filter(Boolean);
+  const tagline =
+    lines.find((l) => !l.startsWith("#") && l.trim().length > 0) ?? "";
+  const taglineHtml = await markdownToHtml(tagline);
 
-  if (titleIndex !== -1) {
-    const title = lines[titleIndex];
-    const beforeTitle = lines.slice(0, titleIndex).join("\n");
-    const afterTitle = lines.slice(titleIndex + 1).join("\n");
-
-    const titleHtml = await markdownToHtml(title);
-    const contentHtml = await markdownToHtml(afterTitle);
-
-    return (
-      <div className="max-w-2xl mx-auto">
-        <article className="prose dark:prose-invert mx-auto">
-          {beforeTitle && (
-            <div
-              dangerouslySetInnerHTML={{
-                __html: await markdownToHtml(beforeTitle),
-              }}
-            />
-          )}
-          <div dangerouslySetInnerHTML={{ __html: titleHtml }} />
-
-          {/* Photo after title */}
-          <div className="flex flex-col items-center">
-            <div className="relative w-48 h-48 sm:w-56 sm:h-56 overflow-hidden">
-              <Image
-                src="/photo.jpg"
-                alt="Franco Benitez"
-                fill
-                className="object-cover"
-                priority
-              />
-            </div>
-            {/* Photo label below image */}
-            <p className="text-xs text-muted-foreground mt-2 italic">
-              {t(lang, "photoLabel")}
-            </p>
-          </div>
-
-          <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
-
-          <SocialLinks />
-
-          {/* Link to quotes page */}
-          <h2 className="mb-4 text-2xl font-medium tracking-tight text-foreground">
-            Links
-          </h2>
-          <div className="mb-8">
-            <ul className="mx-0">
-              <li className="text-sm text-muted-foreground">
-                1.{" "}
-                <Link href={`/${lang}/journey`} className="">
-                  {t(lang, "myJourney")}
-                </Link>
-              </li>
-              <li className="text-sm text-muted-foreground">
-                2.{" "}
-                <Link href={`/${lang}/quotes`} className="">
-                  {t(lang, "interestingQuotes")}
-                </Link>
-              </li>
-              {lang === "en" && (
-                <li className="text-sm text-muted-foreground">
-                  3.{" "}
-                  <Link href={`/${lang}/product-engineer`} className="">
-                    What is a Product Engineer?
-                  </Link>
-                </li>
-              )}
-            </ul>
-          </div>
-        </article>
-      </div>
-    );
-  }
-
-  // Fallback if no title found
-  const htmlContent = await markdownToHtml(content);
   return (
     <div className="max-w-2xl mx-auto">
       <article className="prose dark:prose-invert mx-auto">
-        <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
+        <h1>Franco S. Benítez</h1>
+
+        <div className="flex flex-col items-center">
+          <div className="relative w-48 h-48 sm:w-56 sm:h-56 overflow-hidden">
+            <Image
+              src="/photo.jpg"
+              alt="Franco Benitez"
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
+          <p className="text-xs text-muted-foreground mt-2 italic">
+            {t(lang, "photoLabel")}
+          </p>
+        </div>
+
+        <div
+          className="[&>p]:mt-0 [&>p]:mb-3"
+          dangerouslySetInnerHTML={{ __html: taglineHtml }}
+        />
+
+        {/* Recent writing section */}
+        <h2 className="mb-4 text-2xl font-medium tracking-tight text-foreground">
+          Recent writing
+        </h2>
+        <div className="mb-8 flex flex-col gap-2">
+          <div className="flex items-baseline gap-4">
+            <span className="text-sm font-mono text-muted-foreground w-28 shrink-0">
+              Jan 1, 2025
+            </span>
+            <Link href={`/${lang}/blog/journey`} className="text-sm">
+              {t(lang, "myJourney")}
+            </Link>
+          </div>
+          <div className="flex items-baseline gap-4">
+            <span className="text-sm font-mono text-muted-foreground w-28 shrink-0">
+              Jan 1, 2025
+            </span>
+            <Link href={`/${lang}/blog/quotes`} className="text-sm">
+              {t(lang, "interestingQuotes")}
+            </Link>
+          </div>
+          {lang === "en" && (
+            <div className="flex items-baseline gap-4">
+              <span className="text-sm font-mono text-muted-foreground w-28 shrink-0">
+                Jan 1, 2025
+              </span>
+              <Link href={`/${lang}/blog/product-engineer`} className="text-sm">
+                What is a Product Engineer?
+              </Link>
+            </div>
+          )}
+        </div>
+
+        <SocialLinks />
       </article>
-      <SocialLinks />
     </div>
   );
 }
