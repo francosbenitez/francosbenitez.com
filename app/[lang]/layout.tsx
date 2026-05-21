@@ -17,9 +17,9 @@ export default async function LocaleLayout({
   return (
     <div className="flex flex-col bg-background text-foreground">
       <header className="sticky top-0 z-40 w-full border-b border-gray-400 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="px-4 py-4 flex items-center justify-between">
+        <div className="px-4 py-4 relative flex items-center justify-between">
           <LogoImg />
-          <div className="flex items-center">
+          <div className="absolute left-1/2 -translate-x-1/2 flex items-center">
             <NavTabs lang={lang} />
           </div>
           <div className="flex items-center gap-2">

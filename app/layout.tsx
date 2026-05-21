@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   title: "FSB | Franco Sebastián Benítez",
   description: "Building tech that thinks like people",
   keywords: [
-    "software developer",
+    "software engineer",
     "psychologist",
     "entrepreneur",
     "startups",
