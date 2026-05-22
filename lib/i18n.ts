@@ -25,7 +25,7 @@ export const translations: Translations = {
     dark: "Dark",
     system: "System",
     photoLabel: "São Paulo adventures",
-    interestingQuotes: "Interesting quotes",
+    interestingQuotes: "Interesting Quotes",
     myJourney: "My journey",
   },
   es: {
@@ -66,7 +66,7 @@ export function t(lang: string, key: string, fallback?: string): string {
 export async function tAsync(
   lang: string,
   key: string,
-  fallback?: string
+  fallback?: string,
 ): Promise<string> {
   return t(lang, key, fallback);
 }
