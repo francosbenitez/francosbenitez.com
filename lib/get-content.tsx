@@ -28,20 +28,25 @@ export async function getAboutContent(
   return getContentFile(lang, "about");
 }
 
-export async function getQuotesContent(
-  lang: string
-): Promise<{ content: string }> {
-  return getContentFile(lang, "quotes");
-}
+/**
+ * Loads blog MDX raw content. Returns null if the file is missing or unreadable.
+ */
+export async function getBlogPostContent(
+  lang: string,
+  slug: string
+): Promise<{ content: string } | null> {
+  const filePath = path.join(contentDirectory, lang, `${slug}.mdx`);
 
-export async function getProductEngineerContent(
-  lang: string
-): Promise<{ content: string }> {
-  return getContentFile(lang, "product-engineer");
-}
+  if (!fs.existsSync(filePath)) {
+    return null;
+  }
 
-export async function getJourneyContent(
-  lang: string
-): Promise<{ content: string }> {
-  return getContentFile(lang, "journey");
+  try {
+    const fileContent = fs.readFileSync(filePath, "utf8");
+    const { content } = matter(fileContent);
+    return { content };
+  } catch (error) {
+    console.error(`Error reading ${slug} content for ${lang}:`, error);
+    return null;
+  }
 }

@@ -2,6 +2,10 @@ import { validateLanguage, t } from "@/lib/i18n";
 import { markdownToHtml } from "@/lib/markdown";
 import { getAboutContent } from "@/lib/get-content";
 import { SocialLinks } from "@/components/social-links";
+import {
+  getBlogPostTitle,
+  getBlogPostsForLang,
+} from "@/lib/blog-posts";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -49,32 +53,16 @@ export default async function Home({
           Recent writing
         </h2>
         <div className="mb-8 flex flex-col gap-2">
-          <div className="flex items-baseline gap-4">
-            <span className="text-sm font-mono text-muted-foreground w-28 shrink-0">
-              Jan 1, 2025
-            </span>
-            <Link href={`/${lang}/blog/journey`} className="text-sm">
-              {t(lang, "myJourney")}
-            </Link>
-          </div>
-          <div className="flex items-baseline gap-4">
-            <span className="text-sm font-mono text-muted-foreground w-28 shrink-0">
-              Jan 1, 2025
-            </span>
-            <Link href={`/${lang}/blog/quotes`} className="text-sm">
-              {t(lang, "interestingQuotes")}
-            </Link>
-          </div>
-          {lang === "en" && (
-            <div className="flex items-baseline gap-4">
+          {getBlogPostsForLang(lang).map((post) => (
+            <div key={post.slug} className="flex items-baseline gap-4">
               <span className="text-sm font-mono text-muted-foreground w-28 shrink-0">
-                Jan 1, 2025
+                {post.date}
               </span>
-              <Link href={`/${lang}/blog/product-engineer`} className="text-sm">
-                What is a Product Engineer?
+              <Link href={`/${lang}/blog/${post.slug}`} className="text-sm">
+                {getBlogPostTitle(post, lang)}
               </Link>
             </div>
-          )}
+          ))}
         </div>
 
         <SocialLinks />
