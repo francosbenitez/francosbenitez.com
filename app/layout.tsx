@@ -1,9 +1,15 @@
 import type { Metadata } from "next";
 // import { Geist, Geist_Mono } from "next/font/google";
-import { IBM_Plex_Mono } from "next/font/google";
+import { IBM_Plex_Sans, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { PostHogProvider } from "@/components/posthog-provider";
+
+const ibmPlexSans = IBM_Plex_Sans({
+  variable: "--font-ibm-plex-sans",
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700"],
+});
 
 const ibmPlexMono = IBM_Plex_Mono({
   variable: "--font-ibm-plex-mono",
@@ -46,7 +52,7 @@ export default function RootLayout({
         {/* <body
         className={`${geistSans.variable} ${geistMono.variable} antialised`}
         > */}
-        <body className={`${ibmPlexMono.variable} antialiased`}>
+        <body className={`${ibmPlexSans.variable} ${ibmPlexMono.variable} antialiased`}>
           <div className="max-w-2xl mx-auto">
             <ThemeProvider
               attribute="class"

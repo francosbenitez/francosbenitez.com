@@ -1,8 +1,6 @@
 import { validateLanguage } from "@/lib/i18n";
-import {
-  getBlogPostTitle,
-  getBlogPostsForLang,
-} from "@/lib/blog-posts";
+import { getBlogPostTitle, getBlogPostsForLang } from "@/lib/blog-posts";
+import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 
 export default async function BlogPage({
@@ -20,10 +18,14 @@ export default async function BlogPage({
         <div className="flex flex-col gap-2">
           {getBlogPostsForLang(lang).map((post) => (
             <div key={post.slug} className="flex items-baseline gap-4">
-              <span className="text-sm font-mono text-muted-foreground w-28 shrink-0">
+              {/* <span className="text-sm font-mono text-muted-foreground w-28 shrink-0">
                 {post.date}
-              </span>
-              <Link href={`/${lang}/blog/${post.slug}`} className="text-sm">
+              </span> */}
+              <Link
+                href={`/${lang}/blog/${post.slug}`}
+                className="group inline-flex items-center gap-1.5 text-sm"
+              >
+                <ArrowRight className="h-3.5 w-3.5 transition-transform duration-200 ease-out group-hover:translate-x-1" />
                 {getBlogPostTitle(post, lang)}
               </Link>
             </div>

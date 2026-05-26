@@ -2,10 +2,8 @@ import { validateLanguage, t } from "@/lib/i18n";
 import { markdownToHtml } from "@/lib/markdown";
 import { getAboutContent } from "@/lib/get-content";
 import { SocialLinks } from "@/components/social-links";
-import {
-  getBlogPostTitle,
-  getBlogPostsForLang,
-} from "@/lib/blog-posts";
+import { getBlogPostTitle, getBlogPostsForLang } from "@/lib/blog-posts";
+import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -48,17 +46,21 @@ export default async function Home({
           dangerouslySetInnerHTML={{ __html: taglineHtml }}
         />
 
-        {/* Recent writing section */}
+        {/* Writing section */}
         <h2 className="mb-4 text-2xl font-medium tracking-tight text-foreground">
-          Recent writing
+          Writing
         </h2>
         <div className="mb-8 flex flex-col gap-2">
           {getBlogPostsForLang(lang).map((post) => (
             <div key={post.slug} className="flex items-baseline gap-4">
-              <span className="text-sm font-mono text-muted-foreground w-28 shrink-0">
+              {/* <span className="text-sm font-mono text-muted-foreground w-28 shrink-0">
                 {post.date}
-              </span>
-              <Link href={`/${lang}/blog/${post.slug}`} className="text-sm">
+              </span> */}
+              <Link
+                href={`/${lang}/blog/${post.slug}`}
+                className="group inline-flex items-center gap-1.5 text-sm"
+              >
+                <ArrowRight className="h-3.5 w-3.5 transition-transform duration-200 ease-out group-hover:translate-x-1" />
                 {getBlogPostTitle(post, lang)}
               </Link>
             </div>
