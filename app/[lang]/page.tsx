@@ -48,7 +48,7 @@ export default async function Home({
 
         {/* Writing section */}
         <h2 className="mb-4 text-2xl font-medium tracking-tight text-foreground">
-          Writing
+          {t(lang, "writing")}
         </h2>
         <div className="mb-8 flex flex-col gap-2">
           {getBlogPostsForLang(lang).map((post) => (

@@ -27,6 +27,7 @@ export const translations: Translations = {
     photoLabel: "São Paulo adventures",
     interestingQuotes: "Interesting Quotes",
     myJourney: "My journey",
+    writing: "Writing",
   },
   es: {
     // about: "Sobre mí",
@@ -41,6 +42,7 @@ export const translations: Translations = {
     photoLabel: "Aventuras en São Paulo",
     interestingQuotes: "Frases interesantes",
     myJourney: "Mi trayectoria",
+    writing: "Escritos",
   },
 };
 

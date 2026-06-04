@@ -28,15 +28,20 @@ const ibmPlexMono = IBM_Plex_Mono({
 // });
 
 export const metadata: Metadata = {
-  title: "FSB | Franco Sebastián Benítez",
-  description: "Building tech that thinks like people",
+  title: "Franco Sebastián Benítez",
+  description:
+    "Software engineer, psychologist, and entrepreneur passionate about startups, artificial intelligence, and product management.",
   keywords: [
     "software engineer",
     "psychologist",
     "entrepreneur",
     "startups",
     "AI",
+    "artificial intelligence",
+    "product engineer",
     "product management",
+    "product",
+    "Franco Sebastián Benítez",
     "FSB",
   ],
 };
@@ -52,7 +57,9 @@ export default function RootLayout({
         {/* <body
         className={`${geistSans.variable} ${geistMono.variable} antialised`}
         > */}
-        <body className={`${ibmPlexSans.variable} ${ibmPlexMono.variable} antialiased`}>
+        <body
+          className={`${ibmPlexSans.variable} ${ibmPlexMono.variable} antialiased`}
+        >
           <div className="max-w-2xl mx-auto">
             <ThemeProvider
               attribute="class"
